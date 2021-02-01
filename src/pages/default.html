@@ -1,4 +1,4 @@
-h<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
@@ -23,8 +23,27 @@ h<!DOCTYPE html>
             <div class="header-mob-layer-wrapp">
               <a href="index.html" class="logo">
                 <img src="assets/img/logo.svg" alt="logo" />
-                <span class="logo__slogan">Lorem ipsum slogan</span>
               </a>
+
+              <div class="header-lang">
+                <div class="header-lang__current">
+                  <span>Ру</span>
+                  <svg class="icon icon-arrow-down">
+                    <use xlink:href="assets/img/sprite.svg#arrow-down"></use>
+                  </svg>
+                </div>
+                <ul class="header-lang__dd">
+                  <li>En</li>
+                  <li>Sp</li>
+                </ul>
+              </div>
+
+              <div class="header-enter-btns">
+                <a href="#" class="btn btn_border">
+                  <span class="text_light">Вход</span>
+                </a>
+                <a href="#" class="btn">Регистрация</a>
+              </div>
 
               <div class="burger-menu">
                 <div class="burger-menu-box"></div>
@@ -38,32 +57,28 @@ h<!DOCTYPE html>
                 <div class="menu-open-wrapper">
                   <nav class="header-nav">
                     <ul class="menu">
+                      <li class="menu-item _active">
+                        <a class="menu-item__link" href="#">О компании</a>
+                      </li>
                       <li class="menu-item">
-                        <span class="menu-item__link menu-item__link_dd"
-                          >Links</span
+                        <a class="menu-item__link" href="#">Как начать</a>
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-item__link" href="#">Наши партнеры</a>
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-item__link" href="#"
+                          >Партнерство с GENESIS</a
                         >
-
-                        <ul class="menu-dd">
-                          <li class="menu-dd-item">
-                            <a class="menu-dd-item__link" href="#pagination"
-                              >Pagination</a
-                            >
-                          </li>
-                          <li class="menu-dd-item">
-                            <a class="menu-dd-item__link" href="#"
-                              >Bread crumbs</a
-                            >
-                          </li>
-                        </ul>
                       </li>
                       <li class="menu-item">
-                        <a class="menu-item__link" href="#buttons">Buttons</a>
+                        <a class="menu-item__link" href="#">Карьера</a>
                       </li>
                       <li class="menu-item">
-                        <a class="menu-item__link" href="#form">Form</a>
+                        <a class="menu-item__link" href="#">Помощь</a>
                       </li>
                       <li class="menu-item">
-                        <a class="menu-item__link" href="#text">Text</a>
+                        <a class="menu-item__link" href="#">Отзывы</a>
                       </li>
                     </ul>
                   </nav>
@@ -125,7 +140,7 @@ h<!DOCTYPE html>
                 <svg class="icon">
                   <use xlink:href="assets/img/sprite.svg#user"></use>
                 </svg>
-                <img src="assets/img/img1.png" alt="" />
+                <!-- <img src="assets/img/img1.png" alt="" /> -->
               </div>
               <div class="st-user__about">
                 <div class="st-user__name">Username</div>

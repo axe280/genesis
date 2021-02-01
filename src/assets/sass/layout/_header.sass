@@ -1,12 +1,18 @@
+.header
+  padding-top: 20px
+  padding-bottom: 24px
+  background-color: #220a5e
+  // background-image: url('../img/header-bg.svg')
+  // background-repeat: no-repeat
+  // background-position: 50% 0
+  // background-size: cover
+  color: #fff
+
 .header-mob-layer-wrapp
   display: flex
   align-items: center
   justify-content: space-between
-
-.header-panel
-  display: flex
-  align-items: center
-  justify-content: space-between
+  margin-bottom: 17px
 
 .logo
   display: flex
@@ -18,13 +24,161 @@
   &:hover
     opacity: .95
 
-  img
-    width: 44px
-    height: 44px
+.header-lang
+  position: relative
+  margin-right: auto
+  margin-left: 30px
+  margin-bottom: 3px
+  text-transform: uppercase
+  font-weight: 600
+  font-size: 12px
+  line-height: 17px
 
-  &__slogan
-    max-width: 80px
-    margin-left: 16px
-    font-size: 12px
-    line-height: 16px
-    color: #fff
+  &._opened
+    .header-lang
+      &__current
+        border-color: transparent
+
+  &__current
+    position: relative
+    z-index: 3
+    margin-right: 10px
+    border-bottom: 1px dotted #0c88f9
+    cursor: pointer
+    transition: border-color .2s
+
+    &:hover
+      border-color: transparent
+
+    .icon
+      position: absolute
+      right: -10px
+      top: 50%
+      margin-top: -2px
+      width: 6px
+      height: 4px
+      fill: #fff
+
+  &__dd
+    display: none
+    position: absolute
+    z-index: 2
+    top: -6px
+    left: -8px
+    width: 44px
+    padding: 23px 7px 7px
+    border: 1px solid #000
+    border: solid 1px rgba(#fff, .2)
+    background-color: #050a4d
+    border-radius: 4px
+
+    li
+      cursor: pointer
+
+      &:hover
+        color: $color-h-link
+
+.header-enter-btns
+  display: flex
+  margin-bottom: 3px
+
+  .btn
+    &:first-child
+      border-radius: 4px 0 0 4px
+      margin-right: -1px
+
+    &:last-child
+      border-radius: 0 4px 4px 0
+
+.main-header-wrapper
+  background-color: #220a5e
+
+  .header
+    background: none
+    position: relative
+    z-index: 10
+
+.main-header-inner
+  padding: 28px 0 48px
+  color: #fff
+
+.main-header-info
+  position: relative
+  z-index: 10
+  max-width: 540px
+  min-height: 176px
+  margin-bottom: 98px
+
+  p
+    max-width: 390px
+    font-size: 16px
+    line-height: 1.38em
+  
+  h1, .title-site
+    margin-bottom: 14px
+
+  .btn
+    margin-top: 30px
+
+.main-header-infograph
+  position: relative
+
+  &::before,
+  &::after
+    content: ''
+    position: absolute
+    z-index: 2
+    background-repeat: no-repeat
+    background-position: 0 0
+    background-size: 100% 100%
+
+  &::before
+    left: 8px
+    top: -404px
+    width: 1278px
+    height: 395px
+    background-image: url('../img/header-list-dots.svg')
+
+  &::after
+    position: absolute
+    left: 812px
+    bottom: -7px
+    width: 300px
+    height: 377px
+    background-image: url('../img/lg-logo-main.svg')
+
+.mh-icons
+  display: flex
+
+  &__info
+    width: 105px
+
+    b
+      display: block
+      margin-bottom: 4px
+      font-weight: 500
+      font-size: 18px
+      line-height: 22px
+      text-transform: uppercase
+
+    span
+      display: block
+      font-size: 12px
+      line-height: 15px
+      color: #8491b4
+
+  li
+    display: flex
+    margin-right: 61px
+
+    &:last-child
+      margin-right: 0
+
+  .icon
+    flex-shrink: 0
+    margin-right: 14px
+    width: 30px
+    height: 30px
+
+  .icon-stat-3
+    width: 26px

@@ -18,10 +18,6 @@
 
 
 /* -- Pagination -------------------- */
-.active
-  .pagination
-    background-color: red
-
 .pagination
   list-style-type: none
 
@@ -64,131 +60,33 @@
 
 /* -- Main menu --------------------- */
 .menu
+  display: flex
+  align-items: center
+  justify-content: space-between
   margin: 0
-  padding: 0
+  padding: 22px 0 0
   list-style: none
+  border-top: 1px solid rgba(#fff, .5)
 
 .menu-item
   position: relative
-  margin-bottom: 15px
   padding: 0
   list-style-type: none
-  font-size: 16px
-  line-height: 20px
+  font-weight: 600
+  font-size: 12px
+  line-height: 15px
+  text-transform: uppercase
   color: #fff
 
-  &__link
-    color: #fff
-    text-decoration: none
-
-    &:hover
-      color: #fff
-
-
-/* - Drop down main menu -------- */
-.menu-item__link_dd
-  cursor: pointer
-  user-select: none
-
-  &:after
-    content: ' '
-    border-top-color: #fff
-    margin: 0 0 0 10px
-
-.menu-dd
-  display: none
-  margin: 0
-  padding: 5px 0
-  list-style: none
-
-.menu-dd-item
-  line-height: 20px
-  margin: 10px 0
-  padding-left: 20px
-  position: relative
+  &._active
+    .menu-item
+      &__link
+        color: $colorBlueLight
 
   &__link
     color: #fff
     text-decoration: none
-    font-size: 14px
 
     &:hover
-      color: #fff
-
-.menu-item.open
-  .menu-dd
-    display: block
-
-  .menu-item__link_dd
-    &:after
-      transform: rotate(180deg)
-
-.menu-item.active
-  .menu-item__link
-    color: $second-color
-
-
-/* Min width $lg pixels */
-@media only screen and (min-width: $lg)
-  .menu
-    background-color: $base-color
-    border-radius: 3px
-
-  .menu-item
-    display: inline-block
-    vertical-align: top
-    margin: 0
-
-    &.active
-      .menu-item__link
-        color: #fff
-        background-color: $second-color
-
-        &:hover
-          background-color: $second-color
-
-    &__link
-      display: block
-      padding: 15px 20px
-      transition: background-color 0.2s ease
-
-      &:hover
-        background-color: darken($base-color, 5%)
-
-  /* - Drop down main menu -------- */
-  .menu-item.open
-    .menu-dd
-      display: none
-
-    .menu-item__link_dd
-      &:after
-        transform: rotate(0)
-
-  .menu-dd
-    position: absolute
-    display: none
-    top: 100%
-    width: 270px
-    text-align: left
-    background-color: darken($base-color, 5%)
-    padding: 10px 20px
-    border-radius: 0 0 5px 5px
-
-  .menu-dd-item
-    margin: 10px 0
-    padding-left: 0
-
-    &__link
-      &:hover
-        text-decoration: underline
-
-  .menu-item
-    &:hover
-      .menu-item__link_dd
-        background-color: darken($base-color, 5%)
-
-      .menu-dd
-        display: block
-  /* end media min width $lg pixels */
-
+      color: $colorBlueLight
 /* ----- END Navigation ---------------- */
