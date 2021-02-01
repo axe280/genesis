@@ -1,0 +1,169 @@
+/* ----- Typography -------------------- */
+*
+  box-sizing: border-box
+
+body
+  font-family: $site-font-family, $systemFont
+  font-size: $site-text-size
+  line-height: 26px
+  color: $site-text-color
+
+.title-site, h1, h2, h3, h4, h5, h6
+  display: block
+  margin: 0 0 20px
+  padding: 0
+  font-family: $site-font-family, $systemFont
+  font-weight: 600
+  line-height: 1.2em
+  color: $site-title-color
+
+h1, .title-site_h1
+  margin-bottom: 30px
+  line-height: 1.233em
+  font-size: $site-h1-size
+
+h2, .title-site_h2
+  margin-bottom: 30px
+  font-size: $site-h2-size
+
+h3, .title-site_h3
+  font-size: $site-h3-size
+
+h4, .title-site_h4
+  font-size: $site-h4-size
+
+h5, .title-site_h5
+  font-size: $site-h5-size
+
+h6, .title-site_h6
+  font-size: $site-h6-size
+
+ul, ol
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+li
+  margin: 0
+  padding: 0
+
+p
+  margin: 0
+
+p + p
+  margin-top: 20px
+
+b
+  font-weight: 600
+
+.text-bl
+  ul
+    margin-bottom: 20px
+    list-style-type: disc
+    padding-left: 15px
+
+  ol
+    margin-bottom: 20px
+    list-style-type: decimal
+    padding-left: 15px
+
+  li
+    margin-bottom: 10px
+
+.text_center
+  text-align: center
+
+.text_left
+  text-align: left
+
+.text_right
+  text-align: right
+
+.text_uppercase
+  text-transform: uppercase
+
+.text_primary
+  color: $colorPrimary
+
+.text_bold
+  font-weight: 700
+
+.text_semi-bold
+  font-weight: 600
+
+.text_medium
+  font-weight: 500
+
+.text_light
+  color: #fff
+
+img
+  vertical-align: middle
+  max-width: 100%
+
+a
+  color: $color-link
+  text-decoration: underline
+  transition: color $transDefault
+
+  &:hover
+    text-decoration: none
+    color: $color-h-link
+
+.icon
+  display: inline-block
+  vertical-align: middle
+  width: 24px
+  height: 24px
+  transition: fill $transDefault, stroke $transDefault
+
+
+/* Max width $m-xl */
+@media only screen and (max-width: $m-xl)
+  h1, .title-site_h1
+    font-size: $site-h1-size-tablet
+
+  h2, .title-site_h2
+    font-size: $site-h2-size-tablet
+
+  h3, .title-site_h3
+    font-size: $site-h3-size-tablet
+
+  h4, .title-site_h4
+    font-size: $site-h4-size-tablet
+
+  h5, .title-site_h5
+    font-size: $site-h5-size-tablet
+
+  h6, .title-site_h6
+    font-size: $site-h6-size-tablet
+/* end media max width $m-xl */
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  h1, .title-site_h1
+    font-size: $site-h1-size-mobile
+
+  h2, .title-site_h2
+    font-size: $site-h2-size-mobile
+
+  h3, .title-site_h3
+    font-size: $site-h3-size-mobile
+
+  h4, .title-site_h4
+    font-size: $site-h4-size-mobile
+
+  h5, .title-site_h5
+    font-size: $site-h5-size-mobile
+
+  h6, .title-site_h6
+    font-size: $site-h6-size-mobile
+/* end media max width $m-md */
+
+/* ----- END Typography ---------------- */
+
+
+
+
+
+

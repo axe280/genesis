@@ -1,0 +1,107 @@
+/* ----- Forms ------------------------- */
+.form-group
+  margin-bottom: 20px
+
+.field-item
+  &._error
+    input
+      background-color: #ffebeb
+
+    ._validation
+      &::before
+        transform: scale(1)
+        background-color: $colorDanger
+
+    .field-item__icon
+      background-color: $colorDanger
+
+  &._success
+    input
+      background-color: #e3f7ff
+    
+    ._validation
+      &::before
+        transform: scale(1)
+        background-color: $colorPrimary
+
+    .field-item__icon
+      background-color: $colorPrimary
+
+  &__label
+    margin-bottom: 13px
+    font-size: 12px
+    line-height: 15px
+
+  &__info
+    margin-top: 16px
+    font-size: 14px
+    line-height: 18px
+
+  &__field
+    position: relative
+
+    &._icon
+      input
+        padding-left: 54px
+
+    &._validation
+      input
+        padding-right: 54px
+        
+      &::before
+        content: ''
+        position: absolute
+        right: 16px
+        top: 50%
+        margin-top: -10px
+        width: 20px
+        height: 20px
+        z-index: 3
+        background-color: #000
+        transform: scale(0)
+        transition: transform .2s
+
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    z-index: 3
+    width: 30px
+    height: 30px
+    left: 16px
+    top: 50%
+    margin-top: -15px
+    background-color: #000
+
+.st-form
+  &._light
+    .field-item
+      &__label
+        color: #fff
+
+    .accept-checkbox
+      a
+        color: #fff
+
+.accept-checkbox
+  span
+    display: block
+
+  .ui-st-checkbox
+    max-width: 300px
+    line-height: 15px
+
+.form-group-grid
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.form-group
+  &_half-col
+    width: 48.5%
+
+
+/* ----- END Forms --------------------- */
+
+

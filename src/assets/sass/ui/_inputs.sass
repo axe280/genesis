@@ -1,0 +1,41 @@
+.placeholder
+  color: rgba(#000, .5)
+
+input,
+textarea
+  +placeholder-color(rgba(#000, .5))
+
+::-webkit-contacts-auto-fill-button
+  opacity: 0
+
+input[type="password"]::-webkit-contacts-auto-fill-button
+  opacity: 1
+
+input[type="search"]
+  -webkit-appearance: none
+
+input,
+textarea
+  position: relative
+  height: 50px
+  width: 100%
+  padding: 0 15px
+  border: 1px solid rgba(#444, .3)
+  font: 600 16px $site-font-family, Arial, sans-serif
+  color: #000
+  background-color: #fff
+  outline: none
+  border-radius: 4px
+  -webkit-appearance: none
+  box-shadow: none
+
+textarea
+  vertical-align: top
+  height: 130px
+  padding: 10px 15px
+  resize: none
+
+.form_light
+  input,
+  textarea
+    border-color: #fff

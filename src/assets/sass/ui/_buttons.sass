@@ -1,0 +1,189 @@
+// all page buttons
+button
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  margin: 0
+  padding: 0
+  background: none
+  border: none
+  outline: none
+  box-shadow: none
+  transition: background-color $transDefault, color $transDefault, border-color $transDefault
+
+  .icon
+    transition: fill $transDefault, stroke $transDefault
+
+
+// page buttons default with class
+.btn
+  position: relative
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  vertical-align: middle
+  margin: 0
+  padding: 10px 20px
+  border: none
+  text-align: center
+  font: normal 600 12px/20px $site-font-family, Arial, sans-serif
+  text-decoration: none
+  text-transform: uppercase
+  color: #000
+  background-color: $btnBg
+  border-radius: 4px
+  outline: none
+  cursor: pointer
+  transition: background-color $transDefault, color $transDefault, border-color $transDefault
+
+  &:hover
+    text-decoration: none
+    color: #000
+    background-color: $btnBgDarken
+
+  // disabled
+  &[disabled],
+  &.disabled,
+  &_border[disabled],
+  &_border.btn_second-st[disabled]
+    cursor: default
+    color: #fff
+    background-color: $colorUiDisabled
+    border-color: transparent
+
+    &:hover
+      color: #fff
+      background-color: $colorUiDisabled
+      border-color: transparent
+
+  // light style
+  &_light
+    background-color: #fff
+
+  // icon
+  &_icon
+    padding: 12px
+
+    .icon
+      width: 16px
+      height: 16px
+      fill: #fff
+
+  // icon and text
+  &__icon
+    width: 20px
+    height: 20px
+    margin-left: 10px
+
+    &:first-child
+      margin-right: 10px
+      margin-left: 0
+
+    .icon
+      vertical-align: top
+      height: 100%
+      width: 100%
+      fill: #fff
+
+
+  // border, border-second-st
+  &_border
+    border: 1px solid $btnSecondColor
+    background: transparent
+    line-height: 18px
+
+    &:hover
+      color: #fff
+      background-color: $btnSecondColor
+
+    &.btn_border-second
+      border-color: $btnThirdColor
+
+      &:hover
+        background-color: $btnThirdColor
+
+    &.btn_border-third
+      border-color: $btnFourthColor
+
+      &:hover
+        background-color: $btnFourthColor
+
+
+  // link
+  &_link
+    background: none
+    color: $color-link
+
+    &:hover
+      background: none
+      color: $color-h-link
+
+      .icon
+        color: $color-h-link
+
+    .icon
+      fill: $color-link
+
+
+  // width
+  &_min-width
+    min-width: 110px
+
+  &_max
+    width: 100%
+
+
+  // sm
+  &_sm
+    padding: 6px 12px
+    font-size: 12px
+
+    &.btn_min-width
+      min-width: 80px
+
+    &.btn_icon
+      padding: 10px
+
+
+  // md
+  &_md
+    padding: 14px 30px
+    font-size: 14px
+    line-height: 24px
+
+    &.btn_min-width
+      min-width: 140px
+
+    &.btn_icon
+      padding: 18px
+      
+      .icon
+        width: 20px
+        height: 20px
+
+    &.btn_border
+      line-height: 22px
+
+
+  // lg
+  &_lg
+    padding: 22px 30px
+    font-size: 24px
+
+    &.btn_min-width
+      min-width: 180px
+
+    &.btn_icon
+      padding: 22px
+
+      .icon
+        width: 24px
+        height: 24px
+
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .btn
+    &_max-mobile
+      width: 100%
+/* end media max width $m-md */

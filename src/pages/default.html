@@ -1,0 +1,952 @@
+h<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+  </head>
+
+  <body>
+    <!-- site main wrapper -->
+    <div class="site-wrapper">
+      <!-- header -->
+      <header class="header _mobile-menu-top" id="header">
+        <div class="header-inner">
+          <div class="header-panel container">
+            <div class="header-mob-layer-wrapp">
+              <a href="index.html" class="logo">
+                <img src="assets/img/logo.svg" alt="logo" />
+                <span class="logo__slogan">Lorem ipsum slogan</span>
+              </a>
+
+              <div class="burger-menu">
+                <div class="burger-menu-box"></div>
+              </div>
+            </div>
+
+            <div class="header-menu">
+              <div class="menu-wrapper-fixed">
+                <div class="menu-close-overlay"></div>
+
+                <div class="menu-open-wrapper">
+                  <nav class="header-nav">
+                    <ul class="menu">
+                      <li class="menu-item">
+                        <span class="menu-item__link menu-item__link_dd"
+                          >Links</span
+                        >
+
+                        <ul class="menu-dd">
+                          <li class="menu-dd-item">
+                            <a class="menu-dd-item__link" href="#pagination"
+                              >Pagination</a
+                            >
+                          </li>
+                          <li class="menu-dd-item">
+                            <a class="menu-dd-item__link" href="#"
+                              >Bread crumbs</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-item__link" href="#buttons">Buttons</a>
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-item__link" href="#form">Form</a>
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-item__link" href="#text">Text</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+
+      <main class="main">
+        <section data-aos="fade-up" id="pagination" class="section-st">
+          <div class="container">
+            <h2>Bread crumbs</h2>
+
+            <ul class="bread-crumbs">
+              <li><a href="#">Main</a></li>
+              <li><a href="#">product</a></li>
+              <li><a href="#">long product name</a></li>
+              <li>last item</li>
+            </ul>
+
+            <br /><br />
+
+            <h2>Pagination</h2>
+            <ol class="pagination">
+              <li class="pagination__prev"><a href="#">prev</a></li>
+              <li class="pagination__active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">...</a></li>
+              <li><a href="#">15</a></li>
+              <li class="pagination__next"><a href="#">next</a></li>
+            </ol>
+
+            <br /><br />
+
+            <h2>User component</h2>
+
+            <div class="st-user">
+              <div class="st-user__img">
+                <svg class="icon">
+                  <use xlink:href="assets/img/sprite.svg#user"></use>
+                </svg>
+              </div>
+              <div class="st-user__about">
+                <div class="st-user__name">Username</div>
+                <div class="st-user__info">More info</div>
+              </div>
+            </div>
+
+            <br />
+
+            <div class="st-user">
+              <div class="st-user__img">
+                <svg class="icon">
+                  <use xlink:href="assets/img/sprite.svg#user"></use>
+                </svg>
+                <img src="assets/img/img1.png" alt="" />
+              </div>
+              <div class="st-user__about">
+                <div class="st-user__name">Username</div>
+              </div>
+            </div>
+
+            <br />
+
+            <div class="st-user st-user_md">
+              <div class="st-user__img">
+                <svg class="icon">
+                  <use xlink:href="assets/img/sprite.svg#user"></use>
+                </svg>
+              </div>
+              <div class="st-user__about">
+                <div class="st-user__name">Username</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          data-aos="fade-up"
+          id="buttons"
+          class="section-st"
+          style="background-color: #050447"
+        >
+          <div class="container">
+            <h2 class="text_light">Buttons</h2>
+
+            <a class="btn btn_sm" href="#">Small button</a>
+            <a class="btn btn_sm btn_min-width" href="#">Min width</a>
+            <a class="btn btn_sm btn_border" href="#">Border</a>
+            <br /><br />
+
+            <a class="btn" href="#">Default button</a>
+            <a class="btn btn_link" href="#">Button Link</a>
+            <a class="btn btn_min-width" href="#">Min width</a>
+            <a class="btn btn_border" href="#">Border</a>
+            <a class="btn btn_border" href="#">
+              <span class="text_light">Border</span>
+            </a>
+            <a class="btn btn_border btn_border-second" href="#">
+              <span class="text_light">Border</span>
+            </a>
+            <a class="btn btn_border btn_border-third" href="#">
+              <span class="text_light">Border third</span>
+            </a>
+
+            <br /><br />
+            <button type="button" class="btn" disabled>
+              Disabled default button
+            </button>
+            <button type="button" class="btn btn_second-st" disabled>
+              Disabled
+            </button>
+            <button type="button" class="btn btn_second-st btn_border" disabled>
+              Border disabled
+            </button>
+
+            <br /><br />
+
+            <a class="btn btn_md" href="#">Middle button</a>
+            <a class="btn btn_md btn_light" href="#">Light button</a>
+            <a class="btn btn_md btn_link" href="#">Button Link</a>
+            <a class="btn btn_md btn_second-st" href="#">Second style</a>
+            <a class="btn btn_md btn_border" href="#">Border</a>
+            <br /><br />
+
+            <a class="btn btn_lg" href="#">Large</a>
+            <a class="btn btn_lg btn_border" href="#">Border</a>
+            <br /><br />
+
+            <a class="btn btn_lg btn_max">btn large max width</a>
+            <br /><br />
+            <a class="btn btn_max-mobile">btn max width only mobile</a>
+            <br /><br />
+            <h3>Btn icons</h3>
+            <button class="btn btn_sm btn_icon" type="button">
+              <svg class="icon">
+                <use xlink:href="assets/img/sprite.svg#close"></use>
+              </svg>
+            </button>
+            <button class="btn btn_sm btn_icon btn_link" type="button">
+              <svg class="icon">
+                <use xlink:href="assets/img/sprite.svg#close"></use>
+              </svg>
+            </button>
+            <button class="btn btn_icon" type="button">
+              <svg class="icon">
+                <use xlink:href="assets/img/sprite.svg#close"></use>
+              </svg>
+            </button>
+            <button class="btn btn_md btn_icon" type="button">
+              <svg class="icon">
+                <use xlink:href="assets/img/sprite.svg#close"></use>
+              </svg>
+            </button>
+            <button class="btn btn_lg btn_icon" type="button">
+              <svg class="icon">
+                <use xlink:href="assets/img/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </div>
+        </section>
+
+        <section data-aos="fade-up" id="form" class="section-st">
+          <div class="container">
+            <div>
+              <h2>Form</h2>
+
+              <h4>Radio and checkbox</h4>
+              <div
+                style="
+                  display: inline-block;
+                  vertical-align: top;
+                  margin-right: 50px;
+                "
+              >
+                <div class="ui-st-radio">
+                  <label>
+                    Option 1
+                    <input type="radio" name="radio" checked />
+                    <span class="fake-control"></span>
+                  </label>
+                </div>
+                <div class="ui-st-radio">
+                  <label>
+                    Option 2
+                    <input type="radio" name="radio" />
+                    <span class="fake-control"></span>
+                  </label>
+                </div>
+                <div class="ui-st-radio">
+                  <label>
+                    Option 3
+                    <input type="radio" name="radio" />
+                    <span class="fake-control"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div style="display: inline-block; vertical-align: top">
+                <div class="ui-st-checkbox">
+                  <label>
+                    Option 1
+                    <input type="checkbox" checked />
+                    <span class="fake-control"></span>
+                  </label>
+                </div>
+
+                <div class="ui-st-checkbox">
+                  <label>
+                    Option 2
+                    <input type="checkbox" />
+                    <span class="fake-control"></span>
+                  </label>
+                </div>
+
+                <div class="accept-checkbox">
+                  <div class="ui-st-checkbox">
+                    <label>
+                      Я ознакомлен(а) и принимаю
+                      <a href="#">условия пользовательского соглашения</a>
+                      <input type="checkbox" />
+                      <span class="fake-control"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <br /><br /><br />
+              <div style="display: flex; justify-content: space-between">
+                <div style="flex: 0 0 48%; padding: 15px">
+                  <form action="#" class="st-form _light">
+                    <h4>Default inputs</h4>
+                    <div class="form-group">
+                      <label class="field-item _success">
+                        <div class="field-item__label">Логин</div>
+                        <div class="field-item__field _icon _validation">
+                          <div class="field-item__icon">
+                            <svg class="icon icon-user">
+                              <use
+                                xlink:href="assets/img/sprite.svg#user"
+                              ></use>
+                            </svg>
+                          </div>
+                          <input type="text" value="bakalev" required />
+                        </div>
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="field-item">
+                        <div class="field-item__label">ФИО</div>
+                        <div class="field-item__field _icon _validation">
+                          <div class="field-item__icon">
+                            <svg class="icon icon-passport">
+                              <use
+                                xlink:href="assets/img/sprite.svg#passport"
+                              ></use>
+                            </svg>
+                          </div>
+                          <input type="text" placeholder="Введите" required />
+                        </div>
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="field-item">
+                        <div class="field-item__label">Почта</div>
+                        <div class="field-item__field _icon _validation">
+                          <div class="field-item__icon">
+                            <svg class="icon icon-envelope">
+                              <use
+                                xlink:href="assets/img/sprite.svg#envelope"
+                              ></use>
+                            </svg>
+                          </div>
+                          <input type="email" placeholder="Введите" required />
+                        </div>
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="field-item">
+                        <div class="field-item__label">Пароль</div>
+                        <div class="field-item__field _icon _validation">
+                          <div class="field-item__icon">
+                            <svg class="icon icon-key">
+                              <use xlink:href="assets/img/sprite.svg#key"></use>
+                            </svg>
+                          </div>
+                          <input
+                            type="password"
+                            placeholder="Введите"
+                            required
+                          />
+                        </div>
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="field-item _error">
+                        <div class="field-item__label">Повторите пароль</div>
+                        <div class="field-item__field _icon _validation">
+                          <div class="field-item__icon">
+                            <svg class="icon icon-key">
+                              <use xlink:href="assets/img/sprite.svg#key"></use>
+                            </svg>
+                          </div>
+                          <input
+                            type="password"
+                            placeholder="Введите"
+                            required
+                          />
+                        </div>
+                      </label>
+                    </div>
+                  </form>
+                </div>
+
+                <div
+                  style="
+                    flex: 0 0 48%;
+                    padding: 15px;
+                    background-color: #050447;
+                    color: #fff;
+                  "
+                >
+                  <div class="sign-in-up-modal">
+                    <div class="title-site title-site_h1">Вход</div>
+                    <div class="soc-flex">
+                      <span class="soc-flex__tt">Вход через соцсети</span>
+
+                      <ul class="social-inline">
+                        <li>
+                          <a href="#">
+                            <svg class="icon icon-vk">
+                              <use xlink:href="assets/img/sprite.svg#vk"></use>
+                            </svg>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <svg class="icon icon-gp">
+                              <use xlink:href="assets/img/sprite.svg#gp"></use>
+                            </svg>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <svg class="icon icon-fb">
+                              <use xlink:href="assets/img/sprite.svg#fb"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <form action="#" class="st-form _light">
+                    <div class="form-group">
+                      <label class="field-item">
+                        <div class="field-item__label">Логин</div>
+                        <div class="field-item__field _icon _validation">
+                          <div class="field-item__icon">
+                            <svg class="icon icon-user">
+                              <use
+                                xlink:href="assets/img/sprite.svg#user"
+                              ></use>
+                            </svg>
+                          </div>
+                          <input type="text" placeholder="Введите" required />
+                        </div>
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="field-item">
+                        <div class="field-item__label">Пароль</div>
+                        <div class="field-item__field _icon _validation">
+                          <div class="field-item__icon">
+                            <svg class="icon icon-key">
+                              <use xlink:href="assets/img/sprite.svg#key"></use>
+                            </svg>
+                          </div>
+                          <input
+                            type="password"
+                            placeholder="Введите"
+                            required
+                          />
+                        </div>
+                        <div class="field-item__info">
+                          Забыли пароль? <a href="#">Восстановить</a>
+                        </div>
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <img src="assets/img/captcha.png" alt="" />
+                    </div>
+
+                    <div class="accept-checkbox">
+                      <div class="ui-st-checkbox">
+                        <label>
+                          <span>Я ознакомлен(а) и принимаю</span>
+                          <a href="#">условия пользовательского соглашения</a>
+                          <input type="checkbox" />
+                          <span class="fake-control"></span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <button class="btn btn_md btn_max" type="submit">
+                      Войти в кабинет
+                    </button>
+
+                    <div class="modal-form-b-message">
+                      Нет аккаунта? <a href="#">Зарегистрироваться</a>
+                    </div>
+                  </form>
+
+                  <div class="sign-in-up-modal">
+                    <div class="title-site title-site_h1">Регистрация</div>
+                    <div class="soc-flex">
+                      <span class="soc-flex__tt"
+                        >Регистрация через&nbsp;соцсети</span
+                      >
+
+                      <ul class="social-inline">
+                        <li>
+                          <a href="#">
+                            <svg class="icon icon-vk">
+                              <use xlink:href="assets/img/sprite.svg#vk"></use>
+                            </svg>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <svg class="icon icon-gp">
+                              <use xlink:href="assets/img/sprite.svg#gp"></use>
+                            </svg>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <svg class="icon icon-fb">
+                              <use xlink:href="assets/img/sprite.svg#fb"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <ul class="reg-validation-list">
+                      <li>
+                        <svg class="icon icon-round-close">
+                          <use
+                            xlink:href="assets/img/sprite.svg#round-close"
+                          ></use>
+                        </svg>
+                        Запрещено регистрировать более 1 аккаунта
+                      </li>
+                      <li>
+                        <svg class="icon icon-round-close">
+                          <use
+                            xlink:href="assets/img/sprite.svg#round-close"
+                          ></use>
+                        </svg>
+                        В логине не должно быть других символов, кроме цифр,
+                        латинских и кириллических букв
+                      </li>
+                    </ul>
+                  </div>
+
+                  <form action="#" class="st-form _light">
+                    <div class="form-group">
+                      <label class="field-item _success">
+                        <div class="field-item__label">Логин</div>
+                        <div class="field-item__field _icon _validation">
+                          <div class="field-item__icon">
+                            <svg class="icon icon-user">
+                              <use
+                                xlink:href="assets/img/sprite.svg#user"
+                              ></use>
+                            </svg>
+                          </div>
+                          <input type="text" value="bakalev" required />
+                        </div>
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="field-item">
+                        <div class="field-item__label">ФИО</div>
+                        <div class="field-item__field _icon _validation">
+                          <div class="field-item__icon">
+                            <svg class="icon icon-passport">
+                              <use
+                                xlink:href="assets/img/sprite.svg#passport"
+                              ></use>
+                            </svg>
+                          </div>
+                          <input type="text" placeholder="Введите" required />
+                        </div>
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="field-item">
+                        <div class="field-item__label">Почта</div>
+                        <div class="field-item__field _icon _validation">
+                          <div class="field-item__icon">
+                            <svg class="icon icon-envelope">
+                              <use
+                                xlink:href="assets/img/sprite.svg#envelope"
+                              ></use>
+                            </svg>
+                          </div>
+                          <input type="email" placeholder="Введите" required />
+                        </div>
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="field-item">
+                        <div class="field-item__label">Пароль</div>
+                        <div class="field-item__field _icon _validation">
+                          <div class="field-item__icon">
+                            <svg class="icon icon-key">
+                              <use xlink:href="assets/img/sprite.svg#key"></use>
+                            </svg>
+                          </div>
+                          <input
+                            type="password"
+                            placeholder="Введите"
+                            required
+                          />
+                        </div>
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="field-item _error">
+                        <div class="field-item__label">Повторите пароль</div>
+                        <div class="field-item__field _icon _validation">
+                          <div class="field-item__icon">
+                            <svg class="icon icon-key">
+                              <use xlink:href="assets/img/sprite.svg#key"></use>
+                            </svg>
+                          </div>
+                          <input
+                            type="password"
+                            placeholder="Введите"
+                            required
+                          />
+                        </div>
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <img src="assets/img/captcha.png" alt="" />
+                    </div>
+
+                    <div class="accept-checkbox">
+                      <div class="ui-st-checkbox">
+                        <label>
+                          <span>Я ознакомлен(а) и принимаю</span>
+                          <a href="#">условия пользовательского соглашения</a>
+                          <input type="checkbox" />
+                          <span class="fake-control"></span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <button class="btn btn_md btn_max" type="submit">
+                      Зарегистрироваться
+                    </button>
+
+                    <div class="modal-form-b-message">
+                      Уже есть аккаунт? <a href="#">Войти</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <br />
+              <h4>Select</h4>
+              <div class="form-group">
+                <label class="field-item">
+                  <div class="field-item__label">label text</div>
+                  <div class="field-item__field">
+                    <select name="" id="">
+                      <option value="" disabled selected>Select wallet</option>
+                      <option value="">
+                        121ny213bdwjuTNOhunthOuthu2uhonethuNUHOu2
+                      </option>
+                      <option value="">
+                        121ndhy213bdwjuTNOthOuthu2uhonethuNUHOu2
+                      </option>
+                      <option value="">
+                        121ndhy213bdwjuTNOhunthOu2uhonethuNUHOu2
+                      </option>
+                    </select>
+                  </div>
+                </label>
+              </div>
+
+              <br /><br />
+
+              <div class="quick-reg">
+                <div class="title-site title-site_h1">Быстрая регистрация</div>
+
+                <form action="#" class="st-form _light">
+                  <div class="form-group-grid">
+                    <div class="form-group form-group_half-col">
+                      <label class="field-item _success">
+                        <div class="field-item__label">Логин</div>
+                        <div class="field-item__field _icon _validation">
+                          <div class="field-item__icon">
+                            <svg class="icon icon-user">
+                              <use
+                                xlink:href="assets/img/sprite.svg#user"
+                              ></use>
+                            </svg>
+                          </div>
+                          <input type="text" value="bakalev" required />
+                        </div>
+                      </label>
+                    </div>
+
+                    <div class="form-group form-group_half-col">
+                      <label class="field-item">
+                        <div class="field-item__label">Почта</div>
+                        <div class="field-item__field _icon _validation">
+                          <div class="field-item__icon">
+                            <svg class="icon icon-envelope">
+                              <use
+                                xlink:href="assets/img/sprite.svg#envelope"
+                              ></use>
+                            </svg>
+                          </div>
+                          <input type="email" placeholder="Введите" required />
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form-group-grid">
+                    <div class="form-group form-group_half-col">
+                      <label class="field-item">
+                        <div class="field-item__label">Пароль</div>
+                        <div class="field-item__field _icon _validation">
+                          <div class="field-item__icon">
+                            <svg class="icon icon-key">
+                              <use xlink:href="assets/img/sprite.svg#key"></use>
+                            </svg>
+                          </div>
+                          <input
+                            type="password"
+                            placeholder="Введите"
+                            required
+                          />
+                        </div>
+                      </label>
+                    </div>
+
+                    <div class="form-group form-group_half-col">
+                      <label class="field-item">
+                        <div class="field-item__label">Повторите пароль</div>
+                        <div class="field-item__field _icon _validation">
+                          <div class="field-item__icon">
+                            <svg class="icon icon-key">
+                              <use xlink:href="assets/img/sprite.svg#key"></use>
+                            </svg>
+                          </div>
+                          <input
+                            type="password"
+                            placeholder="Введите"
+                            required
+                          />
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="field-item">
+                      <div class="field-item__label">ФИО</div>
+                      <div class="field-item__field _icon _validation">
+                        <div class="field-item__icon">
+                          <svg class="icon icon-passport">
+                            <use
+                              xlink:href="assets/img/sprite.svg#passport"
+                            ></use>
+                          </svg>
+                        </div>
+                        <input type="text" placeholder="Введите" required />
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="quick-req-btns">
+                    <button class="btn btn_md" type="submit">
+                      Зарегистрироваться
+                    </button>
+
+                    <div class="accept-checkbox">
+                      <div class="ui-st-checkbox">
+                        <label>
+                          <span>Я ознакомлен(а) и принимаю</span>
+                          <a href="#">условия пользовательского соглашения</a>
+                          <input type="checkbox" />
+                          <span class="fake-control"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section data-aos="fade-up" id="text" class="section-st">
+          <div class="container">
+            <h2>Text</h2>
+            <div class="text-bl">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum
+                blanditiis voluptatum repellat delectus, veniam eligendi non
+                totam, dolore aliquam temporibus quidem commodi.
+              </p>
+
+              <h1>h1 rubl ₽</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum
+                blanditiis voluptatum repellat delectus, veniam eligendi non
+                totam, dolore aliquam temporibus quidem commodi.
+              </p>
+
+              <div class="text_center">
+                <h2>h2 Text center</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Assumenda reiciendis, sint quam iste dicta quasi sapiente
+                  ipsum blanditiis voluptatum repellat delectus, veniam eligendi
+                  non totam, dolore aliquam temporibus quidem commodi.
+                </p>
+              </div>
+
+              <div class="tex">
+                <h3>h3 text right</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Assumenda reiciendis, sint quam iste dicta quasi sapiente
+                  ipsum blanditiis voluptatum repellat delectus, veniam eligendi
+                  non totam, dolore aliquam temporibus quidem commodi.
+                </p>
+              </div>
+
+              <div class="text_uppercase">
+                <h4>h4 text uppercase</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Assumenda reiciendis, sint quam iste dicta quasi sapiente
+                  ipsum blanditiis voluptatum repellat delectus, veniam eligendi
+                  non totam, dolore aliquam temporibus quidem commodi.
+                </p>
+              </div>
+
+              <h5>h5 Lorem ipsum dolor sit amet, consectetur adipisicing.</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum
+                blanditiis voluptatum repellat delectus, veniam eligendi non
+                totam, dolore aliquam temporibus quidem commodi.
+              </p>
+
+              <h6>
+                h6 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure,
+                similique. Architecto quo cum, sunt consequuntur quaerat,
+                commodi ratione natus laboriosam deserunt error numquam et
+                optio, possimus beatae rem ex. Unde.
+              </p>
+
+              <br />
+
+              <ul>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum.</li>
+              </ul>
+
+              <br />
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Tempora magnam, similique quam blanditiis aperiam accusamus
+                quia. Sed nam ullam ut maiores. Voluptas deleniti delectus,
+                temporibus nam enim vero ea molestiae.
+              </p>
+
+              <br />
+
+              <ol>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum.</li>
+              </ol>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure,
+                similique. Architecto quo cum, sunt consequuntur quaerat,
+                commodi ratione natus laboriosam deserunt error numquam et
+                optio, possimus beatae rem ex. Unde.
+              </p>
+
+              <br />
+            </div>
+
+            <div class="title-site title-site_h3">Two column text</div>
+
+            <div class="text-bl-grid">
+              <div class="text-bl text-bl-grid__half-col">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
+                  sapiente nemo, eligendi facilis accusamus sequi est hic rerum
+                  et repellendus voluptas provident. Nisi, nihil qui earum a,
+                  pariatur esse, fuga nobis possimus quisquam repudiandae
+                  nostrum placeat ipsa itaque? Veniam cumque laboriosam
+                  repudiandae, totam nihil doloremque explicabo. Recusandae
+                  voluptatibus, tenetur praesentium sed cum dicta a tempora.
+                  Esse delectus commodi totam enim, laborum a excepturi
+                  assumenda sit voluptatum consequatur accusantium impedit ea
+                  quisquam libero. Ipsa, molestiae fugit neque ut, adipisci est
+                  iusto dicta aliquam maiores nulla tempora consequatur amet
+                  alias, eveniet nam numquam ab iste non possimus similique?
+                  Quia quo esse distinctio.
+                </p>
+              </div>
+              <div class="text-bl text-bl-grid__half-col">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Omnis, non consequuntur harum aliquam quibusdam placeat. Ipsam
+                  alias consequuntur, iure vitae ad. Quas error ut dolorum vero
+                  et commodi voluptatum. Distinctio perferendis fuga, excepturi?
+                  Tempore, corporis architecto! Pariatur hic dignissimos libero
+                  ullam. Molestiae ullam, voluptatibus sunt labore. Consequuntur
+                  et sapiente maxime harum esse aperiam, rem amet est numquam
+                  quos nobis optio veniam maiores neque repellat minima, debitis
+                  blanditiis odio. Quam molestiae non nobis hic qui et explicabo
+                  sit, debitis, accusantium laboriosam illum blanditiis. Amet
+                  explicabo a vitae quos praesentium doloribus, modi
+                  consequatur? Velit dolores officia libero vel sapiente beatae,
+                  quibusdam! Fugiat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- end site main wrapper -->
+
+    <!-- footer -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <span class="copy">Design by Axe</span>
+      </div>
+    </footer>
+    <!-- end footer -->
+  </body>
+</html>
