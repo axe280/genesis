@@ -1,0 +1,75 @@
+.ic-tt-rows
+  display: flex
+  justify-content: space-between
+
+.ic-tt-col-about
+  position: relative
+  flex: 0 0 210px
+  padding: 16px 16px 0 0
+
+  &._purple
+    .ic-tt-col-about__icon
+      .icon
+        fill: $colorPurpleDark
+
+  &._blue
+    .ic-tt-col-about__icon
+      .icon
+        fill: $colorBlueDark2
+
+  &__icon
+    margin-bottom: 18px
+
+    .icon
+      width: 60px
+      height: 60px
+
+    .icon-user-st
+      width: 53px
+      height: 64px
+
+  .icon-arr-min-t-purple,
+  .icon-arr-min-t-blue,
+  .icon-arr-min-t-pink
+    position: absolute
+    top: 42px
+    left: 83px
+    width: 100px
+    height: 10px
+
+.ic-col-services
+  position: relative
+
+// hts
+.ic-tt-rows
+  &._hts
+    margin-bottom: 30px
+    padding: 36px 20px 0 0
+    position: relative
+
+    &::before
+      content: ''
+      position: absolute
+      right: 0
+      top: 0
+      width: 100%
+      height: 100%
+      z-index: 3
+      background-image: url('../img/hts-bg.svg')
+      background-repeat: no-repeat
+      background-position: 100% 0
+
+    .ic-tt-col-about
+      padding-top: 38px
+      flex: 0 0 190px
+
+    .ic-col-services
+      min-width: 336px
+
+    .tiles-list
+      li
+        padding-bottom: 100px
+
+      p
+        position: relative
+        z-index: 5

@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1230" height="340" viewBox="0 0 1230 340">
+    <defs>
+        <circle id="9rc7emw49h" cx="351.5" cy="303.5" r="3.5"/>
+        <circle id="9t6armwg0i" cx="249.5" cy="268.5" r="3.5"/>
+        <circle id="7qoasgnv2j" cx="203.5" cy="308.5" r="3.5"/>
+        <circle id="2pm15pbvwk" cx="103.5" cy="271.5" r="3.5"/>
+        <filter id="6rreh4ikmc" width="156.5%" height="156.5%" x="-28.2%" y="-28.2%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="40"/>
+        </filter>
+        <filter id="wu1urmad3e" width="156.5%" height="156.5%" x="-28.2%" y="-28.2%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="40"/>
+        </filter>
+        <rect id="gmmn5avg2a" width="1230" height="340" x="0" y="0" rx="10"/>
+        <rect id="wf9sxbfdkf" width="1230" height="340" x="0" y="0" rx="10"/>
+        <radialGradient id="l6nx9676zb" cx="15.828%" cy="148.555%" r="305.573%" fx="15.828%" fy="148.555%" gradientTransform="scale(.27642 1) rotate(-13.723 .365 -.236)">
+            <stop offset="0%" stop-color="#0071DB"/>
+            <stop offset="100%" stop-color="#10C0E6"/>
+        </radialGradient>
+        <linearGradient id="ftvpvlercl" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#F4FDFF"/>
+            <stop offset="100%" stop-color="#9CE9F9"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-345 -1910) translate(345 1910)">
+                <mask id="hhkj1526ld" fill="#fff">
+                    <use xlink:href="#gmmn5avg2a"/>
+                </mask>
+                <use fill="url(#l6nx9676zb)" xlink:href="#gmmn5avg2a"/>
+                <circle cx="861.5" cy="-52.5" r="212.5" fill="#FFF" filter="url(#6rreh4ikmc)" mask="url(#hhkj1526ld)" opacity=".3"/>
+                <circle cx="292.5" cy="420.5" r="212.5" fill="#10E2CE" filter="url(#wu1urmad3e)" mask="url(#hhkj1526ld)" opacity=".3"/>
+                <mask id="lu162yfuqg" fill="#fff">
+                    <use xlink:href="#wf9sxbfdkf"/>
+                </mask>
+                <g mask="url(#lu162yfuqg)">
+                    <g>
+                        <path stroke="#FFF" stroke-width=".5" d="M0 360.51L101.5 270.208 204.164 309.51 249.406 267.708 352.25 304.333 587 0" opacity=".6" transform="translate(431)"/>
+                        <g transform="translate(431)">
+                            <use fill="#0AA1E2" xlink:href="#9rc7emw49h"/>
+                            <circle cx="351.5" cy="303.5" r="5.5" stroke="#0AA1E2" stroke-width="4"/>
+                            <circle cx="351.5" cy="303.5" r="3" stroke="#63CCE2" stroke-linejoin="square"/>
+                        </g>
+                        <g transform="translate(431)">
+                            <use fill="#099BE1" xlink:href="#9t6armwg0i"/>
+                            <circle cx="249.5" cy="268.5" r="5.5" stroke="#099BE1" stroke-width="4"/>
+                            <circle cx="249.5" cy="268.5" r="3" stroke="#11DADC" stroke-linejoin="square"/>
+                        </g>
+                        <g transform="translate(431)">
+                            <use fill="#0896E0" xlink:href="#7qoasgnv2j"/>
+                            <circle cx="203.5" cy="308.5" r="5.5" stroke="#0896E0" stroke-width="4"/>
+                            <circle cx="203.5" cy="308.5" r="3" stroke="#63CCE2" stroke-linejoin="square"/>
+                        </g>
+                        <g transform="translate(431)">
+                            <use fill="#0691DE" xlink:href="#2pm15pbvwk"/>
+                            <circle cx="103.5" cy="271.5" r="5.5" stroke="#0691DE" stroke-width="4"/>
+                            <circle cx="103.5" cy="271.5" r="3" stroke="#11DADC" stroke-linejoin="square"/>
+                        </g>
+                    </g>
+                </g>
+                <g mask="url(#lu162yfuqg)">
+                    <g>
+                        <path fill="#5BD5F0" fill-rule="nonzero" d="M28.125 0h43.75C73.601 0 75 1.4 75 3.125V93.75H25V3.125C25 1.399 26.4 0 28.125 0z" transform="translate(989 66)"/>
+                        <path fill="#39A9E6" fill-rule="nonzero" d="M25 17.5L25 93.75 31.25 93.75 31.25 12.5zM68.75 37.5L68.75 93.75 75 93.75 75 42.5z" transform="translate(989 66)"/>
+                        <path fill="#9CE9F9" fill-rule="nonzero" d="M0 39.002v51.623c0 1.726 1.4 3.125 3.125 3.125H25V17.5L1.173 36.562C.432 37.155 0 38.052 0 39.002zM75 42.5v51.25h21.875c1.726 0 3.125-1.4 3.125-3.125V64.002c0-.95-.432-1.847-1.173-2.44L75 42.5z" transform="translate(989 66)"/>
+                        <g>
+                            <path fill="#E3FAFF" fill-rule="nonzero" d="M87.5 25L100 25 100 31.25 87.5 31.25zM87.5 37.5L100 37.5 100 43.75 87.5 43.75zM0 25L12.5 25 12.5 31.25 0 31.25zM0 12.5L12.5 12.5 12.5 18.75 0 18.75zM0 0L12.5 0 12.5 6.25 0 6.25z" transform="translate(989 66) translate(0 43.75)"/>
+                        </g>
+                        <path fill="#E3FAFF" fill-rule="nonzero" d="M0 81.25L12.5 81.25 12.5 87.5 0 87.5zM37.5 12.5L62.5 12.5 62.5 18.75 37.5 18.75zM37.5 25L62.5 25 62.5 31.25 37.5 31.25zM37.5 37.5L62.5 37.5 62.5 43.75 37.5 43.75zM37.5 50L62.5 50 62.5 56.25 37.5 56.25zM37.5 62.5L62.5 62.5 62.5 68.75 37.5 68.75zM43.75 81.25L56.25 81.25 56.25 93.75 43.75 93.75z" transform="translate(989 66)"/>
+                    </g>
+                </g>
+                <path d="M987.06 48L1098 48 1098 170 969 170 969 80.614z" mask="url(#lu162yfuqg)"/>
+                <g mask="url(#lu162yfuqg)">
+                    <g>
+                        <path fill="#5BD5F0" fill-rule="nonzero" d="M45 0h70c2.761 0 5 2.239 5 5v145H40V5c0-2.761 2.239-5 5-5z" transform="translate(812 96)"/>
+                        <path fill="#39A9E6" fill-rule="nonzero" d="M40 28L40 150 50 150 50 20zM110 60L110 150 120 150 120 68z" transform="translate(812 96)"/>
+                        <path fill="#9CE9F9" fill-rule="nonzero" d="M0 62.403V145c0 2.761 2.239 5 5 5h35V28L1.877 58.499C.69 59.448 0 60.884 0 62.403zM120 68v82h35c2.761 0 5-2.239 5-5v-42.597c0-1.519-.69-2.955-1.877-3.904L120 68z" transform="translate(812 96)"/>
+                        <g>
+                            <path fill="#E3FAFF" fill-rule="nonzero" d="M140 40L160 40 160 50 140 50zM140 60L160 60 160 70 140 70zM0 40L20 40 20 50 0 50zM0 20L20 20 20 30 0 30zM0 0L20 0 20 10 0 10z" transform="translate(812 96) translate(0 70)"/>
+                        </g>
+                        <path fill="#E3FAFF" fill-rule="nonzero" d="M0 130L20 130 20 140 0 140zM60 20L100 20 100 30 60 30zM60 40L100 40 100 50 60 50zM60 60L100 60 100 70 60 70zM60 80L100 80 100 90 60 90zM60 100L100 100 100 110 60 110zM70 130L90 130 90 150 70 150z" transform="translate(812 96)"/>
+                    </g>
+                </g>
+                <g mask="url(#lu162yfuqg)">
+                    <g>
+                        <path fill="url(#ftvpvlercl)" fill-rule="nonzero" d="M28 52.545c-1.507 0-2.727 1.22-2.727 2.728v33.09c0 1.508 1.22 2.728 2.727 2.728s2.727-1.22 2.727-2.727V55.273c0-1.508-1.22-2.728-2.727-2.728z" transform="translate(761 154)"/>
+                        <g>
+                            <g fill-rule="nonzero" transform="translate(761 154) translate(.609 .114)">
+                                <circle cx="27.985" cy="27.985" r="27.985" fill="#EAC420"/>
+                                <circle cx="27.985" cy="27.985" r="22.231" fill="#FEDB41"/>
+                                <path fill="#FFE571" d="M29.125 8.19C18.193 7.56 8.817 15.91 8.187 26.844 7.556 37.778 15.909 47.15 26.84 47.782L29.125 8.19z"/>
+                            </g>
+                        </g>
+                        <path fill="#000" fill-rule="nonzero" d="M26.528 36c-.473 0-.936-.14-1.33-.406L18 30.764l2.662-4.019 5.369 3.602L34.252 20 38 23.019l-9.598 12.075c-.455.573-1.145.907-1.874.906z" transform="translate(761 154) rotate(4 28 28)"/>
+                    </g>
+                </g>
+                <g mask="url(#lu162yfuqg)">
+                    <g>
+                        <path fill="#5BD5F0" fill-rule="nonzero" d="M16.875 0h26.25C44.161 0 45 .84 45 1.875V56.25H15V1.875C15 .839 15.84 0 16.875 0z" transform="translate(722 66)"/>
+                        <path fill="#39A9E6" fill-rule="nonzero" d="M15 10.5L15 56.25 18.75 56.25 18.75 7.5zM41.25 22.5L41.25 56.25 45 56.25 45 25.5z" transform="translate(722 66)"/>
+                        <path fill="#9CE9F9" fill-rule="nonzero" d="M0 23.401v30.974c0 1.036.84 1.875 1.875 1.875H15V10.5L.704 21.937c-.445.356-.704.895-.704 1.464zM45 25.5v30.75h13.125c1.036 0 1.875-.84 1.875-1.875V38.401c0-.57-.259-1.108-.704-1.464L45 25.5z" transform="translate(722 66)"/>
+                        <g>
+                            <path fill="#E3FAFF" fill-rule="nonzero" d="M52.5 15L60 15 60 18.75 52.5 18.75zM52.5 22.5L60 22.5 60 26.25 52.5 26.25zM0 15L7.5 15 7.5 18.75 0 18.75zM0 7.5L7.5 7.5 7.5 11.25 0 11.25zM0 0L7.5 0 7.5 3.75 0 3.75z" transform="translate(722 66) translate(0 26.25)"/>
+                        </g>
+                        <path fill="#E3FAFF" fill-rule="nonzero" d="M0 48.75L7.5 48.75 7.5 52.5 0 52.5zM22.5 7.5L37.5 7.5 37.5 11.25 22.5 11.25zM22.5 15L37.5 15 37.5 18.75 22.5 18.75zM22.5 22.5L37.5 22.5 37.5 26.25 22.5 26.25zM22.5 30L37.5 30 37.5 33.75 22.5 33.75zM22.5 37.5L37.5 37.5 37.5 41.25 22.5 41.25zM26.25 48.75L33.75 48.75 33.75 56.25 26.25 56.25z" transform="translate(722 66)"/>
+                    </g>
+                </g>
+                <path d="M692 38H812V150H692z" mask="url(#lu162yfuqg)"/>
+                <g mask="url(#lu162yfuqg)" opacity=".8">
+                    <g>
+                        <g fill-rule="nonzero">
+                            <path fill="#5BD5F0" d="M9.844 0h15.312c.604 0 1.094.49 1.094 1.094v31.718H8.75V1.095C8.75.49 9.24 0 9.844 0z" transform="translate(1089 239) translate(17.5 16.333)"/>
+                            <path fill="#39A9E6" d="M8.75 6.125L8.75 32.813 10.938 32.813 10.938 4.375zM24.063 13.125L24.063 32.813 26.25 32.813 26.25 14.875z" transform="translate(1089 239) translate(17.5 16.333)"/>
+                            <path fill="#9CE9F9" d="M0 13.65V31.72c0 .604.49 1.093 1.094 1.093H8.75V6.125L.41 12.797c-.259.207-.41.521-.41.854zM26.25 14.875v17.938h7.656c.604 0 1.094-.49 1.094-1.094V22.4c0-.333-.151-.647-.41-.854l-8.34-6.672z" transform="translate(1089 239) translate(17.5 16.333)"/>
+                            <g fill="#E3FAFF">
+                                <path d="M30.625 8.75L35 8.75 35 10.938 30.625 10.938zM30.625 13.125L35 13.125 35 15.313 30.625 15.313zM0 8.75L4.375 8.75 4.375 10.938 0 10.938zM0 4.375L4.375 4.375 4.375 6.563 0 6.563zM0 0L4.375 0 4.375 2.188 0 2.188z" transform="translate(1089 239) translate(17.5 16.333) translate(0 15.313)"/>
+                            </g>
+                            <path fill="#E3FAFF" d="M0 28.438L4.375 28.438 4.375 30.625 0 30.625zM13.125 4.375L21.875 4.375 21.875 6.563 13.125 6.563zM13.125 8.75L21.875 8.75 21.875 10.938 13.125 10.938zM13.125 13.125L21.875 13.125 21.875 15.313 13.125 15.313zM13.125 17.5L21.875 17.5 21.875 19.688 13.125 19.688zM13.125 21.875L21.875 21.875 21.875 24.063 13.125 24.063zM15.313 28.438L19.688 28.438 19.688 32.813 15.313 32.813z" transform="translate(1089 239) translate(17.5 16.333)"/>
+                        </g>
+                        <path d="M0 0H70V65.333H0z" transform="translate(1089 239)"/>
+                    </g>
+                </g>
+                <g mask="url(#lu162yfuqg)">
+                    <g>
+                        <g fill-rule="nonzero">
+                            <path fill="#5BD5F0" d="M11.25 0h17.5C29.44 0 30 .56 30 1.25V37.5H10V1.25C10 .56 10.56 0 11.25 0z" transform="translate(562 142) translate(20 18.667)"/>
+                            <path fill="#39A9E6" d="M10 7L10 37.5 12.5 37.5 12.5 5zM27.5 15L27.5 37.5 30 37.5 30 17z" transform="translate(562 142) translate(20 18.667)"/>
+                            <path fill="#9CE9F9" d="M0 15.6v20.65c0 .69.56 1.25 1.25 1.25H10V7L.47 14.625c-.297.237-.47.596-.47.976zM30 17v20.5h8.75c.69 0 1.25-.56 1.25-1.25V25.6c0-.379-.173-.738-.47-.975L30 17z" transform="translate(562 142) translate(20 18.667)"/>
+                            <g fill="#E3FAFF">
+                                <path d="M35 10L40 10 40 12.5 35 12.5zM35 15L40 15 40 17.5 35 17.5zM0 10L5 10 5 12.5 0 12.5zM0 5L5 5 5 7.5 0 7.5zM0 0L5 0 5 2.5 0 2.5z" transform="translate(562 142) translate(20 18.667) translate(0 17.5)"/>
+                            </g>
+                            <path fill="#E3FAFF" d="M0 32.5L5 32.5 5 35 0 35zM15 5L25 5 25 7.5 15 7.5zM15 10L25 10 25 12.5 15 12.5zM15 15L25 15 25 17.5 15 17.5zM15 20L25 20 25 22.5 15 22.5zM15 25L25 25 25 27.5 15 27.5zM17.5 32.5L22.5 32.5 22.5 37.5 17.5 37.5z" transform="translate(562 142) translate(20 18.667)"/>
+                        </g>
+                        <path d="M0 0H80V74.667H0z" transform="translate(562 142)"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

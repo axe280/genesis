@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="960px" height="110px" viewBox="0 0 960 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>34B39F35-E2D0-464B-88E5-A338C4EC1F09</title>
+    <defs>
+        <radialGradient cx="-4.2045617%" cy="91.6354697%" fx="-4.2045617%" fy="91.6354697%" r="912.420364%" gradientTransform="translate(-0.042046,0.916355),scale(0.114583,1.000000),rotate(-4.646524),translate(0.042046,-0.916355)" id="radialGradient-1">
+            <stop stop-color="#EDEDED" offset="0%"></stop>
+            <stop stop-color="#FAFAFA" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Главная" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Главная-1920" transform="translate(-565.000000, -3921.000000)">
+            <g id="Как-начать?" transform="translate(345.000000, 3665.000000)">
+                <g id="Group-8" transform="translate(220.000000, 256.000000)">
+                    <rect id="Rectangle" fill="url(#radialGradient-1)" opacity="0.699999988" x="0" y="0" width="960" height="110" rx="6"></rect>
+                    <rect id="Rectangle" x="0" y="0" width="960" height="110" rx="6"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

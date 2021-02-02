@@ -1,14 +1,202 @@
-/* ----- Index page -------------------- */
+.m-ban-block
+  margin-bottom: 50px
+  padding: 60px 60px 66px
+  border-radius: 10px
+  background-color: $colorBlueLight
+  background-image: url('../img/h-ban-block-bg.svg')
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  background-size: cover
+  color: #fff
 
-/* ----- END index page /--------------- */
+  .title-site
+    margin-bottom: 15px
+    max-width: 450px
 
+  p
+    max-width: 400px
+    font-size: 16px
+    line-height: 1.38em
 
+  .btn
+    margin-top: 30px
 
+.why-services
+  &__head
+    .title-site_h4
+      margin-left: 210px
 
+.why-services
+  .tiles-list
+    margin-bottom: 30px
 
+.hts-reg-bg
+  position: absolute
+  z-index: 2
+  bottom: -30px
+  left: 30px
+  right: 30px
+  min-height: 110px
+  border-radius: 6px
+  background-image: url('../img/hts-reg-bg.svg')
+  background-repeat: no-repeat
+  background-size: cover
+  -webkit-backdrop-filter: blur(10px)
+  backdrop-filter: blur(10px)
 
+.hts-reg
+  position: absolute
+  z-index: 5
+  bottom: -30px
+  left: 30px
+  right: 30px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  min-height: 110px
+  padding: 8px 80px 8px 60px
 
+.hts-reg-info
+  display: flex
+  align-items: center
+  justify-content: space-between
+  max-width: 450px
+  margin-right: 20px
+  font-size: 16px
+  line-height: 1.38em
 
+  .btn
+    flex-shrink: 0
 
+  .icon
+    flex-shrink: 0
+    width: 40px
+    height: 40px
+    margin-right: 16px
+    fill: #0f3675
 
+// partners
+.partners-wrapp
+  .partners-stat
+    position: absolute
+    bottom: -35px
+    left: 30px
+    right: 30px
+    display: flex
+    align-items: center
+    justify-content: space-between
 
+  .partner-stat-comp
+    width: calc(50% - 2px)
+    padding-top: 15px
+    padding-bottom: 15px
+
+.partners-list
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  padding-bottom: 20px
+
+  li
+    position: relative
+    width: calc(50% - 15px)
+    padding: 30px 0 70px
+    margin-bottom: 60px
+    border-radius: 10px
+
+  .partners-emty
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    .icon
+      width: 30px
+      height: 47px
+
+    b
+      display: block
+      margin-top: 14px
+      font-size: 16px
+      line-height: 19px
+      color: rgba(#000, .5)
+
+.partners-row
+  display: flex
+  justify-content: space-between
+
+.partners-img
+  flex: 0 0 170px
+  padding: 20px
+  display: flex
+  flex-direction: column
+  align-items: center
+  border-right: 1px solid rgba(#969696, .2)
+
+  &__logo
+    height: 90px
+    line-height: 90px
+    margin-bottom: 16px
+
+    img
+      max-height: 100%
+
+  &__name
+    font-weight: 600
+    font-size: 16px
+    line-height: 19px
+    text-align: center
+
+.partners-about
+  padding: 0 30px
+
+  p
+    font-size: 12px
+    line-height: 20px
+
+  .btn
+    margin-top: 20px
+
+// calc
+.calc-line
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 20px 146px 20px 60px
+  border-radius: 10px
+  background-image: url('../img/calc-line-bg.svg')
+  background-repeat: no-repeat
+  background-position: 100% 50%
+  background-size: cover
+
+  &__tt
+    flex-shrink: 0
+    display: flex
+    align-items: center
+
+    .icon
+      margin-right: 14px
+      width: 26px
+      height: 34px
+      fill: #fff
+
+    .title-site
+      margin-bottom: 0
+
+  &__arr
+    flex-grow: 1
+    margin: 0 30px 0 34px
+    height: 10px
+    position: relative
+    overflow: hidden
+
+    .icon
+      position: absolute
+      right: 0
+      top: 50%
+      margin-top: -5px
+      width: 550px
+      height: 10px
+
+  .btn
+    flex-shrink: 0

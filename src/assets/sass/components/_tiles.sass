@@ -1,0 +1,55 @@
+.tiles-list
+  display: flex
+  justify-content: space-between
+
+  &._purple
+    li
+      background-color: $colorPurpleDarkest
+
+  &._arr-top
+    li
+      padding-top: 44px
+
+  li
+    position: relative
+    width: calc(25% - 3px)
+    padding: 34px 30px
+    background-color: $colorBlueDarkest
+    border-radius: 10px
+    color: #fff
+
+.tiles-head
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 26px
+
+  &._bordered
+    padding-bottom: 26px
+    border-bottom: 1px solid rgba(#fff, .2)
+
+    .icon
+      width: 26px
+      height: 26px
+
+  .icon
+    flex-shrink: 0
+    width: 30px
+    height: 30px
+
+.tiles-tt
+  margin-right: 10px
+  font-weight: 500
+  font-size: 16px
+  line-height: 19px
+
+.tiles-info
+  font-size: 12px
+  line-height: 20px
+
+.tiles-numb
+  margin-bottom: auto
+  font-weight: 500
+  font-size: 18px
+  line-height: 18px
+  color: #8491b4

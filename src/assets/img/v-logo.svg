@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="83" height="102" viewBox="0 0 83 102">
+    <defs>
+        <linearGradient id="sbyidvqdza" x1="15.077%" x2="63.346%" y1="28.364%" y2="57.831%">
+            <stop offset="0%" stop-color="#CF44FB"/>
+            <stop offset="57%" stop-color="#2854C6"/>
+            <stop offset="79%" stop-color="#1E46B6"/>
+            <stop offset="100%" stop-color="#001A86"/>
+        </linearGradient>
+        <linearGradient id="x0c67wn4vb" x1="41.074%" x2="62.374%" y1="77.006%" y2="31.374%">
+            <stop offset="0%" stop-color="#11DADC"/>
+            <stop offset="100%" stop-color="#0C7CFE"/>
+        </linearGradient>
+        <linearGradient id="fr8z8a4mac" x1="49.223%" x2="53.147%" y1="92.158%" y2="26.372%">
+            <stop offset="0%" stop-color="#11D8DD"/>
+            <stop offset="100%" stop-color="#0C7CFE"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <text fill="#FFF" font-family="Basecoat-Regular, Basecoat" font-size="18" letter-spacing="1.029" transform="translate(-1158 -720) translate(345 610) translate(630) translate(121 54) translate(62 56)">
+                                <tspan x=".208" y="98">GENESIS</tspan>
+                            </text>
+                            <g>
+                                <path fill="url(#sbyidvqdza)" d="M33.12.87C31.056-.3 28.526-.29 26.473.9L3.451 14.236C1.396 15.426.127 17.616.116 19.99L0 46.194c-.01 2.402 1.268 4.626 3.35 5.824l22.976 13.226c2.09 1.203 4.665 1.188 6.74-.04l13.017-7.702c2.016-1.192 3.258-3.355 3.274-5.697.015-2.341-1.2-4.52-3.2-5.738l-7.315-4.456c-1.408-.858-3.237-.5-4.219.823l-3.128 4.216c-.42.567-1.085.901-1.792.9-.706 0-1.37-.336-1.79-.904-4.26-5.782-7.855-11.878-10.687-18.5-.277-.65-.229-1.393.13-2.002.358-.609.984-1.012 1.687-1.085 7.214-.746 14.105-.95 21.317-.263.707.07 1.338.475 1.698 1.087.36.613.406 1.36.123 2.013-.364.848-.778 1.804-1.184 2.741-1.144 2.64-.092 5.718 2.428 7.106l5.407 2.977c2.193 1.207 4.859 1.174 7.021-.087 2.163-1.262 3.504-3.567 3.531-6.07l.165-14.746c.027-2.434-1.271-4.69-3.39-5.89L33.12.868z" transform="translate(-1158 -720) translate(345 610) translate(630) translate(121 54) translate(62 56) translate(12)"/>
+                                <path fill="url(#x0c67wn4vb)" d="M35.893 2.29s5.789 4.734 7.96 11.42c2.316 7.127-1.785 15.633-3.939 19.38-.302.517-.383 1.134-.226 1.71.158.578.54 1.067 1.063 1.359l15.64 8.73c.688.383 1.526.376 2.206-.02.68-.395 1.102-1.12 1.109-1.906l.205-23.26c.022-2.442-1.29-4.701-3.422-5.893L35.893 2.29z" transform="translate(-1158 -720) translate(345 610) translate(630) translate(121 54) translate(62 56) translate(12)"/>
+                                <g fill="url(#fr8z8a4mac)" transform="translate(-1158 -720) translate(345 610) translate(630) translate(121 54) translate(62 56) translate(12) scale(1 -1) rotate(-60 -43.355 -32.293)">
+                                    <path d="M.053.168S5.843 4.9 8.014 11.586c2.315 7.128-1.785 15.634-3.94 19.382-.301.516-.382 1.133-.225 1.71s.54 1.066 1.063 1.358l15.64 8.73c.687.383 1.526.376 2.206-.02.68-.395 1.102-1.12 1.108-1.906l.206-23.26c.021-2.442-1.29-4.701-3.422-5.893L.053.167z"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

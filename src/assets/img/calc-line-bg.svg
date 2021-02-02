@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1230px" height="90px" viewBox="0 0 1230 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>E3B4D20A-EEE5-4883-B643-C70C33F98F92</title>
+    <defs>
+        <radialGradient cx="15.8283618%" cy="148.55543%" fx="15.8283618%" fy="148.55543%" r="1123.77146%" gradientTransform="translate(0.158284,1.485554),scale(0.073171,1.000000),rotate(-3.698642),translate(-0.158284,-1.485554)" id="radialGradient-1">
+            <stop stop-color="#0060BA" offset="0%"></stop>
+            <stop stop-color="#02AFD4" offset="100%"></stop>
+        </radialGradient>
+        <rect id="path-2" x="0" y="-4.54747351e-13" width="1230" height="90" rx="10"></rect>
+        <rect id="path-4" x="0" y="0" width="1230" height="90" rx="10"></rect>
+        <circle id="path-6" cx="772.5" cy="285.010254" r="3.5"></circle>
+        <circle id="path-7" cx="821.5" cy="311.010254" r="3.5"></circle>
+        <circle id="path-8" cx="668.5" cy="329.010254" r="3.5"></circle>
+    </defs>
+    <g id="Главная" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Главная-1920" transform="translate(-345.000000, -3474.000000)">
+            <g id="Фон" transform="translate(345.000000, 3474.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Mask" fill="url(#radialGradient-1)" opacity="0.900000036" xlink:href="#path-2"></use>
+                <mask id="mask-5" fill="white">
+                    <use xlink:href="#path-4"></use>
+                </mask>
+                <g id="Mask"></g>
+                <g id="Group-4" mask="url(#mask-5)">
+                    <g transform="translate(338.000000, -247.000000)">
+                        <polyline id="Path-2" stroke="#FFFFFF" stroke-width="0.5" opacity="0.300000012" points="-2.20308902e-12 372.510254 635 372.510254 667.539398 329.0979 719 358.315002 771.5 285.510254 820 311.676636 943.642944 127.510254 1123.39429 213.510246 1278 0"></polyline>
+                        <g id="Oval" stroke="none">
+                            <use fill="#1BB2D7" fill-rule="evenodd" xlink:href="#path-6"></use>
+                            <circle stroke="#1BB2D7" stroke-width="4" cx="772.5" cy="285.010254" r="5.5"></circle>
+                            <circle stroke="#11DADC" stroke-width="1" stroke-linejoin="square" cx="772.5" cy="285.010254" r="3"></circle>
+                        </g>
+                        <g id="Oval" stroke="none">
+                            <use fill="#1BB4D8" fill-rule="evenodd" xlink:href="#path-7"></use>
+                            <circle stroke="#1BB4D8" stroke-width="4" cx="821.5" cy="311.010254" r="5.5"></circle>
+                            <circle stroke="#CF44FB" stroke-width="1" stroke-linejoin="square" cx="821.5" cy="311.010254" r="3"></circle>
+                        </g>
+                        <g id="Oval" stroke="none">
+                            <use fill="#1BA8D4" fill-rule="evenodd" xlink:href="#path-8"></use>
+                            <circle stroke="#1BA8D4" stroke-width="4" cx="668.5" cy="329.010254" r="5.5"></circle>
+                            <circle stroke="#11DADC" stroke-width="1" stroke-linejoin="square" cx="668.5" cy="329.010254" r="3"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

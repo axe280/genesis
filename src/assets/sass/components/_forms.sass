@@ -10,10 +10,11 @@
     ._validation
       &::before
         transform: scale(1)
-        background-color: $colorDanger
+        background-image: url('../img/error-status.svg')
 
     .field-item__icon
-      background-color: $colorDanger
+      .icon
+        fill: $colorDanger
 
   &._success
     input
@@ -22,10 +23,12 @@
     ._validation
       &::before
         transform: scale(1)
-        background-color: $colorBlue
+        background-image: url('../img/check.svg')
+        background-size: 12px 11px
 
     .field-item__icon
-      background-color: $colorBlue
+      .icon
+        fill: $colorBlue
 
   &__label
     margin-bottom: 13px
@@ -57,7 +60,8 @@
         width: 20px
         height: 20px
         z-index: 3
-        background-color: #000
+        background-repeat: no-repeat
+        background-position: 50% 50%
         transform: scale(0)
         transition: transform .2s
 
@@ -72,7 +76,9 @@
     left: 16px
     top: 50%
     margin-top: -15px
-    background-color: #000
+
+    .icon
+      fill: #B7B7B7
 
 .st-form
   &._light

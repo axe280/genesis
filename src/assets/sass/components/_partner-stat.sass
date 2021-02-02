@@ -1,0 +1,51 @@
+.partner-stat-comp
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 25px 30px
+  border-radius: 4px
+  background-color: #cccbd9
+
+  &._purple
+    background-color: $colorPurple
+
+  &._blue
+    background-color: $colorBlue
+
+  &._purple,
+  &._blue
+    color: #fff
+
+    .partner-stat-comp
+      &__about
+        span
+          color: #fff
+
+      &__aside
+        .icon
+          fill: #fff
+
+  &__about
+    span
+      display: block
+      margin-bottom: 6px
+      font-size: 12px
+      line-height: 15px
+      color: rgba(#000, .5)
+
+    b
+      display: block
+      font-weight: 500
+      font-size: 16px
+      line-height: 19px
+
+  &__aside
+    .icon
+      width: 30px
+      height: 30px
+
+    .icon-calendar
+      fill: $colorBlueDark2
+
+    .icon-coins-up
+      fill: $colorPurpleDark
