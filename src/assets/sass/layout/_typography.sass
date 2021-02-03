@@ -97,6 +97,9 @@ b
 .text_light
   color: #fff
 
+.text_dark-50
+  color: rgba(#000, .5)
+
 img
   vertical-align: middle
   max-width: 100%
@@ -119,11 +122,17 @@ a
   &:hover
     color: $color-link
 
+  &:active
+    color: $color-active-link
+
 .dotted-link
-  border-bottom: 1px dotted rgba($color-link, .4)
+  cursor: pointer
+  color: $colorPrimary
+  border-bottom: 1px dotted rgba($colorPrimary, .4)
 
   &:hover
     border-color: transparent
+    color: $colorPrimaryDark
 
   &_light
     color: #fff
@@ -148,8 +157,12 @@ a
   &-stat-3
     fill: $colorPrimary
 
-  &-building
+  &-building,
+  &_blue
     fill: $colorBlueMoreLight
+
+  &_purple
+    fill: $colorPurple
 
 
 /* Max width $m-xl */

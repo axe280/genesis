@@ -2,18 +2,26 @@
   display: flex
   justify-content: space-between
 
+  &._three-col
+    li
+      width: calc(33.33% - 2.5px)
+
   &._purple
     li
       background-color: $colorPurpleDarkest
 
   &._arr-top
     li
-      padding-top: 44px
+      padding-top: 40px
+
+  &._arr-bottom
+    li
+      padding-bottom: 40px
 
   li
     position: relative
     width: calc(25% - 3px)
-    padding: 34px 30px
+    padding: 34px 30px 30px
     background-color: $colorBlueDarkest
     border-radius: 10px
     color: #fff
@@ -22,7 +30,7 @@
   display: flex
   align-items: center
   justify-content: space-between
-  margin-bottom: 26px
+  margin-bottom: 20px
 
   &._bordered
     padding-bottom: 26px
@@ -36,6 +44,13 @@
     flex-shrink: 0
     width: 30px
     height: 30px
+    fill: rgba(#fff, .7)
+
+    &_blue
+      fill: $colorBlueMoreLight
+
+    &_purple
+      fill: $colorPurple
 
 .tiles-tt
   margin-right: 10px
@@ -52,4 +67,4 @@
   font-weight: 500
   font-size: 18px
   line-height: 18px
-  color: #8491b4
+  color: rgba(#fff, .3)

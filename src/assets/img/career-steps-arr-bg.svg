@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1181px" height="234px" viewBox="0 0 1181 234" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>B0D63B6A-007F-4E09-BE01-B78CB8502FEB</title>
+    <g id="Внутренние" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Карьера-1920" transform="translate(-369.000000, -1869.000000)">
+            <g id="Контент" transform="translate(0.000000, 202.000000)">
+                <g id="Пример" transform="translate(345.000000, 1607.000000)">
+                    <g id="Стрелки" transform="translate(25.000000, 60.000000)">
+                        <g id="5" transform="translate(0.692245, 4.152008)">
+                            <path d="M990,0.538840649 L1168,0.538840649 C1173.52285,0.538840649 1178,5.01599315 1178,10.5388406 L1178,218.680496 C1178,224.203344 1173.52285,228.680496 1168,228.680496 L10.0478189,228.680496 C4.52497138,228.680496 0.0478188772,224.203344 0.0478188772,218.680496 L0.0478188772,174.01378 C0.0478188772,168.490933 4.52497138,164.01378 10.0478189,164.01378 L37.6595392,164.01378 L37.6595392,164.01378" id="Path-5" stroke="#FEDB41" stroke-width="2" stroke-linecap="round" stroke-dasharray="0,4"></path>
+                            <polygon id="Triangle" fill="#FEDB41" transform="translate(41.500000, 163.500000) scale(-1, 1) rotate(-90.000000) translate(-41.500000, -163.500000) " points="41.5 159 46 168 37 168"></polygon>
+                        </g>
+                        <g id="3" transform="translate(782.000000, 0.000000)">
+                            <line x1="0.416152188" y1="5" x2="114.529458" y2="5" id="Path-5" stroke="#C66FEC" stroke-width="2" stroke-linecap="round" stroke-dasharray="0,4"></line>
+                            <polygon id="Triangle" fill="#C66FEC" transform="translate(118.098593, 4.923897) rotate(-270.000000) translate(-118.098593, -4.923897) " points="118.098593 0.423897048 122.598593 9.42389705 113.598593 9.42389705"></polygon>
+                        </g>
+                        <g id="1" transform="translate(556.000000, 0.000000)">
+                            <line x1="0.416152188" y1="5" x2="114.529458" y2="5" id="Path-5" stroke="#3698E4" stroke-width="2" stroke-linecap="round" stroke-dasharray="0,4"></line>
+                            <polygon id="Triangle" fill="#3698E4" transform="translate(118.098593, 4.923897) rotate(-270.000000) translate(-118.098593, -4.923897) " points="118.098593 0.423897048 122.598593 9.42389705 113.598593 9.42389705"></polygon>
+                        </g>
+                        <g id="2" transform="translate(330.000000, 0.000000)">
+                            <line x1="0.416152188" y1="5" x2="114.529458" y2="5" id="Path-5" stroke="#C66FEC" stroke-width="2" stroke-linecap="round" stroke-dasharray="0,4"></line>
+                            <polygon id="Triangle" fill="#C66FEC" transform="translate(118.098593, 4.923897) rotate(-270.000000) translate(-118.098593, -4.923897) " points="118.098593 0.423897048 122.598593 9.42389705 113.598593 9.42389705"></polygon>
+                        </g>
+                        <g id="1" transform="translate(104.000000, 0.000000)">
+                            <line x1="0.416152188" y1="5" x2="114.529458" y2="5" id="Path-5" stroke="#3698E4" stroke-width="2" stroke-linecap="round" stroke-dasharray="0,4"></line>
+                            <polygon id="Triangle" fill="#3698E4" transform="translate(118.098593, 4.923897) rotate(-270.000000) translate(-118.098593, -4.923897) " points="118.098593 0.423897048 122.598593 9.42389705 113.598593 9.42389705"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

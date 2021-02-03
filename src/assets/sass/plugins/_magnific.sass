@@ -27,7 +27,6 @@ button.mfp-arrow
   display: flex
   align-items: center
   justify-content: center
-  background-color: #fff
   overflow: hidden
   cursor: pointer
   transition: background-color $transDefault, color $transDefault
@@ -46,25 +45,23 @@ button.mfp-arrow
 
 button.mfp-close,
 .mfp-close
-  top: -35px
-  right: 0
+  top: 10px
+  right: 10px
   width: 35px
   height: 35px
   opacity: 1
 
   .icon
-    width: 20px
-    height: 20px
-    fill: #000
+    width: 100%
+    height: 100%
+    fill: rgba(#fff, .5)
 
   &:hover
-    background-color: #000
-
     .icon
       fill: #fff
 
   &:active
-    top: -35px
+    top: 10px
 
 button.mfp-arrow
   background-color: #000
@@ -126,21 +123,3 @@ button.mfp-arrow
   position: relative
   font-size: 14px
   line-height: 24px
-
-/* Min width $md pixels */
-@media only screen and (min-width: $md)
-  button.mfp-arrow
-    padding-right: 10px
-
-    &.mfp-arrow-right
-      padding: 0 0 0 10px
-
-    &:hover
-      .icon
-        fill: red
-
-    .icon
-      width: 30px
-      height: 30px
-      fill: #fff
-/* end media min width $md pixels */

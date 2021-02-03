@@ -34,16 +34,26 @@
                     </svg>
                   </div>
                   <ul class="header-lang__dd">
-                    <li>En</li>
-                    <li>Sp</li>
+                    <li><a href="#">En</a></li>
+                    <li><a href="#">Sp</a></li>
                   </ul>
                 </div>
 
                 <div class="header-enter-btns">
-                  <a href="#" class="btn btn_border">
+                  <button
+                    type="button"
+                    data-mfp-src="#signInModal"
+                    class="btn btn_border open-popup-link"
+                  >
                     <span class="text_light">Вход</span>
-                  </a>
-                  <a href="#" class="btn">Регистрация</a>
+                  </button>
+                  <button
+                    type="button"
+                    data-mfp-src="#regModal"
+                    class="btn open-popup-link"
+                  >
+                    Регистрация
+                  </button>
                 </div>
 
                 <div class="burger-menu">
@@ -756,7 +766,7 @@
                   <ul class="tiles-list _arr-top">
                     <li>
                       <div class="tiles-head">
-                        <svg class="icon icon-b-list-1">
+                        <svg class="icon icon_blue icon-b-list-1">
                           <use
                             xlink:href="assets/img/sprite.svg#b-list-1"
                           ></use>
@@ -774,7 +784,7 @@
 
                     <li>
                       <div class="tiles-head">
-                        <svg class="icon icon-b-list-2">
+                        <svg class="icon icon_blue icon-b-list-2">
                           <use
                             xlink:href="assets/img/sprite.svg#b-list-2"
                           ></use>
@@ -792,7 +802,7 @@
 
                     <li>
                       <div class="tiles-head">
-                        <svg class="icon icon-b-list-3">
+                        <svg class="icon icon_blue icon-b-list-3">
                           <use
                             xlink:href="assets/img/sprite.svg#b-list-3"
                           ></use>
@@ -810,7 +820,7 @@
 
                     <li>
                       <div class="tiles-head">
-                        <svg class="icon icon-b-list-4">
+                        <svg class="icon icon_blue icon-b-list-4">
                           <use
                             xlink:href="assets/img/sprite.svg#b-list-4"
                           ></use>
@@ -1376,7 +1386,9 @@
                   <div class="ui-st-checkbox">
                     <label>
                       <span>Я ознакомлен(а) и принимаю</span>
-                      <a href="#" class="dotted-link dotted-link_light">условия пользовательского соглашения</a>
+                      <a href="#" class="dotted-link dotted-link_light"
+                        >условия пользовательского соглашения</a
+                      >
                       <input type="checkbox" />
                       <span class="fake-control"></span>
                     </label>
@@ -1457,7 +1469,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="mailto:help@genesis.ws">
                   <svg class="icon icon-envelope-s">
                     <use xlink:href="assets/img/sprite.svg#envelope-s"></use>
                   </svg>
@@ -1482,5 +1494,315 @@
       </div>
     </footer>
     <!-- end footer -->
+
+    <!-- modals -->
+    <div id="signInModal" class="st-modal modal-sign-in mfp-hide">
+      <div class="sign-in-up-modal">
+        <div class="title-site title-site_h1">Вход</div>
+        <div class="soc-flex">
+          <span class="soc-flex__tt">Вход через соцсети</span>
+
+          <ul class="social-inline">
+            <li>
+              <a href="#">
+                <svg class="icon icon-vk">
+                  <use xlink:href="assets/img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <svg class="icon icon-gp">
+                  <use xlink:href="assets/img/sprite.svg#gp"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <svg class="icon icon-fb">
+                  <use xlink:href="assets/img/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <form action="#" class="st-form _light">
+        <div class="form-group">
+          <label class="field-item">
+            <div class="field-item__label">Логин</div>
+            <div class="field-item__field _icon _validation">
+              <div class="field-item__icon">
+                <svg class="icon icon-user">
+                  <use xlink:href="assets/img/sprite.svg#user"></use>
+                </svg>
+              </div>
+              <input type="text" placeholder="Введите" required />
+            </div>
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label class="field-item">
+            <div class="field-item__label">Пароль</div>
+            <div class="field-item__field _icon _validation">
+              <div class="field-item__icon">
+                <svg class="icon icon-key">
+                  <use xlink:href="assets/img/sprite.svg#key"></use>
+                </svg>
+              </div>
+              <input type="password" placeholder="Введите" required />
+            </div>
+            <div class="field-item__info">
+              Забыли пароль?
+              <button
+                type="button"
+                class="dotted-link dotted-link_light open-popup-link"
+                data-mfp-src="#sendPasswordModal"
+              >
+                Восстановить
+              </button>
+            </div>
+          </label>
+        </div>
+
+        <div class="form-group">
+          <img src="assets/img/captcha.png" alt="" />
+        </div>
+
+        <button class="btn btn_md btn_max" type="submit">
+          Войти в кабинет
+        </button>
+
+        <div class="modal-form-b-message">
+          Нет аккаунта?
+          <button
+            type="button"
+            class="dotted-link open-popup-link"
+            data-mfp-src="#regModal"
+          >
+            Зарегистрироваться
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div id="sendPasswordModal" class="st-modal modal-send-password mfp-hide">
+      <div class="sign-in-up-modal">
+        <div class="title-site title-site_h1">Восстановление <br />пароля</div>
+        <p>Для восстановление пароля введите свою электронную почту</p>
+      </div>
+      <form action="#" class="st-form _light">
+        <div class="form-group">
+          <label class="field-item">
+            <div class="field-item__label">Почта</div>
+            <div class="field-item__field _icon _validation">
+              <div class="field-item__icon">
+                <svg class="icon icon-envelope">
+                  <use xlink:href="assets/img/sprite.svg#envelope"></use>
+                </svg>
+              </div>
+              <input type="email" placeholder="Введите" required />
+            </div>
+          </label>
+        </div>
+
+        <button
+          class="btn btn_md btn_max open-popup-link"
+          type="submit"
+          data-mfp-src="#sendPasswordCodeModal"
+        >
+          Отправить код
+        </button>
+      </form>
+    </div>
+
+    <div
+      id="sendPasswordCodeModal"
+      class="st-modal modal-send-password mfp-hide"
+    >
+      <div class="sign-in-up-modal">
+        <div class="title-site title-site_h1">Восстановление <br />пароля</div>
+        <p>
+          На указанную вами электронную почту был отправлен код для
+          восстановление пароля
+        </p>
+      </div>
+      <form action="#" class="st-form _light">
+        <div class="form-group">
+          <label class="field-item">
+            <div class="field-item__label">Код</div>
+            <div class="field-item__field _icon _validation">
+              <div class="field-item__icon">
+                <svg class="icon icon-password">
+                  <use xlink:href="assets/img/sprite.svg#password"></use>
+                </svg>
+              </div>
+              <input type="email" placeholder="Введите" required />
+            </div>
+          </label>
+        </div>
+
+        <button class="btn btn_md btn_max" type="submit">
+          Восстановить пароль
+        </button>
+      </form>
+    </div>
+
+    <div id="regModal" class="st-modal modal-reg mfp-hide">
+      <div class="sign-in-up-modal">
+        <div class="title-site title-site_h1">Регистрация</div>
+        <div class="soc-flex">
+          <span class="soc-flex__tt">Регистрация через&nbsp;соцсети</span>
+
+          <ul class="social-inline">
+            <li>
+              <a href="#">
+                <svg class="icon icon-vk">
+                  <use xlink:href="assets/img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <svg class="icon icon-gp">
+                  <use xlink:href="assets/img/sprite.svg#gp"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <svg class="icon icon-fb">
+                  <use xlink:href="assets/img/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="reg-validation-list">
+          <li>
+            <svg class="icon icon-round-close">
+              <use xlink:href="assets/img/sprite.svg#round-close"></use>
+            </svg>
+            Запрещено регистрировать более 1 аккаунта
+          </li>
+          <li>
+            <svg class="icon icon-round-close">
+              <use xlink:href="assets/img/sprite.svg#round-close"></use>
+            </svg>
+            В логине не должно быть других символов, кроме цифр, латинских и
+            кириллических букв
+          </li>
+        </ul>
+      </div>
+
+      <form action="#" class="st-form _light">
+        <div class="form-group">
+          <label class="field-item _success">
+            <div class="field-item__label">Логин</div>
+            <div class="field-item__field _icon _validation">
+              <div class="field-item__icon">
+                <svg class="icon icon-user">
+                  <use xlink:href="assets/img/sprite.svg#user"></use>
+                </svg>
+              </div>
+              <input type="text" value="bakalev" required />
+            </div>
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label class="field-item">
+            <div class="field-item__label">ФИО</div>
+            <div class="field-item__field _icon _validation">
+              <div class="field-item__icon">
+                <svg class="icon icon-passport">
+                  <use xlink:href="assets/img/sprite.svg#passport"></use>
+                </svg>
+              </div>
+              <input type="text" placeholder="Введите" required />
+            </div>
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label class="field-item">
+            <div class="field-item__label">Почта</div>
+            <div class="field-item__field _icon _validation">
+              <div class="field-item__icon">
+                <svg class="icon icon-envelope">
+                  <use xlink:href="assets/img/sprite.svg#envelope"></use>
+                </svg>
+              </div>
+              <input type="email" placeholder="Введите" required />
+            </div>
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label class="field-item">
+            <div class="field-item__label">Пароль</div>
+            <div class="field-item__field _icon _validation">
+              <div class="field-item__icon">
+                <svg class="icon icon-key">
+                  <use xlink:href="assets/img/sprite.svg#key"></use>
+                </svg>
+              </div>
+              <input type="password" placeholder="Введите" required />
+            </div>
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label class="field-item _error">
+            <div class="field-item__label">Повторите пароль</div>
+            <div class="field-item__field _icon _validation">
+              <div class="field-item__icon">
+                <svg class="icon icon-key">
+                  <use xlink:href="assets/img/sprite.svg#key"></use>
+                </svg>
+              </div>
+              <input type="password" placeholder="Введите" required />
+            </div>
+          </label>
+        </div>
+
+        <div class="form-group">
+          <img src="assets/img/captcha.png" alt="" />
+        </div>
+
+        <div class="accept-checkbox">
+          <div class="ui-st-checkbox">
+            <label>
+              <span>Я ознакомлен(а) и принимаю</span>
+              <a href="#">условия пользовательского соглашения</a>
+              <input type="checkbox" checked />
+              <span class="fake-control"></span>
+            </label>
+          </div>
+        </div>
+
+        <button class="btn btn_md btn_max" type="submit">
+          Зарегистрироваться
+        </button>
+
+        <div class="modal-form-b-message">
+          Уже есть аккаунт?
+          <button
+            type="button"
+            class="dotted-link open-popup-link"
+            data-mfp-src="#signInModal"
+          >
+            Войти
+          </button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>

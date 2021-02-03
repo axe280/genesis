@@ -68,8 +68,41 @@
 
     .tiles-list
       li
-        padding-bottom: 100px
+        padding-bottom: 110px
 
       p
         position: relative
         z-index: 5
+
+// chart
+.ic-tt-rows
+  &._chart
+    min-height: 464px
+    padding: 36px 0
+    position: relative
+    background-image: url('../img/g-chart-bg.svg')
+    background-repeat: no-repeat
+    background-position: 100% 0
+
+    .ic-tt-col-about
+      flex: 0 0 190px
+      padding-top: 134px
+
+    .ic-col-services
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+.ic-tt-chart
+  position: absolute
+  left: 62px
+  white-space: nowrap
+  font-weight: 600
+  font-size: 16px
+  line-height: 19px
+
+  &._top
+    top: -41px
+
+  &._bottom
+    bottom: -39px
