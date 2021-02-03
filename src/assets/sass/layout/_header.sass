@@ -38,6 +38,11 @@
     .header-lang
       &__current
         border-color: transparent
+        color: $colorBlueLight
+
+        .icon
+          fill: $colorBlueLight
+          transform: rotate(-180deg)
 
   &__current
     position: relative
@@ -45,7 +50,8 @@
     margin-right: 10px
     border-bottom: 1px dotted #0c88f9
     cursor: pointer
-    transition: border-color .2s
+    user-select: none
+    transition: border-color .2s, color .2s
 
     &:hover
       border-color: transparent
@@ -58,6 +64,7 @@
       width: 6px
       height: 4px
       fill: #fff
+      transition: transform .2s, fill .2s
 
   &__dd
     display: none

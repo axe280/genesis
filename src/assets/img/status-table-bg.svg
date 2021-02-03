@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1230px" height="454px" viewBox="0 0 1230 454" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>02552CCF-6086-4E72-9948-FA3927971ED5</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.2205051%" id="linearGradient-1">
+            <stop stop-color="#050447" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#392F6D" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#050447" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#050447" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-3" cx="615.5" cy="378.5" r="3.5"></circle>
+        <circle id="path-4" cx="615.5" cy="277.5" r="3.5"></circle>
+        <circle id="path-5" cx="615.5" cy="176.5" r="3.5"></circle>
+        <circle id="path-6" cx="615.5" cy="75.5" r="3.5"></circle>
+    </defs>
+    <g id="Главная" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Главная-1920" transform="translate(-345.000000, -4568.000000)">
+            <g id="Карьера-в-компании.-Genesis-UP" transform="translate(0.000000, 4132.000000)">
+                <g id="Варианты" transform="translate(0.000000, 332.000000)">
+                    <g id="Линии" transform="translate(345.000000, 104.000000)">
+                        <rect id="Rectangle" fill="#FFFFFF" opacity="0.200000003" x="0" y="378" width="1230" height="1"></rect>
+                        <rect id="Rectangle" fill="#FFFFFF" opacity="0.200000003" x="0" y="277" width="1230" height="1"></rect>
+                        <rect id="Rectangle" fill="#FFFFFF" opacity="0.200000003" x="0" y="176" width="1230" height="1"></rect>
+                        <rect id="Rectangle" fill="#FFFFFF" opacity="0.200000003" x="0" y="75" width="1230" height="1"></rect>
+                        <polygon id="Rectangle" fill="#FFFFFF" opacity="0.200000003" points="615 -5.08175967e-13 616 -5.08175967e-13 616 454 615 454"></polygon>
+                        <rect id="Rectangle" fill="url(#linearGradient-1)" x="615" y="410" width="1" height="44"></rect>
+                        <rect id="Rectangle" fill="url(#linearGradient-2)" transform="translate(615.500000, 22.000000) scale(1, -1) translate(-615.500000, -22.000000) " x="615" y="0" width="1" height="44"></rect>
+                        <g id="Oval">
+                            <use fill="#272160" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            <circle stroke="#272160" stroke-width="4" cx="615.5" cy="378.5" r="5.5"></circle>
+                            <circle stroke="#9D9DC5" stroke-width="1" stroke-linejoin="square" cx="615.5" cy="378.5" r="3"></circle>
+                        </g>
+                        <g id="Oval">
+                            <use fill="#0B094B" fill-rule="evenodd" xlink:href="#path-4"></use>
+                            <circle stroke="#0B094B" stroke-width="4" cx="615.5" cy="277.5" r="5.5"></circle>
+                            <circle stroke="#9D9DC5" stroke-width="1" stroke-linejoin="square" cx="615.5" cy="277.5" r="3"></circle>
+                        </g>
+                        <g id="Oval">
+                            <use fill="#050447" fill-rule="evenodd" xlink:href="#path-5"></use>
+                            <circle stroke="#050447" stroke-width="4" cx="615.5" cy="176.5" r="5.5"></circle>
+                            <circle stroke="#9D9DC5" stroke-width="1" stroke-linejoin="square" cx="615.5" cy="176.5" r="3"></circle>
+                        </g>
+                        <g id="Oval">
+                            <use fill="#050447" fill-rule="evenodd" xlink:href="#path-6"></use>
+                            <circle stroke="#050447" stroke-width="4" cx="615.5" cy="75.5" r="5.5"></circle>
+                            <circle stroke="#9D9DC5" stroke-width="1" stroke-linejoin="square" cx="615.5" cy="75.5" r="3"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

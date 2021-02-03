@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="16px" viewBox="0 0 160 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>00CA34CF-4A20-4F32-B16C-463A4C233782</title>
+    <defs>
+        <circle id="path-1" cx="148.5" cy="3.5" r="3.5"></circle>
+        <circle id="path-2" cx="3.5" cy="3.5" r="3.5"></circle>
+    </defs>
+    <g id="Главная" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Главная-1920" transform="translate(-1011.000000, -6156.000000)">
+            <g id="Футер-1920" transform="translate(0.000000, 6013.000000)">
+                <g id="График" transform="translate(975.000000, 102.000000)">
+                    <g id="Линии" transform="translate(40.000000, 45.510254)">
+                        <line x1="-2.20308902e-12" y1="4" x2="145" y2="4" id="Path-2" stroke="#FFFFFF" stroke-width="0.5" opacity="0.300000012"></line>
+                        <g id="Oval">
+                            <use fill="#050447" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <circle stroke="#050447" stroke-width="4" cx="148.5" cy="3.5" r="5.5"></circle>
+                            <circle stroke="#9D9DC5" stroke-width="1" stroke-linejoin="square" cx="148.5" cy="3.5" r="3"></circle>
+                        </g>
+                        <g id="Oval">
+                            <use fill="#050447" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            <circle stroke="#050447" stroke-width="4" cx="3.5" cy="3.5" r="5.5"></circle>
+                            <circle stroke="#9D9DC5" stroke-width="1" stroke-linejoin="square" cx="3.5" cy="3.5" r="3"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

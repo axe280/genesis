@@ -104,11 +104,33 @@ img
 a
   color: $color-link
   text-decoration: none
-  transition: color $transDefault
+  transition: color .2s, border-color .2s
 
   &:hover
     text-decoration: none
     color: $color-h-link
+
+  &:active
+    color: $color-active-link
+
+.black-link
+  color: $color-h-link
+
+  &:hover
+    color: $color-link
+
+.dotted-link
+  border-bottom: 1px dotted rgba($color-link, .4)
+
+  &:hover
+    border-color: transparent
+
+  &_light
+    color: #fff
+    border-color: rgba(#fff, .4)
+
+    &:hover
+      color: #fff
 
 .icon
   display: inline-block

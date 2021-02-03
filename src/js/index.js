@@ -29,6 +29,20 @@ $(function () {
     removeDocumentScrollBlocker()
   })
 
+  // lang opened
+  $('.header-lang__current').on('click', function () {
+    $(this).parent().toggleClass('_opened')
+    $(this).siblings('.header-lang__dd').fadeToggle(200)
+  })
+
+  $(document).bind('click touchstart', function (e) {
+    var $clicked = $(e.target)
+    if (!$clicked.parents().hasClass('header-lang')) {
+      $('.header-lang').removeClass('_opened')
+      $('.header-lang__dd').fadeOut(200)
+    }
+  })
+
   // magnific popup
   $('.open-popup-link').magnificPopup({
     type: 'inline',
