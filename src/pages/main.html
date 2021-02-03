@@ -68,7 +68,7 @@
                   <div class="menu-open-wrapper">
                     <nav class="header-nav">
                       <ul class="menu">
-                        <li class="menu-item _active">
+                        <li class="menu-item">
                           <a class="menu-item__link" href="#">О компании</a>
                         </li>
                         <li class="menu-item">
@@ -109,7 +109,13 @@
                 Начните зарабатывать с самыми прибыльными компаниями прямо
                 сейчас
               </p>
-              <a href="#" class="btn btn_md">Бесплатная регистрация</a>
+              <button
+                type="button"
+                data-mfp-src="#regModal"
+                class="btn btn_md open-popup-link"
+              >
+                Бесплатная регистрация
+              </button>
             </div>
 
             <div class="main-header-infograph">
@@ -849,7 +855,13 @@
                       сейчас
                     </div>
 
-                    <a href="#" class="btn btn_md">Бесплатная регистрация</a>
+                    <button
+                      type="button"
+                      data-mfp-src="#regModal"
+                      class="btn btn_md open-popup-link"
+                    >
+                      Бесплатная регистрация
+                    </button>
                   </div>
                 </div>
               </div>
@@ -1389,7 +1401,7 @@
                       <a href="#" class="dotted-link dotted-link_light"
                         >условия пользовательского соглашения</a
                       >
-                      <input type="checkbox" />
+                      <input type="checkbox" checked />
                       <span class="fake-control"></span>
                     </label>
                   </div>
@@ -1421,7 +1433,9 @@
               </ul>
               <ul>
                 <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Регистрация</a></li>
+                <li>
+                  <a href="#regModal" class="open-popup-link">Регистрация</a>
+                </li>
               </ul>
             </nav>
           </div>

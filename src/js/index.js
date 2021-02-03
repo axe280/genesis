@@ -43,6 +43,11 @@ $(function () {
     }
   })
 
+  // faq list
+  $('.faq-head').on('click', function () {
+    $(this).toggleClass('_opened').parent().find('.faq-body').slideToggle(200)
+  })
+
   // magnific popup
   $('.open-popup-link').magnificPopup({
     type: 'inline',

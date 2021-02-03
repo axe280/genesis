@@ -109,3 +109,194 @@
   .career-users__icon
     flex-shrink: 0
     margin: 0 14px 0 0
+
+.limitation-section
+  margin-top: 40px
+  margin-bottom: 80px
+  padding: 50px 50px 0
+  background-color: $colorPurpleDarkest
+  color: #fff
+  border-radius: 10px
+
+.limitation-list
+  display: flex
+  flex-wrap: wrap
+  margin-bottom: -30px
+  background-image: url('../img/limit-list-bg.svg')
+  background-repeat: no-repeat
+  background-position: calc(50% + 25px) calc(50% - 20px)
+
+  li
+    display: flex
+    width: 50%
+    min-height: 54px
+    margin-bottom: 40px
+    // border: 1px solid #fff
+
+    &:nth-child(odd)
+      padding-right: 30px
+
+    &:nth-child(even)
+      padding-left: 30px
+      padding-right: 0
+
+  .icon
+    width: 20px
+    height: 20px
+    margin-top: 8px
+    margin-right: 12px
+    flex-shrink: 0
+    fill: $colorDanger
+
+  p
+    font-weight: 500
+    font-size: 14px
+    line-height: 18px
+
+.limit-info-wrap
+  position: relative
+  top: 30px
+  padding: 32px 30px
+  background-image: url('../img/limit-info-wrap-bg.svg')
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  border-radius: 6px
+  -webkit-backdrop-filter: blur(10px)
+  backdrop-filter: blur(10px)
+  background-size: cover
+  color: #000
+
+.limit-info
+  display: flex
+  align-items: center
+  margin-bottom: 30px
+  padding-bottom: 30px
+  border-bottom: 1px solid rgba(#fff, .2)
+
+  &:last-child
+    border: none
+    padding-bottom: 0
+    margin-bottom: 0
+
+  &__tt
+    flex-shrink: 0
+    margin-right: 30px
+    display: flex
+    align-items: center
+
+  &__about
+    p
+      max-width: 635px
+      font-size: 12px
+      line-height: 20px
+
+  span
+    flex-grow: 1
+    min-width: 100px
+    padding-right: 8px
+    font-weight: 500
+    font-size: 16px
+    line-height: 19px
+
+.limit-info-tt-icon
+  flex-shrink: 0
+  margin-right: 14px
+
+  .icon
+    width: 30px
+    height: 30px
+    fill: #A04EA8
+
+    &-varning
+      height: 27px
+
+.limit-info-tt-arrow
+  position: relative
+  width: 72px
+  height: 10px
+  overflow: hidden
+
+  .icon
+    position: absolute
+    right: 0
+    top: 50%
+    margin-top: -5px
+    height: 10px
+    width: 100px
+
+.limit-info-steps
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  &__about
+    min-width: 115px
+    font-size: 12px
+    line-height: 15px
+
+  li
+    padding-right: 66px
+    margin-right: 20px
+    display: flex
+    align-items: center
+    background-image: url('../img/min-purple-arr.svg')
+    background-repeat: no-repeat
+    background-position: 100% 50%
+
+    &:last-child
+      padding-right: 0
+      background: none
+
+    .icon
+      flex-shrink: 0
+      margin-right: 12px
+      fill: #A04EA8
+
+      &-status1-dark
+        width: 30px
+        height: 30px
+
+      &-user-st
+        width: 24px
+        height: 29px
+
+.career-file-wrap
+  display: flex
+  align-items: center
+  padding: 50px
+  border-radius: 10px
+  background-image: url('../img/career-file-wrap-bg.svg')
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  background-size: cover
+  -webkit-backdrop-filter: blur(20px)
+  backdrop-filter: blur(20px)
+
+  &__about
+    display: flex
+    align-items: center
+
+    .icon
+      flex-shrink: 0
+      width: 40px
+      height: 43px
+      margin-right: 20px
+
+    p
+      font-weight: 600
+      font-size: 14px
+      line-height: 26px
+
+  &__arr
+    flex-shrink: 0
+    margin: 0 35px
+    width: 100px
+    height: 10px
+
+    .icon
+      vertical-align: top
+      width: 100%
+      height: 100%
+
+  .btn
+    flex-shrink: 0

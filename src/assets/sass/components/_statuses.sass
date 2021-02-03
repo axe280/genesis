@@ -86,3 +86,183 @@
     width: 16px
     height: 16px
     margin-right: 8px
+
+// sattus list
+.status-list
+  li
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    margin-bottom: 23px
+    padding-bottom: 23px
+    border-bottom: 1px solid rgba(#fff, .2)
+
+    &:last-child
+      border: none
+      margin-bottom: 0
+      padding-bottom: 0
+
+  .status-item
+    margin-bottom: 0
+
+.status-money-wrapp
+  display: flex
+  align-items: center
+
+.status-money-item
+  position: relative
+  width: 200px
+  flex-shrink: 0
+  min-height: 54px
+  padding: 9px 50px 9px 20px
+  background-image: url('../img/status-rectangle-left.svg')
+  background-repeat: no-repeat
+  background-position: 0 50%
+  background-size: auto 100%
+  overflow: hidden
+  border-radius: 0 4px 4px 0
+  -webkit-backdrop-filter: blur(20px)
+  backdrop-filter: blur(20px)
+
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    right: 15px
+    width: 30px
+    height: 100%
+    background-image: url('../img/st-ic2.svg')
+    background-repeat: no-repeat
+    background-position: 50% 50%
+
+  &:first-child
+    padding: 9px 50px 9px 14px
+    background-image: url('../img/status-rectangle-right.svg')
+    background-position: 100% 50%
+    border-radius: 4px 0 0 4px
+
+    &::before
+      right: 17px
+      background-image: url('../img/st-ic1.svg')
+
+  &__tt
+    margin-bottom: 2px
+    font-size: 12px
+    line-height: 15px
+    color: $colorGrayLight
+
+  &__val
+    font-weight: 500
+    font-size: 16px
+    line-height: 19px
+
+.status-money-line
+  margin: 0 10px
+  font-size: 12px
+  line-height: 15px
+
+.status-item-partners
+  display: flex
+  margin-left: 46px
+
+  &__tt
+    flex-shrink: 0
+    width: 120px
+    padding-top: 9px
+    padding-right: 10px
+    font-weight: 600
+    font-size: 14px
+    line-height: 18px
+
+  .status-bonus
+    margin-left: 24px
+
+  .status-levels
+    flex-grow: 1
+    min-height: 54px
+    padding: 7px 18px 14px 24px
+    background-image: url('../img/status-rectangle-left.svg')
+    background-repeat: no-repeat
+    background-position: 0 50%
+    background-size: cover
+    border-radius: 0 4px 4px 0
+
+  .status-level
+    width: 132px
+    margin-right: 18px
+
+    &:last-child
+      margin-right: 0
+
+    &__tt
+      margin-right: 34px
+
+.status-level-progress
+  position: relative
+  display: flex
+  margin-top: 10px
+  height: 4px
+  width: 100%
+  background-image: url('../img/status-progress-empty.svg')
+  background-repeat: no-repeat
+  background-position: 0 50%
+
+  &::before
+    content: ''
+    position: absolute
+    left: 1px
+    top: 0
+    width: 0
+    height: 100%
+    z-index: 2
+    background-image: url('../img/status-progress-fill.svg')
+    background-repeat: no-repeat
+    background-position: 0 50%
+
+  &.st-level-1
+    &::before
+      width: 11px
+
+  &.st-level-2
+    &::before
+      width: 22px
+
+  &.st-level-3
+    &::before
+      width: 33px
+
+  &.st-level-4
+    &::before
+      width: 44px
+
+  &.st-level-5
+    &::before
+      width: 55px
+
+  &.st-level-6
+    &::before
+      width: 66px
+
+  &.st-level-7
+    &::before
+      width: 77px
+
+  &.st-level-8
+    &::before
+      width: 88px
+
+  &.st-level-9
+    &::before
+      width: 99px
+
+  &.st-level-10
+    &::before
+      width: 110px
+
+  &.st-level-11
+    &::before
+      width: 121px
+
+  &.st-level-12
+    &::before
+      width: 132px

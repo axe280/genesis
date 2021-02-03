@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1130px" height="210px" viewBox="0 0 1130 210" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>03095A37-9BE1-4FF4-9100-85D3F1EB4DC7</title>
+    <defs>
+        <radialGradient cx="-4.2045617%" cy="91.6354697%" fx="-4.2045617%" fy="91.6354697%" r="565.570418%" gradientTransform="translate(-0.042046,0.916355),scale(0.185841,1.000000),rotate(-7.509386),translate(0.042046,-0.916355)" id="radialGradient-1">
+            <stop stop-color="#EDEDED" offset="0%"></stop>
+            <stop stop-color="#FAFAFA" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Внутренние" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Карьера-1920" transform="translate(-395.000000, -4586.000000)">
+            <g id="Контент" transform="translate(0.000000, 202.000000)">
+                <g id="Обратите-внимание" transform="translate(345.000000, 4051.000000)">
+                    <g id="Ограничения" transform="translate(0.000000, 92.000000)">
+                        <g id="Фон" transform="translate(50.000000, 241.000000)">
+                            <rect id="Rectangle" fill="url(#radialGradient-1)" opacity="0.699999988" x="0" y="0" width="1130" height="210" rx="6"></rect>
+                            <rect id="Rectangle" x="0" y="0" width="1130" height="210" rx="6"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

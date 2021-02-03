@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1230px" height="70px" viewBox="0 0 1230 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>1B7BE2ED-396C-4D68-9793-B50882438E57</title>
+    <defs>
+        <radialGradient cx="-4.2045617%" cy="91.6354697%" fx="-4.2045617%" fy="91.6354697%" r="1830.25227%" gradientTransform="translate(-0.042046,0.916355),scale(0.056911,1.000000),rotate(-2.311626),translate(0.042046,-0.916355)" id="radialGradient-1">
+            <stop stop-color="#F5F5F5" offset="0%"></stop>
+            <stop stop-color="#F4F4F6" offset="100%"></stop>
+        </radialGradient>
+        <rect id="path-2" x="0" y="0" width="1230" height="70" rx="10"></rect>
+        <radialGradient cx="0.519212726%" cy="77.5295909%" fx="0.519212726%" fy="77.5295909%" r="107.704726%" gradientTransform="translate(0.005192,0.775296),rotate(-41.325808),scale(1.000000,2.092115),translate(-0.005192,-0.775296)" id="radialGradient-4">
+            <stop stop-color="#4600D1" offset="0%"></stop>
+            <stop stop-color="#AC0CC5" offset="50.0023902%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </radialGradient>
+        <filter x="-20.0%" y="-20.0%" width="139.9%" height="139.9%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="40" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Внутренние" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Карьера-1920" transform="translate(-345.000000, -3985.000000)">
+            <g id="Контент" transform="translate(0.000000, 202.000000)">
+                <g id="Частые-вопросы" transform="translate(345.000000, 3509.000000)">
+                    <g id="Фон" transform="translate(0.000000, 274.000000)">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <use id="Mask" fill="url(#radialGradient-1)" xlink:href="#path-2"></use>
+                        <circle id="Oval" fill="url(#radialGradient-4)" opacity="0.100000001" mask="url(#mask-3)" transform="translate(184.196418, 186.678561) rotate(-75.000000) translate(-184.196418, -186.678561) " cx="184.196418" cy="186.678561" r="165"></circle>
+                        <circle id="Oval" fill="#0FBCE7" opacity="0.100000001" filter="url(#filter-5)" mask="url(#mask-3)" cx="1031.5" cy="-254.5" r="300.5"></circle>
+                        <rect id="Rectangle" mask="url(#mask-3)" x="0" y="0" width="1230" height="70" rx="10"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

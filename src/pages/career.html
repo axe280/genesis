@@ -33,16 +33,26 @@
                   </svg>
                 </div>
                 <ul class="header-lang__dd">
-                  <li>En</li>
-                  <li>Sp</li>
+                  <li><a href="#">En</a></li>
+                  <li><a href="#">Sp</a></li>
                 </ul>
               </div>
 
               <div class="header-enter-btns">
-                <a href="#" class="btn btn_border">
+                <button
+                  type="button"
+                  data-mfp-src="#signInModal"
+                  class="btn btn_border open-popup-link"
+                >
                   <span class="text_light">Вход</span>
-                </a>
-                <a href="#" class="btn">Регистрация</a>
+                </button>
+                <button
+                  type="button"
+                  data-mfp-src="#regModal"
+                  class="btn open-popup-link"
+                >
+                  Регистрация
+                </button>
               </div>
 
               <div class="burger-menu">
@@ -57,7 +67,7 @@
                 <div class="menu-open-wrapper">
                   <nav class="header-nav">
                     <ul class="menu">
-                      <li class="menu-item _active">
+                      <li class="menu-item">
                         <a class="menu-item__link" href="#">О компании</a>
                       </li>
                       <li class="menu-item">
@@ -464,8 +474,9 @@
             <div class="title-site title-site_h4 text_light">
               Статусы пользователя
             </div>
-            <div class="status-row">
-              <div class="status-col">
+
+            <ul class="status-list">
+              <li>
                 <div class="status-item">
                   <div class="status-rank">
                     <div class="status-rank__icon">
@@ -476,28 +487,50 @@
                     <div class="status-rank__name">G1</div>
                   </div>
 
+                  <div class="status-money-wrapp">
+                    <div class="status-money-item">
+                      <div class="status-money-item__tt">Оборот структуры</div>
+                      <div class="status-money-item__val">0 руб</div>
+                    </div>
+
+                    <span class="status-money-line">или</span>
+
+                    <div class="status-money-item">
+                      <div class="status-money-item__tt">Оборот сделок</div>
+                      <div class="status-money-item__val">0 руб</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="status-item-partners">
+                  <div class="status-item-partners__tt">Партнерские бонусы</div>
                   <div class="status-info">
                     <div class="status-info-row">
                       <div class="status-levels">
                         <div class="status-level">
                           <div class="status-level__tt">1 уровень</div>
                           <div class="status-level__val">4%</div>
+                          <div class="status-level-progress st-level-4"></div>
                         </div>
 
                         <div class="status-level">
                           <div class="status-level__tt">2 уровень</div>
                           <div class="status-level__val">0%</div>
+                          <div class="status-level-progress"></div>
                         </div>
 
                         <div class="status-level">
                           <div class="status-level__tt">3 уровень</div>
                           <div class="status-level__val">0%</div>
+                          <div class="status-level-progress"></div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+              </li>
 
+              <li>
                 <div class="status-item">
                   <div class="status-rank">
                     <div class="status-rank__icon">
@@ -508,28 +541,50 @@
                     <div class="status-rank__name">G2</div>
                   </div>
 
+                  <div class="status-money-wrapp">
+                    <div class="status-money-item">
+                      <div class="status-money-item__tt">Оборот структуры</div>
+                      <div class="status-money-item__val">10 000 руб</div>
+                    </div>
+
+                    <span class="status-money-line">или</span>
+
+                    <div class="status-money-item">
+                      <div class="status-money-item__tt">Оборот сделок</div>
+                      <div class="status-money-item__val">10 000 руб</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="status-item-partners">
+                  <div class="status-item-partners__tt">Партнерские бонусы</div>
                   <div class="status-info">
                     <div class="status-info-row">
                       <div class="status-levels">
                         <div class="status-level">
                           <div class="status-level__tt">1 уровень</div>
                           <div class="status-level__val">4%</div>
+                          <div class="status-level-progress st-level-4"></div>
                         </div>
 
                         <div class="status-level">
                           <div class="status-level__tt">2 уровень</div>
                           <div class="status-level__val">1%</div>
+                          <div class="status-level-progress st-level-2"></div>
                         </div>
 
                         <div class="status-level">
                           <div class="status-level__tt">3 уровень</div>
                           <div class="status-level__val">0%</div>
+                          <div class="status-level-progress"></div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+              </li>
 
+              <li>
                 <div class="status-item">
                   <div class="status-rank">
                     <div class="status-rank__icon">
@@ -540,28 +595,50 @@
                     <div class="status-rank__name">G3</div>
                   </div>
 
+                  <div class="status-money-wrapp">
+                    <div class="status-money-item">
+                      <div class="status-money-item__tt">Оборот структуры</div>
+                      <div class="status-money-item__val">30 000 руб</div>
+                    </div>
+
+                    <span class="status-money-line">или</span>
+
+                    <div class="status-money-item">
+                      <div class="status-money-item__tt">Оборот сделок</div>
+                      <div class="status-money-item__val">30 000 руб</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="status-item-partners">
+                  <div class="status-item-partners__tt">Партнерские бонусы</div>
                   <div class="status-info">
                     <div class="status-info-row">
                       <div class="status-levels">
                         <div class="status-level">
                           <div class="status-level__tt">1 уровень</div>
                           <div class="status-level__val">5%</div>
+                          <div class="status-level-progress st-level-5"></div>
                         </div>
 
                         <div class="status-level">
                           <div class="status-level__tt">2 уровень</div>
                           <div class="status-level__val">1%</div>
+                          <div class="status-level-progress st-level-2"></div>
                         </div>
 
                         <div class="status-level">
                           <div class="status-level__tt">3 уровень</div>
                           <div class="status-level__val">0%</div>
+                          <div class="status-level-progress"></div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+              </li>
 
+              <li>
                 <div class="status-item">
                   <div class="status-rank">
                     <div class="status-rank__icon">
@@ -572,22 +649,42 @@
                     <div class="status-rank__name">G4</div>
                   </div>
 
+                  <div class="status-money-wrapp">
+                    <div class="status-money-item">
+                      <div class="status-money-item__tt">Оборот структуры</div>
+                      <div class="status-money-item__val">100 000 руб</div>
+                    </div>
+
+                    <span class="status-money-line">или</span>
+
+                    <div class="status-money-item">
+                      <div class="status-money-item__tt">Оборот сделок</div>
+                      <div class="status-money-item__val">150 000 руб</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="status-item-partners">
+                  <div class="status-item-partners__tt">Партнерские бонусы</div>
                   <div class="status-info">
                     <div class="status-info-row">
                       <div class="status-levels">
                         <div class="status-level">
                           <div class="status-level__tt">1 уровень</div>
                           <div class="status-level__val">5%</div>
+                          <div class="status-level-progress st-level-5"></div>
                         </div>
 
                         <div class="status-level">
                           <div class="status-level__tt">2 уровень</div>
                           <div class="status-level__val">2%</div>
+                          <div class="status-level-progress st-level-4"></div>
                         </div>
 
                         <div class="status-level">
                           <div class="status-level__tt">3 уровень</div>
                           <div class="status-level__val">1%</div>
+                          <div class="status-level-progress st-level-3"></div>
                         </div>
                       </div>
                       <div class="status-bonus">
@@ -602,7 +699,9 @@
                     </div>
                   </div>
                 </div>
+              </li>
 
+              <li>
                 <div class="status-item">
                   <div class="status-rank">
                     <div class="status-rank__icon">
@@ -613,22 +712,42 @@
                     <div class="status-rank__name">G5</div>
                   </div>
 
+                  <div class="status-money-wrapp">
+                    <div class="status-money-item">
+                      <div class="status-money-item__tt">Оборот структуры</div>
+                      <div class="status-money-item__val">300 000 руб</div>
+                    </div>
+
+                    <span class="status-money-line">или</span>
+
+                    <div class="status-money-item">
+                      <div class="status-money-item__tt">Оборот сделок</div>
+                      <div class="status-money-item__val">300 000 руб</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="status-item-partners">
+                  <div class="status-item-partners__tt">Партнерские бонусы</div>
                   <div class="status-info">
                     <div class="status-info-row">
                       <div class="status-levels">
                         <div class="status-level">
                           <div class="status-level__tt">1 уровень</div>
                           <div class="status-level__val">6%</div>
+                          <div class="status-level-progress st-level-6"></div>
                         </div>
 
                         <div class="status-level">
                           <div class="status-level__tt">2 уровень</div>
                           <div class="status-level__val">3%</div>
+                          <div class="status-level-progress st-level-6"></div>
                         </div>
 
                         <div class="status-level">
                           <div class="status-level__tt">3 уровень</div>
                           <div class="status-level__val">1%</div>
+                          <div class="status-level-progress st-level-3"></div>
                         </div>
                       </div>
                       <div class="status-bonus">
@@ -640,9 +759,9 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </li>
 
-              <div class="status-col">
+              <li>
                 <div class="status-item">
                   <div class="status-rank">
                     <div class="status-rank__icon">
@@ -651,22 +770,42 @@
                     <div class="status-rank__name">G6</div>
                   </div>
 
+                  <div class="status-money-wrapp">
+                    <div class="status-money-item">
+                      <div class="status-money-item__tt">Оборот структуры</div>
+                      <div class="status-money-item__val">1 000 000 руб</div>
+                    </div>
+
+                    <span class="status-money-line">или</span>
+
+                    <div class="status-money-item">
+                      <div class="status-money-item__tt">Оборот сделок</div>
+                      <div class="status-money-item__val">700 000 руб</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="status-item-partners">
+                  <div class="status-item-partners__tt">Партнерские бонусы</div>
                   <div class="status-info">
                     <div class="status-info-row">
                       <div class="status-levels">
                         <div class="status-level">
                           <div class="status-level__tt">1 уровень</div>
                           <div class="status-level__val">7%</div>
+                          <div class="status-level-progress st-level-7"></div>
                         </div>
 
                         <div class="status-level">
                           <div class="status-level__tt">2 уровень</div>
                           <div class="status-level__val">3%</div>
+                          <div class="status-level-progress st-level-6"></div>
                         </div>
 
                         <div class="status-level">
                           <div class="status-level__tt">3 уровень</div>
                           <div class="status-level__val">2%</div>
+                          <div class="status-level-progress st-level-6"></div>
                         </div>
                       </div>
                       <div class="status-bonus">
@@ -678,7 +817,9 @@
                     </div>
                   </div>
                 </div>
+              </li>
 
+              <li>
                 <div class="status-item">
                   <div class="status-rank">
                     <div class="status-rank__icon">
@@ -687,22 +828,42 @@
                     <div class="status-rank__name">G7</div>
                   </div>
 
+                  <div class="status-money-wrapp">
+                    <div class="status-money-item">
+                      <div class="status-money-item__tt">Оборот структуры</div>
+                      <div class="status-money-item__val">2 500 000 руб</div>
+                    </div>
+
+                    <span class="status-money-line">или</span>
+
+                    <div class="status-money-item">
+                      <div class="status-money-item__tt">Оборот сделок</div>
+                      <div class="status-money-item__val">1 500 000 руб</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="status-item-partners">
+                  <div class="status-item-partners__tt">Партнерские бонусы</div>
                   <div class="status-info">
                     <div class="status-info-row">
                       <div class="status-levels">
                         <div class="status-level">
                           <div class="status-level__tt">1 уровень</div>
                           <div class="status-level__val">7%</div>
+                          <div class="status-level-progress st-level-7"></div>
                         </div>
 
                         <div class="status-level">
                           <div class="status-level__tt">2 уровень</div>
                           <div class="status-level__val">4%</div>
+                          <div class="status-level-progress st-level-8"></div>
                         </div>
 
                         <div class="status-level">
                           <div class="status-level__tt">3 уровень</div>
                           <div class="status-level__val">3%</div>
+                          <div class="status-level-progress st-level-9"></div>
                         </div>
                       </div>
                       <div class="status-bonus">
@@ -717,7 +878,9 @@
                     </div>
                   </div>
                 </div>
+              </li>
 
+              <li>
                 <div class="status-item">
                   <div class="status-rank">
                     <div class="status-rank__icon">
@@ -725,23 +888,42 @@
                     </div>
                     <div class="status-rank__name">G8</div>
                   </div>
+                  <div class="status-money-wrapp">
+                    <div class="status-money-item">
+                      <div class="status-money-item__tt">Оборот структуры</div>
+                      <div class="status-money-item__val">7 000 000 руб</div>
+                    </div>
 
+                    <span class="status-money-line">или</span>
+
+                    <div class="status-money-item">
+                      <div class="status-money-item__tt">Оборот сделок</div>
+                      <div class="status-money-item__val">3 000 000 руб</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="status-item-partners">
+                  <div class="status-item-partners__tt">Партнерские бонусы</div>
                   <div class="status-info">
                     <div class="status-info-row">
                       <div class="status-levels">
                         <div class="status-level">
                           <div class="status-level__tt">1 уровень</div>
                           <div class="status-level__val">5%</div>
+                          <div class="status-level-progress st-level-8"></div>
                         </div>
 
                         <div class="status-level">
                           <div class="status-level__tt">2 уровень</div>
                           <div class="status-level__val">1%</div>
+                          <div class="status-level-progress st-level-10"></div>
                         </div>
 
                         <div class="status-level">
                           <div class="status-level__tt">3 уровень</div>
                           <div class="status-level__val">0%</div>
+                          <div class="status-level-progress st-level-9"></div>
                         </div>
                       </div>
                       <div class="status-bonus">
@@ -753,7 +935,9 @@
                     </div>
                   </div>
                 </div>
+              </li>
 
+              <li>
                 <div class="status-item">
                   <div class="status-rank">
                     <div class="status-rank__icon">
@@ -761,23 +945,42 @@
                     </div>
                     <div class="status-rank__name">G9</div>
                   </div>
+                  <div class="status-money-wrapp">
+                    <div class="status-money-item">
+                      <div class="status-money-item__tt">Оборот структуры</div>
+                      <div class="status-money-item__val">20 000 000 руб</div>
+                    </div>
 
+                    <span class="status-money-line">или</span>
+
+                    <div class="status-money-item">
+                      <div class="status-money-item__tt">Оборот сделок</div>
+                      <div class="status-money-item__val">7 000 000 руб</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="status-item-partners">
+                  <div class="status-item-partners__tt">Партнерские бонусы</div>
                   <div class="status-info">
                     <div class="status-info-row">
                       <div class="status-levels">
                         <div class="status-level">
                           <div class="status-level__tt">1 уровень</div>
                           <div class="status-level__val">10%</div>
+                          <div class="status-level-progress st-level-10"></div>
                         </div>
 
                         <div class="status-level">
                           <div class="status-level__tt">2 уровень</div>
                           <div class="status-level__val">6%</div>
+                          <div class="status-level-progress st-level-11"></div>
                         </div>
 
                         <div class="status-level">
                           <div class="status-level__tt">3 уровень</div>
                           <div class="status-level__val">3%</div>
+                          <div class="status-level-progress st-level-9"></div>
                         </div>
                       </div>
                       <div class="status-bonus">
@@ -791,7 +994,9 @@
                     </div>
                   </div>
                 </div>
+              </li>
 
+              <li>
                 <div class="status-item">
                   <div class="status-rank">
                     <div class="status-rank__icon">
@@ -799,23 +1004,42 @@
                     </div>
                     <div class="status-rank__name">G10</div>
                   </div>
+                  <div class="status-money-wrapp">
+                    <div class="status-money-item">
+                      <div class="status-money-item__tt">Оборот структуры</div>
+                      <div class="status-money-item__val">50 000 000 руб</div>
+                    </div>
 
+                    <span class="status-money-line">или</span>
+
+                    <div class="status-money-item">
+                      <div class="status-money-item__tt">Оборот сделок</div>
+                      <div class="status-money-item__val">15 000 000 руб</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="status-item-partners">
+                  <div class="status-item-partners__tt">Партнерские бонусы</div>
                   <div class="status-info">
                     <div class="status-info-row">
                       <div class="status-levels">
                         <div class="status-level">
                           <div class="status-level__tt">1 уровень</div>
                           <div class="status-level__val">12%</div>
+                          <div class="status-level-progress st-level-12"></div>
                         </div>
 
                         <div class="status-level">
                           <div class="status-level__tt">2 уровень</div>
                           <div class="status-level__val">8%</div>
+                          <div class="status-level-progress st-level-12"></div>
                         </div>
 
                         <div class="status-level">
                           <div class="status-level__tt">3 уровень</div>
                           <div class="status-level__val">4%</div>
+                          <div class="status-level-progress st-level-12"></div>
                         </div>
                       </div>
                       <div class="status-bonus">
@@ -833,13 +1057,304 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
 
         <div class="container">
-          <div class="section-space-st"></div>
+          <div class="section-space-st">
+            <div class="career-file-wrap">
+              <div class="career-file-wrap__about">
+                <svg class="icon icon-pdf">
+                  <use xlink:href="assets/img/sprite.svg#pdf"></use>
+                </svg>
+                <p>
+                  Для более детального ознакомления с карьерой Genesis UP мы
+                  сделали PDF-презентацию, с которой вы можете ознакомить своих
+                  потенциальных партнеров.
+                </p>
+              </div>
+
+              <div class="career-file-wrap__arr">
+                <svg class="icon icon-arr-min-t-purple">
+                  <use
+                    xlink:href="assets/img/sprite.svg#arr-min-t-purple"
+                  ></use>
+                </svg>
+              </div>
+
+              <a href="#" class="btn btn_md btn_light">Открыть презентацию</a>
+            </div>
+          </div>
+
+          <div class="section-space-st">
+            <div class="faq-wrapp">
+              <div class="title-site title-site_h4">Частые вопросы</div>
+              <ul class="faq-list">
+                <li>
+                  <div class="faq-head">
+                    <div class="faq-head__tt">
+                      Что такое <b>«Статус карьеры»?</b>
+                    </div>
+                    <div class="faq-head__aside">
+                      <svg class="icon icon-arrow-down">
+                        <use
+                          xlink:href="assets/img/sprite.svg#arrow-down"
+                        ></use>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="faq-body">
+                    <p>
+                      Оборот структуры – сумма сделок, открытых Вашими
+                      партнерами. Сделки партнеров 2-го и 3-го уровня
+                      учитываются в оборот в размере 60% и 30% соответственно.
+                      Сделка на 3 дня не учитывается в программе
+                      <b>Genesis UP.</b>
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="faq-head">
+                    <div class="faq-head__tt">
+                      Что такое <b>Оборот карьеры»?</b>
+                    </div>
+                    <div class="faq-head__aside">
+                      <svg class="icon icon-arrow-down">
+                        <use
+                          xlink:href="assets/img/sprite.svg#arrow-down"
+                        ></use>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="faq-body">
+                    <p>
+                      Оборот структуры – сумма сделок, открытых Вашими
+                      партнерами. Сделки партнеров 2-го и 3-го уровня
+                      учитываются в оборот в размере 60% и 30% соответственно.
+                      Сделка на 3 дня не учитывается в программе
+                      <b>Genesis UP.</b>
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="faq-head">
+                    <div class="faq-head__tt">
+                      Что такое <b>«Личный оборот»?</b>
+                    </div>
+                    <div class="faq-head__aside">
+                      <svg class="icon icon-arrow-down">
+                        <use
+                          xlink:href="assets/img/sprite.svg#arrow-down"
+                        ></use>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="faq-body">
+                    <p>
+                      Оборот структуры – сумма сделок, открытых Вашими
+                      партнерами. Сделки партнеров 2-го и 3-го уровня
+                      учитываются в оборот в размере 60% и 30% соответственно.
+                      Сделка на 3 дня не учитывается в программе
+                      <b>Genesis UP.</b>
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="faq-head">
+                    <div class="faq-head__tt">
+                      Что такое <b>«Партнерские бонусы»?</b>
+                    </div>
+                    <div class="faq-head__aside">
+                      <svg class="icon icon-arrow-down">
+                        <use
+                          xlink:href="assets/img/sprite.svg#arrow-down"
+                        ></use>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="faq-body">
+                    <p>
+                      Оборот структуры – сумма сделок, открытых Вашими
+                      партнерами. Сделки партнеров 2-го и 3-го уровня
+                      учитываются в оборот в размере 60% и 30% соответственно.
+                      Сделка на 3 дня не учитывается в программе
+                      <b>Genesis UP.</b>
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="faq-head">
+                    <div class="faq-head__tt">
+                      Что такое партнеры первого, второго и третьего уровня?
+                    </div>
+                    <div class="faq-head__aside">
+                      <svg class="icon icon-arrow-down">
+                        <use
+                          xlink:href="assets/img/sprite.svg#arrow-down"
+                        ></use>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="faq-body">
+                    <p>
+                      Оборот структуры – сумма сделок, открытых Вашими
+                      партнерами. Сделки партнеров 2-го и 3-го уровня
+                      учитываются в оборот в размере 60% и 30% соответственно.
+                      Сделка на 3 дня не учитывается в программе
+                      <b>Genesis UP.</b>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section-space-st">
+            <p>
+              <b>Обратите внимание!</b> Программа <b>Genesis UP</b> разработана
+              для развития компании <b>Genesis</b>, а также для вознаграждения
+              активных участников за помощь в развитии платформы. В связи с
+              этим, существуют некоторые ограничения, направленные на исключение
+              злоупотребления бонусами от программы <b>Genesis UP</b>.
+            </p>
+
+            <div class="limitation-section">
+              <ul class="limitation-list">
+                <li>
+                  <svg class="icon icon-round-close">
+                    <use xlink:href="assets/img/sprite.svg#round-close"></use>
+                  </svg>
+                  <p>
+                    Пользователю строго запрещается иметь более одного аккаунта
+                    на сайте компании
+                  </p>
+                </li>
+                <li>
+                  <svg class="icon icon-round-close">
+                    <use xlink:href="assets/img/sprite.svg#round-close"></use>
+                  </svg>
+                  <p>
+                    Пользователю запрещается регистрировать со своего компьютера
+                    других пользователей, в том числе родственников и друзей
+                  </p>
+                </li>
+                <li>
+                  <svg class="icon icon-round-close">
+                    <use xlink:href="assets/img/sprite.svg#round-close"></use>
+                  </svg>
+                  <p>
+                    Пользователю запрещается размещать информацию о компании на
+                    любых сайтах (кроме социальных сетей), без предварительного
+                    согласования с администрацией
+                  </p>
+                </li>
+                <li>
+                  <svg class="icon icon-round-close">
+                    <use xlink:href="assets/img/sprite.svg#round-close"></use>
+                  </svg>
+                  <p>
+                    Пользователю запрещено продвигать свою партнерскую ссылку
+                    методом «СПАм», а также с помощью «Буксов»
+                  </p>
+                </li>
+              </ul>
+
+              <div class="limit-info-wrap">
+                <div class="limit-info">
+                  <div class="limit-info__tt">
+                    <div class="limit-info-tt-icon">
+                      <svg class="icon icon-warning">
+                        <use xlink:href="assets/img/sprite.svg#warning"></use>
+                      </svg>
+                    </div>
+                    <span>Важно!</span>
+                    <div class="limit-info-tt-arrow">
+                      <svg class="icon icon-arr-min-t-purple">
+                        <use
+                          xlink:href="assets/img/sprite.svg#arr-min-t-purple"
+                        ></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="limit-info__about">
+                    <p>
+                      В оборот структуры учитываются сделки от партнеров любого
+                      уровня, однако сделки от партнеров второго и третьего
+                      уровня идут в общий оборот в размере <b>60%</b> и
+                      <b>30%</b> соответственно.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="limit-info">
+                  <div class="limit-info__tt">
+                    <div class="limit-info-tt-icon">
+                      <svg class="icon icon-tabl">
+                        <use xlink:href="assets/img/sprite.svg#tabl"></use>
+                      </svg>
+                    </div>
+                    <span>Пример</span>
+                    <div class="limit-info-tt-arrow">
+                      <svg class="icon icon-arr-min-t-purple">
+                        <use
+                          xlink:href="assets/img/sprite.svg#arr-min-t-purple"
+                        ></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="limit-info__about">
+                    <ul class="limit-info-steps">
+                      <li>
+                        <svg class="icon icon-status1-dark">
+                          <use
+                            xlink:href="assets/img/sprite.svg#status1-dark"
+                          ></use>
+                        </svg>
+
+                        <div class="limit-info-steps__about">
+                          Ваш партнерский статус <b>G1</b>
+                        </div>
+                      </li>
+
+                      <li>
+                        <svg class="icon icon-user-st">
+                          <use xlink:href="assets/img/sprite.svg#user-st"></use>
+                        </svg>
+
+                        <div class="limit-info-steps__about">
+                          Ваш партнер второго уровня открыл депозит на сумму
+                          <b>10 000 рублей</b>
+                        </div>
+                      </li>
+
+                      <li>
+                        <svg class="icon icon-user-st">
+                          <use xlink:href="assets/img/sprite.svg#user-st"></use>
+                        </svg>
+
+                        <div class="limit-info-steps__about">
+                          Ваш оборот структуры увеличится на
+                          <b>6 000 рублей</b>, так как это <b>60%</b> от суммы
+                          открытой сделки
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div class="quick-reg">
             <div class="title-site title-site_h1">Быстрая регистрация</div>
@@ -933,7 +1448,7 @@
                       <a href="#" class="dotted-link dotted-link_light"
                         >условия пользовательского соглашения</a
                       >
-                      <input type="checkbox" />
+                      <input type="checkbox" checked />
                       <span class="fake-control"></span>
                     </label>
                   </div>
@@ -965,7 +1480,9 @@
               </ul>
               <ul>
                 <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Регистрация</a></li>
+                <li>
+                  <a href="#regModal" class="open-popup-link">Регистрация</a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -1013,7 +1530,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="mailto:help@genesis.ws">
                   <svg class="icon icon-envelope-s">
                     <use xlink:href="assets/img/sprite.svg#envelope-s"></use>
                   </svg>
@@ -1038,5 +1555,315 @@
       </div>
     </footer>
     <!-- end footer -->
+
+    <!-- modals -->
+    <div id="signInModal" class="st-modal modal-sign-in mfp-hide">
+      <div class="sign-in-up-modal">
+        <div class="title-site title-site_h1">Вход</div>
+        <div class="soc-flex">
+          <span class="soc-flex__tt">Вход через соцсети</span>
+
+          <ul class="social-inline">
+            <li>
+              <a href="#">
+                <svg class="icon icon-vk">
+                  <use xlink:href="assets/img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <svg class="icon icon-gp">
+                  <use xlink:href="assets/img/sprite.svg#gp"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <svg class="icon icon-fb">
+                  <use xlink:href="assets/img/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <form action="#" class="st-form _light">
+        <div class="form-group">
+          <label class="field-item">
+            <div class="field-item__label">Логин</div>
+            <div class="field-item__field _icon _validation">
+              <div class="field-item__icon">
+                <svg class="icon icon-user">
+                  <use xlink:href="assets/img/sprite.svg#user"></use>
+                </svg>
+              </div>
+              <input type="text" placeholder="Введите" required />
+            </div>
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label class="field-item">
+            <div class="field-item__label">Пароль</div>
+            <div class="field-item__field _icon _validation">
+              <div class="field-item__icon">
+                <svg class="icon icon-key">
+                  <use xlink:href="assets/img/sprite.svg#key"></use>
+                </svg>
+              </div>
+              <input type="password" placeholder="Введите" required />
+            </div>
+            <div class="field-item__info">
+              Забыли пароль?
+              <button
+                type="button"
+                class="dotted-link dotted-link_light open-popup-link"
+                data-mfp-src="#sendPasswordModal"
+              >
+                Восстановить
+              </button>
+            </div>
+          </label>
+        </div>
+
+        <div class="form-group">
+          <img src="assets/img/captcha.png" alt="" />
+        </div>
+
+        <button class="btn btn_md btn_max" type="submit">
+          Войти в кабинет
+        </button>
+
+        <div class="modal-form-b-message">
+          Нет аккаунта?
+          <button
+            type="button"
+            class="dotted-link open-popup-link"
+            data-mfp-src="#regModal"
+          >
+            Зарегистрироваться
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div id="sendPasswordModal" class="st-modal modal-send-password mfp-hide">
+      <div class="sign-in-up-modal">
+        <div class="title-site title-site_h1">Восстановление <br />пароля</div>
+        <p>Для восстановление пароля введите свою электронную почту</p>
+      </div>
+      <form action="#" class="st-form _light">
+        <div class="form-group">
+          <label class="field-item">
+            <div class="field-item__label">Почта</div>
+            <div class="field-item__field _icon _validation">
+              <div class="field-item__icon">
+                <svg class="icon icon-envelope">
+                  <use xlink:href="assets/img/sprite.svg#envelope"></use>
+                </svg>
+              </div>
+              <input type="email" placeholder="Введите" required />
+            </div>
+          </label>
+        </div>
+
+        <button
+          class="btn btn_md btn_max open-popup-link"
+          type="submit"
+          data-mfp-src="#sendPasswordCodeModal"
+        >
+          Отправить код
+        </button>
+      </form>
+    </div>
+
+    <div
+      id="sendPasswordCodeModal"
+      class="st-modal modal-send-password mfp-hide"
+    >
+      <div class="sign-in-up-modal">
+        <div class="title-site title-site_h1">Восстановление <br />пароля</div>
+        <p>
+          На указанную вами электронную почту был отправлен код для
+          восстановление пароля
+        </p>
+      </div>
+      <form action="#" class="st-form _light">
+        <div class="form-group">
+          <label class="field-item">
+            <div class="field-item__label">Код</div>
+            <div class="field-item__field _icon _validation">
+              <div class="field-item__icon">
+                <svg class="icon icon-password">
+                  <use xlink:href="assets/img/sprite.svg#password"></use>
+                </svg>
+              </div>
+              <input type="email" placeholder="Введите" required />
+            </div>
+          </label>
+        </div>
+
+        <button class="btn btn_md btn_max" type="submit">
+          Восстановить пароль
+        </button>
+      </form>
+    </div>
+
+    <div id="regModal" class="st-modal modal-reg mfp-hide">
+      <div class="sign-in-up-modal">
+        <div class="title-site title-site_h1">Регистрация</div>
+        <div class="soc-flex">
+          <span class="soc-flex__tt">Регистрация через&nbsp;соцсети</span>
+
+          <ul class="social-inline">
+            <li>
+              <a href="#">
+                <svg class="icon icon-vk">
+                  <use xlink:href="assets/img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <svg class="icon icon-gp">
+                  <use xlink:href="assets/img/sprite.svg#gp"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <svg class="icon icon-fb">
+                  <use xlink:href="assets/img/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="reg-validation-list">
+          <li>
+            <svg class="icon icon-round-close">
+              <use xlink:href="assets/img/sprite.svg#round-close"></use>
+            </svg>
+            Запрещено регистрировать более 1 аккаунта
+          </li>
+          <li>
+            <svg class="icon icon-round-close">
+              <use xlink:href="assets/img/sprite.svg#round-close"></use>
+            </svg>
+            В логине не должно быть других символов, кроме цифр, латинских и
+            кириллических букв
+          </li>
+        </ul>
+      </div>
+
+      <form action="#" class="st-form _light">
+        <div class="form-group">
+          <label class="field-item _success">
+            <div class="field-item__label">Логин</div>
+            <div class="field-item__field _icon _validation">
+              <div class="field-item__icon">
+                <svg class="icon icon-user">
+                  <use xlink:href="assets/img/sprite.svg#user"></use>
+                </svg>
+              </div>
+              <input type="text" value="bakalev" required />
+            </div>
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label class="field-item">
+            <div class="field-item__label">ФИО</div>
+            <div class="field-item__field _icon _validation">
+              <div class="field-item__icon">
+                <svg class="icon icon-passport">
+                  <use xlink:href="assets/img/sprite.svg#passport"></use>
+                </svg>
+              </div>
+              <input type="text" placeholder="Введите" required />
+            </div>
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label class="field-item">
+            <div class="field-item__label">Почта</div>
+            <div class="field-item__field _icon _validation">
+              <div class="field-item__icon">
+                <svg class="icon icon-envelope">
+                  <use xlink:href="assets/img/sprite.svg#envelope"></use>
+                </svg>
+              </div>
+              <input type="email" placeholder="Введите" required />
+            </div>
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label class="field-item">
+            <div class="field-item__label">Пароль</div>
+            <div class="field-item__field _icon _validation">
+              <div class="field-item__icon">
+                <svg class="icon icon-key">
+                  <use xlink:href="assets/img/sprite.svg#key"></use>
+                </svg>
+              </div>
+              <input type="password" placeholder="Введите" required />
+            </div>
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label class="field-item _error">
+            <div class="field-item__label">Повторите пароль</div>
+            <div class="field-item__field _icon _validation">
+              <div class="field-item__icon">
+                <svg class="icon icon-key">
+                  <use xlink:href="assets/img/sprite.svg#key"></use>
+                </svg>
+              </div>
+              <input type="password" placeholder="Введите" required />
+            </div>
+          </label>
+        </div>
+
+        <div class="form-group">
+          <img src="assets/img/captcha.png" alt="" />
+        </div>
+
+        <div class="accept-checkbox">
+          <div class="ui-st-checkbox">
+            <label>
+              <span>Я ознакомлен(а) и принимаю</span>
+              <a href="#">условия пользовательского соглашения</a>
+              <input type="checkbox" checked />
+              <span class="fake-control"></span>
+            </label>
+          </div>
+        </div>
+
+        <button class="btn btn_md btn_max" type="submit">
+          Зарегистрироваться
+        </button>
+
+        <div class="modal-form-b-message">
+          Уже есть аккаунт?
+          <button
+            type="button"
+            class="dotted-link open-popup-link"
+            data-mfp-src="#signInModal"
+          >
+            Войти
+          </button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>

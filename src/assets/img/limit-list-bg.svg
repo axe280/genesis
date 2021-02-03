@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1180px" height="151px" viewBox="0 0 1180 151" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>9D19D692-D8D0-4926-B510-ADBB6C662D9E</title>
+    <defs>
+        <linearGradient x1="50%" y1="1.37743116%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#4B167A" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#4B167A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="1.37743116%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#3A0E6E" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#3A0E6E" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-3" cx="565.5" cy="66.5" r="3.5"></circle>
+    </defs>
+    <g id="Внутренние" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Карьера-1920" transform="translate(-395.000000, -4395.000000)">
+            <g id="Контент" transform="translate(0.000000, 202.000000)">
+                <g id="Обратите-внимание" transform="translate(345.000000, 4051.000000)">
+                    <g id="Ограничения" transform="translate(0.000000, 92.000000)">
+                        <g id="Group-12" transform="translate(50.000000, 50.000000)">
+                            <rect id="Rectangle" fill="#FFFFFF" opacity="0.200000003" x="565" y="0" width="1" height="151"></rect>
+                            <rect id="Rectangle" fill="url(#linearGradient-1)" x="565" y="117" width="1" height="34"></rect>
+                            <rect id="Rectangle" fill="url(#linearGradient-2)" transform="translate(565.500000, 17.000000) scale(1, -1) translate(-565.500000, -17.000000) " x="565" y="0" width="1" height="34"></rect>
+                            <rect id="Rectangle" fill="#FFFFFF" opacity="0.200000003" x="0" y="66" width="1180" height="1"></rect>
+                            <g id="Oval">
+                                <use fill="#1B0B5B" fill-rule="evenodd" xlink:href="#path-3"></use>
+                                <circle stroke="#1B0B5B" stroke-width="4" cx="565.5" cy="66.5" r="5.5"></circle>
+                                <circle stroke="#9D9DC5" stroke-width="1" stroke-linejoin="square" cx="565.5" cy="66.5" r="3"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
