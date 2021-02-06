@@ -1,4 +1,44 @@
+.faq-list-tiles
+  .faq-list
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-top: -30px
+
+    li
+      padding-top: 18px
+      padding-bottom: 34px
+      width: 48.8%
+      margin-top: 30px
+      margin-bottom: 0
+
+    .faq-head
+      padding-bottom: 14px
+      background-position: calc(100% - 30px) 50%
+
+    .faq-body
+      font-size: 12px
+      line-height: 20px
+      padding-right: 80px
+      padding-bottom: 0
+
+      &::before
+        right: 42px
+
+      &::after
+        right: 39px
+
 .faq-list
+  &._all-opened
+    .faq-head
+      cursor: auto
+
+      &:hover
+        color: #000
+
+    .faq-body
+      display: block
+    
   li
     padding: 9px 0
     margin-bottom: 4px

@@ -45,6 +45,8 @@ $(function () {
 
   // faq list
   $('.faq-head').on('click', function () {
+    if ($(this).parents('.faq-list').hasClass('_all-opened')) return
+
     $(this).toggleClass('_opened').parent().find('.faq-body').slideToggle(200)
   })
 

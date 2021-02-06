@@ -1,0 +1,77 @@
+.tiles-docs
+  li
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    width: calc(20% - 3px)
+
+    &.tiles-docs__row
+      background-color: $colorBlueDarkest
+      width: calc(40% - 3px)
+
+      > div
+        display: flex
+        justify-content: space-between
+
+      .tiles-doc-item
+        width: 50%
+
+        &:last-child
+          padding-left: 30px
+          border-left: 1px solid rgba(#fff, .2)
+
+.tiles-doc-item
+  margin-bottom: 22px
+
+  &__icon
+    height: 34px
+    margin-bottom: 17px
+
+    .icon
+      width: 32px
+      height: 34px
+
+  &__tt
+    font-weight: 500
+    font-size: 14px
+    line-height: 18px
+
+    span
+      display: block
+      text-transform: uppercase
+      font-weight: 400
+      font-size: 12px
+      line-height: 15px
+      color: $colorGrayLight
+
+    a
+      color: #fff
+
+      &:hover
+        color: $colorPrimary
+
+.about-row
+  display: flex
+  justify-content: space-between
+  margin-top: 40px
+
+.about-info
+  flex-grow: 1
+
+.about-aside
+  width: 390px
+  margin-left: 50px
+  flex-shrink: 0
+
+.aside-b-start
+  padding: 80px 68px 0
+  text-align: center
+  border-radius: 10px
+  -webkit-backdrop-filter: blur(20px)
+  backdrop-filter: blur(20px)
+
+  .title-site
+    margin-bottom: 40px
+
+  .btn
+    margin-bottom: 80px

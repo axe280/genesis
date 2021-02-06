@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1231px" height="792px" viewBox="0 0 1231 792" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>8C63909F-B3D9-4E5F-A0FB-78378A327D96</title>
+    <defs>
+        <circle id="path-1" cx="383.5" cy="4.5" r="4.5"></circle>
+        <circle id="path-2" cx="383.5" cy="4.5" r="4.5"></circle>
+        <circle id="path-3" cx="215.5" cy="775.5" r="4.5"></circle>
+        <circle id="path-4" cx="328.5" cy="5.5" r="4.5"></circle>
+        <circle id="path-5" cx="328.5" cy="5.5" r="4.5"></circle>
+        <circle id="path-6" cx="329.5" cy="5.5" r="4.5"></circle>
+    </defs>
+    <g id="Внутренние" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Как-начать-1920" transform="translate(-345.000000, -1425.000000)">
+            <g id="Контент" transform="translate(345.000000, 202.000000)">
+                <g id="Как-начать-работу-с-GENESIS" transform="translate(0.000000, 1226.000000)">
+                    <g id="Стрелки" transform="translate(1.000000, 0.000000)">
+                        <g id="2" transform="translate(629.000000, 776.000000)">
+                            <g id="Oval">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                <circle stroke="#FFFFFF" stroke-width="4" cx="383.5" cy="4.5" r="6.5"></circle>
+                                <circle stroke="#FEDB41" stroke-width="3" stroke-linejoin="square" cx="383.5" cy="4.5" r="3"></circle>
+                            </g>
+                            <g id="1">
+                                <line x1="0.416152188" y1="5" x2="360.529458" y2="5" id="Path-5" stroke="#FEDB41" stroke-width="2" stroke-linecap="round" stroke-dasharray="0,4"></line>
+                                <polygon id="Triangle" fill="#FEDB41" transform="translate(366.500000, 4.500000) rotate(-270.000000) translate(-366.500000, -4.500000) " points="366.5 0 371 9 362 9"></polygon>
+                            </g>
+                        </g>
+                        <g id="2" transform="translate(231.000000, 776.000000)">
+                            <g id="Oval">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                <circle stroke="#FFFFFF" stroke-width="4" cx="383.5" cy="4.5" r="6.5"></circle>
+                                <circle stroke="#3698E4" stroke-width="3" stroke-linejoin="square" cx="383.5" cy="4.5" r="3"></circle>
+                            </g>
+                            <g id="1">
+                                <line x1="0.416152188" y1="5" x2="360.529458" y2="5" id="Path-5" stroke="#3698E4" stroke-width="2" stroke-linecap="round" stroke-dasharray="0,4"></line>
+                                <polygon id="Triangle" fill="#3698E4" transform="translate(366.500000, 4.500000) rotate(-270.000000) translate(-366.500000, -4.500000) " points="366.5 0 371 9 362 9"></polygon>
+                            </g>
+                        </g>
+                        <g id="5" transform="translate(0.000000, 5.000000)">
+                            <g id="Oval">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                                <circle stroke="#FFFFFF" stroke-width="4" cx="215.5" cy="775.5" r="6.5"></circle>
+                                <circle stroke="#3698E4" stroke-width="3" stroke-linejoin="square" cx="215.5" cy="775.5" r="3"></circle>
+                            </g>
+                            <g id="1">
+                                <path d="M1055.41615,0 L1218.44324,0 C1223.96608,-1.26775297e-13 1228.44324,4.4771525 1228.44324,10 L1228.44324,388.753826 C1228.44324,394.276674 1223.96608,398.753826 1218.44324,398.753826 L10,398.753826 C4.4771525,398.753826 3.1207927e-14,403.230979 0,408.753826 L0,766 C-6.13158509e-14,771.522847 4.4771525,776 10,776 L194.443237,776 L194.443237,776" id="Path-5" stroke="#3698E4" stroke-width="2" stroke-linecap="round" stroke-dasharray="0,4"></path>
+                                <polygon id="Triangle" fill="#3698E4" transform="translate(198.500000, 775.500000) rotate(-270.000000) translate(-198.500000, -775.500000) " points="198.5 771 203 780 194 780"></polygon>
+                            </g>
+                        </g>
+                        <g id="3" transform="translate(712.000000, 0.000000)">
+                            <g id="Oval">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                                <circle stroke="#FFFFFF" stroke-width="4" cx="328.5" cy="5.5" r="6.5"></circle>
+                                <circle stroke="#3698E4" stroke-width="3" stroke-linejoin="square" cx="328.5" cy="5.5" r="3"></circle>
+                            </g>
+                            <g id="1">
+                                <line x1="0.416152188" y1="5" x2="308.529458" y2="5" id="Path-5" stroke="#3698E4" stroke-width="2" stroke-linecap="round" stroke-dasharray="0,4"></line>
+                                <polygon id="Triangle" fill="#3698E4" transform="translate(311.098593, 4.923897) rotate(-270.000000) translate(-311.098593, -4.923897) " points="311.098593 0.423897048 315.598593 9.42389705 306.598593 9.42389705"></polygon>
+                            </g>
+                        </g>
+                        <g id="2" transform="translate(370.000000, 0.000000)">
+                            <g id="Oval">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                                <circle stroke="#FFFFFF" stroke-width="4" cx="328.5" cy="5.5" r="6.5"></circle>
+                                <circle stroke="#3698E4" stroke-width="3" stroke-linejoin="square" cx="328.5" cy="5.5" r="3"></circle>
+                            </g>
+                            <g id="1">
+                                <line x1="0.416152188" y1="5" x2="308.529458" y2="5" id="Path-5" stroke="#3698E4" stroke-width="2" stroke-linecap="round" stroke-dasharray="0,4"></line>
+                                <polygon id="Triangle" fill="#3698E4" transform="translate(311.098593, 4.923897) rotate(-270.000000) translate(-311.098593, -4.923897) " points="311.098593 0.423897048 315.598593 9.42389705 306.598593 9.42389705"></polygon>
+                            </g>
+                        </g>
+                        <g id="1" transform="translate(28.000000, 0.000000)">
+                            <g id="Oval">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
+                                <circle stroke="#FFFFFF" stroke-width="4" cx="329.5" cy="5.5" r="6.5"></circle>
+                                <circle stroke="#3698E4" stroke-width="3" stroke-linejoin="square" cx="329.5" cy="5.5" r="3"></circle>
+                            </g>
+                            <g>
+                                <path d="M0.692244808,55.8479921 L0.692244808,15 C0.692244808,9.4771525 5.16939731,5 10.6922448,5 L307.529458,5 L307.529458,5" id="Path-5" stroke="#3698E4" stroke-width="2" stroke-linecap="round" stroke-dasharray="0,4"></path>
+                                <polygon id="Triangle" fill="#3698E4" transform="translate(312.098593, 4.923897) rotate(-270.000000) translate(-312.098593, -4.923897) " points="312.098593 0.423897048 316.598593 9.42389705 307.598593 9.42389705"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
