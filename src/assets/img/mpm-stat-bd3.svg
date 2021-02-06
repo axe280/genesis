@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="346px" height="90px" viewBox="0 0 346 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>D4634C43-2EBD-4A1B-B31F-8BD053B4D9BD</title>
+    <defs>
+        <radialGradient cx="-4.2045617%" cy="91.6354697%" fx="-4.2045617%" fy="91.6354697%" r="407.370237%" gradientTransform="translate(-0.042046,0.916355),scale(0.260116,1.000000),rotate(-10.453697),translate(0.042046,-0.916355)" id="radialGradient-1">
+            <stop stop-color="#EDEDED" offset="0%"></stop>
+            <stop stop-color="#FAFAFA" offset="100%"></stop>
+        </radialGradient>
+        <path d="M4.9864642,0 L342,0 C344.209139,-4.05812251e-16 346,1.790861 346,4 L346,86 C346,88.209139 344.209139,90 342,90 L4.9864642,90 C2.7773252,90 0.986464203,88.209139 0.986464203,86 C0.986464203,85.7081506 1.01840494,85.4171778 1.08171596,85.1322782 L10,45 L10,45 L1.08171596,4.86772183 C0.602486428,2.71118893 1.96220947,0.574481294 4.11874237,0.0952517593 C4.40364196,0.0319407388 4.69461482,-2.6109234e-15 4.9864642,0 Z" id="path-2"></path>
+        <filter x="-88.8%" y="-88.8%" width="277.5%" height="277.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="50" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Окна" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="НГР-Групп-1920" transform="translate(-1169.000000, -393.000000)">
+            <g id="3" transform="translate(345.000000, 207.000000)">
+                <g transform="translate(824.000000, 186.000000)" id="Фон">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Rectangle" fill="url(#radialGradient-1)" opacity="0.699999988" xlink:href="#path-2"></use>
+                    <circle id="Oval" fill="#FFFFFF" filter="url(#filter-4)" mask="url(#mask-3)" cx="87.5" cy="108.5" r="84.5"></circle>
+                    <path d="M24.9864642,0 L342,0 C344.209139,-4.05812251e-16 346,1.790861 346,4 L346,86 C346,88.209139 344.209139,90 342,90 L24.9864642,90 C22.7773252,90 20.9864642,88.209139 20.9864642,86 C20.9864642,85.7081506 21.0184049,85.4171778 21.081716,85.1322782 L30,45 L30,45 L21.081716,4.86772183 C20.6024864,2.71118893 21.9622095,0.574481294 24.1187424,0.0952517593 C24.403642,0.0319407388 24.6946148,-2.6109234e-15 24.9864642,0 Z" id="Rectangle" mask="url(#mask-3)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
