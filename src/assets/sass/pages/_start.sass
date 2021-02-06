@@ -1,3 +1,78 @@
+.section-invest-diff
+  padding: 30px 0
+  position: relative
+  color: #fff
+  display: flex
+  align-items: flex-start
+  &:before
+    display: block
+    content: ''
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 30px
+    background: $colorPurpleDarkest
+    border-radius: 10px
+    z-index: 1
+  .diff-col
+    position: relative
+    z-index: 2
+    display: flex
+    flex-direction: column
+    justify-content: center
+    &.company-invest
+      padding: 50px 50px 60px 60px
+      background: $colorBlueDark2
+      border-radius: 10px
+      width: 56.5%
+      .icon
+        fill: $colorPrimary
+      .diff-list
+        margin-top: 36px
+      li
+        width: calc(100% + 93px) // 50padding + 43 outside gap
+        background-image: url('../img/li-plus-yellow.svg')
+        &:not(:last-child)
+          margin-bottom: 32px
+    &.self-invest
+      width: 43.5%
+      padding: 50px 40px
+      .icon
+        fill: $colorPurple
+      .diff-list
+        margin-top: 27px
+      li
+        background-image: url('../img/li-minus-violet.svg')
+        &:not(:last-child)
+          margin-bottom: 14px
+  .title-site
+    color: inherit
+    display: flex
+    align-items: center
+    margin-bottom: 0
+  .icon
+    width: 40px
+    height: 38px
+    flex-shrink: 0
+    margin-right: 12px
+  .diff-list
+    padding-left: 12px
+  li
+    padding-left: 42px
+    line-height: normal
+    background-color: transparent
+    background-size: 16px
+    background-position: left center
+    background-repeat: no-repeat
+    display: flex
+    align-items: center
+    span
+      flex-grow: 1
+      height: 1px
+      margin-left: 20px
+      background: transparent url('../img/li-dotline-white.svg') right center no-repeat
+
 .ic-tt-start-bl
   margin-bottom: 34px
   padding: 40px 20px 46px
