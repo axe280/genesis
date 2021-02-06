@@ -1,16 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
     <g fill="none" fill-rule="evenodd">
-        <g>
-            <g>
-                <g>
-                    <g>
-                        <g transform="translate(-1092 -507) translate(345 202) translate(0 159) translate(735 77) translate(12 69)">
-                            <circle cx="8" cy="8" r="7.6" stroke="#CF44FB" stroke-width=".8"/>
-                            <rect width="1.2" height="8" x="4" y="-3" fill="#CF44FB" fill-rule="nonzero" rx=".6" transform="rotate(90 2.734 6.134)"/>
-                        </g>
-                    </g>
-                </g>
-            </g>
+        <g transform="translate(-1092 -507) translate(345 202) translate(0 159) translate(735 77) translate(12 69)">
+            <circle cx="8" cy="8" r="7.6" stroke="#CF44FB" stroke-width=".8"/>
+            <rect width="1.2" height="8" x="4" y="-3" fill="#CF44FB" fill-rule="nonzero" rx=".6" transform="rotate(90 2.734 6.134)"/>
         </g>
     </g>
 </svg>
