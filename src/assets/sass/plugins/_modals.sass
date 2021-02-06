@@ -73,3 +73,249 @@
   p
     font-size: 14px
     line-height: 20px
+
+
+.modal-partner
+  padding: 0
+  max-width: 1230px
+  overflow: hidden
+
+.m-partner-row
+  display: flex
+  overflow: hidden
+
+.m-partner-aside
+  flex-shrink: 0
+  padding: 60px 30px
+  text-align: center
+  width: 230px
+  padding: 
+  background-image: linear-gradient(to bottom, rgba(14, 13, 87, 0.6), rgba(14, 13, 87, 0.6)), radial-gradient(circle at 100% 0, #4b50d1, #050447)
+
+  &__info
+    line-height: 18px
+  
+    li
+      margin-bottom: 30px
+      padding: 37px 0 0
+      background-image: url('../img/mpa-list-bg.svg')
+      background-repeat: no-repeat
+      background-position: 50% 0
+      background-size: auto 7px
+
+.m-partner-row-main
+  flex-grow: 1
+  padding: 60px
+  background-color: $colorBlueDarkest
+
+.mpm-list-info
+  margin-bottom: 40px
+
+  li
+    display: flex
+    font-size: 14px
+    line-height: 20px
+    margin-bottom: 10px
+
+.mpm-list-tt
+  flex-shrink: 0
+  width: 250px
+  margin-right: 50px
+  color: rgba(#fff, .5)
+
+.mpm-list-inner
+  flex-grow: 1
+
+  span
+    display: block
+
+.m-partner-logo
+  margin-bottom: 50px
+
+  &__img
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 20px
+    height: 100px
+    
+    img
+      max-height: 100%
+
+  &__name
+    font-weight: 600
+    font-size: 18px
+    line-height: 22px
+
+.mpa-list-tt
+  padding-bottom: 6px
+  color: rgba(#fff, .5)
+
+.mpa-list-link
+  display: inline-block
+  vertical-align: top
+  margin-top: 6px
+  font-size: 14px
+  padding: 4px 12px 6px
+  border: 1px solid rgba(#fff, .3)
+  border-radius: 4px
+
+  a
+    display: block
+    font-weight: 600
+
+  span
+    display: block
+    font-size: 12px
+    line-height: 15px
+    color: $colorGrayLight
+
+.mpa-list-year
+  font-size: 14px
+
+.mpa-list-est
+  margin-top: 4px
+  font-weight: 500
+  font-size: 20px
+  line-height: 24px
+
+.mpm-btns
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin-bottom: 50px
+
+  .btn
+    margin-right: 20px
+    border-color: rgba(#fff, .3)
+
+    &:hover
+      border-color: transparent
+
+      .icon
+        fill: #fff
+
+.mpm-about
+  .btn
+    margin-top: 40px
+
+.mpm-graph
+  margin-bottom: 50px
+
+.mpm-graph-head
+  display: flex
+  justify-content: space-between
+  line-height: 24px
+  margin-bottom: 30px
+
+  &__tt
+    font-weight: 600
+    font-size: 20px
+    margin-right: 20px
+
+  &__graph-i
+    display: flex
+    flex-wrap: wrap
+
+    li
+      position: relative
+      margin-left: 20px
+      padding-left: 20px
+      font-size: 13px
+
+      &.light
+        &::before
+          border-color: #11dadc
+
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 8px
+        width: 5px
+        height: 5px
+        z-index: 2
+        border: 2px solid #cf44fb
+        border-radius: 50%
+
+.mpm-stat-wrapp
+  margin-bottom: 40px
+
+.mpm-stat-row
+  display: flex
+  justify-content: flex-end
+  margin-bottom: 4px
+
+  &:last-child
+    margin-bottom: 0
+
+.mpm-stat-bl
+  position: relative
+  display: flex
+  align-items: center
+  width: 268px
+  margin-right: 4px
+  justify-content: space-between
+  min-height: 90px
+  padding: 10px 30px
+  background-color: #ededed
+  background-image: radial-gradient(circle at -4% 92%, #ededed, #fafafa 99%)
+  color: #000
+  border-radius: 4px
+  webkit-backdrop-filter: blur(10px)
+  backdrop-filter: blur(10px)
+
+  // &:nth-child(2)
+  //   &::before
+  //     content: ''
+  //     position: absolute
+  //     left: 0
+  //     top: 0
+  //     width: calc(100% + 6px)
+  //     height: 100%
+  //     z-index: 2
+  //     background-image: url('../img/mpm-stat-bd2.svg')
+  //     background-repeat: no-repeat
+  //     background-position: 100% 50%
+  //     background-size: auto 100%
+
+  &:last-child
+    margin-right: 0
+    width: 344px
+
+  &__about
+    position: relative
+    z-index: 3
+
+  &__tt
+    margin-bottom: 6px
+    font-size: 12px
+    line-height: 15px
+    color: rgba(#000, .5)
+
+  &__val
+    font-weight: 500
+    font-size: 16px
+    line-height: 19px
+
+  .icon
+    position: relative
+    z-index: 3
+    flex-shrink: 0
+    width: 30px
+    height: 30px
+
+.npm-btns-info
+  max-width: 220px
+  margin-left: 40px
+  display: flex
+  align-items: center
+  font-size: 14px
+  line-height: 18px
+
+  .icon
+    flex-shrink: 0
+    margin-right: 10px
+    width: 22px
+    height: 22px
+    fill: $colorPrimary
