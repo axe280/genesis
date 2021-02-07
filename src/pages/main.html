@@ -780,7 +780,11 @@
                 </svg>
               </div>
 
-              <button class="btn btn_md" type="button">
+              <button
+                class="btn btn_md open-popup-link"
+                type="button"
+                data-mfp-src="#calculator"
+              >
                 Рассчитать прибыль
               </button>
             </div>
@@ -1538,6 +1542,111 @@
       </div>
     </footer>
     <!-- end footer -->
+
+    <!-- calculator madal -->
+    <div id="calculator" class="st-modal modal-lg mfp-hide">
+      <div class="title-site title-site_h1 text_light">Калькулятор прибыли</div>
+      <form action="">
+        <div class="m-calc-radio-list">
+          <label class="m-calc-radio-item active">
+            <input type="radio" name="m-calc" value="UNITY TRADE" checked />
+            <span class="m-calc-radio-item__img">
+              <img src="assets/img/b-logo-1@2x.png" alt="" />
+            </span>
+            UNITY TRADE
+          </label>
+          <label class="m-calc-radio-item">
+            <input type="radio" name="m-calc" value="MineLab" />
+            <span class="m-calc-radio-item__img">
+              <img src="assets/img/b-logo-2@2x.png" alt="" />
+            </span>
+            MineLab
+          </label>
+          <label class="m-calc-radio-item">
+            <input type="radio" name="m-calc" value="НГР Групп" />
+            <span class="m-calc-radio-item__img">
+              <img src="assets/img/b-logo-3@2x.png" alt="" />
+            </span>
+            НГР Групп
+          </label>
+          <label class="m-calc-radio-item">
+            <input type="radio" name="m-calc" value="HEMEL" />
+            <span class="m-calc-radio-item__img">
+              <img src="assets/img/b-logo-4@2x.png" alt="" />
+            </span>
+            HEMEL
+          </label>
+          <label class="m-calc-radio-item">
+            <input type="radio" name="m-calc" value="Consult Global Systems" />
+            <span class="m-calc-radio-item__img">
+              <img src="assets/img/b-logo-5@2x.png" alt="" />
+            </span>
+            Consult Global Systems
+          </label>
+        </div>
+
+        <div class="m-calc-row-controls">
+          <div class="m-calc-rc-tt">Сумма инвестиции</div>
+          <div class="m-calc-rc-arr">
+            <svg class="icon icon-arr-min-t-purple">
+              <use xlink:href="assets/img/sprite.svg#arr-min-t-purple"></use>
+            </svg>
+          </div>
+          <div class="m-calc-rc-field">
+            <div class="field-item">
+              <div class="field-item__field _icon">
+                <div class="field-item__icon">
+                  <svg class="icon icon-coins">
+                    <use xlink:href="assets/img/sprite.svg#coins"></use>
+                  </svg>
+                </div>
+                <input type="text" value="14 500" />
+              </div>
+            </div>
+          </div>
+          <button class="btn btn_md" type="button">Рассчитать</button>
+        </div>
+
+        <div class="m-calc-result">
+          <div class="m-calc-result-logo">
+            <div class="m-calc-result-logo__img">
+              <img src="assets/img/b-logo-1@2x.png" alt="" />
+            </div>
+            <div class="m-calc-result-logo__tt">UNITY TRADE</div>
+          </div>
+
+          <div class="m-calc-result-row">
+            <div class="mpm-stat-bl">
+              <div class="mpm-stat-bl__about">
+                <div class="mpm-stat-bl__tt">Срок сделки</div>
+                <div class="mpm-stat-bl__val">15 дней</div>
+              </div>
+              <svg class="icon icon-calendar icon_blueDark">
+                <use xlink:href="assets/img/sprite.svg#calendar"></use>
+              </svg>
+            </div>
+
+            <div class="mpm-stat-bl">
+              <div class="mpm-stat-bl__about">
+                <div class="mpm-stat-bl__tt">Прибыль</div>
+                <div class="mpm-stat-bl__val">1 100₽ в день</div>
+              </div>
+              <svg class="icon icon-coins-up icon_purpleDark">
+                <use xlink:href="assets/img/sprite.svg#coins-up"></use>
+              </svg>
+            </div>
+
+            <div class="mpm-stat-bl">
+              <div class="mpm-stat-bl__about">
+                <div class="mpm-stat-bl__tt">Общая доходность</div>
+                <div class="mpm-stat-bl__val">50 000₽</div>
+              </div>
+              <button class="btn btn_md" type="button">Заключить сделку</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
 
     <!-- partners modals -->
     <div id="partner1" class="st-modal modal-partner mfp-hide">

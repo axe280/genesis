@@ -29,6 +29,32 @@ $(function () {
     removeDocumentScrollBlocker()
   })
 
+  // calc checked
+  var $inputVal = $('.m-calc-rc-field input')
+  $('.m-calc-result').css('display', 'flex').hide()
+  $('.m-calc-row-controls .btn').on('click', function () {
+    // if $inputVal.value valid => $('.m-calc-result').fadeIn()
+    console.log(true)
+    $('.m-calc-result').fadeIn()
+  })
+
+  var $targetNameBl = $('.m-calc-result-logo__tt')
+  var $targetImageBl = $('.m-calc-result-logo__img img')
+
+  $('.m-calc-radio-list').on('change', 'input', function (e) {
+    var name = e.target.value
+    var imgSrc = $(this).parent().find('img').attr('src')
+
+    $targetNameBl.text(name)
+    $targetImageBl.attr('src', imgSrc)
+
+    $(this)
+      .parent()
+      .addClass('active')
+      .siblings('.m-calc-radio-item')
+      .removeClass('active')
+  })
+
   // lang opened
   $('.header-lang__current').on('click', function () {
     $(this).parent().toggleClass('_opened')

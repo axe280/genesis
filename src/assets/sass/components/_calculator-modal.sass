@@ -1,0 +1,121 @@
+.m-calc-radio-list
+  display: flex
+  margin-bottom: 40px
+
+.m-calc-radio-item
+  position: relative
+  width: calc(20% + 1px)
+  border: 1px solid #60619d
+  margin-left: -1px
+  overflow: hidden
+  height: 140px
+  padding: 24px 15px 14px
+  text-align: center
+  font-weight: 600
+  font-size: 14px
+  line-height: 18px
+  opacity: .5
+  transition: opacity .2s, border-color .2s
+  cursor: pointer
+
+  &:first-child
+    margin-left: 0
+
+  &:hover
+    opacity: 1
+
+  &.active
+    border-color: $colorPrimary
+    opacity: 1
+    z-index: 2
+
+  &__img
+    display: block
+    height: 50px
+    line-height: 50px
+    margin-bottom: 10px
+
+    img
+      max-height: 100%
+      max-width: 90px
+
+  input
+    position: absolute
+    left: -10px
+    top: -10px
+    width: 0
+    height: 0
+    visibility: hidden
+
+.m-calc-row-controls
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.m-calc-rc-tt
+  font-weight: 600
+  font-size: 18px
+  line-height: 22px
+
+.m-calc-rc-arr
+  position: relative
+  flex-shrink: 0
+  margin: 0 38px 0 30px
+
+  .icon
+    width: 100px
+    height: 10px
+
+.m-calc-rc-field
+  flex-grow: 1
+  margin-right: 20px
+
+  input
+    height: 52px
+
+.m-calc-result
+  display: none
+  margin-top: 40px
+
+.m-calc-result-logo
+  flex-shrink: 0
+  display: flex
+  width: 200px
+  margin-right: 4px
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  padding: 20px
+  background-color: $colorBlueMoreLight
+  text-align: center
+  border-radius: 10px
+
+  &__img
+    height: 70px
+    line-height: 70px
+    margin-bottom: 14px
+    max-width: 120px
+
+    img
+      max-height: 100%
+
+  &__tt
+    font-weight: 600
+    font-size: 16px
+    line-height: 19px
+    text-transform: uppercase
+    color: #000
+
+.m-calc-result-row
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  flex-grow: 1
+
+  .mpm-stat-bl
+    margin-right: 0
+    width: calc(50% - 2px)
+
+    &:last-child
+      width: 100%
+      margin-top: 4px
