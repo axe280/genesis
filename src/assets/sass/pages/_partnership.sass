@@ -52,3 +52,80 @@
 
     &:last-child
       margin-bottom: 0
+
+.section-partner-contact
+  padding: 60px 60px 0
+  color: #fff
+  position: relative
+  &::before
+    display: block
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 30px
+    border-radius: 10px
+    background: $colorBlueDark
+    z-index: 1
+
+  .section-content
+    position: relative
+    z-index: 2
+  .title-site
+    color: inherit
+    &_h6
+      margin-botttom: 20px
+      max-width: 680px
+  p
+    margin-top: 20px
+    line-height: 1.57
+    max-width: 1045px
+    margin-bottom: 30px
+  .info-list
+    background: transparent url('../img/triple-dotted-list-figure.svg') center no-repeat
+    background-size: 100% 100%
+    position: relative
+    z-index: 2
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    padding: 16px 0
+    grid-row-gap: 3px
+    li
+      padding-left: 30px
+      padding-right: 10px
+      line-height: 18px
+      font-weight: 500
+    span
+      font-size: 12px
+      opacity: .6
+      line-height: 15px
+      font-weight: 400
+      display: block
+  .contact-form
+    background: #f2f2f2
+    border-radius: 6px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 40px
+    padding: 30px 90px 30px 30px
+  .form-title
+    display: flex
+    align-items: center
+    font-size: 16px
+    font-weight: 600
+    color: #000
+    .icon
+      margin-right: 14px
+      width: 30px
+      height: 23px
+      fill: $colorBlueDark2
+  .arrow
+    background: transparent url('../img/dotted-arrow-long-blue.svg') right center no-repeat
+    flex-grow: 1
+    margin: 0 30px
+    height: 10px
+  .mail-link
+    height: 44px
+    font-size: 18px
