@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="285px" height="259px" viewBox="0 0 285 259" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>233F3407-357E-4234-A173-33F6360F1F00</title>
+    <defs>
+        <radialGradient cx="92.2954376%" cy="100%" fx="92.2954376%" fy="100%" r="115.793315%" gradientTransform="translate(0.922954,1.000000),scale(0.908772,1.000000),rotate(-38.759662),translate(-0.922954,-1.000000)" id="radialGradient-1">
+            <stop stop-color="#0060BA" offset="0%"></stop>
+            <stop stop-color="#02AFD4" offset="100%"></stop>
+        </radialGradient>
+        <rect id="path-2" x="0" y="0" width="285" height="259" rx="10"></rect>
+        <filter x="-28.2%" y="-28.2%" width="156.5%" height="156.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="40" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <circle id="path-5" cx="351.5" cy="237.5" r="3.5"></circle>
+        <circle id="path-6" cx="249.5" cy="202.5" r="3.5"></circle>
+        <circle id="path-7" cx="203.5" cy="242.5" r="3.5"></circle>
+    </defs>
+    <g id="Внутренние" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Помощь-1920" transform="translate(-1290.000000, -387.000000)">
+            <g id="Контент" transform="translate(345.000000, 202.000000)">
+                <g id="Фон" transform="translate(945.000000, 185.000000)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Mask" fill="url(#radialGradient-1)" opacity="0.900000036" xlink:href="#path-2"></use>
+                    <circle id="Oval" fill="#10E2CE" opacity="0.300000012" filter="url(#filter-4)" mask="url(#mask-3)" cx="30.5" cy="-110.5" r="212.5"></circle>
+                    <rect id="Rectangle" mask="url(#mask-3)" x="2.84217094e-14" y="0" width="285" height="259" rx="10"></rect>
+                    <g id="Group-4" mask="url(#mask-3)">
+                        <g transform="translate(-134.000000, 0.000000)">
+                            <polyline id="Path-2" stroke="#FFFFFF" stroke-width="0.5" opacity="0.300000012" points="-5.32907052e-13 294.510254 101.5 204.208333 204.164063 243.510254 249.40625 201.708333 352.25 238.333333 554 0.423897048"></polyline>
+                            <g id="Oval" stroke="none">
+                                <use fill="#1B7DC6" fill-rule="evenodd" xlink:href="#path-5"></use>
+                                <circle stroke="#1B7DC6" stroke-width="4" cx="351.5" cy="237.5" r="5.5"></circle>
+                                <circle stroke="#63CCE2" stroke-width="1" stroke-linejoin="square" cx="351.5" cy="237.5" r="3"></circle>
+                            </g>
+                            <g id="Oval" stroke="none">
+                                <use fill="#0E88C7" fill-rule="evenodd" xlink:href="#path-6"></use>
+                                <circle stroke="#108CC9" stroke-width="4" cx="249.5" cy="202.5" r="5.5"></circle>
+                                <circle stroke="#63CCE2" stroke-width="1" stroke-linejoin="square" cx="249.5" cy="202.5" r="3"></circle>
+                            </g>
+                            <g id="Oval" stroke="none">
+                                <use fill="#1B9DD0" fill-rule="evenodd" xlink:href="#path-7"></use>
+                                <circle stroke="#1B9DD0" stroke-width="4" cx="203.5" cy="242.5" r="5.5"></circle>
+                                <circle stroke="#63CCE2" stroke-width="1" stroke-linejoin="square" cx="203.5" cy="242.5" r="3"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

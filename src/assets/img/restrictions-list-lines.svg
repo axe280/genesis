@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1180px" height="473px" viewBox="0 0 1180 473" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>C4B440C3-8633-4D90-89F3-D6F53828A023</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#460F7A" stop-opacity="0" offset="1.37743116%"></stop>
+            <stop stop-color="#460F7A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="1.37743116%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#3A0E6E" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#3A0E6E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="1.37743116%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#1D0860" stop-opacity="0" offset="0.623326868%"></stop>
+            <stop stop-color="#1D0860" offset="99.3123088%"></stop>
+        </linearGradient>
+        <circle id="path-4" cx="763.5" cy="181.5" r="3.5"></circle>
+        <circle id="path-5" cx="366.5" cy="181.5" r="3.5"></circle>
+    </defs>
+    <g id="Внутренние" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Помощь-1920" transform="translate(-395.000000, -2059.000000)">
+            <g id="Контент" transform="translate(345.000000, 202.000000)">
+                <g id="Ограничения" transform="translate(0.000000, 1754.000000)">
+                    <g id="Линии" transform="translate(50.000000, 103.000000)">
+                        <rect id="Rectangle" fill="#FFFFFF" opacity="0.200000003" x="0" y="181" width="1180" height="1"></rect>
+                        <rect id="Rectangle" fill="#FFFFFF" opacity="0.200000003" x="763" y="0" width="1" height="473"></rect>
+                        <rect id="Rectangle" fill="url(#linearGradient-1)" transform="translate(763.500000, 22.000000) scale(1, -1) translate(-763.500000, -22.000000) " x="763" y="0" width="1" height="44"></rect>
+                        <rect id="Rectangle" fill="#FFFFFF" opacity="0.200000003" x="366" y="0" width="1" height="423"></rect>
+                        <rect id="Rectangle" fill="url(#linearGradient-2)" transform="translate(366.500000, 22.000000) scale(1, -1) translate(-366.500000, -22.000000) " x="366" y="0" width="1" height="44"></rect>
+                        <rect id="Rectangle" fill="url(#linearGradient-3)" x="366" y="379" width="1" height="44"></rect>
+                        <g id="Oval">
+                            <use fill="#440F74" fill-rule="evenodd" xlink:href="#path-4"></use>
+                            <circle stroke="#440F74" stroke-width="4" cx="763.5" cy="181.5" r="5.5"></circle>
+                            <circle stroke="#9D9DC5" stroke-width="1" stroke-linejoin="square" cx="763.5" cy="181.5" r="3"></circle>
+                        </g>
+                        <g id="Oval">
+                            <use fill="#270E63" fill-rule="evenodd" xlink:href="#path-5"></use>
+                            <circle stroke="#270E63" stroke-width="4" cx="366.5" cy="181.5" r="5.5"></circle>
+                            <circle stroke="#9D9DC5" stroke-width="1" stroke-linejoin="square" cx="366.5" cy="181.5" r="3"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

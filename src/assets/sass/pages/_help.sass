@@ -1,0 +1,52 @@
+.restrictions-bl
+  padding: 50px 50px 20px
+  border-radius: 10px
+  background-color: $colorPurpleDarkest
+  color: #fff
+  overflow: hidden
+
+.restrictions-list
+  margin-top: -30px
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  background-image: url('../img/restrictions-list-lines.svg')
+  background-repeat: no-repeat
+  background-position: -5px 49px
+
+  li
+    position: relative
+    z-index: 3
+    padding: 30px 10px 0 0
+    width: 30%
+    font-size: 12px
+    min-height: 230px
+    line-height: 20px
+
+  .restrictions-last-b
+    z-index: 2
+    padding-bottom: 30px
+
+    &::before
+      content: ''
+      position: absolute
+      left: -33px
+      top: 0
+      right: -50px
+      bottom: -20px
+      z-index: -1
+      background-color: rgba(#cf44fb, .4)
+      border-radius: 10px 0 10px 0
+
+.restrictions-tt
+  padding-left: 30px
+  margin-bottom: 15px
+  font-weight: 500
+  font-size: 14px
+  line-height: 18px
+  min-height: 20px
+  max-width: 290px
+  background-image: url('../img/round-close-red.svg')
+  background-repeat: no-repeat
+  background-position: 0 50%
+  background-size: 20px 20px
