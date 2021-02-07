@@ -7,9 +7,12 @@
     li
       width: calc(33.33% - 2.5px)
 
-  &._purple
-    li
-      background-color: $colorPurpleDarkest
+  &._purple li
+  .tiles-list_purple-item,
+  .tiles-list_purple-item .tiles-head._bordered-round::before,
+  .tiles-list_purple-item .f-hours-w-item:last-child::before
+    background-color: $colorPurpleDarkest
+
 
   &._arr-top
     li
@@ -50,6 +53,33 @@
           width: 30px
           height: 30px
           margin-right: 20px
+
+  &._bordered-round
+    position: relative
+    padding-bottom: 26px
+    margin-bottom: 24px
+
+    &::after
+      content: ''
+      position: absolute
+      left: 11px
+      bottom: -1px
+      right: 0
+      height: 1px
+      z-index: 2
+      background-color: rgba(#fff, 0.2)
+
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: -4px
+      width: 5px
+      height: 5px
+      z-index: 2
+      border: 1px solid #9d9dc5
+      border-radius: 50%
+      background-color: $colorBlueDarkest
 
   .icon
     flex-shrink: 0

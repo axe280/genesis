@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1170px" height="104px" viewBox="0 0 1170 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>A8298D17-D52B-405D-B8F8-0E3783B323F4</title>
+    <defs>
+        <radialGradient cx="-4.2045617%" cy="91.6354697%" fx="-4.2045617%" fy="91.6354697%" r="1174.62913%" gradientTransform="translate(-0.042046,0.916355),scale(0.088889,1.000000),rotate(-3.607724),translate(0.042046,-0.916355)" id="radialGradient-1">
+            <stop stop-color="#EDEDED" offset="0%"></stop>
+            <stop stop-color="#FAFAFA" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Внутренние" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="О-компании-1920" transform="translate(-375.000000, -482.000000)">
+            <g id="Контент" transform="translate(345.000000, 202.000000)">
+                <g id="Контакты" transform="translate(0.000000, 67.000000)">
+                    <g id="Фон" transform="translate(30.000000, 213.000000)">
+                        <rect id="Rectangle" fill="url(#radialGradient-1)" opacity="0.699999988" x="0" y="0" width="1170" height="104" rx="6"></rect>
+                        <rect id="Rectangle" x="0" y="0" width="1170" height="104" rx="6"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

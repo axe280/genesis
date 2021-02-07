@@ -2,7 +2,7 @@
   margin-bottom: 70px
   padding: 40px 62px 1px 40px
   border-radius: 10px
-  background-color: $colorBlueMoreLight
+  background-color: $colorUiDisabled
 
   .tiles-list
     // transform: translateY(20px)
@@ -49,6 +49,10 @@
     margin-bottom: 4px
     border-radius: 4px
     background-color: #fff
+    background-image: url('../img/checked.svg')
+    background-repeat: no-repeat
+    background-position: 20px 50%
+    background-size: 20px 17px
 
     &:last-child
       margin-bottom: 0
@@ -66,7 +70,7 @@
     right: 0
     bottom: 30px
     border-radius: 10px
-    background: $colorBlueDark
+    background: $colorBlueDark2
     z-index: 1
 
   .section-content
@@ -75,13 +79,14 @@
   .title-site
     color: inherit
     &_h6
-      margin-botttom: 20px
+      margin-bottom: 30px
       max-width: 680px
   p
     margin-top: 20px
     line-height: 1.57
     max-width: 1045px
     margin-bottom: 30px
+
   .info-list
     background: transparent url('../img/triple-dotted-list-figure.svg') center no-repeat
     background-size: 100% 100%
@@ -89,8 +94,8 @@
     z-index: 2
     display: grid
     grid-template-columns: repeat(3, 1fr)
-    padding: 16px 0
-    grid-row-gap: 3px
+    padding: 20px 0
+    grid-row-gap: 8px
     li
       padding-left: 30px
       padding-right: 10px
@@ -102,21 +107,36 @@
       line-height: 15px
       font-weight: 400
       display: block
+      margin-top: 2px
   .contact-form
-    background: #f2f2f2
+    background-image: url('../img/bgd-line.svg')
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    background-size: cover
+    -webkit-backdrop-filter: blur(10px)
+    backdrop-filter: blur(10px)
     border-radius: 6px
     display: flex
     align-items: center
     justify-content: space-between
     margin-top: 40px
     padding: 30px 90px 30px 30px
+
+    .btn
+      font-size: 18px
+      padding-top: 12px
+      padding-bottom: 12px
+      text-transform: none
+      
   .form-title
     display: flex
     align-items: center
     font-size: 16px
+    line-height: 19px
     font-weight: 600
     color: #000
     .icon
+      flex-shrink: 0
       margin-right: 14px
       width: 30px
       height: 23px
