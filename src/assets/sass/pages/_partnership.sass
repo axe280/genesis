@@ -2,7 +2,11 @@
   margin-bottom: 70px
   padding: 40px 62px 1px 40px
   border-radius: 10px
-  background-color: $colorUiDisabled
+  background-image: url('../img/services-bl-bg@2x.png')
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  background-size: cover
+  backdrop-filter: blur(10px)
 
   .tiles-list
     // transform: translateY(20px)
@@ -61,6 +65,7 @@
   padding: 60px 60px 0
   color: #fff
   position: relative
+
   &::before
     display: block
     content: ''
@@ -70,14 +75,21 @@
     right: 0
     bottom: 30px
     border-radius: 10px
-    background: $colorBlueDark2
+    background-image: url('../img/section-partner-contact-bg.svg')
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    background-size: cover
+    backdrop-filter: blur(10px)
     z-index: 1
 
   .section-content
     position: relative
     z-index: 2
+
   .title-site
     color: inherit
+    margin-bottom: 20px
+
     &_h6
       margin-bottom: 30px
       max-width: 680px
@@ -88,7 +100,7 @@
     margin-bottom: 30px
 
   .info-list
-    background: transparent url('../img/triple-dotted-list-figure.svg') center no-repeat
+    background: transparent url('../img/triple-dotted-list-figure.svg#svgView(preserveAspectRatio(none))') center no-repeat
     background-size: 100% 100%
     position: relative
     z-index: 2

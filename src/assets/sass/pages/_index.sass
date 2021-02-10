@@ -3,7 +3,9 @@
   padding: 60px 60px 66px
   border-radius: 10px
   background-color: $colorBlueLight
-  background-image: url('../img/h-ban-block-bg.svg')
+  background-image: radial-gradient(circle 1039px at 43.88% 710.32%, #0071db 0%, #10c0e6 100%)
+  // background-image: url('../img/h-ban-block-bg.svg')
+  background-image: url('../img/h-ban-block-bg@2x.png')
   background-repeat: no-repeat
   background-position: 50% 50%
   background-size: cover
@@ -33,7 +35,7 @@
 .hts-reg-bg
   position: absolute
   z-index: 2
-  bottom: -30px
+  bottom: -32px
   left: 30px
   right: 30px
   min-height: 110px
@@ -41,13 +43,12 @@
   background-image: url('../img/hts-reg-bg.svg')
   background-repeat: no-repeat
   background-size: cover
-  -webkit-backdrop-filter: blur(10px)
   backdrop-filter: blur(10px)
 
 .hts-reg
   position: absolute
   z-index: 5
-  bottom: -30px
+  bottom: -32px
   left: 30px
   right: 30px
   display: flex
@@ -79,7 +80,7 @@
 .partners-wrapp
   .partners-stat
     position: absolute
-    bottom: -35px
+    bottom: -30px
     left: 30px
     right: 30px
     display: flex
@@ -98,17 +99,43 @@
   padding-bottom: 20px
 
   li
+    display: flex
     position: relative
     width: calc(50% - 15px)
+    min-height: 300px
     padding: 30px 0 70px
     margin-bottom: 60px
     border-radius: 10px
+    background-image: url('../img/partners-list-3.svg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 100%
+    backdrop-filter: blur(10px)
+
+    &:first-child
+      background-image: url('../img/partners-list-1.svg')
+
+    &:nth-child(2)
+      background-image: url('../img/partners-list-2.svg')
+
+    &:nth-child(3)
+      background-image: url('../img/partners-list-3.svg')
+
+    &:nth-child(4)
+      background-image: url('../img/partners-list-4.svg')
+
+    &:nth-child(5)
+      background-image: url('../img/partners-list-5.svg')
+
+    &:nth-child(6)
+      background-image: url('../img/partners-list-6.svg')
 
   .partners-emty
     display: flex
     flex-direction: column
     align-items: center
     justify-content: center
+    padding-bottom: 30px
 
     .icon
       width: 30px
@@ -116,12 +143,13 @@
 
     b
       display: block
-      margin-top: 14px
+      margin-top: 20px
       font-size: 16px
       line-height: 19px
       color: rgba(#000, .5)
 
 .partners-row
+  flex-grow: 1
   display: flex
   justify-content: space-between
 
@@ -148,6 +176,9 @@
     text-align: center
 
 .partners-about
+  display: flex
+  flex-direction: column
+  justify-content: space-between
   padding: 0 30px
 
   p
@@ -168,6 +199,7 @@
   background-repeat: no-repeat
   background-position: 100% 50%
   background-size: cover
+  backdrop-filter: blur(10px)
 
   &__tt
     flex-shrink: 0
@@ -203,12 +235,13 @@
 
 // kudos bl
 .kudos-bl
-  padding: 60px 60px 46px 420px
-  background-image: url('../img/kudos-bg.svg')
+  padding: 60px 80px 46px 420px
+  background-image: url('../img/kudos-bg@2x.png')
   background-repeat: no-repeat
   background-position: 0% 50%
   background-size: cover
   border-radius: 10px
+  backdrop-filter: blur(10px)
 
 .kudos-bl-arr
   display: flex

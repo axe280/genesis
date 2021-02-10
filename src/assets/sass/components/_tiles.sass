@@ -4,10 +4,50 @@
   flex-grow: 1
 
   &._three-col
-    li
-      width: calc(33.33% - 2.5px)
+    &._arr-top
+      li
+        width: calc(33.33% - 2.5px)
 
-  &._purple li
+        &:first-child
+          background-image: url('../img/tiles-blue-arr-1-long.svg#svgView(preserveAspectRatio(none))')
+
+        &:nth-child(2)
+          background-image: url('../img/tiles-blue-arr-2-long.svg#svgView(preserveAspectRatio(none))')
+
+        &:nth-child(3)
+          background-image: url('../img/tiles-blue-arr-3-long.svg#svgView(preserveAspectRatio(none))')
+
+  
+
+  &._purple
+    &._three-col
+      &._arr-bottom
+        li
+          width: calc(33.33% - 2.5px)
+
+          &:first-child
+            background-image: url('../img/tiles-purple-arr-1-long.svg#svgView(preserveAspectRatio(none))')
+
+          &:nth-child(2)
+            background-image: url('../img/tiles-purple-arr-2-long.svg#svgView(preserveAspectRatio(none))')
+
+          &:nth-child(3)
+            background-image: url('../img/tiles-purple-arr-3-long.svg#svgView(preserveAspectRatio(none))')
+    li
+      // background-color: $colorPurpleDarkest
+
+      &:first-child
+        background-image: url('../img/tiles-purple-1.svg')
+
+      &:nth-child(2)
+        background-image: url('../img/tiles-purple-2.svg')
+
+      &:nth-child(3)
+        background-image: url('../img/tiles-purple-3.svg')
+
+      &:nth-child(4)
+        background-image: url('../img/tiles-purple-4.svg')
+
   .tiles-list_purple-item,
   .tiles-list_purple-item .tiles-head._bordered-round::before,
   .tiles-list_purple-item .f-hours-w-item:last-child::before
@@ -17,18 +57,50 @@
   &._arr-top
     li
       padding-top: 40px
+      background-position: 50% 0
+      background-size: 100% 100%
+
+      &:first-child
+        background-image: url('../img/tiles-blue-arr-1.svg#svgView(preserveAspectRatio(none))')
+
+      &:nth-child(2)
+        background-image: url('../img/tiles-blue-arr-2.svg#svgView(preserveAspectRatio(none))')
+
+      &:nth-child(3)
+        background-image: url('../img/tiles-blue-arr-3.svg#svgView(preserveAspectRatio(none))')
+
+      &:nth-child(4)
+        background-image: url('../img/tiles-blue-arr-4.svg#svgView(preserveAspectRatio(none))')
 
   &._arr-bottom
     li
       padding-bottom: 40px
+      background-position: 50% 100%
+      background-size: 100% 100%
 
   li
     position: relative
     width: calc(25% - 3px)
-    padding: 34px 30px 30px
-    background-color: $colorBlueDarkest
+    padding: 30px
+    // background-color: $colorBlueDarkest
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: 50% 50%
+    backdrop-filter: blur(10px)
     border-radius: 10px
     color: #fff
+
+    &:first-child
+      background-image: url('../img/tiles-blue-1.svg')
+
+    &:nth-child(2)
+      background-image: url('../img/tiles-blue-2.svg')
+
+    &:nth-child(3)
+      background-image: url('../img/tiles-blue-3.svg')
+
+    &:nth-child(4)
+      background-image: url('../img/tiles-blue-4.svg')
 
 .tiles-head
   display: flex
@@ -37,7 +109,8 @@
   margin-bottom: 20px
 
   &._bordered
-    padding-bottom: 26px
+    padding-bottom: 24px
+    margin-bottom: 26px
     border-bottom: 1px solid rgba(#fff, .2)
 
     .icon
@@ -56,7 +129,8 @@
 
   &._bordered-round
     position: relative
-    padding-bottom: 26px
+    padding-bottom: 30px
+    padding-top: 2px
     margin-bottom: 24px
 
     &::after

@@ -6,20 +6,34 @@
   max-width: 450px
   margin: 0 auto
   padding: 40px 50px
-  background-color: #181869
   border-radius: 10px
   color: #fff
+  background-repeat: no-repeat
+  background-position: 50% 0
+  background-size: cover
+  backdrop-filter: blur(20px)
 
   &.modal-reg
-    background-color: $colorBlueLight
+    background-image: url('../img/modal-reg-bg.svg')
 
     .accept-checkbox
       margin-bottom: 28px
 
+  &.modal-sign-in
+    background-image: url('../img/modal-sign-in-bg.svg')
+
+  &.modal-send-password
+    background-image: url('../img/modal-send-password-bg.svg')
+
+  &.modal-partner
+    background-image: url('../img/modal-partner-bg.svg')
+
+  &.modal-lg
+    background-image: url('../img/m-calc-bg.svg')
+
 .modal-lg
   max-width: 1020px
   padding: 50px 60px 60px
-  background-color: $colorPurpleDarkest
 
 .sign-in-up-modal
   margin-bottom: 20px
@@ -95,7 +109,10 @@
   text-align: center
   width: 230px
   padding: 
-  background-image: linear-gradient(to bottom, rgba(14, 13, 87, 0.6), rgba(14, 13, 87, 0.6)), radial-gradient(circle at 100% 0, #4b50d1, #050447)
+  background-image: url('../img/m-partner-aside-bg.png')
+  background-repeat: no-repeat
+  background-position: 50% 0
+  background-size: 100% 100%
 
   &__info
     line-height: 18px
@@ -111,7 +128,6 @@
 .m-partner-row-main
   flex-grow: 1
   padding: 60px
-  background-color: $colorBlueDarkest
 
 .mpm-list-info
   margin-bottom: 40px
@@ -254,6 +270,21 @@
   &:last-child
     margin-bottom: 0
 
+.m-calc-result-row
+  .mpm-stat-bl
+    &:nth-child(2),
+    &:last-child
+      background-image: url('../img/mpm-stat-bl-bg.svg#svgView(preserveAspectRatio(none))')
+      background-repeat: no-repeat
+      background-position: 0 0
+      background-size: cover
+
+    &:nth-child(2)::before
+      display: none
+
+    &:last-child
+      background-position: 50% 50%
+
 .mpm-stat-bl
   position: relative
   display: flex
@@ -263,30 +294,39 @@
   justify-content: space-between
   min-height: 90px
   padding: 10px 30px
-  background-color: #ededed
-  background-image: radial-gradient(circle at -4% 92%, #ededed, #fafafa 99%)
+  background-image: url('../img/mpm-stat-bl-bg.svg#svgView(preserveAspectRatio(none))')
+  background-repeat: no-repeat
+  background-position: 0 0
+  background-size: cover
   color: #000
   border-radius: 4px
-  webkit-backdrop-filter: blur(10px)
   backdrop-filter: blur(10px)
 
-  // &:nth-child(2)
-  //   &::before
-  //     content: ''
-  //     position: absolute
-  //     left: 0
-  //     top: 0
-  //     width: calc(100% + 6px)
-  //     height: 100%
-  //     z-index: 2
-  //     background-image: url('../img/mpm-stat-bd2.svg')
-  //     background-repeat: no-repeat
-  //     background-position: 100% 50%
-  //     background-size: auto 100%
+  &:nth-child(2)
+    background: none
+    z-index: 10
+
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: calc(100% + 9px)
+      height: 100%
+      z-index: 2
+      background-image: url('../img/mpm-stat-bl-arr-st.svg#svgView(preserveAspectRatio(none))')
+      background-repeat: no-repeat
+      background-position: 100% 50%
+      background-size: 100% 100%
+      backdrop-filter: blur(10px)
 
   &:last-child
     margin-right: 0
     width: 344px
+    background-image: url('../img/mpm-stat-bl-arr-max.svg#svgView(preserveAspectRatio(none))')
+    background-repeat: no-repeat
+    background-position: 100% 50%
+    background-size: 100% 100%
 
   &__about
     position: relative

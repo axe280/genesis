@@ -2,7 +2,15 @@
   padding: 50px 0
   margin: 50px 0
   background-color: $colorPurpleDarkest
+  background-image: url('../img/status-sec-1.svg')
+  background-repeat: no-repeat
+  background-position: 50% 0
+  background-size: cover
+  backdrop-filter: blur(10px)
   color: #fff
+
+  &._bg2
+    background-image: url('../img/status-sec-2.svg')
 
 .status-row
   display: flex
@@ -24,7 +32,7 @@
   display: flex
   align-items: center
   flex-shrink: 0
-  margin-right: 32px
+  margin-right: 38px
 
   &__icon
     flex-shrink: 0
@@ -93,8 +101,8 @@
     display: flex
     align-items: flex-start
     justify-content: space-between
-    margin-bottom: 23px
-    padding-bottom: 23px
+    margin-bottom: 22px
+    padding-bottom: 22px
     border-bottom: 1px solid rgba(#fff, .2)
 
     &:last-child
@@ -115,7 +123,7 @@
   flex-shrink: 0
   min-height: 54px
   padding: 9px 50px 9px 20px
-  background-image: url('../img/status-rectangle-left.svg')
+  background-image: url('../img/status-rectangle-left.svg#svgView(preserveAspectRatio(none))')
   background-repeat: no-repeat
   background-position: 0 50%
   background-size: auto 100%
@@ -137,7 +145,7 @@
 
   &:first-child
     padding: 9px 50px 9px 14px
-    background-image: url('../img/status-rectangle-right.svg')
+    background-image: url('../img/status-rectangle-right.svg#svgView(preserveAspectRatio(none))')
     background-position: 100% 50%
     border-radius: 4px 0 0 4px
 
@@ -181,10 +189,10 @@
     flex-grow: 1
     min-height: 54px
     padding: 7px 18px 14px 24px
-    background-image: url('../img/status-rectangle-left.svg')
+    background-image: url('../img/status-rectangle-left.svg#svgView(preserveAspectRatio(none))')
     background-repeat: no-repeat
     background-position: 0 50%
-    background-size: cover
+    background-size: auto 100%
     border-radius: 0 4px 4px 0
 
   .status-level

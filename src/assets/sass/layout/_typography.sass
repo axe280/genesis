@@ -2,8 +2,14 @@
 *
   box-sizing: border-box
 
+html, body
+  -webkit-font-smoothing: antialiased
+  -moz-font-smoothing: antialiased
+  -o-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
 body
-  font-family: $site-font-family, $systemFont
+  font-family: $site-font-family, Times, $systemFont
   font-size: $site-text-size
   line-height: 26px
   color: $site-text-color
@@ -51,7 +57,7 @@ p
   margin: 0
 
 p + p
-  margin-top: 20px
+  margin-top: 26px
 
 b
   font-weight: 600

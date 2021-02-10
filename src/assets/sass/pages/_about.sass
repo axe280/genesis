@@ -67,6 +67,10 @@
   padding: 80px 68px 0
   text-align: center
   border-radius: 10px
+  background-image: url('../img/aside-b-start@2x.png')
+  background-repeat: no-repeat
+  background-position: 50% 0
+  background-size: 100% 592px
   -webkit-backdrop-filter: blur(20px)
   backdrop-filter: blur(20px)
 
@@ -82,9 +86,21 @@
 
   .tiles-list
     li
-      min-height: 305px
+      min-height: 290px
       padding-top: 30px
       padding-bottom: 80px
+
+      &:first-child
+        background-image: url('../img/tiles-about-1-bg.svg#svgView(preserveAspectRatio(none))')
+
+      &:nth-child(2)
+        background-image: url('../img/tiles-about-2-bg.svg#svgView(preserveAspectRatio(none))')
+
+      &:nth-child(3)
+        background-image: url('../img/tiles-about-3-bg.svg#svgView(preserveAspectRatio(none))')
+
+      &:nth-child(4)
+        background-image: url('../img/tiles-about-4-bg.svg#svgView(preserveAspectRatio(none))')
 
   .tiles-head
     justify-content: flex-start

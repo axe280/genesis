@@ -1,10 +1,14 @@
 .career-prog-wrapp
   margin-top: 40px
   padding: 50px 50px 32px
-  background-color: #ccc
   font-size: 12px
   line-height: 20px
   border-radius: 10px
+  background-image: url('../img/career-prog-wrapp-bg@2x.png')
+  background-repeat: no-repeat
+  background-position: 50% 100%
+  background-size: cover
+  backdrop-filter: blur(20px)
 
   .tiles-list
     margin-bottom: 30px
@@ -32,13 +36,19 @@
       margin-bottom: 10px
 
       .icon
+        width: 24px
+        height: 24px
         fill: #050447
 
 .career-steps
   position: relative
   padding: 40px 50px 50px 50px
-  background-color: #ccc
   border-radius: 10px
+  background-image: url('../img/career-steps-bg@2x.png')
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  background-size: cover
+  backdrop-filter: blur(20px)
 
   &::before
     content: ''
@@ -95,7 +105,7 @@
 .career-steps-result
   display: flex
   align-items: center
-  padding: 15px 40px
+  padding: 15px 20px 15px 30px
   background-color: #fff
   border-radius: 10px
 
@@ -104,7 +114,7 @@
   align-items: center
 
   &:first-child
-    margin-right: 50px
+    margin-right: 60px
 
   .career-users__icon
     flex-shrink: 0
@@ -114,7 +124,11 @@
   margin-top: 40px
   margin-bottom: 80px
   padding: 50px 50px 0
-  background-color: $colorPurpleDarkest
+  background-image: url('../img/limitation-section-bg@2x.png')
+  background-repeat: no-repeat
+  background-position: 50% 0
+  background-size: cover
+  backdrop-filter: blur(10px)
   color: #fff
   border-radius: 10px
 
@@ -155,15 +169,16 @@
 
 .limit-info-wrap
   position: relative
+  z-index: 4
   top: 30px
   padding: 32px 30px
-  background-image: url('../img/limit-info-wrap-bg.svg')
+  background-color: #ededed
+  background-image: url('../img/limit-info-wrap-bg@2x.png')
   background-repeat: no-repeat
   background-position: 50% 50%
-  border-radius: 6px
-  -webkit-backdrop-filter: blur(10px)
-  backdrop-filter: blur(10px)
   background-size: cover
+  border-radius: 6px
+  backdrop-filter: blur(10px)
   color: #000
 
 .limit-info
@@ -192,7 +207,7 @@
 
   span
     flex-grow: 1
-    min-width: 100px
+    min-width: 90px
     padding-right: 8px
     font-weight: 500
     font-size: 16px
@@ -243,6 +258,10 @@
     background-repeat: no-repeat
     background-position: 100% 50%
 
+    &:nth-child(2)
+      .limit-info-steps__about
+        min-width: 196px
+
     &:last-child
       padding-right: 0
       background: none
@@ -269,7 +288,6 @@
   background-repeat: no-repeat
   background-position: 50% 50%
   background-size: cover
-  -webkit-backdrop-filter: blur(20px)
   backdrop-filter: blur(20px)
 
   &__about
