@@ -118,3 +118,110 @@
     font-size: 18px
     border-radius: 50%
     background-image: radial-gradient(circle at 22% 72%, #10c0e6, #0071db 103%)
+
+/* Max width $m-xl */
+@media only screen and (max-width: $m-xl)
+  .how-we-work
+    display: block
+
+    &__pic
+      margin: 35px 0 0
+
+  .hww-pic-wrap
+    width: 100%
+
+  .hww-b-2
+    left: 121px
+    width: 315px
+    background-image: url('../img/hww2-tablet.svg')
+    background-size: cover
+
+  .hww-b-3
+    left: 410px
+
+  .hww-b-4
+    left: 561px
+/* end media max width $m-xl */
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .how-we-work
+    &__pic
+      margin-top: 32px
+
+  .hww-pic-wrap
+    height: 472px
+    margin: 0 auto
+
+    &::before
+      content: ''
+      position: absolute
+      left: 50%
+      margin-left: -100px
+      top: 90px
+      width: 200px
+      height: 285px
+      z-index: 5
+      background-image: url('../img/hww-pic-wrap-arrows-mobile@2x.png')
+      background-repeat: no-repeat
+      background-position: 50% 50%
+      background-size: 100% 100%
+
+  .hww-block
+    width: 240px
+    height: 116px
+    background-size: cover
+    top: 0
+    left: 50%
+    margin-left: -120px
+    margin-top: 0
+    font-weight: 500
+    font-size: 13px
+    line-height: 16px
+    font-weight: 500
+
+    &::before,
+    &::after
+      display: none
+
+    .icon
+      width: 30px
+      height: 30px
+      margin-bottom: 10px
+  
+  .hww-b-2
+    top: 100px
+    margin-left: -140px
+    width: 280px
+    height: 152px
+    background-image: url('../img/hww2-mobile.svg')
+    background-size: cover
+
+    img
+      width: 74px
+      height: 79px
+
+  .hww-b-3
+    top: 236px
+
+  .hww-b-4
+    top: 356px
+
+  .hww-current-money
+    left: 0
+    top: -21px
+    left: 50%
+    margin-left: -21px
+    padding: 7px
+
+    &::before
+      left: 2px
+      top: 2px
+      right: 2px
+      bottom: 2px
+
+    span
+      width: 28px
+      height: 28px
+      font-size: 14px
+/* end media max width $m-md */

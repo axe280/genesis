@@ -14,6 +14,7 @@ body
 
 .site-wrapper
   flex: 1 0 auto
+  overflow: hidden
 
 .footer
   flex-shrink: 0
@@ -24,9 +25,8 @@ body
   margin-left: auto
   margin-right: auto
 
-.hidden-mobile,
-.hidden-devices
-  display: none
+.hidden-mobile
+  display: block
 
 .section-space-st
   margin: 50px 0
@@ -100,6 +100,25 @@ body
     margin-top: 10px
 
 
+/* Max width $m-lg */
+@media only screen and (max-width: $m-lg)
+  .container
+    padding: 0 $sides-spacing-md
+/* end media max width $m-lg */
 
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .container
+    padding: 0 $sides-spacing-xs
+
+  .hidden-mobile
+    display: none
+
+  .section-space-st
+    margin: 30px 0
+
+    &._bordered
+      padding-bottom: 30px
+/* end media max width $m-md */
 
 

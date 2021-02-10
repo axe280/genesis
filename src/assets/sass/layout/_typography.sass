@@ -193,30 +193,15 @@ a
     background-position: 0 50%
     background-size: 20px 20px
 
-
-/* Max width $m-xl */
-@media only screen and (max-width: $m-xl)
-  h1, .title-site_h1
-    font-size: $site-h1-size-tablet
-
-  h2, .title-site_h2
-    font-size: $site-h2-size-tablet
-
-  h3, .title-site_h3
-    font-size: $site-h3-size-tablet
-
-  h4, .title-site_h4
-    font-size: $site-h4-size-tablet
-
-  h5, .title-site_h5
-    font-size: $site-h5-size-tablet
-
-  h6, .title-site_h6
-    font-size: $site-h6-size-tablet
-/* end media max width $m-xl */
-
 /* Max width $m-md */
 @media only screen and (max-width: $m-md)
+  body
+    font-size: 13px
+    line-height: 20px
+
+  .title-site, h1, h2, h3, h4, h5, h6
+    margin-bottom: 20px
+
   h1, .title-site_h1
     font-size: $site-h1-size-mobile
 
@@ -234,6 +219,9 @@ a
 
   h6, .title-site_h6
     font-size: $site-h6-size-mobile
+
+  p + p
+    margin-top: 18px
 /* end media max width $m-md */
 
 /* ----- END Typography ---------------- */

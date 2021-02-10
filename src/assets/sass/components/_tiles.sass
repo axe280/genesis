@@ -4,6 +4,10 @@
   flex-grow: 1
 
   &._three-col
+    li
+      width: calc(33.33% - 2.5px)
+
+  &._three-col
     &._arr-top
       li
         width: calc(33.33% - 2.5px)
@@ -17,14 +21,10 @@
         &:nth-child(3)
           background-image: url('../img/tiles-blue-arr-3-long.svg#svgView(preserveAspectRatio(none))')
 
-  
-
   &._purple
     &._three-col
       &._arr-bottom
         li
-          width: calc(33.33% - 2.5px)
-
           &:first-child
             background-image: url('../img/tiles-purple-arr-1-long.svg#svgView(preserveAspectRatio(none))')
 
@@ -52,7 +52,6 @@
   .tiles-list_purple-item .tiles-head._bordered-round::before,
   .tiles-list_purple-item .f-hours-w-item:last-child::before
     background-color: $colorPurpleDarkest
-
 
   &._arr-top
     li
@@ -180,9 +179,36 @@
   font-size: 12px
   line-height: 20px
 
+  p + p
+    margin-top: 15px
+
 .tiles-numb
   margin-bottom: auto
   font-weight: 500
   font-size: 18px
   line-height: 18px
   color: rgba(#fff, .3)
+
+/* Max width $m-xl */
+@media only screen and (max-width: $m-xl)
+  .tiles-list
+    flex-wrap: wrap
+
+    li
+      width: calc(50% - 2px)
+      margin-bottom: 4px
+      padding: 20px
+
+  .tiles-head
+    &._bordered
+      margin-bottom: 20px
+      padding-bottom: 20px
+
+      .icon
+        width: 20px
+        height: 20px
+
+  .tiles-tt
+    font-size: 14px
+    line-height: 17px
+/* end media max width $m-xl */

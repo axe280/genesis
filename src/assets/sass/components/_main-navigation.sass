@@ -90,3 +90,30 @@
     &:hover
       color: $colorBlueLight
 /* ----- END Navigation ---------------- */
+
+
+/* Max width $m-lg */
+@media only screen and (max-width: $m-lg)
+  .menu
+    padding-right: 0
+    flex-wrap: wrap
+    justify-content: flex-start
+
+    li
+      width: 25%
+      margin-bottom: 10px
+/* end media max width $m-lg */
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .menu
+    padding-top: 30px
+    border-top: 1px solid rgba(#fff, .3)
+    display: block
+
+    li
+      width: 100%
+      margin-bottom: 20px
+      font-size: 14px
+      line-height: 20px
+/* end media max width $m-md */

@@ -24,11 +24,6 @@ $(function () {
     }
   })
 
-  $('.menu-close-overlay').on('click', function () {
-    $('body').removeClass('menu_opened')
-    removeDocumentScrollBlocker()
-  })
-
   // calc checked
   var $inputVal = $('.m-calc-rc-field input')
   $('.m-calc-result').css('display', 'flex').hide()
@@ -95,4 +90,14 @@ $(function () {
       },
     },
   })
+
+  if ($(window).width() < 740) {
+    $('.tiles-mobile-carousel').owlCarousel({
+      loop: false,
+      dots: false,
+      nav: false,
+      autoWidth: true,
+      margin: 4,
+    })
+  }
 })

@@ -109,7 +109,7 @@
     background-image: url('../img/partners-list-3.svg')
     background-size: cover
     background-repeat: no-repeat
-    background-position: 50% 100%
+    background-position: 0 100%
     backdrop-filter: blur(10px)
 
     &:first-child
@@ -259,3 +259,60 @@
     .icon
       width: 104px
       height: 10px
+
+
+/* Max width $m-xl */
+@media only screen and (max-width: $m-xl)
+  .why-services
+    .tiles-list
+      margin-bottom: 26px
+/* end media max width $m-xl */
+
+/* Max width $m-lg */
+@media only screen and (max-width: $m-lg)
+  .m-ban-block
+    padding-left: 40px
+    background-image: url('../img/h-ban-block-bg-tablet@2x.png')
+
+    .title-site
+      margin-bottom: 17px
+
+  .partners-list
+    display: block
+
+    li
+      width: 100%
+      min-height: 280px
+      padding-bottom: 50px
+
+  .partners-about
+    .btn
+      margin-bottom: 20px
+/* end media max width $m-lg */
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .why-services
+    .tiles-list
+      margin-bottom: 20px
+
+  .why-services__head .title-site_h4
+    margin-left: 0
+
+  .m-ban-block
+    margin-bottom: 30px
+    padding: 30px 30px 34px
+    background-image: url('../img/h-ban-block-bg-mobile@2x.png')
+
+    .title-site
+      margin-bottom: 18px
+      font-size: 20px
+      line-height: 24px
+
+    p
+      font-size: 14px
+      line-height: 17px
+
+    .btn
+      margin-top: 32px
+/* end media max width $m-md */

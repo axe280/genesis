@@ -4,6 +4,7 @@
   color: #fff
   display: flex
   align-items: flex-start
+
   &:before
     display: block
     content: ''
@@ -13,6 +14,11 @@
     right: 0
     left: 30px
     background: $colorPurpleDarkest
+    background-image: url('../img/section-invest-bg.svg')
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    background-size: cover
+    backdrop-filter: blur(10px)
     border-radius: 10px
     z-index: 1
   .diff-col
@@ -24,6 +30,11 @@
     &.company-invest
       padding: 50px 50px 60px 60px
       background: $colorBlueDark2
+      background-image: url('../img/diff-invest-bg@2x.png')
+      background-repeat: no-repeat
+      background-position: 50% 50%
+      background-size: cover
+      backdrop-filter: blur(10px)
       border-radius: 10px
       width: 56.5%
       .icon
@@ -67,6 +78,7 @@
     background-repeat: no-repeat
     display: flex
     align-items: center
+
     span
       flex-grow: 1
       height: 1px
@@ -97,6 +109,11 @@
   padding: 30px 0 30px 50px
   margin: 0 20px
   background-color: $colorPurpleDarkest
+  background-image: url('../img/start-spec-bg.svg')
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  background-size: cover
+  backdrop-filter: blur(10px)
   border-radius: 10px
   color: #fff
 
@@ -153,10 +170,33 @@
     font-size: 12px
     line-height: 20px
     color: #000
-    background-image: url('../img/start-spec-info-more-bg.svg')
+    background-color: #ccc
+    background-image: url('../img/start-spec-info-more-bg@2x.png')
     background-repeat: no-repeat
-    background-position: 50% 50%
+    background-position: 100% 50%
     background-size: cover
     border-radius: 6px
-    -webkit-backdrop-filter: blur(10px)
     backdrop-filter: blur(10px)
+
+.ic-tt-start-bl
+  .tiles-list._three-col._arr-top
+    li
+      &:first-child
+        background-image: url('../img/tiles-start-top-arr-1-bg.svg#svgView(preserveAspectRatio(none))')
+
+      &:nth-child(2)
+        background-image: url('../img/tiles-start-top-arr-2-bg.svg#svgView(preserveAspectRatio(none))')
+
+      &:nth-child(3)
+        background-image: url('../img/tiles-start-top-arr-3-bg.svg#svgView(preserveAspectRatio(none))')
+
+  .tiles-list._three-col._arr-bottom
+    li
+      &:first-child
+        background-image: url('../img/tiles-start-bottom-arr-1-bg.svg#svgView(preserveAspectRatio(none))')
+
+      &:nth-child(2)
+        background-image: url('../img/tiles-start-bottom-arr-2-bg.svg#svgView(preserveAspectRatio(none))')
+
+      &:nth-child(3)
+        background-image: url('../img/tiles-start-bottom-arr-3-bg.svg#svgView(preserveAspectRatio(none))')

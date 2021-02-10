@@ -1,11 +1,9 @@
 .owl-carousel
-  margin-bottom: 50px
+  &.tiles-mobile-carousel
+    display: flex
 
-.owl-item
-  height: 100px
-  line-height: 100px
-  text-align: center
-  background-color: #d9d9d9
+.mobile-carousel-hand
+  display: none
 
 .owl-nav
   position: absolute
@@ -69,13 +67,33 @@
   &.active
     background-color: red
 
-/* Min width $lg pixels */
-@media only screen and (min-width: $lg)
-  .owl-prev,
-  .owl-next
-    &:hover
-      background-color: #333
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .tiles-mobile-carousel
+    .owl-stage
+      display: flex
 
-      .icon
-        fill: white
-/* end media min width $lg pixels */
+    .owl-item
+      li
+        width: 232px
+        height: 100%
+        margin-bottom: 0
+
+  .owl-carousel
+    &.tiles-mobile-carousel
+      display: block
+
+      .owl-stage-outer
+        overflow: visible
+
+  .mobile-carousel-hand
+    display: block
+    text-align: center
+    margin-bottom: 20px
+
+    .icon
+      vertical-align: top
+      width: 37px
+      height: 31px
+      fill: #d7d7e0
+/* end media max width $m-md */

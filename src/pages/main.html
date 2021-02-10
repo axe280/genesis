@@ -22,11 +22,13 @@
           <div class="header-inner">
             <div class="header-panel container">
               <div class="header-mob-layer-wrapp">
+                <button class="btn btn_border burger-menu">Меню</button>
+
                 <a href="index.html" class="logo">
                   <img src="assets/img/logo.svg" alt="logo" />
                 </a>
 
-                <div class="header-lang">
+                <div class="header-lang hidden-mobile">
                   <div class="header-lang__current">
                     <span>Ру</span>
                     <svg class="icon icon-arrow-down">
@@ -55,17 +57,29 @@
                     Регистрация
                   </button>
                 </div>
-
-                <div class="burger-menu">
-                  <div class="burger-menu-box"></div>
-                </div>
               </div>
 
               <div class="header-menu">
                 <div class="menu-wrapper-fixed">
-                  <div class="menu-close-overlay"></div>
-
                   <div class="menu-open-wrapper">
+                    <div class="header-lang-mobile">
+                      <div class="header-lang-mobile__tt">Язык сайта:</div>
+                      <div class="header-lang">
+                        <div class="header-lang__current">
+                          <span>Ру</span>
+                          <svg class="icon icon-arrow-down">
+                            <use
+                              xlink:href="assets/img/sprite.svg#arrow-down"
+                            ></use>
+                          </svg>
+                        </div>
+                        <ul class="header-lang__dd">
+                          <li><a href="#">En</a></li>
+                          <li><a href="#">Sp</a></li>
+                        </ul>
+                      </div>
+                    </div>
+
                     <nav class="header-nav">
                       <ul class="menu">
                         <li class="menu-item">
@@ -114,7 +128,7 @@
         <div class="main-header-inner">
           <div class="container">
             <div class="main-header-info">
-              <h1 class="text_light">Инвестиции – это просто!</h1>
+              <h1 class="text_light">Инвестиции – это&nbsp;просто!</h1>
               <p>
                 Начните зарабатывать с самыми прибыльными компаниями прямо
                 сейчас
@@ -122,7 +136,7 @@
               <button
                 type="button"
                 data-mfp-src="#regModal"
-                class="btn btn_md open-popup-link"
+                class="btn btn_md open-popup-link btn_max-mobile"
               >
                 Бесплатная регистрация
               </button>
@@ -258,10 +272,15 @@
                     </svg>
                   </div>
                   <div class="title-site title-site_h4">Инвесторам</div>
+                  <svg class="icon icon-mob-arr-t1">
+                    <use xlink:href="assets/img/sprite.svg#mob-arr-t1"></use>
+                  </svg>
                 </div>
 
                 <div class="ic-col-services">
-                  <ul class="tiles-list _purple">
+                  <ul
+                    class="tiles-list owl-carousel tiles-mobile-carousel _purple"
+                  >
                     <li>
                       <div class="tiles-head _bordered">
                         <div class="tiles-tt">Надежность</div>
@@ -341,6 +360,14 @@
                       </div>
                     </li>
                   </ul>
+
+                  <span class="mobile-carousel-hand">
+                    <svg class="icon icon-carousel-hand">
+                      <use
+                        xlink:href="assets/img/sprite.svg#carousel-hand"
+                      ></use>
+                    </svg>
+                  </span>
                 </div>
               </div>
 
@@ -360,7 +387,7 @@
                 </div>
 
                 <div class="ic-col-services">
-                  <ul class="tiles-list">
+                  <ul class="tiles-list owl-carousel tiles-mobile-carousel">
                     <li>
                       <div class="tiles-head _bordered">
                         <div class="tiles-tt">Стабильность</div>
@@ -461,7 +488,9 @@
                 Ознакомьтесь с компаниями-партнерами, и заключите свою первую
                 сделку уже сегодня.
               </p>
-              <a href="#" class="btn btn_md">Начать зарабатывать</a>
+              <a href="#" class="btn btn_md btn_max-mobile"
+                >Начать зарабатывать</a
+              >
             </div>
 
             <div class="partners-wrapp" id="partners">
