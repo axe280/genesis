@@ -24,7 +24,7 @@
               <div class="header-mob-layer-wrapp">
                 <button class="btn btn_border burger-menu">Меню</button>
 
-                <a href="index.html" class="logo">
+                <a href="main.html" class="logo">
                   <img src="assets/img/logo.svg" alt="logo" />
                 </a>
 
@@ -93,7 +93,7 @@
                           >
                         </li>
                         <li class="menu-item">
-                          <a class="menu-item__link" href="main.html#partners"
+                          <a class="menu-item__link scrollto" href="#partners"
                             >Наши партнеры</a
                           >
                         </li>
@@ -183,7 +183,7 @@
                   </svg>
 
                   <div class="mh-icons__info">
-                    <b>4</b>
+                    <b>3</b>
                     <span>Компаний-партнеров</span>
                   </div>
                 </li>
@@ -468,10 +468,10 @@
 
                   <p>
                     Если у вас остались сомнения, вы можете ознакомиться со
-                    страницей <b><a href="#">«Отзывы»</a></b
+                    страницей <b><a href="reviews.html">«Отзывы»</a></b
                     >, на которой пользователи компании делятся впечатлениями о
                     работе с нами. А также с документами компании на странице
-                    <b><a href="#">«О компании»</a></b
+                    <b><a href="about.html">«О компании»</a></b
                     >.
                   </p>
                 </div>
@@ -488,9 +488,13 @@
                 Ознакомьтесь с компаниями-партнерами, и заключите свою первую
                 сделку уже сегодня.
               </p>
-              <a href="#" class="btn btn_md btn_max-mobile"
-                >Начать зарабатывать</a
+              <button
+                type="button"
+                data-mfp-src="#regModal"
+                class="btn btn_md btn_max-mobile open-popup-link"
               >
+                Начать зарабатывать
+              </button>
             </div>
 
             <div class="partners-wrapp" id="partners">
@@ -973,7 +977,7 @@
               Хотите узнать больше?
               <b
                 >Ознакомьтесь с информацией в разделе
-                <a href="#">«Карьера»</a></b
+                <a href="career.html">«Карьера»</a></b
               >
             </p>
           </div>
@@ -1385,7 +1389,7 @@
                     ></use>
                   </svg>
                 </div>
-                <a href="#" class="btn btn_md btn_light"
+                <a href="reviews.html" class="btn btn_md btn_light"
                   >Ознакомиться с отзывами</a
                 >
               </div>
@@ -1484,7 +1488,7 @@
                       <a href="#" class="dotted-link dotted-link_light"
                         >условия пользовательского соглашения</a
                       >
-                      <input type="checkbox" checked />
+                      <input type="checkbox" />
                       <span class="fake-control"></span>
                     </label>
                   </div>
@@ -1505,19 +1509,27 @@
             <div class="footer-tt">Меню</div>
             <nav class="footer-nav">
               <ul>
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Как начать</a></li>
-                <li><a href="#">Наши партнеры</a></li>
-              </ul>
-              <ul>
-                <li><a href="#">Партнерство</a></li>
-                <li><a href="#">Карьера</a></li>
-                <li><a href="#">Помощь</a></li>
-              </ul>
-              <ul>
-                <li><a href="#">Отзывы</a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="start.html">Как начать</a></li>
                 <li>
-                  <a href="#regModal" class="open-popup-link">Регистрация</a>
+                  <a href="#partners" class="scrollto">Наши партнеры</a>
+                </li>
+              </ul>
+              <ul>
+                <li><a href="partnership.html">Партнерство</a></li>
+                <li><a href="career.html">Карьера</a></li>
+                <li><a href="help.html">Помощь</a></li>
+              </ul>
+              <ul>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li>
+                  <button
+                    type="button"
+                    href="#regModal"
+                    class="open-popup-link text_primary"
+                  >
+                    Регистрация
+                  </button>
                 </li>
               </ul>
             </nav>
@@ -1550,7 +1562,7 @@
             <div class="footer-tt">Мы в соцсетях</div>
             <ul class="v-soc-fullname">
               <li>
-                <a href="#">
+                <a href="https://t.me/genesisws">
                   <svg class="icon icon-telegram-s">
                     <use xlink:href="assets/img/sprite.svg#telegram-s"></use>
                   </svg>
@@ -1558,7 +1570,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="http://vk.com/genesisws">
                   <svg class="icon icon-vk-s">
                     <use xlink:href="assets/img/sprite.svg#vk-s"></use>
                   </svg>
@@ -1690,7 +1702,13 @@
                 <div class="mpm-stat-bl__tt">Общая доходность</div>
                 <div class="mpm-stat-bl__val">50 000₽</div>
               </div>
-              <button class="btn btn_md" type="button">Заключить сделку</button>
+              <button
+                type="button"
+                class="btn btn_md open-popup-link"
+                data-mfp-src="#regModal"
+              >
+                Заключить сделку
+              </button>
             </div>
           </div>
         </div>
@@ -1837,7 +1855,13 @@
               инвестиций, либо для тех, кого не устраивает низкая доходность, в
               сравнении с другими компаниями-партнерами.
             </p>
-            <a href="#" class="btn btn_md">Заключить сделку с компанией</a>
+            <button
+              type="button"
+              class="btn btn_md open-popup-link"
+              data-mfp-src="#regModal"
+            >
+              Заключить сделку с компанией
+            </button>
           </div>
         </div>
       </div>
@@ -1982,7 +2006,13 @@
               опытным инвесторам, так и новичкам, которые желают получать более
               высокую доходность.
             </p>
-            <a href="#" class="btn btn_md">Заключить сделку с компанией</a>
+            <button
+              type="button"
+              class="btn btn_md open-popup-link"
+              data-mfp-src="#regModal"
+            >
+              Заключить сделку с компанией
+            </button>
           </div>
         </div>
       </div>
@@ -2163,7 +2193,13 @@
               заработаете. Команда Genesis рекомендует данную компанию к
               сотрудничеству всем пользователям платформы.
             </p>
-            <a href="#" class="btn btn_md">Заключить сделку с компанией</a>
+            <button
+              type="button"
+              class="btn btn_md open-popup-link"
+              data-mfp-src="#regModal"
+            >
+              Заключить сделку с компанией
+            </button>
           </div>
         </div>
       </div>
@@ -2296,7 +2332,13 @@
               Ознакомьтесь с предложением подробнее в личном кабинете на сайте
               Genesis.
             </p>
-            <a href="#" class="btn btn_md">Заключить сделку с компанией</a>
+            <button
+              type="button"
+              class="btn btn_md open-popup-link"
+              data-mfp-src="#regModal"
+            >
+              Заключить сделку с компанией
+            </button>
           </div>
         </div>
       </div>
@@ -2419,7 +2461,13 @@
               контрактов с ней рекомендуется всем пользователям, у которых
               открыт статус <b>G5</b> в рамках программы <b>Genesis UP</b>.
             </p>
-            <a href="#" class="btn btn_md">Заключить сделку с компанией</a>
+            <button
+              type="button"
+              class="btn btn_md open-popup-link"
+              data-mfp-src="#regModal"
+            >
+              Заключить сделку с компанией
+            </button>
           </div>
         </div>
       </div>
@@ -2535,7 +2583,7 @@
                   <use xlink:href="assets/img/sprite.svg#envelope"></use>
                 </svg>
               </div>
-              <input type="email" placeholder="Введите" required />
+              <input type="text" placeholder="Введите" />
             </div>
           </label>
         </div>
@@ -2712,7 +2760,7 @@
             <label>
               <span>Я ознакомлен(а) и принимаю</span>
               <a href="#">условия пользовательского соглашения</a>
-              <input type="checkbox" checked />
+              <input type="checkbox" />
               <span class="fake-control"></span>
             </label>
           </div>

@@ -29,7 +29,6 @@ $(function () {
   $('.m-calc-result').css('display', 'flex').hide()
   $('.m-calc-row-controls .btn').on('click', function () {
     // if $inputVal.value valid => $('.m-calc-result').fadeIn()
-    console.log(true)
     $('.m-calc-result').fadeIn()
   })
 
@@ -69,6 +68,17 @@ $(function () {
     if ($(this).parents('.faq-list').hasClass('_all-opened')) return
 
     $(this).toggleClass('_opened').parent().find('.faq-body').slideToggle(200)
+  })
+
+  // scrollto
+  $('a.scrollto').on('click', function () {
+    var elementClick = $(this).attr('href')
+    var destination = $(elementClick).offset().top
+    jQuery('html:not(:animated),body:not(:animated)').animate(
+      { scrollTop: destination },
+      800
+    )
+    return false
   })
 
   // magnific popup

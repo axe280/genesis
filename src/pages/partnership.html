@@ -21,11 +21,13 @@
         <div class="header-inner">
           <div class="header-panel container">
             <div class="header-mob-layer-wrapp">
-              <a href="index.html" class="logo">
+              <button class="btn btn_border burger-menu">Меню</button>
+
+              <a href="main.html" class="logo">
                 <img src="assets/img/logo.svg" alt="logo" />
               </a>
 
-              <div class="header-lang">
+              <div class="header-lang hidden-mobile">
                 <div class="header-lang__current">
                   <span>Ру</span>
                   <svg class="icon icon-arrow-down">
@@ -54,17 +56,29 @@
                   Регистрация
                 </button>
               </div>
-
-              <div class="burger-menu">
-                <div class="burger-menu-box"></div>
-              </div>
             </div>
 
             <div class="header-menu">
               <div class="menu-wrapper-fixed">
-                <div class="menu-close-overlay"></div>
-
                 <div class="menu-open-wrapper">
+                  <div class="header-lang-mobile">
+                    <div class="header-lang-mobile__tt">Язык сайта:</div>
+                    <div class="header-lang">
+                      <div class="header-lang__current">
+                        <span>Ру</span>
+                        <svg class="icon icon-arrow-down">
+                          <use
+                            xlink:href="assets/img/sprite.svg#arrow-down"
+                          ></use>
+                        </svg>
+                      </div>
+                      <ul class="header-lang__dd">
+                        <li><a href="#">En</a></li>
+                        <li><a href="#">Sp</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
                   <nav class="header-nav">
                     <ul class="menu">
                       <li class="menu-item">
@@ -78,7 +92,9 @@
                         >
                       </li>
                       <li class="menu-item">
-                        <a class="menu-item__link" href="main.html#partners"
+                        <a
+                          class="menu-item__link scrollto"
+                          href="main.html#partners"
                           >Наши партнеры</a
                         >
                       </li>
@@ -286,7 +302,7 @@
                       </svg>
                     </div>
                     <div class="tiles-service__info">
-                      <b>4</b>
+                      <b>3</b>
                       <span>Компаний-партнеров</span>
                     </div>
                   </div>
@@ -358,19 +374,29 @@
             <div class="footer-tt">Меню</div>
             <nav class="footer-nav">
               <ul>
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Как начать</a></li>
-                <li><a href="#">Наши партнеры</a></li>
-              </ul>
-              <ul>
-                <li><a href="#">Партнерство</a></li>
-                <li><a href="#">Карьера</a></li>
-                <li><a href="#">Помощь</a></li>
-              </ul>
-              <ul>
-                <li><a href="#">Отзывы</a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="start.html">Как начать</a></li>
                 <li>
-                  <a href="#regModal" class="open-popup-link">Регистрация</a>
+                  <a href="main.html#partners" class="scrollto"
+                    >Наши партнеры</a
+                  >
+                </li>
+              </ul>
+              <ul>
+                <li><a href="partnership.html">Партнерство</a></li>
+                <li><a href="career.html">Карьера</a></li>
+                <li><a href="help.html">Помощь</a></li>
+              </ul>
+              <ul>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li>
+                  <button
+                    type="button"
+                    href="#regModal"
+                    class="open-popup-link text_primary"
+                  >
+                    Регистрация
+                  </button>
                 </li>
               </ul>
             </nav>
@@ -403,7 +429,7 @@
             <div class="footer-tt">Мы в соцсетях</div>
             <ul class="v-soc-fullname">
               <li>
-                <a href="#">
+                <a href="https://t.me/genesisws">
                   <svg class="icon icon-telegram-s">
                     <use xlink:href="assets/img/sprite.svg#telegram-s"></use>
                   </svg>
@@ -411,7 +437,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="http://vk.com/genesisws">
                   <svg class="icon icon-vk-s">
                     <use xlink:href="assets/img/sprite.svg#vk-s"></use>
                   </svg>
@@ -555,7 +581,7 @@
                   <use xlink:href="assets/img/sprite.svg#envelope"></use>
                 </svg>
               </div>
-              <input type="email" placeholder="Введите" required />
+              <input type="text" placeholder="Введите" />
             </div>
           </label>
         </div>
@@ -732,7 +758,7 @@
             <label>
               <span>Я ознакомлен(а) и принимаю</span>
               <a href="#">условия пользовательского соглашения</a>
-              <input type="checkbox" checked />
+              <input type="checkbox" />
               <span class="fake-control"></span>
             </label>
           </div>

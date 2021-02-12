@@ -21,11 +21,13 @@
         <div class="header-inner">
           <div class="header-panel container">
             <div class="header-mob-layer-wrapp">
-              <a href="index.html" class="logo">
+              <button class="btn btn_border burger-menu">Меню</button>
+
+              <a href="main.html" class="logo">
                 <img src="assets/img/logo.svg" alt="logo" />
               </a>
 
-              <div class="header-lang">
+              <div class="header-lang hidden-mobile">
                 <div class="header-lang__current">
                   <span>Ру</span>
                   <svg class="icon icon-arrow-down">
@@ -54,17 +56,29 @@
                   Регистрация
                 </button>
               </div>
-
-              <div class="burger-menu">
-                <div class="burger-menu-box"></div>
-              </div>
             </div>
 
             <div class="header-menu">
               <div class="menu-wrapper-fixed">
-                <div class="menu-close-overlay"></div>
-
                 <div class="menu-open-wrapper">
+                  <div class="header-lang-mobile">
+                    <div class="header-lang-mobile__tt">Язык сайта:</div>
+                    <div class="header-lang">
+                      <div class="header-lang__current">
+                        <span>Ру</span>
+                        <svg class="icon icon-arrow-down">
+                          <use
+                            xlink:href="assets/img/sprite.svg#arrow-down"
+                          ></use>
+                        </svg>
+                      </div>
+                      <ul class="header-lang__dd">
+                        <li><a href="#">En</a></li>
+                        <li><a href="#">Sp</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
                   <nav class="header-nav">
                     <ul class="menu">
                       <li class="menu-item">
@@ -78,7 +92,9 @@
                         >
                       </li>
                       <li class="menu-item">
-                        <a class="menu-item__link" href="main.html#partners"
+                        <a
+                          class="menu-item__link scrollto"
+                          href="main.html#partners"
                           >Наши партнеры</a
                         >
                       </li>
@@ -1091,7 +1107,9 @@
                 </svg>
               </div>
 
-              <a href="#" class="btn btn_md btn_light">Открыть презентацию</a>
+              <a href="#" class="btn btn_md btn_light" target="_blank"
+                >Открыть презентацию</a
+              >
             </div>
           </div>
 
@@ -1115,11 +1133,9 @@
 
                   <div class="faq-body">
                     <p>
-                      Оборот структуры – сумма сделок, открытых Вашими
-                      партнерами. Сделки партнеров 2-го и 3-го уровня
-                      учитываются в оборот в размере 60% и 30% соответственно.
-                      Сделка на 3 дня не учитывается в программе
-                      <b>Genesis UP.</b>
+                      Статус карьеры – это Ваш уровень в программе
+                      <b>Genesis UP</b>. Он показывает Ваше текущее
+                      местоположение в карьерной лестнице.
                     </p>
                   </div>
                 </li>
@@ -1144,7 +1160,7 @@
                       партнерами. Сделки партнеров 2-го и 3-го уровня
                       учитываются в оборот в размере 60% и 30% соответственно.
                       Сделка на 3 дня не учитывается в программе
-                      <b>Genesis UP.</b>
+                      <b>Genesis UP</b>.
                     </p>
                   </div>
                 </li>
@@ -1165,11 +1181,9 @@
 
                   <div class="faq-body">
                     <p>
-                      Оборот структуры – сумма сделок, открытых Вашими
-                      партнерами. Сделки партнеров 2-го и 3-го уровня
-                      учитываются в оборот в размере 60% и 30% соответственно.
-                      Сделка на 3 дня не учитывается в программе
-                      <b>Genesis UP.</b>
+                      Личный оборот – сумма сделок, которые Вы открыли с
+                      компаниями-партнерами. Сделка на 3 дня не учитывается в
+                      программе <b>Genesis UP</b>.
                     </p>
                   </div>
                 </li>
@@ -1190,11 +1204,12 @@
 
                   <div class="faq-body">
                     <p>
-                      Оборот структуры – сумма сделок, открытых Вашими
-                      партнерами. Сделки партнеров 2-го и 3-го уровня
-                      учитываются в оборот в размере 60% и 30% соответственно.
-                      Сделка на 3 дня не учитывается в программе
-                      <b>Genesis UP.</b>
+                      Партнерские бонусы – сумма бонуса, которую Вы получаете на
+                      свой баланс, при открытии сделки Вашим партнером.
+                      <b>НАПРИМЕР:</b> Ваш партнерский статус G1. При открытии
+                      Вашим партнером сделки на 10 000 рублей, на Ваш баланс
+                      автоматически поступает 400 рублей, так как Ваш
+                      партнерский бонус от партнера первого уровня равен 4%.
                     </p>
                   </div>
                 </li>
@@ -1215,11 +1230,11 @@
 
                   <div class="faq-body">
                     <p>
-                      Оборот структуры – сумма сделок, открытых Вашими
-                      партнерами. Сделки партнеров 2-го и 3-го уровня
-                      учитываются в оборот в размере 60% и 30% соответственно.
-                      Сделка на 3 дня не учитывается в программе
-                      <b>Genesis UP.</b>
+                      Партнеры первого уровня – партнеры которых пригласили
+                      лично Вы. Партнеры второго уровня – партнеры которых
+                      пригласили Ваши партнеры первого уровня. Партнеры третьего
+                      уровня – партнеры которых пригласили Ваши партнеры второго
+                      уровня.
                     </p>
                   </div>
                 </li>
@@ -1476,19 +1491,29 @@
             <div class="footer-tt">Меню</div>
             <nav class="footer-nav">
               <ul>
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Как начать</a></li>
-                <li><a href="#">Наши партнеры</a></li>
-              </ul>
-              <ul>
-                <li><a href="#">Партнерство</a></li>
-                <li><a href="#">Карьера</a></li>
-                <li><a href="#">Помощь</a></li>
-              </ul>
-              <ul>
-                <li><a href="#">Отзывы</a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="start.html">Как начать</a></li>
                 <li>
-                  <a href="#regModal" class="open-popup-link">Регистрация</a>
+                  <a href="main.html#partners" class="scrollto"
+                    >Наши партнеры</a
+                  >
+                </li>
+              </ul>
+              <ul>
+                <li><a href="partnership.html">Партнерство</a></li>
+                <li><a href="career.html">Карьера</a></li>
+                <li><a href="help.html">Помощь</a></li>
+              </ul>
+              <ul>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li>
+                  <button
+                    type="button"
+                    href="#regModal"
+                    class="open-popup-link text_primary"
+                  >
+                    Регистрация
+                  </button>
                 </li>
               </ul>
             </nav>
@@ -1521,7 +1546,7 @@
             <div class="footer-tt">Мы в соцсетях</div>
             <ul class="v-soc-fullname">
               <li>
-                <a href="#">
+                <a href="https://t.me/genesisws">
                   <svg class="icon icon-telegram-s">
                     <use xlink:href="assets/img/sprite.svg#telegram-s"></use>
                   </svg>
@@ -1529,7 +1554,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="http://vk.com/genesisws">
                   <svg class="icon icon-vk-s">
                     <use xlink:href="assets/img/sprite.svg#vk-s"></use>
                   </svg>
@@ -1673,7 +1698,7 @@
                   <use xlink:href="assets/img/sprite.svg#envelope"></use>
                 </svg>
               </div>
-              <input type="email" placeholder="Введите" required />
+              <input type="text" placeholder="Введите" />
             </div>
           </label>
         </div>
@@ -1850,7 +1875,7 @@
             <label>
               <span>Я ознакомлен(а) и принимаю</span>
               <a href="#">условия пользовательского соглашения</a>
-              <input type="checkbox" checked />
+              <input type="checkbox" />
               <span class="fake-control"></span>
             </label>
           </div>
