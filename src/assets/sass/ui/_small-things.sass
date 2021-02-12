@@ -64,3 +64,73 @@
   .icon-envelope-s
     height: 18px
     fill: $colorPurple
+
+
+// hint
+.hint-wrapper
+  position: relative
+
+  &:hover
+    .hint-bl
+      display: block
+
+    .dotted-link
+      border-color: transparent
+
+.hint-bl
+  position: absolute
+  bottom: 100%
+  left: 50%
+  width: 200px
+  margin-left: -100px
+  padding-bottom: 15px
+  z-index: 3
+  display: none
+
+.hint-inner
+  position: relative
+  padding: 12px 16px
+  border-radius: 6px
+  color: #fff
+  font-size: 12px
+  line-height: 15px
+  background-color: #050447
+
+  &::before
+    content: ''
+    position: absolute
+    left: 50%
+    margin-left: -6px
+    top: 100%
+    width: 0
+    height: 0
+    border-left: 12px solid transparent
+    border-right: 12px solid transparent
+    border-top: 8px solid #050447
+
+.status-section-wrapper
+  .hint-inner
+    background-color: $colorBlueDarkest
+
+    &::before
+      border-top-color: $colorBlueDarkest
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .v-soc-fullname
+    li
+      font-size: 13px
+      line-height: 18px
+
+    .icon
+      width: 20px
+
+    .icon-telegram-s
+      height: 18px
+
+    .icon-vk-s
+      height: 12px
+
+    .icon-envelope-s
+      height: 15px
+/* end media max width $m-md */

@@ -12,6 +12,24 @@ body
   padding: 0
   background-color: #fff
 
+._blur-bg
+  position: relative
+
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 2
+    backdrop-filter: blur(10px)
+
+.status-section-wrapper
+  .container
+    position: relative
+    z-index: 3
+
 .site-wrapper
   flex: 1 0 auto
 

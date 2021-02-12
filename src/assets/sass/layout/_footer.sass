@@ -1,8 +1,16 @@
 .footer
+  position: relative
   padding-top: 50px
   color: #fff
   background-color: $colorBlueDarkest
+  background-image: url('../img/footer-bg.svg')
+  background-repeat: no-repeat
+  background-size: cover
   overflow: hidden
+
+  .container
+    position: relative
+    z-index: 3
 
 .footer-row
   display: flex
@@ -79,7 +87,7 @@
   display: flex
   align-items: center
   padding: 24px 0 20px
-  border-top: 1px solid rgba(#fff, .2)
+  border-top: 1px solid rgba(#fff, .15)
 
   .logo
     margin-right: 70px
@@ -106,3 +114,131 @@
 
     &:hover
       color: $colorPrimary
+
+/* Max width $m-hd */
+@media only screen and (max-width: $m-hd)
+  .footer-nav
+    width: 415px
+/* end media max width $m-hd */
+
+/* Max width $m-xl */
+@media only screen and (max-width: $m-xl)
+  .footer-row
+    flex-wrap: wrap
+    justify-content: flex-start
+
+  .footer-col
+    margin-right: 0
+
+    &:first-child
+      width: 100%
+      margin-bottom: 43px
+
+  .footer-nav
+    width: 555px
+    margin-right: 0
+
+  .f-hours-work
+    justify-content: flex-start
+
+  .f-hours-w-item
+    width: 230px
+/* end media max width $m-xl */
+
+/* Max width $m-lg */
+@media only screen and (max-width: $m-lg)
+  .footer
+    background-image: url('../img/footer-bg-tablet.svg')
+
+  .footer-nav
+    width: 580px
+
+  .f-hours-work
+    width: 373px
+    margin-right: 111px
+    justify-content: space-between
+    background-image: url('../img/hours-work-line-tablet.svg')
+    background-size: 212px 8px
+    background-position: 40px 8px
+
+  .f-hours-w-item
+    width: auto
+
+  .footer-bottom .logo
+    margin-right: 40px
+/* end media max width $m-lg */
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .footer
+    padding-top: 32px
+
+  .footer-row
+    display: block
+    padding: 32px 0
+
+  .footer-tt
+    margin-bottom: 15px
+    font-size: 14px
+    line-height: 17px
+
+  .footer-nav
+    width: auto
+    flex-wrap: wrap
+    justify-content: flex-start
+
+    ul
+      margin-right: 30px
+      margin-left: 0
+
+    li
+      font-size: 13px
+      line-height: 17px
+
+      &:last-child
+        margin-bottom: 10px
+
+  .footer-col
+    &:first-child
+      margin-bottom: 14px
+
+    &:nth-child(2)
+      margin-bottom: 24px
+
+  .f-hours-work
+    width: 231px
+    min-width: 0
+    margin-right: 0px
+    background-image: url('../img/hours-work-line-mobile.svg')
+    background-size: 91px 8px
+    background-position: 39px 7px
+
+  .f-hours-w-item
+    &__w-days
+      font-size: 13px
+      line-height: 16px
+      margin-bottom: 2px
+
+    &__w-hours
+      font-size: 14px
+      line-height: 17px
+      margin-bottom: 5px
+
+    &__t
+      font-size: 12px
+      line-height: 15px
+
+    .icon
+      margin-bottom: 10px
+
+  .footer-bottom
+    display: block
+    padding: 28px 0
+
+    .logo
+      display: none
+
+  .copy
+    display: block
+    margin-bottom: 14px
+/* end media max width $m-md */

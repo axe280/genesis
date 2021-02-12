@@ -279,11 +279,27 @@
 
   .partners-list
     display: block
+    padding-bottom: 0
 
     li
       width: 100%
       min-height: 280px
       padding-bottom: 50px
+
+      &:first-child
+        background-image: url('../img/partners-list-1-tablet.svg')
+
+      &:nth-child(2)
+        background-image: url('../img/partners-list-2-tablet.svg')
+
+      &:nth-child(3)
+        background-image: url('../img/partners-list-3-tablet.svg')
+
+      &:nth-child(4)
+        background-image: url('../img/partners-list-4-tablet.svg')
+
+      &:nth-child(5)
+        background-image: url('../img/partners-list-5-tablet.svg')
 
   .partners-about
     .btn
@@ -315,4 +331,82 @@
 
     .btn
       margin-top: 32px
+
+  .partners-list
+    li
+      width: 100%
+      min-height: 100px
+      padding: 20px 20px 112px
+      margin-bottom: 40px
+
+      &:first-child
+        background-image: url('../img/partners-list-1-mob.svg')
+
+      &:nth-child(2)
+        background-image: url('../img/partners-list-2-mob.svg')
+
+      &:nth-child(3)
+        background-image: url('../img/partners-list-3-mob.svg')
+
+      &:nth-child(4)
+        background-image: url('../img/partners-list-4-mob.svg')
+
+      &:nth-child(5)
+        background-image: url('../img/partners-list-5-mob.svg')
+
+    .partners-emty
+      padding-bottom: 20px
+
+      img
+        width: 30px
+        height: 30px
+
+      b
+        margin-top: 10px
+        font-size: 14px
+        line-height: 17px
+
+  .partners-row
+    display: block
+
+  .partners-img
+    padding: 0 0 20px
+    margin-bottom: 20px
+    border-right: none
+    border-bottom: 1px solid rgba(#969696, .2)
+
+    &__logo
+      width: 84px
+      height: 60px
+      line-height: 60px
+      margin-bottom: 15px
+      text-align: center
+
+    &__name
+      font-size: 14px
+      line-height: 17px
+
+  .partners-about
+    padding: 0
+
+    .btn
+      font-size: 12px
+      width: 100%
+      line-height: 24px
+
+  .partners-wrapp
+    .partners-stat
+      display: block
+      left: 20px
+      right: 20px
+      bottom: -20px
+
+    .partner-stat-comp
+      width: 100%
+      margin-bottom: 4px
+      padding-top: 12px
+      padding-bottom: 14px
+
+      &:last-child
+        margin-bottom: 0
 /* end media max width $m-md */
