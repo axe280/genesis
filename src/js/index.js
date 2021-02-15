@@ -101,8 +101,11 @@ $(function () {
     },
   })
 
-  if ($(window).width() < 740) {
-    $('.tiles-mobile-carousel').owlCarousel({
+  // init resize carousel
+  var $mobileCarouselHts = null
+
+  var initHtsCarousel = function () {
+    $mobileCarouselHts = $('.tiles-mobile-carousel').owlCarousel({
       loop: false,
       dots: false,
       nav: false,
@@ -110,4 +113,19 @@ $(function () {
       margin: 4,
     })
   }
+
+  var initCarouselResizeHandler = function () {
+    if (
+      $mobileCarouselHts &&
+      $mobileCarouselHts.length &&
+      $(window).width() >= 740
+    ) {
+      $mobileCarouselHts.trigger('destroy.owl.carousel')
+    } else if ($(window).width() < 740) {
+      initHtsCarousel()
+    }
+  }
+
+  initCarouselResizeHandler()
+  $(window).on('resize', initCarouselResizeHandler)
 })

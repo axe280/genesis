@@ -60,12 +60,14 @@
 .status-levels
   display: flex
   align-items: center
+  justify-content: space-between
 
 .status-level
   display: flex
   flex-wrap: wrap
   align-items: center
-  margin-right: 50px
+  margin-right: 44px
+  min-width: 112px
 
   &:last-child
     margin-right: 0
@@ -273,3 +275,126 @@
   &.st-level-12
     &::before
       width: 132px
+
+/* Max width $m-hd */
+@media only screen and (max-width: $m-hd)
+  .status-row
+    background: none
+    align-items: flex-start
+
+  .status-item
+    flex-wrap: wrap
+    min-height: 141px
+
+  .status-rank
+    width: 100%
+    margin-bottom: 20px
+
+  .status-item
+    border-bottom: 1px solid rgba(#fff, .2)
+    padding-bottom: 25px
+    margin-bottom: 25px
+
+    &:last-child
+      border: none
+      padding-bottom: 0
+/* end media max width $m-hd */
+
+/* Max width $m-lg */
+@media only screen and (max-width: $m-lg)
+  .status-section-wrapper
+    background-image: url('../img/status-sec-1-tablet.png')
+
+  .status-row
+    display: block
+
+  .status-item
+    flex-wrap: wrap
+    min-height: 141px
+
+  .status-rank
+    width: auto
+    margin-bottom: 0
+    min-width: 182px
+
+    &__icon
+      width: 
+
+  .status-col
+    width: 100%
+
+    &:last-child
+      padding-left: 0
+
+      .status-item
+        &:last-child
+          padding-bottom: 0
+          margin-bottom: 0
+          border: none
+  
+  .status-item
+    min-height: auto
+
+    &:last-child
+      border-bottom: 1px solid rgba(#fff, .2)
+      margin-bottom: 25px
+      padding-bottom: 25px
+/* end media max width $m-lg */
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .status-section-wrapper
+    margin: 30px 0
+    padding: 30px 0
+
+  .status-rank
+    display: block
+    min-width: 40px
+    margin-right: 20px
+
+    &__icon
+      width: 40px
+      height: 40px
+      margin-right: 0
+
+    &__name
+      margin-top: 12px
+      text-align: center
+      font-size: 18px
+      line-height: 22px
+
+  .status-item
+    align-items: flex-start
+    flex-wrap: nowrap
+
+  .status-level
+    display: block
+
+    &__tt
+      font-size: 12px
+      line-height: 15px
+      margin-bottom: 4px
+
+    &__val
+      font-size: 14px
+      line-height: 17px
+
+  .status-level
+    min-width: 20px
+    margin-right: 0
+
+    &__tt
+      margin-right: 0
+
+  .status-info
+    flex-grow: 1
+
+  .status-item,
+  .status-item:last-child
+    padding-bottom: 20px
+    margin-bottom: 20px
+
+  .status-bonus
+    align-items: flex-start
+    margin-top: 12px
+/* end media max width $m-md */

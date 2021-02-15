@@ -260,12 +260,45 @@
       width: 104px
       height: 10px
 
+/* Max width $m-hd */
+@media only screen and (max-width: $m-hd)
+  .how-to-start
+    width: 708px
+    margin: 0 auto
+
+  .hts-reg
+    flex-wrap: wrap
+    max-width: 708px
+    margin: 0 auto
+    padding: 30px
+    right: 40px
+
+    .btn
+      width: 100%
+
+  .hts-reg-bg
+    height: 198px
+    right: 40px
+    background-image: url('../img/hts-reg-bg-tablet.svg')
+
+  .hts-reg-info
+    margin-right: 0
+    margin-bottom: 20px
+/* end media max width $m-hd */
+
 
 /* Max width $m-xl */
 @media only screen and (max-width: $m-xl)
   .why-services
     .tiles-list
       margin-bottom: 26px
+
+  .calc-line
+    padding-right: 60px
+
+  .kudos-bl
+    padding-left: 300px
+    background-position: -100px 50%
 /* end media max width $m-xl */
 
 /* Max width $m-lg */
@@ -304,6 +337,34 @@
   .partners-about
     .btn
       margin-bottom: 20px
+
+  .calc-line
+    padding: 20px 20px 20px 60px
+    background-position: 50% 50%
+
+  .kudos-bl
+    padding: 40px 40px 40px 200px
+    background-image: url('../img/kudos-bg-tablet.png')
+    background-position: 0 50%
+
+  .kudos-bl-arr
+    .btn
+      flex-shrink: 0
+
+    b
+      min-width: 134px
+
+    &__arr
+      overflow: hidden
+      flex-shrink: 1
+      min-width: 10px
+      display: flex
+      justify-content: flex-end
+      align-items: center
+      margin: 0 10px
+
+      .icon
+        flex-shrink: 0
 /* end media max width $m-lg */
 
 /* Max width $m-md */
@@ -409,4 +470,88 @@
 
       &:last-child
         margin-bottom: 0
+
+  .calc-line
+    flex-wrap: wrap
+    justify-content: flex-start
+    padding: 30px 30px 34px
+
+    &__tt
+      .icon
+        width: 22px
+        height: 29px
+
+    &__arr
+      position: relative
+      top: 8px
+      flex-grow: 0
+      margin: 0 0 0 20px
+      width: 40px
+      height: 20px
+      background-image: url('../img/white-arr-bottom.svg')
+      background-repeat: no-repeat
+      background-position: 0 0
+      background-size: 100% 100%
+      
+      .icon
+        display: none
+
+    .btn
+      margin-top: 20px
+      width: 100%
+
+  .how-to-start
+    max-width: 380px
+    width: auto
+
+  .hts-reg-bg
+    display: none
+
+  .hts-reg
+    position: relative
+    z-index: 2
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    margin: 4px 0 0
+    padding: 20px
+    background-image: url('../img/hts-reg-bg-tablet.svg')
+    background-size: cover
+    backdrop-filter: blur(10px)
+    border-radius: 10px
+
+  .hts-reg-info
+    font-size: 13px
+    line-height: 16px
+    margin-bottom: 16px
+
+    .icon
+      width: 30px
+      height: 30px
+      margin-right: 10px
+
+  .kudos-bl
+    padding: 30px 30px 34px
+    background-image: url('../img/kudos-bg-mobile.png')
+    background-position: 0 50%
+
+  .kudos-bl-arr
+    display: block
+    margin: 0
+
+    .btn
+      flex-shrink: 0
+      width: 100%
+      padding-top: 8px
+      padding-bottom: 8px
+
+    b
+      display: block
+      margin: 20px 0
+      font-size: 13px
+      line-height: 16px
+
+    &__arr
+      display: none
 /* end media max width $m-md */
