@@ -12,7 +12,7 @@
   padding: 0
 
 .mfp-content
-  padding: 40px 15px
+  padding: 40px 20px
 
 .mfp-image-holder .mfp-close,
 .mfp-iframe-holder .mfp-close
@@ -123,3 +123,11 @@ button.mfp-arrow
   position: relative
   font-size: 14px
   line-height: 24px
+
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .mfp-close, button.mfp-close
+    width: 30px
+    height: 30px
+/* end media max width $m-md */
