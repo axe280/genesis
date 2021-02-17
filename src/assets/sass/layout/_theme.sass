@@ -1,0 +1,37 @@
+.page-cabinet
+  background-color: var(--main-bg-color)
+  color: var(--main-text-color)
+  transition: background-color .2s
+
+  .title-site, h1, h2, h3, h4, h5, h6,
+  .btn_border
+    color: var(--main-text-color)
+
+.aside-nav,
+.pay-comp-wrapp
+  background-color: var(--main-blocks-bg)
+  transition: background-color .2s
+
+.cabinet-stat-bl
+  color: var(--color-dark)
+
+.pay-comp-bonus__tt
+  color: var(--color-gray-light)
+
+[data-theme="dark"]
+  &.page-cabinet .header,
+  &.page-cabinet .footer,
+    background: var(--main-blocks-bg)
+
+  .cabinet-stat-bl
+    background-color: #f7f7f7
+
+  .pay-comp-aside
+    border-color: rgba(#fff, .11)
+    transition: none
+
+  .btn_border.btn_border-gray
+    border-color: rgba(#fff, .11)
+
+  .text_dark-50
+    color: var(--color-light)

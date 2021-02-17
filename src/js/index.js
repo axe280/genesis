@@ -128,4 +128,12 @@ $(function () {
 
   initCarouselResizeHandler()
   $(window).on('resize', initCarouselResizeHandler)
+
+  // cabinet
+  // switch theme
+  $('.header-switch-theme').on('click', 'button:not(.active)', function () {
+    var themeName = $(this).data('switchTheme')
+    $(this).addClass('active').siblings('button').removeClass('active')
+    $('body').attr('data-theme', themeName)
+  })
 })

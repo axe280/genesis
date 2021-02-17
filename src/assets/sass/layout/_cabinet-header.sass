@@ -1,0 +1,40 @@
+.header-switch-theme
+  display: flex
+  align-items: center
+  border: 1px solid rgba(#fff, .2)
+  padding: 7px 9px
+  border-radius: 4px
+
+  button
+    margin-right: 10px
+    padding: 0
+    cursor: pointer
+
+    &:hover
+      .icon
+        fill: #fff
+
+    &:last-child
+      margin-right: 0
+
+    .icon
+      width: 20px
+      height: 20px
+      fill: $colorGrayLight
+      transition: fill .2s
+
+    .icon-moon
+      width: 19px
+      height: 19px
+      transform: scaleX(-1)
+
+  .active
+    cursor: default
+
+    .icon-sun,
+    .icon-sun:hover
+      fill: $colorPrimary
+    
+    .icon-moon,
+    .icon-moon:hover
+      fill: $colorBlueMoreLight

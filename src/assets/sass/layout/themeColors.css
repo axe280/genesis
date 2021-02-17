@@ -1,0 +1,18 @@
+:root {
+  --main-bg-color: #fff;
+  --main-blocks-bg: #f7f7f7;
+
+  --main-text-color: #000;
+  --color-dark: #000;
+  --color-light: #fff;
+  --color-gray-light: #7c7c7c;
+}
+
+[data-theme='dark'] {
+  --main-bg-color: #15151e;
+  --main-blocks-bg: #1f1e43;
+
+  --main-text-color: #fff;
+  --color-light: #fff;
+  --color-gray-light: #fff;
+}

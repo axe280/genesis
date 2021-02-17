@@ -1,0 +1,108 @@
+.cabinet-stat-row
+  display: flex
+  justify-content: space-between
+
+  &._four-cols
+    .cabinet-stat-bl
+      width: calc(25% - 3px)
+
+  &._two-cols
+    .cabinet-stat-bl
+      width: calc(50% - 2px)
+
+  &._two-cols-last-long
+    .cabinet-stat-bl
+      &:first-child
+        flex-shrink: 0
+        width: 200px
+        margin-right: 4px
+
+      &:last-child
+        flex-grow: 1
+
+  &._ghost
+    .cabinet-stat-bl
+      background-color: rgba(#fff, .08)
+      color: #fff
+
+      &__tt
+        color: rgba(#fff, .7)
+
+.cabinet-stat-row + .cabinet-stat-row
+  margin-top: 4px
+
+.cabinet-stat-bl
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: calc(33.33% - 3px)
+  padding: 14px 20px
+  background-color: #fff
+  border-radius: 4px
+
+  &__about
+    flex-grow: 1
+
+  &__tt
+    margin-bottom: 5px
+    font-size: 12px
+    line-height: 15px
+    color: #7c7c7c
+
+  &__val
+    display: flex
+    align-items: center
+    font-weight: 500
+    font-size: 14px
+    line-height: 17px
+
+    .icon
+      margin-right: 8px
+      width: 14px
+      height: 14px
+      fill: $colorPrimary
+
+      &_light
+        fill: #fff
+
+  &__icon
+    flex-shrink: 0
+    width: 26px
+    height: 26px
+    margin-left: 10px
+
+.pay-comp-stats
+  .mpm-stat-wrapp
+    margin-bottom: 0
+
+  .mpm-stat-bl
+    padding: 14px 20px
+    background: #fff
+    border-radius: 4px
+    flex-grow: 1
+    width: auto
+    min-height: 40px
+
+    &:nth-child(2)
+      flex-grow: 0
+      width: 277px
+      flex-shrink: 0
+      background: none
+
+      &::before
+        background-image: url('../img/mpm-stat-bl-arr-st-cab.png')
+
+    &:nth-child(3)
+      flex-grow: 0
+      flex-shrink: 0
+      width: 267px
+      background-color: transparent
+      background-image: url('../img/mpm-stat-bl-arr-max-cab.png')
+
+    &__val
+      font-size: 14px
+      line-height: 17px
+
+    .icon
+      width: 26px
+      height: 26px

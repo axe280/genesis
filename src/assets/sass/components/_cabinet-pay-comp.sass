@@ -1,0 +1,250 @@
+.pay-comp-wrapp
+  border-radius: 10px
+  overflow: hidden
+
+  &._pay-comp
+    .pay-comp-bonus
+      margin-bottom: 20px
+
+    .pay-comp-stats
+      margin-bottom: 0
+
+    .pay-comp-actions
+      &__btn
+        .btn
+          padding-left: 25px
+          padding-right: 25px
+
+      &__field
+        width: 240px
+
+.pay-comp-row
+  display: flex
+  position: relative
+
+  &._blue
+    color: #fff
+    background-image: radial-gradient(circle at 27% 150%, #0060ba, #02afd4 125%)
+
+    .pay-comp-aside
+      border-color: rgba(#fff, .11)
+
+    .round-row-list
+      li
+        color: rgba(#fff, .9)
+
+        &::before
+          border-color: rgba(#fff, .5)
+
+  .pay-comp-btn
+    position: absolute
+    left: 0
+    bottom: 40px
+    width: 220px
+    text-align: center
+    
+    .btn
+      min-width: 140px
+      padding: 10px 24px
+      font-size: 10px
+
+  .round-row-list
+    margin-top: 24px
+    margin-left: -6%
+    
+    &._two-cols-long
+      margin-left: -3%
+
+      li
+        &:first-child
+          width: 30.33%
+          margin-left: 3%
+
+        &:last-child
+          width: 63.66%
+          max-width: 400px
+
+    &._half-col
+      margin-left: -3%
+
+      li
+        width: 47%
+        margin-left: 3%
+
+    &._max-col
+      margin-left: 0
+
+      li
+        width: 100%
+        margin-left: 0
+
+    li
+      width: 28.33%
+      margin: 0 0 0 6%
+
+.pay-comp-aside
+  flex: 0 0 220px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  padding: 40px 25px 120px
+  border-right: 1px solid #e7e7e9
+  transition: border-color 1s
+
+.pay-comp-brand
+  text-align: center
+
+  &__logo
+    height: 120px
+    max-width: 170px
+    margin: 10px auto 20px
+    line-height: 120px
+    text-align: center
+
+    img
+      max-height: 100%
+
+  &__name
+    padding: 0 20px
+    font-weight: 600
+    font-size: 16px
+    line-height: 20px
+
+.pay-comp-balance
+  text-align: center
+
+  &__tt
+    margin-bottom: 25px
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+
+  &__icon
+    margin-bottom: 12px
+
+    .icon
+      width: 30px
+      height: 30px
+      fill: $colorPrimary
+
+  &__value
+    font-weight: 500
+    font-size: 18px
+    line-height: 22px
+
+.pay-comp-main
+  flex-grow: 1
+  padding: 40px
+
+  .pay-comp-row
+    margin: 40px -40px -40px
+
+.pay-comp-info
+  margin-bottom: 35px
+
+.pay-comp-stats
+  margin-bottom: 20px
+
+.pay-comp-bonus
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: -20px
+
+  &__tt
+    flex-shrink: 0
+
+  &__result
+    flex-shrink: 0
+    font-weight: 500
+    font-size: 14px
+    line-height: 17px
+
+  &__arr
+    flex-grow: 1
+    margin: 0 10px 0 16px
+
+    .st-arrow-grow
+      .icon
+        width: 800px
+
+.bonus-result-round
+  padding: 0 4px
+  font-weight: 500
+  font-size: 14px
+  line-height: 23px
+  border: 1px solid #3698e4
+  border-radius: 4px
+
+.pay-comp-actions
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  margin-bottom: 30px
+
+  &__arr
+    flex-grow: 1
+    display: flex
+    align-items: center
+    height: 44px
+    margin: 0 20px
+
+    .st-arrow-grow
+      width: 100%
+
+    .icon
+      width: 300px
+
+  &__empty-field
+    width: 150px
+    border: 1px solid rgba(#fff, .4)
+    padding: 0 18px
+    font-weight: 500
+    font-size: 16px
+    line-height: 42px
+    border-radius: 4px
+  
+  &__tt
+    margin-bottom: 15px
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+  
+  &__field
+    width: 280px
+
+    .field-item__field
+      .icon-coins
+        fill: $colorBlue
+
+      input
+        border-color: transparent
+
+.pay-comp-actions-col
+  flex-shrink: 0
+
+.cabinet-stat-val-states
+  display: flex
+  align-items: center
+  max-width: 460px
+
+  .cabinet-stat-bl__val
+    flex-shrink: 0
+    min-width: 120px
+
+  .st-arrow-grow
+    flex-grow: 1
+    margin: 0 16px 0 20px
+
+    .icon
+      width: 206px
+      height: 7px
+
+.pay-comp-row-more
+  padding: 40px
+
+  .title-site
+    margin-bottom: 20px
+    font-size: 18px
+    line-height: 22px
