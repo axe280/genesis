@@ -41,6 +41,7 @@
     transition: background-color .2s
 
   input, textarea
+    font-weight: 500
     height: 44px
     font-size: 14px
 
@@ -66,3 +67,71 @@
   bottom: 0
   width: 230px
   z-index: 50
+
+/* Max width $m-lg */
+@media only screen and (max-width: $m-lg)
+  .aside-nav
+    transform: translateX(-160px)
+
+  .page-cabinet
+    .main,
+    .footer
+      padding-left: 70px
+
+  .page-cabinet
+    .main
+      .btn
+        padding-left: 25px
+        padding-right: 25px
+/* end media max width $m-lg */
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .aside-nav
+    transform: translateX(-100%)
+
+  .page-cabinet
+    font-size: 10px
+    line-height: 18px
+
+    input
+      height: 40px
+
+    .field-item
+      &__field
+        &._icon
+          input
+            padding-left: 38px
+
+        &._ruble
+          input
+            padding-right: 38px
+
+      &__icon
+        .icon
+          width: 16px
+          height: 16px
+    
+    .main,
+    .footer
+      padding-left: 0
+
+    .container
+      padding-left: 20px
+      padding-right: 20px
+
+    .main
+      padding-top: 20px
+
+      p + p
+        margin-top: 18px
+
+      h1
+        font-size: 18px
+        line-height: 22px
+        margin-bottom: 18px
+
+      .btn
+        padding: 13px 20px
+        font-size: 12px
+/* end media max width $m-md */

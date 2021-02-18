@@ -18,6 +18,11 @@
       &__field
         width: 240px
 
+    .pay-comp-brand
+      &__logo
+        height: 60px
+        line-height: 60px
+
 .pay-comp-row
   display: flex
   position: relative
@@ -36,6 +41,9 @@
         &::before
           border-color: rgba(#fff, .5)
 
+  .round-row-list
+    margin-top: 24px
+
   .pay-comp-btn
     position: absolute
     left: 0
@@ -47,40 +55,6 @@
       min-width: 140px
       padding: 10px 24px
       font-size: 10px
-
-  .round-row-list
-    margin-top: 24px
-    margin-left: -6%
-    
-    &._two-cols-long
-      margin-left: -3%
-
-      li
-        &:first-child
-          width: 30.33%
-          margin-left: 3%
-
-        &:last-child
-          width: 63.66%
-          max-width: 400px
-
-    &._half-col
-      margin-left: -3%
-
-      li
-        width: 47%
-        margin-left: 3%
-
-    &._max-col
-      margin-left: 0
-
-      li
-        width: 100%
-        margin-left: 0
-
-    li
-      width: 28.33%
-      margin: 0 0 0 6%
 
 .pay-comp-aside
   flex: 0 0 220px
@@ -106,6 +80,7 @@
       max-height: 100%
 
   &__name
+    max-width: 240px
     padding: 0 20px
     font-weight: 600
     font-size: 16px
@@ -215,7 +190,8 @@
     width: 280px
 
     .field-item__field
-      .icon-coins
+      .icon-coins,
+      .icon_blueDark
         fill: $colorBlue
 
       input
@@ -248,3 +224,266 @@
     margin-bottom: 20px
     font-size: 18px
     line-height: 22px
+
+/* Max width $m-hd */
+@media only screen and (max-width: $m-hd)
+  .pay-comp-wrapp
+    &._pay-comp
+      .pay-comp-actions
+        flex-wrap: wrap
+
+        &__btn
+          .btn
+            width: 100%
+
+        &__empty-field
+          width: 100%
+
+      .pay-comp-actions__arr
+        &:nth-child(4)
+          display: none
+
+      .pay-comp-actions-col
+        width: 240px
+        
+        &:last-child
+          margin-top: 20px
+          width: 100%
+/* end media max width $m-hd */
+
+/* Max width $m-xl-plus */
+@media only screen and (max-width: $m-xl-plus)
+  .pay-comp-aside
+    flex-basis: 200px
+
+  .pay-comp-row
+    .pay-comp-btn
+      width: 200px
+
+  .pay-comp-brand
+    &__logo
+      height: 80px
+      line-height: 80px
+/* end media max width $m-xl-plus */
+
+/* Max width $m-xl */
+@media only screen and (max-width: $m-xl)
+  .pay-comp-aside
+    display: block
+    padding: 40px
+    flex-basis: 100%
+    border-right: none
+    border-bottom: 1px solid #e7e7e9
+
+  .pay-comp-brand
+    display: flex
+    align-items: center
+    text-align: left
+
+    &__logo
+      margin: 0
+      max-width: 137px
+
+  .pay-comp-row
+    display: block
+
+    &._blue
+      .pay-comp-main
+        background-image: radial-gradient(circle 876px at 21.33% 114.41%, #0060ba 0%, #02afd4 100%)
+
+      .pay-comp-aside
+        background-image: radial-gradient(circle at 36% 371%, #0060ba, #02afd4 123%)
+
+    .pay-comp-btn
+      left: auto
+      right: 40px
+      top: 60px
+      bottom: auto
+      text-align: left
+      width: auto
+
+  .pay-comp-balance
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: -15px 0
+    text-align: left
+
+    &__tt
+      margin-bottom: 0
+
+    &__icon
+      margin: 0 14px 0 auto
+
+    &__value
+      min-width: 146px
+      margin: 0
+
+  .pay-comp-actions
+    margin-bottom: 24px
+/* end media max width $m-xl */
+
+/* Min width $md */
+@media only screen and (min-width: $md) and (max-width: $m-xl-plus)
+  .pay-comp-wrapp
+    &._pay-comp
+      .pay-comp-aside
+        padding-top: 30px
+        padding-bottom: 30px
+
+      .pay-comp-main
+        padding-top: 30px
+
+        .pay-comp-main
+          padding-top: 40px
+/* end media min width $md */
+
+/* Min width $md */
+@media only screen and (min-width: $md) and (max-width: $m-xl)
+  .pay-comp-wrapp
+    &._pay-comp
+      .pay-comp-row .pay-comp-btn
+        top: 40px
+/* end media min width $md */
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .pay-comp-aside
+    padding: 20px 20px 0
+    border: none
+
+  .pay-comp-main
+    padding: 15px 20px 20px
+
+  .pay-comp-brand
+    display: block
+    text-align: center
+
+    &__logo
+      margin: 0 auto 12px
+      height: 60px
+      line-height: 60px
+      max-width: 103px
+
+    &__name
+      padding: 0
+      font-size: 14px
+      line-height: 17px
+      margin: 0 auto
+
+  .pay-comp-row
+    &._blue
+      .pay-comp-main
+        padding-top: 20px
+        background-image: radial-gradient(circle 924px at 21.33% 146.47%, #0060ba 0%, #02afd4 100%)
+
+      .pay-comp-aside
+        padding: 20px
+        border-bottom: 1px solid rgba(#fff, .11)
+        background-image: radial-gradient(circle at 36% 371%, #0060ba, #02afd4 100%)
+
+    .round-row-list
+      margin-top: 20px
+    
+    .pay-comp-btn
+      position: relative
+      top: 0
+      right: 0
+      margin-bottom: 20px
+
+      &:last-child
+        margin-bottom: 0
+
+      .btn
+        width: 100%
+
+  .pay-comp-info
+    margin-bottom: 23px
+
+  .pay-comp-stats
+    margin-bottom: 10px
+
+  .pay-comp-bonus
+    margin: 0
+
+  .pay-comp-balance
+    justify-content: flex-start
+    margin: 0
+
+    &__tt
+      font-size: 12px
+      line-height: 15px
+
+    &__icon
+      margin: 0 8px 0 14px
+
+      .icon
+        width: 18px
+        height: 18px
+
+    &__value
+      min-width: 40px
+      font-size: 14px
+      line-height: 18px
+
+  .pay-comp-actions
+    display: block
+    margin-bottom: 10px
+
+    &__tt
+      font-size: 12px
+      line-height: 15px
+      margin-bottom: 10px
+
+    &__field
+      width: 100%
+
+    &__arr
+      display: none
+
+    &__btn
+      .btn
+        width: 100%
+
+  .pay-comp-actions-col
+    margin-bottom: 10px
+
+  .pay-comp-row-more .title-site
+    font-size: 16px
+    line-height: 20px
+    margin-bottom: 15px
+
+  .pay-comp-actions-col
+    margin-bottom: 16px
+    width: 100%
+
+  .pay-comp-wrapp._pay-comp
+    .pay-comp-brand__logo
+      height: 30px
+      line-height: 30px
+
+    .pay-comp-bonus
+      margin-bottom: 10px
+
+    .pay-comp-row
+      .pay-comp-btn
+        margin: 14px 0 0
+
+    .pay-comp-main .pay-comp-row
+      margin: 20px -20px -20px
+
+    .pay-comp-actions
+      background-image: url('../img/min-mob-md-arr.svg')
+      background-repeat: no-repeat
+      background-position: 100% 44px
+
+    .pay-comp-actions-col
+      padding-right: 30px
+      width: 100%
+
+      &:last-child
+        padding-right: 0
+
+    .pay-comp-actions__field
+      width: 100%
+/* end media max width $m-md */

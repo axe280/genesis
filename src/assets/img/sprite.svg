@@ -579,6 +579,10 @@
     <path fill="none" stroke="#3698e4" stroke-dasharray="0 4" stroke-linecap="round" stroke-miterlimit="20" d="M.42 4h709.113"></path>
     <path fill="#3698e4" d="M712.08 3.6l-6 3v-6z"></path>
   </symbol>
+  <symbol viewBox="0 0 713 7" id="arr-grow-gray-min">
+    <path fill="none" stroke="#bfbfc2" stroke-dasharray="0 4" stroke-linecap="round" stroke-miterlimit="20" d="M.42 4h709.113"></path>
+    <path fill="#bfbfc2" d="M712.08 3.6l-6 3v-6z"></path>
+  </symbol>
   <symbol viewBox="0 0 300 10" id="arr-grow-yellow">
     <path fill="none" stroke="#fedb41" stroke-dasharray="0 4" stroke-linecap="round" stroke-miterlimit="20" stroke-width="2" d="M1.42 5h290.113"></path>
     <path fill="#fedb41" d="M299.58 5.1l-9 4.5v-9z"></path>

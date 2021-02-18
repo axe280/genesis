@@ -40,6 +40,10 @@
   background-color: #fff
   border-radius: 4px
 
+  .icon
+    width: 26px
+    height: 26px
+
   &__about
     flex-grow: 1
 
@@ -106,3 +110,219 @@
     .icon
       width: 26px
       height: 26px
+
+/* Max width $m-hd */
+@media only screen and (min-width: $md) and (max-width: $m-hd)
+  .pay-comp-stats
+    .mpm-stat-wrapp._spec-list
+      .mpm-stat-row:first-child
+        .mpm-stat-bl:first-child
+          background: #fff
+          width: 100%
+
+    .mpm-stat-wrapp._spec-list .mpm-stat-bl:nth-child(2)
+      width: 50%
+
+      &::before
+        background-image: url('../img/mpm-stat-bl-arr-st-cab-tabl.png')
+        width: calc(100% + 8px)
+
+    .mpm-stat-wrapp._spec-list .mpm-stat-bl:nth-child(3)
+      width: 50%
+      background-image: url('../img/mpm-stat-bl-arr-max-tabl.png')
+
+/* end media max width $m-hd */
+
+/* Max width $m-xl */
+@media only screen and (min-width: $md) and (max-width: $m-xl)
+  .pay-comp-stats
+    .mpm-stat-wrapp._spec-list .mpm-stat-bl:nth-child(2)
+      &::before
+        width: calc(100% + 5px)
+
+/* end media max width $m-xl */
+
+/* Max width $m-xl-plus */
+@media only screen and (max-width: $m-xl-plus)
+  .cabinet-stat-row
+    flex-wrap: wrap
+
+    &._four-cols
+      margin-bottom: -4px
+
+      .cabinet-stat-bl
+        width: calc(50% - 2px)
+        margin-bottom: 4px
+
+    &._two-cols-last-long
+      .cabinet-stat-bl
+        margin-bottom: 0
+
+    &._two-cols
+      .cabinet-stat-bl
+        margin-bottom: 0
+
+  .cabinet-stat-bl
+    width: calc(50% - 2px)
+    
+    &:first-child
+      width: 100%
+      margin-bottom: 4px
+/* end media max width $m-xl-plus */
+
+/* Min width $md */
+@media only screen and (min-width: $md) and (max-width: $m-xl-plus)
+  .pay-comp-wrapp
+    &._pay-comp
+      .pay-comp-aside
+        padding-top: 30px
+        padding-bottom: 30px
+
+      .pay-comp-main
+        padding-top: 30px
+
+        .pay-comp-main
+          padding-top: 40px
+/* end media min width $md */
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .cabinet-stat-row
+    &._four-cols
+      margin-bottom: 0
+
+      .cabinet-stat-bl
+        width: 100%
+        margin-bottom: 4px
+
+        &:last-child
+          margin-bottom: 0
+
+    &._two-cols
+      .cabinet-stat-bl
+        width: 100%
+        margin-bottom: 4px
+
+        &:last-child
+          margin-bottom: 0
+
+    &._two-cols-last-long
+      .cabinet-stat-bl
+        &:first-child
+          width: 100%
+          margin-right: 0
+
+    &._two-cols-last-long
+      .cabinet-stat-bl
+        margin-bottom: 4px
+
+        &:last-child
+          margin-bottom: 0
+
+  .cabinet-stat-bl
+    width: 100%
+    margin-bottom: 4px
+    padding: 10px 18px 10px 12px
+    
+    &:last-child
+      margin-bottom: 0
+
+    .icon
+      width: 20px
+      height: 20px
+
+    &__tt
+      margin-bottom: 3px
+      font-size: 10px
+      line-height: 12px
+
+    &__val
+      font-size: 13px
+      line-height: 16px
+
+      .icon
+        width: 14px
+        height: 14px
+
+  .pay-comp-bonus
+    &__result
+      font-size: 13px
+      line-height: 16px
+
+    &__arr
+      margin-top: 1px
+      margin-left: 10px
+
+  .pay-comp-stats
+    .mpm-stat-row
+      &:before
+        display: none
+
+    .mpm-stat-bl
+      padding: 10px 18px 10px 12px
+      height: auto
+      min-height: 10px
+
+      &:nth-child(2)
+        width: 100%
+        background: #fff
+        border-radius: 4px 4px 0 0
+
+      &:nth-child(3)
+        width: 100%
+        background: #fff
+        border-radius: 0 0 4px 4px
+
+        &::before
+          content: ''
+          position: absolute
+          top: -1px
+          left: 12px
+          right: 12px
+          background: #e7e7e9
+          height: 1px
+          z-index: 10
+
+      .icon
+        width: 20px
+        height: 20px
+
+      &__tt
+        margin-bottom: 3px
+        font-size: 10px
+        line-height: 12px
+
+      &__val
+        font-size: 13px
+        line-height: 16px
+
+        .icon
+          width: 14px
+          height: 14px
+  
+  .cabinet-stat-row._ghost .cabinet-stat-bl__tt
+    margin-bottom: 6px
+
+  .pay-comp-row-more
+    padding: 20px
+/* end media max width $m-md */
+
+/* Max width 500px */
+@media only screen and (max-width: 500px)
+  .cabinet-stat-val-states
+    display: block
+    background-image: url('../img/min-mob-yellow-arr.svg')
+    background-repeat: no-repeat
+    background-position: 100% 54%
+    background-size: 15px 27px
+
+  .cabinet-stat-bl
+    &__val
+      margin-bottom: 8px
+
+      &:last-child
+        margin-bottom: 0
+
+    .st-arrow-grow
+      display: none
+/* end media max width 500px */

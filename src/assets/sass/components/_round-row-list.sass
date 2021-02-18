@@ -22,3 +22,73 @@
 
     &:last-child
       margin-right: 0
+
+/* Min width $md */
+@media only screen and (min-width: $md)
+  .pay-comp-row
+    .round-row-list
+      margin-left: -6%
+      
+      &._two-cols-long
+        margin-left: -3%
+
+        li
+          &:first-child
+            width: 30.33%
+            margin-left: 3%
+
+          &:last-child
+            width: 63.66%
+            max-width: 400px
+
+      &._half-col
+        margin-left: -3%
+
+        li
+          width: 47%
+          margin-left: 3%
+
+      &._max-col
+        margin-left: 0
+
+        li
+          width: 100%
+          margin-left: 0
+
+      li
+        width: 28.33%
+        margin: 0 0 0 6%
+/* end media min width $md */
+
+/* Max width $m-lg */
+@media only screen and (max-width: $m-lg)
+  .pay-comp-row
+    .round-row-list
+      &._tablet-half
+        margin-left: -3%
+
+        li
+          width: 47%
+          margin-left: 3%
+/* end media max width $m-lg */
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .round-row-list
+    display: block
+
+    li
+      padding-left: 16px
+      font-size: 10px
+      line-height: 13px
+      width: 100%
+      margin: 0 0 14px
+
+      &:last-child
+        margin-bottom: 0
+
+      &::before
+        width: 3px
+        height: 3px
+        top: 4px
+/* end media max width $m-md */
