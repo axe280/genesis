@@ -8,7 +8,8 @@
     color: var(--main-text-color)
 
 .aside-nav,
-.pay-comp-wrapp
+.pay-comp-wrapp,
+.cab-st-tile
   background-color: var(--main-blocks-bg)
   transition: background-color .2s
 
@@ -21,6 +22,7 @@
 [data-theme="dark"]
   &.page-cabinet .header,
   &.page-cabinet .footer,
+  .limits-withdraw-info
     background: var(--main-blocks-bg)
 
   .cabinet-stat-bl
@@ -30,8 +32,12 @@
     border-color: rgba(#fff, .11)
     transition: none
 
-  .btn_border.btn_border-gray
+  .btn_border.btn_border-gray,
+  .cabinet-st-border-bl
     border-color: rgba(#fff, .11)
 
   .text_dark-50
     color: var(--color-light)
+
+  .cabinet-stat-bl .btn_border.btn_border-gray
+    border-color: rgba(#424242, .2)

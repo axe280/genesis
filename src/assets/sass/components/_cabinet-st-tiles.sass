@@ -1,0 +1,143 @@
+.cab-st-tiles-wrapp
+  display: flex
+  flex-wrap: wrap
+  margin-left: -8px
+
+.cab-st-tile
+  padding: 23px 30px 30px
+  width: calc(33.33% - 8px)
+  margin-left: 8px
+  margin-bottom: 8px
+  border-radius: 10px
+
+  &__btn
+    margin-top: 20px
+
+  .cabinet-stat-bl
+    width: 100%
+    margin-bottom: 4px
+
+    .btn
+      margin-right: -4px
+      color: #000
+
+  .pay-comp-bonus
+    margin: 20px 0
+
+  .pay-comp-brand
+    display: flex
+    align-items: center
+    text-align: left
+    margin-bottom: 14px
+
+    &__logo
+      flex-shrink: 0
+      max-width: 34px
+      height: 35px
+      line-height: 35px
+      margin: 0
+
+    &__name
+      padding: 0
+      margin-left: 12px
+      font-size: 16px
+      line-height: 19px
+
+  .bonus-result-round
+    border-color: #4acded
+
+/* Max width $m-xl-plus */
+@media only screen and (max-width: $m-xl-plus)
+  .cab-st-tiles-wrapp
+    margin-left: 0
+    display: block
+
+  .cab-st-tile
+    width: 100%
+    margin-left: 0
+
+    &:last-child
+      margin-bottom: 0
+
+    .pay-comp-brand
+      &__name
+        max-width: none
+
+  .cab-stat-bl-half-row
+    display: flex
+    justify-content: space-between
+
+    .cabinet-stat-bl
+      width: calc(50% - 2px)
+/* end media max width $m-xl-plus */
+
+/* Min width 1200px */
+@media only screen and (min-width: 1200px)
+  .cab-st-tile
+    &._long
+      display: flex
+      align-items: center
+      justify-content: space-between
+      position: relative
+      width: 100%
+      padding-top: 30px
+      padding-bottom: 94px
+
+      .cab-st-tile__btn
+        position: absolute
+        left: 30px
+        right: 30px
+        bottom: 30px
+        margin-top: 0
+
+      .cab-stat-bl-half-row
+        flex-grow: 1
+        display: flex
+        justify-content: space-between
+
+        .cabinet-stat-bl
+          width: calc(50% - 2px)
+
+    .pay-comp-brand
+      flex: 0 0 160px
+      margin-right: 20px
+      margin-bottom: 0
+
+    .pay-comp-bonus
+      flex: 0 0 232px
+      margin-right: 25px
+/* end media min width 1200px */
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .cab-st-tile
+    padding: 16px 20px 20px
+    margin-bottom: 4px
+
+    &__btn
+      margin-top: 10px
+
+    .pay-comp-brand
+      &__logo
+        height: 31px
+        line-height: 31px
+        max-width: 30px
+
+      &__name
+        margin-left: 10px
+        font-size: 13px
+        line-height: 16px
+
+    .pay-comp-bonus
+      margin: 10px 0
+
+    .cabinet-stat-bl
+      .btn
+        margin-right: -8px
+
+  .cab-stat-bl-half-row
+    display: block
+
+    .cabinet-stat-bl
+      width: 100%
+/* end media max width $m-md */

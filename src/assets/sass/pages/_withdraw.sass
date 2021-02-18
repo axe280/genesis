@@ -1,0 +1,237 @@
+.limits-withdraw-info
+  display: flex
+  align-items: center
+  padding: 18px 30px
+  background-color: #050447
+  border-radius: 10px
+  color: #fff
+
+.limits-w-info-head
+  display: flex
+  align-items: center
+  margin-right: 20px
+
+  &::after
+    content: ''
+    height: 10px
+    width: 117px
+    background-image: url('../img/blue-long-arr.svg')
+    background-repeat: no-repeat
+    background-position: 100% 50%
+
+.limits-w-icon
+  flex-shrink: 0
+  width: 34px
+  height: 35px
+  margin-right: 14px
+
+  .icon
+    width: 100%
+    height: 100%
+
+.limits-w-tt
+  flex-shrink: 0
+  font-weight: 600
+  font-size: 16px
+  line-height: 19px
+  margin-right: 25px
+  max-width: 150px
+
+.limits-w-statuses
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-grow: 1
+
+  li
+    display: flex
+    align-items: center
+    margin-right: 20px
+    color: $colorGrayLight
+
+    &::after
+      content: ''
+      width: 50px
+      height: 10px
+      margin-left: 20px
+      background-image: url('../img/gray-arr.svg')
+      background-repeat: no-repeat
+      background-position: 100% 50%
+
+    &:first-child
+      color: #fff
+
+    &:last-child
+      margin-right: 0
+
+      &::after
+        display: none
+
+  &__status
+    flex-shrink: 0
+    width: 40px
+    height: 40px
+    margin-right: 12px
+
+    .icon
+      width: 100%
+      height: 100%
+
+.limits-w-stat-tt
+  font-weight: 600
+  font-size: 14px
+  line-height: 17px
+  margin-bottom: 3px
+
+.limits-w-stat-val
+  font-weight: 500
+  font-size: 14px
+  line-height: 17px
+
+.limits-w-stat-more
+  font-size: 12px
+  line-height: 15px
+
+
+/* Max width $m-hd */
+@media only screen and (max-width: $m-hd)
+  .limits-withdraw-info
+    display: block
+    padding: 26px 30px 30px
+
+  .limits-w-info-head
+    display: flex
+    align-items: center
+    margin-right: 0
+    margin-bottom: 20px
+
+    &::after
+      position: relative
+      top: 12px
+      height: 24px
+      width: 49px
+      background-image: url('../img/mob-arr-t2.svg')
+      background-position: 100% 100%
+      background-size: 100% 100%
+
+  .limits-w-tt
+    margin-right: 30px
+    max-width: 100%
+
+  .limits-w-statuses
+    justify-content: flex-start
+
+    li
+      &::after
+        width: 149px
+        height: 10px
+/* end media max width $m-hd */
+
+/* Max width $m-xl */
+@media only screen and (max-width: $m-xl) and (min-width: $lg)
+  .limits-w-statuses
+    li
+      &::after
+        width: 60px
+/* end media max width $m-xl */
+
+/* Max width $m-lg */
+@media only screen and (max-width: $m-lg)
+  .limits-w-info-head
+    display: flex
+    align-items: center
+    margin-right: 0
+    margin-bottom: 20px
+
+    &::after
+      position: relative
+      top: 12px
+      height: 24px
+      width: 49px
+      background-image: url('../img/mob-arr-t2.svg')
+      background-position: 100% 100%
+      background-size: 100% 100%
+
+  .limits-w-tt
+    margin-right: 30px
+    max-width: 100%
+
+  .limits-w-statuses
+    align-items: flex-start
+
+    li
+      flex-wrap: wrap
+      align-items: flex-start
+      max-width: 200px
+
+      &::after
+        order: 1
+        margin-top: 15px
+        width: 140px
+
+    &__status
+      margin-right: 0
+      margin-bottom: 12px
+
+    &__info
+      width: 100%
+      order: 2
+/* end media max width $m-lg */
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .limits-withdraw-info
+    padding: 20px
+
+  .limits-w-info-head
+    margin-bottom: 16px
+
+    &::after
+      display: none
+
+  .limits-w-icon
+    width: 24px
+    height: 25px
+    margin-right: 12px
+
+  .limits-w-tt
+    margin-right: 0
+    font-size: 14px
+    line-height: 17px
+
+  .limits-w-statuses
+    display: block
+
+    li
+      flex-wrap: nowrap
+      max-width: 100%
+      margin-bottom: 20px
+
+      &::after
+        position: absolute
+        width: 22px
+        height: 10px
+        transform-origin: 0 0
+        transform: rotate(90deg) translateX(21px)
+
+      &:last-child
+        margin-bottom: 0
+
+    &__status
+      width: 30px
+      height: 30px
+      margin-right: 10px
+
+    &__info
+      width: auto
+
+  .limits-w-stat-tt,
+  .limits-w-stat-val
+    font-size: 12px
+    line-height: 15px
+    margin-bottom: 2px
+
+  .limits-w-stat-more
+    font-size: 10px
+    line-height: 12px
+/* end media max width $m-md */

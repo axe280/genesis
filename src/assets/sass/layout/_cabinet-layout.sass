@@ -8,6 +8,14 @@
     .btn
       padding: 12px 30px
 
+      &_sm
+        padding: 7px 16px
+        font-size: 10px
+
+    .btn.disabled, .btn[disabled], .btn_border.btn_second-st[disabled], .btn_border[disabled]
+      background-color: #ececec
+      color: #7c7c7c
+
     h1
       font-size: 24px
       line-height: 29px
@@ -68,6 +76,41 @@
   width: 230px
   z-index: 50
 
+.cabinet-st-tt
+  margin-bottom: 20px
+  font-size: 18px
+  line-height: 22px
+
+.cabinet-st-inner
+  margin-bottom: 30px
+
+  &:last-child
+    margin-bottom: 0
+
+.cabinet-st-border-bl
+  border-radius: 10px
+  border: 1px solid #f7f7f7
+  padding: 30px
+
+.cab-list-inf
+  display: flex
+  flex-wrap: wrap
+  margin-left: -30px
+  margin-bottom: -23px
+
+  &._att
+    li
+      background-image: url('../img/ang-att.svg')
+      background-size: 20px 20px
+
+  li
+    padding-left: 30px
+    width: calc(33.33% - 30px)
+    margin-left: 30px
+    margin-bottom: 23px
+    background-repeat: no-repeat
+    background-position: 0 0
+
 /* Max width $m-lg */
 @media only screen and (max-width: $m-lg)
   .aside-nav
@@ -83,6 +126,16 @@
       .btn
         padding-left: 25px
         padding-right: 25px
+
+  .cabinet-st-inner
+    margin-bottom: 20px
+
+  .cab-list-inf
+    margin-left: -18px
+
+    li
+      width: calc(50% - 18px)
+      margin-left: 18px
 /* end media max width $m-lg */
 
 /* Max width $m-md */
@@ -134,4 +187,34 @@
       .btn
         padding: 13px 20px
         font-size: 12px
+
+        &_sm
+          font-size: 10px
+          padding: 7px 8px
+
+  .cabinet-st-tt
+    margin-bottom: 13px
+    font-size: 16px
+    line-height: 20px
+
+  .cabinet-st-border-bl
+    padding: 20px
+
+  .cab-list-inf
+    display: block
+    margin-left: 0
+    margin-bottom: -18px
+
+    &._att
+      li
+        background-size: 16px 16px
+
+    li
+      min-height: 16px
+      padding-left: 26px
+      width: 100%
+      margin-left: 0
+      margin-bottom: 18px
+      font-size: 10px
+      line-height: 13px
 /* end media max width $m-md */
