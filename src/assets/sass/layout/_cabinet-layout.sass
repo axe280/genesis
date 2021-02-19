@@ -67,6 +67,18 @@
       height: 20px
       margin-top: -10px
 
+      .icon
+        width: 100% 
+        height: 100%
+
+      .icon-envelope
+        width: 16px
+        height: 12px
+
+      .icon-key
+        width: 18px
+        height: 18px
+
 .aside-nav
   position: fixed
   top: 0
@@ -110,6 +122,49 @@
     margin-bottom: 23px
     background-repeat: no-repeat
     background-position: 0 0
+
+.data-list-pay
+  .field-item
+    &._success
+      input
+        background-color: #fff
+
+    input
+      border-color: transparent
+      font-weight: 600
+
+.cabinet-data-fields-row
+  .field-item
+    input
+      border-color: transparent
+      font-weight: 600
+
+.ban-repeat-bl
+  padding: 30px
+  border-radius: 10px
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  .icon
+    width: 26px
+    height: 26px
+    flex-shrink: 0
+    margin-right: 14px
+
+  &__info
+    flex-grow: 1
+    margin-right: 60px
+
+    .cabinet-st-tt
+      margin-bottom: 12px
+
+    p
+      font-size: 14px
+      line-height: 17px
+
+  .btn
+    flex-shrink: 0
 
 /* Max width $m-lg */
 @media only screen and (max-width: $m-lg)
@@ -217,4 +272,36 @@
       margin-bottom: 18px
       font-size: 10px
       line-height: 13px
+
+  .page-cabinet input, .page-cabinet textarea
+    font-size: 13px
+
+  .ban-repeat-bl
+    padding: 20px 20px 24px
+    display: block
+    overflow: hidden
+
+    .icon
+      width: 20px
+      height: 20px
+      margin-right: 0
+      margin-top: 6px
+      float: left
+
+    &__info
+      margin-left: 30px
+      margin-right: 0
+      margin-bottom: 20px
+
+      .cabinet-st-tt
+        margin-bottom: 10px
+        line-height: 17px
+
+      p
+        font-size: 12px
+        line-height: 14px
+
+    .btn
+      clear: both
+      width: 100%
 /* end media max width $m-md */

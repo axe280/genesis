@@ -70,6 +70,11 @@ $(function () {
     $(this).toggleClass('_opened').parent().find('.faq-body').slideToggle(200)
   })
 
+  // aside filter nav
+  $('.h-aside-nav').on('click', 'li:not(.active)', function () {
+    $(this).addClass('active').siblings('li').removeClass('active')
+  })
+
   // scrollto
   $('a.scrollto').on('click', function () {
     var elementClick = $(this).attr('href')

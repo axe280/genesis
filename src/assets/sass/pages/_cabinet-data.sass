@@ -1,0 +1,446 @@
+.data-head-tt
+  display: flex
+  align-items: center
+  margin-bottom: 22px
+
+  &__attention
+    flex-shrink: 0
+    width: 130px
+    margin-right: 10px
+    display: flex
+    align-items: center
+    font-weight: 600
+    font-size: 12px
+    line-height: 15px
+    text-transform: uppercase
+
+    .icon
+      flex-shrink: 0
+      width: 24px
+      height: 22px
+      fill: #ae51b9
+      margin-right: 12px
+
+  &__text
+    font-size: 12px
+    line-height: 15px
+
+  .cabinet-st-tt
+    margin: 0 60px 0 0
+    flex-shrink: 0
+
+.data-head-tt-wrap
+  display: flex
+  align-items: center
+  flex-grow: 1
+
+.data-list-pay
+  margin-bottom: 20px
+
+  li
+    margin-bottom: 8px
+    border-radius: 10px
+
+  &__body
+    position: relative
+    display: flex
+    align-items: center
+    padding: 20px 30px
+
+  &__footer
+    border-top: 1px solid #e7e7e9
+    padding: 20px 30px
+
+  .field-item
+    width: 350px
+    flex-shrink: 0
+
+  .pay-comp-brand
+    position: relative
+    display: flex
+    align-items: center
+    margin-right: 30px
+    width: 480px
+
+    &__logo
+      flex-shrink: 0
+      margin: 0
+      height: 35px
+      width: 35px
+      line-height: 35px
+      position: relative
+      z-index: 3
+
+    &__name
+      max-width: 100%
+      text-align: left
+      padding: 0 30px 0 14px
+      position: relative
+      z-index: 3
+
+  .st-arrow-grow
+    position: absolute
+    right: 0
+    top: 50%
+    z-index: 2
+    margin-top: -5px
+    width: 100%
+    height: 10px
+
+    .icon
+      height: 10px
+      width: 358px
+
+    .icon-arr-grow-gray-pay-mob,
+    .icon-arr-grow-blue-pay-mob
+      display: none
+
+.cabinet-data-fields-row
+  display: flex
+  justify-content: space-between
+  margin-left: -30px
+
+.cabinet-data-col
+  border-radius: 10px
+  width: calc(33.33% - 30px)
+  margin-left: 30px
+  border: 1px solid #f7f7f7
+
+  &__inner
+    padding: 30px
+
+  .field-item
+    &__label
+      margin-bottom: 10px
+
+.cabinet-data-photo-bl
+  padding: 30px
+
+.cabinet-data-photo-save
+  padding: 30px
+  border-top: 1px solid #f7f7f7
+
+  .round-row-list
+    margin: 0 0 30px
+    display: block
+
+    li
+      width: 100%
+      margin: 0 0 20px
+      opacity: .8
+
+.cabinet-data-photo
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  &__img
+    border: 5px solid #e2e0e0
+    width: 110px
+    height: 110px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    margin-right: 10px
+
+    .icon
+      width: 56px
+      height: 56px
+      fill: #e2e0e0
+
+  .btn
+    &.btn_border
+      padding-left: 22px
+      padding-right: 22px
+
+.data-qw-info
+  display: flex
+  justify-content: space-between
+  align-items: center
+  font-size: 12px
+  line-height: 18px
+
+  .icon
+    width: 16px
+    height: 16px
+    flex-shrink: 0
+    margin-right: 12px
+    fill: #b7b7b7
+
+.h-st-nav-row
+  display: flex
+
+.h-st-nav-col-main
+  flex-grow: 1
+
+.h-st-nav-col-aside
+  flex: 0 0 160px
+  margin-left: 30px
+
+.h-aside-nav
+  border: 1px solid #f7f7f7
+  padding: 30px
+  border-radius: 10px
+
+  li
+    position: relative
+    font-weight: 600
+    font-size: 12px
+    line-height: 17px
+    margin-bottom: 16px
+    cursor: pointer
+    text-transform: uppercase
+    transition: color .2s
+    user-select: none
+
+    &:last-child
+      margin-bottom: 0
+
+    &.active
+      color: #000
+
+      &::before
+        content: ''
+        position: absolute
+        left: -46px
+        top: 50%
+        margin-top: -5px
+        width: 30px
+        height: 10px
+        z-index: 2
+        background-image: url('../img/blue-long-arr.svg')
+        background-repeat: no-repeat
+        background-position: 100% 50%
+        background-size: 300px 10px
+        transform: rotate(-180deg)
+
+    &:hover
+      color: #000
+
+
+/* Max width $m-hd */
+@media only screen and (max-width: $m-hd)
+  .cabinet-data-fields-row
+    flex-wrap: wrap
+
+  .cabinet-data-col
+    width: calc(50% - 30px)
+
+    &:first-child
+      width: 100%
+      margin-bottom: 30px
+      display: flex
+
+  .cabinet-data-photo-bl
+    flex-shrink: 0
+
+  .cabinet-data-photo
+    flex-shrink: 0
+    justify-content: flex-start
+
+    &__img
+      margin-right: 30px
+
+  .cabinet-data-photo-save
+    flex-grow: 1
+    border-top: none
+    border-left: 1px solid #f7f7f7
+
+    .round-row-list
+      margin-bottom: 0
+
+  .data-qw-info
+    align-items: flex-start
+    line-height: 15px
+
+    .icon
+      margin-top: 6px
+/* end media max width $m-hd */
+
+
+/* Max width $m-lg */
+@media only screen and (max-width: $m-lg)
+  .data-head-tt
+    flex-wrap: wrap
+
+    .cabinet-st-tt
+      width: 100%
+      margin: 0 0 14px
+
+  .data-list-pay
+    &__body
+      display: block
+      padding-top: 25px
+
+    .pay-comp-brand
+      width: 100%
+      margin-bottom: 12px
+
+      &__name
+        padding-right: 25px
+
+    .field-item
+      width: 100%
+
+    .st-arrow-grow
+      left: 120px
+      right: auto
+      height: 21px
+      margin-top: 0
+      width: 335px
+
+      .icon
+        display: none
+        width: 335px
+        height: 21px
+
+      .icon-arr-grow-gray-pay-mob,
+      .icon-arr-grow-blue-pay-mob
+        display: block
+    
+    .round-row-list
+      margin: 0
+      display: block
+
+      li
+        width: 100%
+        margin: 0 0 16px
+
+        &:last-child
+          margin-bottom: 0
+/* end media max width $m-lg */
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .data-head-tt
+    &__attention
+      width: 100%
+      margin-bottom: 14px
+
+      .icon
+        width: 20px
+        height: 19px
+        margin-right: 8px
+
+      span
+        font-size: 10px
+        line-height: 12px
+
+    &__text
+      font-size: 10px
+      line-height: 12px
+
+  .data-head-tt-wrap
+    display: block
+
+  .data-list-pay
+    margin-bottom: 10px
+
+    li
+      margin-bottom: 4px
+
+    &__body
+      padding: 15px 20px 20px
+
+    &__footer
+      padding: 20px
+
+    .pay-comp-brand
+      margin-bottom: 16px
+
+      &__logo
+        height: 31px
+        width: 30px
+        line-height: 31px
+
+      &__name
+        padding: 0 10px
+        margin: 0
+
+    .st-arrow-grow
+      display: none
+
+  .cabinet-data-fields-row
+    flex-wrap: wrap
+
+  .cabinet-data-col
+    width: 100%
+    margin-bottom: 20px
+
+    &:first-child
+      margin-bottom: 20px
+      display: block
+
+    &:last-child
+      margin-bottom: 0
+
+    &__inner
+      padding: 24px 20px 20px
+
+  .cabinet-data-photo-bl
+    flex-shrink: 0
+    padding: 24px 20px 20px
+
+  .cabinet-data-photo
+    &__img
+      width: 70px
+      height: 70px
+      margin-right: 20px
+
+      .icon
+        width: 36px
+        height: 36px
+
+    .btn.btn_border
+      padding-top: 12px
+      padding-bottom: 12px
+
+  .cabinet-data-photo-save
+    border-left: none
+    border-top: 1px solid #f7f7f7
+    padding: 20px
+
+    .round-row-list
+      margin-bottom: 20px
+
+      li
+        margin-bottom: 15px
+
+  .data-qw-info
+    align-items: flex-start
+    line-height: 15px
+
+    .icon
+      margin-top: 6px
+
+  .data-qw-info
+    margin-top: 18px
+    font-size: 10px
+    line-height: 13px
+    align-items: center
+
+    .icon
+      margin-right: 8px
+      margin-top: 0
+
+  .cabinet-data-col
+    .field-item__label
+      font-size: 10px
+      line-height: 12px
+      margin-bottom: 9px
+
+    .form-group
+      margin-bottom: 14px
+
+  .h-st-nav-row
+    display: flex
+    flex-direction: column-reverse
+
+  .h-st-nav-col-aside
+    flex: 0 0 auto
+    margin: 0 0 10px
+
+  .h-aside-nav
+    display: none
+/* end media max width $m-md */

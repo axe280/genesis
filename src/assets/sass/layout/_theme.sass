@@ -9,7 +9,13 @@
 
 .aside-nav,
 .pay-comp-wrapp,
-.cab-st-tile
+.cab-st-tile,
+.data-list-pay li,
+.data-list-pay .pay-comp-brand__name,
+.data-list-pay .pay-comp-brand__logo,
+.cabinet-data-col._gray,
+.ban-repeat-bl,
+.st-table-h-row
   background-color: var(--main-blocks-bg)
   transition: background-color .2s
 
@@ -17,7 +23,11 @@
   color: var(--color-dark)
 
 .pay-comp-bonus__tt,
-.cab-st-tile._empty b
+.cab-st-tile._empty b,
+.cabinet-data-col .field-item__label,
+.st-table-h-head,
+.h-aside-nav,
+.st-table-h-device-tt
   color: var(--color-gray-light)
 
 [data-theme="dark"]
@@ -34,7 +44,11 @@
     transition: none
 
   .btn_border.btn_border-gray,
-  .cabinet-st-border-bl
+  .cabinet-st-border-bl,
+  .data-list-pay__footer,
+  .cabinet-data-col,
+  .cabinet-data-photo-save,
+  .h-aside-nav
     border-color: rgba(#fff, .11)
 
   .text_dark-50
@@ -48,3 +62,22 @@
 
   .cab-st-tile._disabled
     background-color: rgba(#1f1e43, .5)
+
+  .cabinet-data-col._gray
+    border-color: transparent
+
+  .h-aside-nav
+    li
+      &.active,
+      &:hover
+        color: $colorBlue
+
+  .pagination a,
+  .pagination a:hover
+    background-color: var(--main-blocks-bg)
+    color: #fff
+
+  .pagination__active a,
+  .pagination__active a:hover
+    background-color: #f7f7f7
+    color: #000

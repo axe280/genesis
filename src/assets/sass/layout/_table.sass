@@ -1,0 +1,275 @@
+.st-table-h-head
+  font-size: 12px
+  line-height: 15px
+
+  .st-table-h-row
+    background: none
+    padding-top: 0
+    padding-bottom: 6px
+
+.st-table-h-row
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: space-between
+  border-radius: 10px
+  padding: 15px 32px
+  margin-bottom: 8px
+
+.st-table-h-col
+  padding-right: 15px
+
+  &:last-child
+    padding-right: 0
+
+.st-table-h-device-tt
+  display: none
+
+.hint-wrapper._only-mob
+  display: none
+
+// history table
+.history-table
+  margin-bottom: 20px
+
+  .st-table-h-row
+    padding-right: 15px
+
+  .st-table-h-col
+    &:nth-child(1)
+      width: 31%
+
+    &:nth-child(2)
+      width: 23%
+
+    &:nth-child(3)
+      width: 18%
+
+    &:nth-child(4)
+      width: 28%
+
+      .hint-wrapper
+        display: inline-block
+
+    .hint-bl
+      width: 220px
+      margin-left: -110px
+
+  .btn
+    cursor: default
+    font-weight: 400
+    font-size: 12px
+    line-height: 16px
+    text-transform: none
+    align-items: center
+
+    &.btn_border
+      padding: 11px 16px
+
+    &:hover
+      background: none
+      color: inherit
+
+    .icon
+      width: 14px
+      height: 14px
+      flex-shrink: 0
+      margin-right: 8px
+
+.h-icon
+  display: flex
+  align-items: center
+  font-size: 14px
+  line-height: 17px
+
+  &__icon
+    flex-shrink: 0
+    margin-right: 10px
+
+    .icon
+      width: 14px
+      height: 14px
+
+  b
+    font-weight: 500
+
+.h-operation
+  display: flex
+  align-items: center
+
+  &__icon
+    flex-shrink: 0
+    margin-right: 10px
+
+    .icon
+      width: 24px
+      height: 24px
+
+    .icon-decrease,
+    .icon-income
+      height: 30px
+
+  &__name
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+
+/* Max width $m-xl */
+@media only screen and (max-width: $m-xl)
+  .st-table-h-device-tt
+    font-size: 12px
+    line-height: 15px
+    margin-bottom: 6px
+    display: block
+    font-weight: 400
+
+  .st-table-h-head
+    display: none
+
+  .st-table-h-row
+    position: relative
+    padding: 20px 30px
+    margin-bottom: 4px
+    flex-wrap: wrap
+    align-items: flex-start
+
+  .history-table
+    .st-table-h-row
+      padding-right: 30px
+
+    .st-table-h-col
+      padding-right: 0
+
+      &:nth-child(1)
+        width: 61%
+        order: 1
+        margin-bottom: 18px
+        padding-right: 10px
+
+      &:nth-child(4)
+        width: 61%
+        order: 3
+        padding-right: 10px
+
+        .hint-wrapper
+          .hint-bl
+            display: none
+
+      &:nth-child(3)
+        order: 4
+        width: 39%
+      
+      &:nth-child(2)
+        width: 39%
+        order: 2
+        margin-bottom: 18px
+
+    .hint-wrapper
+      &._only-mob
+        display: block
+        position: absolute
+        right: 10px
+        top: 10px
+        cursor: pointer
+        width: 12px
+        height: 12px
+
+        &:hover
+          .icon
+            fill: $colorBlue
+
+        .icon
+          vertical-align: top
+          width: 12px
+          height: 12px
+          fill: #7c7c7c
+          opacity: .8
+
+        .hint-bl
+          margin-left: -115px
+/* end media max width $m-xl */
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .st-table-h-device-tt
+    font-size: 10px
+    line-height: 12px
+    margin-bottom: 5px
+
+  .st-table-h-head
+    display: none
+
+  .st-table-h-row
+    padding: 20px
+    justify-content: flex-start
+
+  .history-table
+    .st-table-h-row
+      padding-right: 20px
+
+    .st-table-h-col
+      padding-right: 0
+
+      &:nth-child(1)
+        width: 100%
+        margin-bottom: 14px
+        padding-right: 0
+
+      &:nth-child(4)
+        width: 100%
+        order: 5
+        padding-right: 0
+
+        .hint-wrapper
+          width: 100%
+          display: block
+
+      &:nth-child(3)
+        width: auto
+        margin-bottom: 14px
+
+        .st-table-h-device-tt
+          margin-bottom: 8px
+      
+      &:nth-child(2)
+        width: 125px
+        flex-shrink: 0
+        margin-bottom: 14px
+        margin-right: 30px
+
+        .st-table-h-device-tt
+          margin-bottom: 8px
+
+    .btn.btn_border
+      padding: 9px 10px
+      font-size: 10px
+      width: 100%
+
+    .hint-wrapper
+      &._only-mob
+        .hint-bl
+          right: -10px
+          left: auto
+          margin-left: -90px
+
+        .hint-inner
+          &::before
+            left: auto
+            right: 8px
+
+  .h-operation
+    &__icon
+      margin-right: 10px
+
+      .icon
+        width: 20px
+        height: 20px
+
+      .icon-decrease,
+      .icon-income
+        height: 24px
+
+    &__name
+      font-size: 13px
+      line-height: 16px
+/* end media max width $m-md */

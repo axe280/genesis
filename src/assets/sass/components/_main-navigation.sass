@@ -20,42 +20,55 @@
 /* -- Pagination -------------------- */
 .pagination
   list-style-type: none
+  display: flex
+  align-items: center
 
   li
-    display: inline-block
-    vertical-align: middle
-    margin: 10px 5px
+    margin: 0 3px
+
+    &:first-child
+      margin-left: 0
+      margin-right: 17px
+
+    &:last-child
+      margin-right: 0
+      margin-left: 17px
 
   a
-    display: block
-    width: 30px
-    height: 30px
-    border-radius: 2px
-    background-color: #f3f3f3
-    line-height: 30px
-    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 36px
+    height: 36px
+    font-size: 14px
+    border-radius: 4px
+    line-height: 36px
     text-decoration: none
+    color: #000
+    background-color: #f7f7f7
+    transition: background-color .2s
 
     &:hover
-      background-color: $base-color
+      background-color: #45a7e7
       color: #fff
 
   &__prev,
   &__next
     a
+      padding: 0 16px
       width: auto
-      height: auto
-      border-radius: 0
-      background: none
 
-      &:hover
-        background: none
-        color: #000
+    .icon
+      display: none
 
   &__active
     a
-      background-color: $base-color
+      background-color: #050447
       color: #fff
+      cursor: default
+
+      &:hover
+        background-color: #050447
 
 
 /* -- Main menu --------------------- */
@@ -116,4 +129,35 @@
       margin-bottom: 20px
       font-size: 14px
       line-height: 20px
+
+  .pagination
+    justify-content: center
+
+    li
+      &:first-child
+        margin-right: 3px
+
+      &:last-child
+        margin-left: 3px
+      
+    a
+      width: 34px
+      height: 34px
+      line-height: 34px
+      font-size: 12px
+
+    &__prev,
+    &__next
+      a
+        overflow: hidden
+        padding: 0
+        width: 34px
+
+      span
+        display: none
+
+      .icon
+        display: block
+        width: 9px
+        height: 9px
 /* end media max width $m-md */
