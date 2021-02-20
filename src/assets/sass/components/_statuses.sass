@@ -215,11 +215,20 @@
   background-image: url('../img/status-progress-empty.svg')
   background-repeat: no-repeat
   background-position: 0 50%
+  background-size: 100% 100%
+
+  &._progress-blue
+    &::before
+      background-image: url('../img/status-progress-fill-blue.svg')
+
+  &._progress-purple
+    &::before
+      background-image: url('../img/status-progress-fill-purple.svg')
 
   &::before
     content: ''
     position: absolute
-    left: 1px
+    left: 0
     top: 0
     width: 0
     height: 100%
@@ -227,54 +236,55 @@
     background-image: url('../img/status-progress-fill.svg')
     background-repeat: no-repeat
     background-position: 0 50%
+    background-size: 132px 100%
 
   &.st-level-1
     &::before
-      width: 11px
+      width: 8.3333%
 
   &.st-level-2
     &::before
-      width: 22px
+      width: 16.6666%
 
   &.st-level-3
     &::before
-      width: 33px
+      width: 24.9999%
 
   &.st-level-4
     &::before
-      width: 44px
+      width: 33.3332%
 
   &.st-level-5
     &::before
-      width: 55px
+      width: 41.6665%
 
   &.st-level-6
     &::before
-      width: 66px
+      width: 49.9998%
 
   &.st-level-7
     &::before
-      width: 77px
+      width: 58.3331%
 
   &.st-level-8
     &::before
-      width: 88px
+      width: 66.6664%
 
   &.st-level-9
     &::before
-      width: 99px
+      width: 74.9997%
 
   &.st-level-10
     &::before
-      width: 110px
+      width: 83.3333%
 
   &.st-level-11
     &::before
-      width: 121px
+      width: 91.6663%
 
   &.st-level-12
     &::before
-      width: 132px
+      width: 100%
 
 /* Max width $m-hd */
 @media only screen and (max-width: $m-hd)

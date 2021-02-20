@@ -104,6 +104,10 @@
   border: 1px solid #f7f7f7
   padding: 30px
 
+.cab-attention-info
+  .cab-list-inf
+    margin: 23px 0 0
+
 .cab-list-inf
   display: flex
   flex-wrap: wrap
@@ -113,7 +117,16 @@
   &._att
     li
       background-image: url('../img/ang-att.svg')
-      background-size: 20px 20px
+
+  &._fobb
+    li
+      background-image: url('../img/round-close-red.svg')
+
+  &._half
+    margin-left: -30px
+
+    li
+      width: calc(50% - 30px)
 
   li
     padding-left: 30px
@@ -122,6 +135,7 @@
     margin-bottom: 23px
     background-repeat: no-repeat
     background-position: 0 0
+    background-size: 20px 20px
 
 .data-list-pay
   .field-item
@@ -187,6 +201,13 @@
 
   .cab-list-inf
     margin-left: -18px
+
+    &._half
+      margin-left: -30px
+
+      li
+        margin-left: 30px
+        width: calc(50% - 30px)
 
     li
       width: calc(50% - 18px)
@@ -260,9 +281,12 @@
     margin-left: 0
     margin-bottom: -18px
 
-    &._att
+    &._half
+      margin-left: 0
+
       li
-        background-size: 16px 16px
+        margin-left: 0
+        width: 100%
 
     li
       min-height: 16px
@@ -272,6 +296,10 @@
       margin-bottom: 18px
       font-size: 10px
       line-height: 13px
+      background-size: 16px 16px
+
+  .cab-attention-info .cab-list-inf
+    margin-top: 18px
 
   .page-cabinet input, .page-cabinet textarea
     font-size: 13px

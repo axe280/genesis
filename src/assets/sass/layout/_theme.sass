@@ -15,7 +15,8 @@
 .data-list-pay .pay-comp-brand__logo,
 .cabinet-data-col._gray,
 .ban-repeat-bl,
-.st-table-h-row
+.st-table-h-row,
+.partners-link-list
   background-color: var(--main-blocks-bg)
   transition: background-color .2s
 
@@ -26,14 +27,18 @@
 .cab-st-tile._empty b,
 .cabinet-data-col .field-item__label,
 .st-table-h-head,
-.h-aside-nav,
-.st-table-h-device-tt
+.st-table-h-device-tt,
+.link-invite__tt,
+.cab-p-status__tt
   color: var(--color-gray-light)
 
 [data-theme="dark"]
   &.page-cabinet .header,
   &.page-cabinet .footer,
-  .limits-withdraw-info
+  .limits-withdraw-info,
+  .half-icon-bl,
+  .cab-partners-bonuses,
+  .partners-link-main
     background: var(--main-blocks-bg)
 
   .cabinet-stat-bl
@@ -70,7 +75,7 @@
     li
       &.active,
       &:hover
-        color: $colorBlue
+        color: #fff
 
   .pagination a,
   .pagination a:hover
@@ -81,3 +86,11 @@
   .pagination__active a:hover
     background-color: #f7f7f7
     color: #000
+
+  .cab-partners-row .cabinet-stat-bl,
+  .cab-partners-col .status-levels,
+  .partners-link-list
+    background-color: #18173d
+
+  .cab-partners-status
+    background-color: #1f1f44
