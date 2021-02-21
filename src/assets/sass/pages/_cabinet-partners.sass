@@ -310,6 +310,45 @@
     &::before
       background-size: 119px 100%
 
+.st-preza-bl
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 32px 30px
+  border-radius: 10px
+  background-color: #0060ba
+  background-image: radial-gradient(circle at 27% 150%, #0060ba, #02afd4 129%)
+  color: #fff
+
+  &__btn
+    flex-shrink: 0
+
+    .btn.btn_border
+      padding: 10px 22px
+      font-size: 10px
+
+  &__icon
+    flex-shrink: 0
+    margin-right: 16px
+
+    .icon
+      width: 30px
+      height: 32px
+
+  p
+    font-weight: 500
+    font-size: 14px
+    line-height: 17px
+
+  .st-arrow-grow
+    margin: 0 30px
+    flex-shrink: 0
+    width: 136px
+
+    .icon
+      width: 300px
+      height: 10px
+
 
 /* Max width $m-xl-plus */
 @media only screen and (max-width: $m-xl-plus)
@@ -408,6 +447,32 @@
 
     .status-level
       margin-right: 40px
+
+  .st-preza-bl
+    position: relative
+    padding: 30px 30px 97px
+
+    &__btn
+      position: absolute
+      bottom: 30px
+      left: 30px
+      right: 30px
+
+      .btn
+        width: 100%
+
+    .st-arrow-grow
+      margin: auto 0 0 20px
+      flex-shrink: 0
+      width: 80px
+      height: 24px
+      background-image: url('../img/arr-grow-yellow-tabl@2x.png')
+      background-repeat: no-repeat
+      background-position: 50% 50%
+      background-size: 100% 100%
+
+      .icon
+        display: none
 /* end media max width $m-xl-plus */
 
 /* Max width $m-lg */
@@ -625,4 +690,23 @@
       &::before
         display: none
 
+  .st-preza-bl
+    padding: 20px 20px 70px
+
+    &__icon
+      margin-right: 10px
+
+      .icon
+        width: 22px
+        height: 26px
+
+    &__btn
+      bottom: 20px
+
+    p
+      font-size: 10px
+      line-height: 14px
+
+    .st-arrow-grow
+      display: none
 /* end media max width $m-md */

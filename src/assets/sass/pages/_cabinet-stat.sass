@@ -1,0 +1,685 @@
+.cabinet-stat-data
+  position: relative
+  background-color: #050447
+  padding: 30px 30px 1px 30px
+  border-radius: 10px
+  color: #fff
+  margin-bottom: 60px
+
+  .tiles-list
+    margin-bottom: -30px
+
+    li
+      padding: 20px 20px 20px 30px
+      border-radius: 6px
+      color: #000
+      background-color: #fff
+      background-image: url('../img/cab-stat-data-bg@2x.png')
+      background-repeat: no-repeat
+      background-position: 50% 50%
+      background-size: cover
+
+    .tiles-service
+      align-items: center
+
+      &__icon
+        width: 30px
+        margin-right: 10px
+
+        .icon
+          width: 30px
+          height: 30px
+          fill: rgba(#050447, .5)
+
+      &__info
+        b
+          font-weight: 500
+          font-size: 20px
+          line-height: 24px
+          margin-bottom: 4px
+          padding: 0
+
+        span
+          font-size: 12px
+          line-height: 15px
+          color: rgba(#000, .7)
+          max-width: 100%
+
+.cab-stat-data-row
+  display: flex
+  margin-bottom: 30px
+
+.cab-stat-data-avatar
+  flex-shrink: 0
+  margin-right: 20px
+
+  .cabinet-data-photo__img
+    margin-right: 0
+    width: 100px
+    height: 100px
+    border-color: #36356a
+
+    .icon
+      fill: #8281a3
+
+.cab-stat-data-about
+  flex-grow: 1
+  margin-top: -20px
+  margin-right: 20px
+  display: flex
+  flex-wrap: wrap
+
+  &__item
+    margin-top: 20px
+    margin-right: 22px
+    width: calc( 58% - 22px )
+
+    &:nth-child(even)
+      width: calc( 42% - 22px )
+
+.cab-stat-data-link
+  width: 320px
+  flex-shrink: 0
+
+  .cab-stat-about-tt
+    margin-bottom: 12px
+
+  .copy-link
+    margin-bottom: 16px
+
+    input
+      height: 40px
+
+    .btn
+      width: 40px
+      height: 40px
+
+  .link-invite__tt
+    color: #8491b4
+
+.cab-stat-about-tt
+  margin-bottom: 6px
+  font-size: 12px
+  line-height: 15px
+  color: #8491b4
+
+  a
+    margin-left: 20px
+
+.cab-stat-about-data
+  font-weight: 500
+  font-size: 14px
+  line-height: 17px
+  text-overflow: ellipsis
+  overflow: hidden
+
+.cab-stat-status
+  display: flex
+  align-items: center
+
+  .icon
+    width: 20px
+    height: 20px
+    margin-right: 8px
+    flex-shrink: 0
+
+  &__val
+    font-weight: 500
+    font-size: 14px
+    line-height: 17px
+
+.cab-target-line
+  padding: 23px 30px
+  color: #fff
+  justify-content: flex-start
+
+  .st-arrow-grow
+    width: 214px
+    margin: 0 30px
+
+    .icon
+      width: 300px
+
+  p
+    flex-grow: 1
+    max-width: 272px
+    font-size: 14px
+    line-height: 17px
+
+  .calc-line__tt
+    margin-right: 23px
+
+    .title-site
+      font-weight: 500
+      font-size: 16px
+      line-height: 20px
+      color: #fff
+      min-width: 138px
+    
+    .icon
+      flex-shrink: 0
+      width: 30px
+      height: 30px
+      fill: $colorPrimary
+
+  .btn
+    font-size: 13px
+
+.cabinet-stat-calc
+  .m-calc-rc-ic
+    flex-grow: 0
+    margin-right: 14px
+
+    .icon
+      width: 26px
+      height: 34px
+
+  .m-calc-rc-tt
+    width: 143px
+    margin-right: 20px
+    flex-shrink: 0
+
+  .m-calc-row-controls
+    .btn
+      font-size: 13px
+
+  .field-item
+    &__field
+      input, select
+        font-size: 16px
+        font-weight: 500
+        height: 44px
+        border-color: transparent
+
+      .icon
+        fill: $colorBlue
+
+  .m-calc-rc-field
+    flex-shrink: 0
+    flex-grow: 0
+    width: 180px
+    margin-left: 20px
+
+  .m-calc-rc-select
+    flex-grow: 1
+
+  .m-calc-rc-arr
+    width: 117px
+    margin-left: 0
+    margin-right: 30px
+
+    .icon
+      width: 117px
+
+  .m-calc-result
+    margin-top: 30px
+
+  .m-calc-result-logo
+    width: 200px
+    padding: 16px 23px
+    background: #fff
+    flex-direction: row
+    border-radius: 4px
+    justify-content: flex-start
+
+    &__img
+      height: 43px
+      line-height: 43px
+      margin: 0 12px 0 0
+
+    &__tt
+      text-align: left
+      font-size: 14px
+      line-height: 16px
+
+  .m-calc-result-row
+    flex-wrap: nowrap
+
+    .mpm-stat-bl
+      flex-shrink: 0
+      padding: 18px 20px
+      width: 220px
+      margin: 0 0 0 4px
+      min-height: 20px
+
+      &:first-child
+        background: #fff
+        margin-left: 0
+
+      &:nth-child(2)
+        background: none
+        position: relative
+
+        &::after
+          content: ''
+          position: absolute
+          left: 0
+          top: 0
+          width: calc(100% + 13px)
+          height: 100%
+          z-index: 2
+          background-image: url('../img/mpm-stat-bl-arr-st-cab.png')
+          background-position: 100% 50%
+          background-size: cover
+          background-repeat: no-repeat
+          border-radius: 4px 0 0 4px
+
+      &:last-child
+        padding-left: 30px
+        margin-top: 0
+        flex-shrink: 1
+        flex-grow: 1
+        background-color: transparent
+        background-image: url('../img/mpm-stat-bl-arr-max-cab.png')
+        background-position: 0 50%
+
+.m-calc-row-tbl
+  display: flex
+  align-items: center
+  flex-grow: 1
+
+/* Max width 1399px */
+@media only screen and (max-width: 1399px)
+  .cabinet-stat-data
+    .tiles-list
+      li
+        padding-left: 20px
+
+      .tiles-service
+        &__info
+          b
+            font-size: 16px
+            margin-bottom: 0
+
+          span
+            font-size: 10px
+/* end media max width 1399px */
+
+/* Max width $m-hd */
+@media only screen and (max-width: $m-hd)
+  .cabinet-stat-calc
+    .m-calc-row-controls
+      flex-wrap: wrap
+      justify-content: flex-start
+
+    .m-calc-result
+      margin-top: 20px
+
+    .m-calc-rc-tt
+      width: auto
+      margin-right: 33px
+
+    .m-calc-row-controls
+      .btn
+        padding-left: 25px
+        padding-right: 25px
+
+  .m-calc-row-tbl
+    width: 100%
+    margin-top: 20px
+
+  .cabinet-stat-calc .m-calc-result-row .mpm-stat-bl:nth-child(2):after
+    width: calc(100% + 10px)
+/* end media max width $m-hd */
+
+/* Max width $m-xl-plus */
+@media only screen and (max-width: $m-xl-plus)
+  .cabinet-stat-data
+    .tiles-list
+      margin-top: -4px
+      flex-wrap: wrap
+
+      li
+        margin-top: 4px
+        margin-bottom: 0
+        width: calc( 50% - 2px )
+        padding-left: 30px
+
+      .tiles-service
+        &__info
+          b
+            font-size: 20px
+            margin-bottom: 4px
+
+          span
+            font-size: 12px
+
+  .cab-stat-data-row
+    overflow: hidden
+    display: block
+
+  .cab-stat-data-avatar
+    float: left
+    margin-right: 0
+
+  .cab-stat-data-about
+    margin-right: 0
+    margin-left: 120px
+
+    &__item:nth-child(even)
+      margin-right: 0
+      width: 40%
+
+  .cab-stat-data-link
+    margin-left: 120px
+    width: auto
+    margin-top: 20px
+
+  .m-calc-result
+    position: relative
+
+  .cabinet-stat-calc
+    .m-calc-rc-field
+      margin: 0 10px
+
+    .m-calc-result-logo
+      position: absolute
+      left: 0
+      top: 0
+      width: calc(50% - 2px)
+      height: 76px
+      margin: 0
+
+    .m-calc-result-row
+      flex-wrap: wrap
+      justify-content: space-between
+      margin-top: -4px
+
+      .mpm-stat-bl
+        height: 76px
+        width: calc(50% - 2px)
+        margin: 4px 0 0
+
+        &:first-child
+          margin-left: calc(50% + 2px)
+
+        &:nth-child(2)
+          &::after
+            width: calc(100% + 13px)
+
+        &:last-child
+          flex-grow: 0
+          width: calc(50% - 2px)
+          margin: 4px 0 0
+
+  .cabinet-stat-calc
+    .m-calc-rc-arr
+      margin-top: auto
+      width: 42px
+      position: relative
+      top: 3px
+      height: 21px
+      background-image: url('../img/mob-arr-t2.svg')
+      background-repeat: no-repeat
+      background-position: 100% 100%
+      background-size: auto 100%
+
+      .icon
+        display: none
+/* end media max width $m-xl-plus */
+
+/* Max width $m-xl */
+@media only screen and (max-width: $m-xl)
+  .cab-target-line
+    position: relative
+    padding: 20px 30px 98px
+    background-color: #0060ba
+    background-image: radial-gradient(circle at 16% 149%, #0060ba, #02afd4 92%)
+
+    .st-arrow-grow
+      flex-shrink: 0
+      width: 84px
+      height: 22px
+      margin: auto 0 0 30px
+      position: relative
+      top: 3px
+      background-image: url('../img/arr-grow-yellow-tabl@2x.png')
+      background-repeat: no-repeat
+      background-position: 50% 50%
+      background-size: 100% 100%
+
+      .icon
+        display: none
+
+    p
+      max-width: 100%
+
+    .calc-line__tt
+      margin-right: 3px
+
+      .title-site
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+        color: #fff
+        min-width: 138px
+
+    .btn
+      position: absolute
+      left: 30px
+      bottom: 30px
+      right: 30px
+/* end media max width $m-xl */
+
+/* Max width $m-lg */
+@media only screen and (max-width: $m-lg)
+  .cab-stat-data-about
+    &__item
+      width: calc(50% - 26px)
+
+      &:nth-child(even)
+        width: 50%
+
+  .cabinet-stat-calc .m-calc-result-row .mpm-stat-bl:nth-child(2):after
+    width: calc(100% + 10px)
+
+  .cabinet-stat-calc .m-calc-rc-field
+    min-width: 144px
+    max-width: 144px
+/* end media max width $m-lg */
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .cabinet-stat-data
+    padding: 12px 20px 1px
+
+    .tiles-list
+      li
+        width: 100%
+        padding: 14px 16px
+
+      .tiles-service
+        &__info
+          b
+            font-size: 16px
+            line-height: 20px
+            margin-bottom: 0
+
+          span
+            font-size: 10px
+            line-height: 12px
+
+  .cab-stat-data-row
+    margin-bottom: 16px
+    position: relative
+
+  .cab-stat-data-avatar
+    margin-right: 16px
+    position: absolute
+    left: 0
+    top: 0
+
+    .cabinet-data-photo__img
+      width: 60px
+      height: 60px
+
+      .icon
+        width: 30px
+        height: 30px
+
+  .cab-stat-data-about
+    margin: 0
+
+    &__item
+      margin: 0 0 14px
+      width: 50%
+      padding-right: 20px
+
+      &:nth-child(even)
+        width: 50%
+
+      &:nth-child(2)
+        order: 3
+
+      &:nth-child(3)
+        order: 2
+
+      &:first-child
+        margin-left: 76px
+        min-height: 60px
+        width: 100%
+
+      &:last-child
+        width: 100%
+        padding-right: 0
+        order: 4
+
+  .cab-stat-data-link
+    margin-left: 0
+    margin-top: 0
+
+  .cab-stat-about-tt
+    font-size: 10px
+    line-height: 12px
+    margin-bottom: 5px
+
+    a
+      margin-left: 10px
+
+  .cab-stat-about-data
+    font-size: 12px
+    line-height: 15px
+
+  .cab-stat-data-link
+    .cab-stat-about-tt
+      margin-bottom: 8px
+
+    .copy-link
+      margin-bottom: 10px
+
+  .cab-target-line
+    padding: 22px 20px 24px
+    display: block
+
+    .st-arrow-grow
+      position: absolute
+      right: 20px
+      top: 33px
+
+    p
+      font-size: 12px
+      line-height: 15px
+      margin: 10px 0 18px
+      
+    .calc-line__tt
+      .title-site
+        font-size: 14px
+        line-height: 17px
+
+      .icon
+        width: 24px
+        height: 24px
+        margin-right: 10px
+
+    .btn
+      position: relative
+      top: 0
+      right: 0
+      left: 0
+      margin: 0
+      font-size: 12px
+
+  .m-calc-row-tbl
+    display: block
+    margin-top: 18px
+
+  .cabinet-stat-calc
+    .m-calc-rc-select
+      margin: 0 0 10px
+
+    .m-calc-rc-field
+      min-width: 20px
+      max-width: none
+      width: 100%
+      margin: 0 0 10px
+
+    .m-calc-rc-ic
+      margin-right: 10px
+
+      .icon
+        width: 20px
+        height: 26px
+
+    .m-calc-rc-tt
+      margin-right: 3px
+      font-size: 16px
+      line-height: 19px
+      max-width: 130px
+
+    .m-calc-rc-arr
+      top: 2px
+
+  .cabinet-stat-calc .field-item__field input, .cabinet-stat-calc .field-item__field select
+    font-size: 14px
+
+  .m-calc-result
+    flex-direction: column
+
+    .m-calc-result-logo
+      position: relative
+      width: 100%
+      margin-bottom: 4px
+      padding: 12px 20px
+      height: auto
+
+      &__img
+        height: 30px
+        line-height: 30px
+        margin-right: 10px
+
+      &__tt
+        font-size: 13px
+        line-height: 16px
+
+    .mpm-stat-bl__tt
+      font-size: 10px
+      line-height: 12px
+      margin-bottom: 3px
+
+  .cabinet-stat-calc .m-calc-result-row
+    display: block
+
+    .mpm-stat-bl
+      width: 100%
+      height: auto
+
+      &:first-child,
+      &:nth-child(2),
+      &:last-child
+        margin: 4px 0 0
+        width: 100%
+        background: #fff
+        border-radius: 4px
+        padding: 11px 20px
+
+        &::before,
+        &::after
+          display: none
+
+      .icon
+        width: 20px
+        height: 20px
+
+  .cabinet-stat-calc .m-calc-row-controls .btn
+    font-size: 12px
+/* end media max width $m-md */
