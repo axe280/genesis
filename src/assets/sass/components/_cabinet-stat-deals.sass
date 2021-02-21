@@ -1,0 +1,391 @@
+.cab-deal-table-list
+  margin-bottom: 20px
+
+.deal-table-item
+  position: relative
+  border-radius: 10px
+  margin-bottom: 8px
+
+  &._status-working
+    .deal-ti-status .btn.btn_border
+      border-color: $colorBlue
+
+    .icon
+      fill: $colorBlue
+
+    .deal-ti-dates
+      .st-arrow-grow
+        background-image: url('../img/blue-long-arr.svg')
+        background-size: 300px 10px
+
+    .deal-ti-brand__logo::before
+      background-image: url('../img/b-arr-blue.svg')
+
+  &._status-finished
+    .deal-ti-status .btn.btn_border
+      border-color: $colorPrimary
+
+    .icon
+      fill: $colorPrimary
+
+    .deal-ti-dates
+      .st-arrow-grow
+        background-image: url('../img/arr-grow-yellow.svg')
+        background-size: 300px 10px
+
+    .deal-ti-brand__logo::before
+      background-image: url('../img/b-arr-yellow.svg')
+
+  &._status-closed
+    .deal-ti-status .btn.btn_border
+      border-color: rgba(#424242, .2)
+
+    .icon
+      fill: $colorGrayLight
+
+    .deal-ti-dates
+      .st-arrow-grow
+        background-image: url('../img/gray-arr.svg')
+        background-size: 140px 10px
+
+    .deal-ti-brand__logo
+      img
+        filter: grayscale(100%)
+        opacity: .5
+
+      &::before
+        background-image: url('../img/b-arr-gray.svg')
+
+.deal-ti-row
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 11px 30px 11px 18px
+  min-height: 80px
+
+  &:last-child
+    border-top: 1px solid #e7e7e9
+    padding-right: 210px
+
+    > div
+      &:first-child
+        padding-left: 60px
+
+  > div
+    &:first-child
+      flex-shrink: 0
+      width: 230px
+      margin-right: 20px
+
+.deal-ti-doc
+  position: absolute
+  right: 30px
+  bottom: 20px
+
+  .btn.btn_border
+    padding: 10px 20px
+    font-size: 10px
+
+.deal-ti-brand
+  display: flex
+  align-items: center
+
+  &__logo
+    position: relative
+    width: 50px
+    text-align: center
+    height: 48px
+    line-height: 48px
+    width: 50px
+    margin-right: 10px
+
+    &::before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 100%
+      margin-top: 8px
+      margin-left: -2px
+      width: 24px
+      height: 50px
+      z-index: 2
+      background-size: 100% 100%
+      background-position: 100% 100%
+
+  &__name
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+    text-transform: uppercase
+
+.deal-ti-status
+  flex-shrink: 0
+  margin-right: 20px
+  width: 136px
+
+  .btn.btn_border
+    cursor: default
+    align-items: center
+    border-radius: 4px
+    padding: 10px 16px
+    text-transform: none
+    font-size: 12px
+    font-weight: 400
+    border-color: rgba(#424242, .2)
+
+    &:hover
+      border-color: rgba(#424242, .2)
+      background: none
+
+    .icon
+      width: 14px
+      height: 14px
+      margin-right: 8px
+
+.deal-ti-progress
+  flex-grow: 1
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+
+  &__info
+    display: flex
+    align-items: center
+    margin: 4px 10px 4px 0
+
+    .deal-ti-tt
+      margin: 0 10px 0 0
+
+  .deal-ti-val
+    flex-shrink: 0
+
+  .status-level-progress
+    flex-shrink: 0
+    width: 500px
+    margin: 4px 0
+    background-color: #ccc
+
+.deal-ti-tt
+  font-size: 12px
+  line-height: 15px
+  color: #8491b4
+  margin-bottom: 4px
+
+.deal-ti-val
+  font-weight: 500
+  font-size: 14px
+  line-height: 17px
+  display: flex
+  align-items: center
+
+  .icon
+    flex-shrink: 0
+    width: 14px
+    height: 14px
+    margin-right: 8px
+
+.deal-ti-dates
+  margin-right: 30px
+  flex-grow: 1
+  display: flex
+  align-items: center
+  padding: 9px 16px
+  background-color: #fff
+  border-radius: 4px
+
+  .st-arrow-grow  
+    margin: 0 16px 0 18px
+    max-width: 140px
+    width: 100%
+    height: 10px
+    background-repeat: no-repeat
+    background-position: 100% 50%
+
+.deal-ti-sum
+  width: 170px
+  flex-shrink: 0
+
+/* Max width 1300px */
+@media only screen and (max-width: 1300px)
+  .deal-ti-row>div:first-child
+    width: 190px
+
+  .deal-ti-sum
+    width: 150px
+/* end media max width 1300px */
+
+/* Max width $m-xl-plus */
+@media only screen and (max-width: $m-xl-plus)
+  .deal-ti-progress
+    justify-content: flex-start
+
+    &__info
+      margin: 0
+
+    .status-level-progress
+      width: 140px
+      margin-left: 20px
+
+  .deal-ti-row
+    padding-right: 120px
+
+    &:last-child
+      padding-right: 0
+
+  .deal-ti-doc
+    bottom: auto
+    right: 20px
+    top: 20px
+
+    .btn.btn_border
+      padding-left: 15px
+      padding-right: 15px
+
+      span
+        display: none
+/* end media max width $m-xl-plus */
+
+/* Max width $m-xl */
+@media only screen and (max-width: $m-xl)
+  .deal-ti-progress
+    display: block
+
+    .status-level-progress
+      margin: 10px 0 0
+/* end media max width $m-xl */
+
+/* Max width $m-lg */
+@media only screen and (max-width: $m-lg)
+  .deal-ti-row
+    >div:first-child
+      margin-right: 10px
+
+    &:last-child
+      padding-right: 20px
+
+  .deal-ti-status
+    margin-right: 12px
+
+  .deal-ti-dates
+    margin-right: 20px
+
+    .st-arrow-grow
+      margin: 0 8px
+
+  .deal-ti-sum
+    width: 130px
+
+  .dieal-tie-date-item
+    flex-shrink: 0
+/* end media max width $m-lg */
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .deal-ti-row
+    flex-wrap: wrap
+    justify-content: flex-start
+    padding: 16px 20px 0
+
+    &:last-child
+      padding: 0 20px 20px
+      border: none
+
+      >div:first-child
+        padding-left: 0
+
+    >div:first-child
+      margin-right: 0
+      width: auto
+
+  .deal-ti-doc
+    position: relative
+    right: 0
+    top: 0
+
+  .deal-ti-brand
+    min-width: 100%
+    margin-bottom: 10px
+
+    &__logo
+      width: 40px
+      height: 36px
+      line-height: 36px
+      margin-right: 6px
+      
+      &::before
+        display: none
+
+    &__name
+      font-size: 13px
+      line-height: 16px
+
+  .deal-ti-progress
+    margin: 14px 0
+    width: 100%
+
+    .status-level-progress
+      width: 295px
+
+    &__info
+      align-items: flex-end
+
+      .deal-ti-tt
+        margin-right: 8px
+        margin-bottom: 0
+
+    .deal-ti-val
+      font-size: 12px
+
+  .deal-ti-status
+    display: inline-block
+    vertical-align: top
+    min-width: 138px
+    margin-right: 4px
+
+    .btn.btn_border
+      width: 100%
+      font-size: 10px
+
+  .deal-ti-doc
+    display: inline-block
+    vertical-align: top
+
+  .deal-ti-tt
+    font-size: 10px
+    line-height: 12px
+    margin-bottom: 6px
+
+  .deal-ti-val
+    font-size: 13px
+    line-height: 16px
+
+    .icon
+      margin-right: 6px
+
+  .deal-ti-dates
+    margin-right: 0
+    padding: 8px 12px
+    order: 3
+
+    .deal-ti-tt
+      margin-bottom: 3px
+
+    .st-arrow-grow
+      margin: 0 10px
+      max-width: 70px
+
+  .deal-ti-sum
+    min-width: 50%
+    max-width: 50%
+    order: 2
+    width: auto
+    margin: 0 0 14px
+/* end media max width $m-md */
+
+/* Max width $m-sm */
+@media only screen and (max-width: $m-sm)
+  .deal-ti-progress
+    .status-level-progress
+      width: 240px
+/* end media max width $m-sm */
