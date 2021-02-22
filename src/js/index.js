@@ -141,4 +141,32 @@ $(function () {
     $(this).addClass('active').siblings('button').removeClass('active')
     $('body').attr('data-theme', themeName)
   })
+
+  // fix aside
+  var addAsideFixClass = function () {
+    if ($(window).scrollTop() > $('.header').outerHeight()) {
+      $('.aside-nav').addClass('h-fixed')
+    } else {
+      $('.aside-nav').removeClass('h-fixed')
+    }
+  }
+
+  if ($('.aside-nav').length) {
+    if ($(window).width() > 740) {
+      $(window).on('scroll', addAsideFixClass)
+    }
+  }
+
+  addAsideFixClass()
+
+  // open aside pan
+  $('.aside-nav-tablet-btn__burger, .burger-menu-cabinet').on('click', function() {
+    $('body').toggleClass('aside-pan_opened')
+
+    if ($('body').hasClass('aside-pan_opened')) {
+      addDocumentScrollBlocker()
+    } else {
+      removeDocumentScrollBlocker()
+    }
+  })
 })

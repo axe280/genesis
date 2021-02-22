@@ -1,0 +1,342 @@
+.aside-nav
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  width: 230px
+  z-index: 50
+  display: flex
+  padding-top: 130px
+
+  &.h-fixed
+    padding-top: 60px
+    transition: padding .3s
+
+    .aside-nav-time
+      top: 0
+      transition: top .3s
+
+  .header-lang,
+  .header-switch-theme
+    display: none
+
+.aside-nav-inner
+  overflow: auto
+  height: 100%
+  width: 100%
+  padding: 30px
+  border-top: 1px solid #e7e7e9
+
+  .btn_border-gray.btn
+    color: #7c7c7c
+
+    &:hover
+      color: #000
+
+.aside-nav-time
+  position: absolute
+  top: 70px
+  left: 0
+  width: 100%
+  height: 60px
+  display: flex
+  align-items: center
+  padding: 0 30px
+
+  .icon
+    width: 24px
+    height: 24px
+    margin-right: 10px
+    fill: $colorBlue
+
+  &__val
+    margin-right: 8px
+    font-weight: 500
+    font-size: 16px
+    line-height: 20px
+
+  &__timezone
+    color: #7c7c7c
+    font-size: 12px
+    line-height: 15px
+
+.aside-nav-list
+  margin-bottom: 48px
+
+.aside-nav-list-items
+  > li
+    font-weight: 600
+    font-size: 12px
+    line-height: 14px
+    margin-bottom: 25px
+    text-transform: uppercase
+
+    > a
+      color: #000
+
+      &:hover
+        color: $colorBlue
+
+  li
+    &.active
+      a, span
+        color: $colorBlue
+        cursor: default
+
+  ul
+    margin: 25px 0
+
+    li
+      position: relative
+      margin-bottom: 30px
+      padding-left: 20px
+
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 3px
+        width: 5px
+        height: 5px
+        z-index: 2
+        border: 1px solid rgba(#818181, .6)
+        border-radius: 50%
+
+      &::after
+        content: ''
+        position: absolute
+        left: 3px
+        top: 15px
+        width: 1px
+        height: 26px
+        z-index: 2
+        background-color: rgba(#818181, .6)
+
+      &:last-child
+        margin-bottom: 0
+
+        &::after
+          display: none
+
+    a, span
+      display: flex
+      color: #7c7c7c
+
+      &:hover
+        color: $colorBlue
+
+    .nav-lock-item
+      display: flex
+      align-items: center
+
+      &::before
+        border-color: rgba($colorDanger, .6)
+
+      .icon
+        flex-shrink: 0
+        width: 12px
+        height: 16px
+        margin-right: 8px
+
+      a, span
+        &:hover
+          color: #7c7c7c
+
+.aside-nav-tablet-btn
+  display: none
+
+/* Max width $m-xl */
+@media only screen and (max-width: $m-xl)
+  .aside-nav
+    padding-top: 185px
+    
+  .aside-nav-time
+    top: 125px
+/* end media max width $m-xl */
+
+/* Max width $m-lg */
+@media only screen and (max-width: $m-lg) and (min-width: $md)
+  .aside-nav-time
+    top: 125px
+    left: 100%
+    width: 70px
+    height: 100px
+    padding-left: 5px
+    padding-right: 5px
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    border-bottom: 1px solid #e7e7e9
+
+    &__val
+      margin: 0 0 1px
+
+    .icon
+      margin: 0 0 6px
+
+  .aside-pan_opened
+    .aside-nav-time
+      left: 0
+      width: 100%
+      height: 60px
+      padding-left: 30px
+      padding-right: 30px
+      justify-content: flex-start
+      flex-direction: row
+      border: none
+
+      &__val
+        margin: 0 8px 0 0
+
+      .icon
+        margin: 0 10px 0 0
+/* end media max width $m-lg */
+
+/* Max width $m-lg */
+@media only screen and (max-width: $m-lg)
+  .aside-pan_opened
+    .aside-nav
+      transform: translate(0)
+
+    .aside-nav-tablet-btn
+      box-shadow: 6px 0 6px rgba(62, 59, 59, 0.1)
+
+      .icon-buter-m
+        display: none
+
+      .icon-close-thin
+        display: block
+    
+    .burger-menu-cabinet.btn,
+    .burger-menu-cabinet.btn:hover
+      background-color: $colorBlue
+      color: #000000
+
+  .aside-nav
+    transform: translateX(-100%)
+
+    &.h-fixed
+      transition: padding .3s, background-color .2s, transform .2s
+      
+      .aside-nav-tablet-btn
+        padding-top: 0
+        transition: padding .3s
+
+  .aside-nav-tablet-btn
+    display: block
+    position: absolute
+    left: 100%
+    top: 0
+    padding-top: 125px
+    width: 70px
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #f7f7f7
+    border-left: 1px solid #e7e7e9
+
+    &__burger
+      text-align: center
+      cursor: pointer
+
+      span
+        display: block
+        font-weight: 500
+        font-size: 13px
+        line-height: 16px
+
+      .icon
+        fill: $colorBlue
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        display: none
+
+    .icon-buter-m
+      height: 16px
+      width: 26px
+      display: block
+
+    .icon-close-thin
+      width: 20px
+      height: 20px
+
+  .antb-buter-icon
+    position: relative
+    margin-bottom: 10px
+    height: 20px
+/* end media max width $m-lg */
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .aside-nav-tablet-btn
+    display: none
+
+  .aside-nav
+    bottom: 0
+    top: 60px
+    z-index: 150
+    padding-top: 52px
+    width: 100%
+
+    .header-lang
+      display: block
+      position: absolute
+      z-index: 20
+      left: 50%
+      top: 17px
+      transform: translate(-50%)
+
+      &__current .icon
+        fill: #7c7c7c
+
+    .header-switch-theme
+      position: absolute
+      z-index: 20
+      right: 20px
+      top: 5px
+      left: auto
+      bottom: auto
+      border-color: #e7e7e9
+      padding: 0
+      width: 70px
+      height: 36px
+      display: flex
+      justify-content: center
+      align-items: center
+
+  .aside-nav-time
+    top: 0
+    height: 52px
+    padding: 0 20px
+
+  .aside-nav-inner
+    padding: 30px 20px
+
+  .aside-nav-list-items
+    >li
+      font-size: 14px
+      line-height: 18px
+      margin-bottom: 22px
+
+      &:last-child
+        margin-bottom: 0
+
+    ul
+      margin: 22px 0
+
+      li
+        margin-bottom: 22px
+        font-size: 12px
+        line-height: 18px
+
+        &::before
+          top: 5px
+
+  .aside-nav-list
+    margin-bottom: 0
+
+/* end media max width $m-md */

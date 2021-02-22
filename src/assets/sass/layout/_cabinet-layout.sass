@@ -44,9 +44,21 @@
     max-width: 100%
 
   .footer
-    padding-left: 230px
-    background-color: #050447
+    margin-left: 230px
+    padding: 25px 0
     transition: background-color .2s
+    background: #050447
+
+    .container
+      display: flex
+      align-items: center
+      justify-content: space-between
+
+      .copy
+        color: #8491b4
+        font-size: 13px
+        line-height: 16px
+        margin: 0 20px 0 0
 
   input, textarea
     font-weight: 500
@@ -78,15 +90,6 @@
       .icon-key
         width: 18px
         height: 18px
-
-.aside-nav
-  position: fixed
-  top: 0
-  padding-top: 70px
-  left: 0
-  bottom: 0
-  width: 230px
-  z-index: 50
 
 .cabinet-st-tt
   margin-bottom: 20px
@@ -184,15 +187,32 @@
   padding: 30px
   border-radius: 10px
 
+.footer-mail
+  flex-shrink: 0
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  a
+    font-size: 13px
+    color: #fff
+
+  .icon
+    flex-shrink: 0
+    width: 20px 
+    height: 20px
+    fill: $colorBlue
+    margin-right: 10px
+
+
 /* Max width $m-lg */
 @media only screen and (max-width: $m-lg)
-  .aside-nav
-    transform: translateX(-160px)
-
   .page-cabinet
-    .main,
-    .footer
+    .main
       padding-left: 70px
+
+    .footer
+      margin-left: 70px
 
   .page-cabinet
     .main
@@ -226,6 +246,15 @@
   .page-cabinet
     font-size: 10px
     line-height: 18px
+
+    .footer
+      margin-left: 0
+      padding: 20px 0
+
+      .container
+        .copy
+          font-size: 10px
+          line-height: 13px
 
     input
       height: 40px
@@ -339,4 +368,14 @@
 
   .st-cab-sec
     padding: 24px 20px
+
+  .footer-mail
+    a
+      font-size: 10px
+
+    .icon
+      width: 14px
+      height: 14px
+      margin-right: 8px
+
 /* end media max width $m-md */

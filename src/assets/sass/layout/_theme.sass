@@ -7,7 +7,6 @@
   .btn_border
     color: var(--main-text-color)
 
-.aside-nav,
 .pay-comp-wrapp,
 .cab-st-tile,
 .data-list-pay li,
@@ -18,12 +17,17 @@
 .st-table-h-row,
 .partners-link-list,
 .st-cab-sec,
-.deal-table-item
+.deal-table-item,
+.aside-nav-tablet-btn
   background-color: var(--main-blocks-bg)
   transition: background-color .2s
 
 .cabinet-stat-bl
   color: var(--color-dark)
+
+.aside-nav
+  background-color: var(--main-blocks-bg)
+  transition: background-color .2s, transform .2s
 
 .pay-comp-bonus__tt,
 .cab-st-tile._empty b,
@@ -35,6 +39,13 @@
   color: var(--color-gray-light)
 
 [data-theme="dark"]
+  a:hover
+    color: var(--color-light)
+
+  .btn
+    &:hover
+      color: #000
+
   &.page-cabinet .header,
   &.page-cabinet .footer,
   .limits-withdraw-info,
@@ -57,10 +68,15 @@
   .cabinet-data-col,
   .cabinet-data-photo-save,
   .h-aside-nav,
-  .deal-ti-row:last-child
+  .deal-ti-row:last-child,
+  .aside-nav-inner,
+  .aside-nav-tablet-btn,
+  .aside-nav-time,
+  .aside-nav .header-switch-theme
     border-color: rgba(#fff, .11)
 
-  .text_dark-50
+  .text_dark-50,
+  .aside-nav-list-items>li>a
     color: var(--color-light)
 
   .cabinet-stat-bl .btn_border.btn_border-gray
@@ -99,3 +115,38 @@
 
   .cab-partners-status
     background-color: #1f1f44
+
+  .aside-nav-list-items ul a, .aside-nav-list-items ul span
+    color: #8491b4
+
+  .aside-nav-list-items ul li:before
+    border-color: #8491b4
+
+  .aside-nav-list-items ul li:after
+    background-color: #8491b4
+
+  .aside-nav-list-items li
+    &.active
+      a, span
+        color: $colorBlue
+
+    .nav-lock-item
+      &::before
+        border-color: rgba($colorDanger, .6)
+
+      a, span
+        &:hover
+          color: #8491b4
+
+    a, span
+      &:hover
+        color: $colorBlue
+
+  .aside-nav-inner
+    .btn_border-gray.btn
+      border-color: #8491b4
+      color: #8491b4
+
+      &:hover
+        background-color: #8491b4
+        color: #fff
