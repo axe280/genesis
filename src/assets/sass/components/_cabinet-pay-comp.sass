@@ -225,6 +225,101 @@
     font-size: 18px
     line-height: 22px
 
+.pay-direct-info
+  font-size: 14px
+  line-height: 17px
+
+  &__tt
+    font-size: 14px
+    line-height: 17px
+    margin-bottom: 26px
+
+  .tiles-list
+    margin-top: 20px
+
+    li
+      padding: 20px 20px 22px
+      background: rgba(#fff, .08)
+      border-radius: 4px
+
+  .tiles-head
+    margin-bottom: 16px
+    justify-content: flex-start
+
+    .icon
+      width: 26px
+      height: 26px
+      margin-right: 12px
+
+  .tiles-tt
+    margin-right: 0
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+
+  .tiles-info
+    font-size: 12px
+    line-height: 15px
+
+.pay-direct-comment
+  display: flex
+  margin-top: 24px
+  font-size: 14px
+  line-height: 17px
+
+  .icon
+    flex-shrink: 0
+    width: 30px
+    height: 28px
+    margin-right: 12px
+    margin-top: 4px
+    fill: $colorPrimary
+
+.pay-comp-order-success
+  position: relative
+  padding-left: 70px
+  background-image: url('../img/check-s.svg')
+  background-repeat: no-repeat
+  background-position: 0 5px
+  background-size: 50px 38px
+
+
+.pay-co-success-head
+  margin-bottom: 22px
+
+  &__tt
+    font-weight: 600
+    font-size: 20px
+    line-height: 24px
+    margin-bottom: 10px
+
+  &__text
+    font-size: 14px
+    line-height: 17px
+
+.pay-co-success-body
+  display: flex
+  align-items: flex-start
+
+  .btn
+    font-size: 12px
+    flex-shrink: 0
+    margin-right: 30px
+    display: inline-block
+
+  &__more
+    display: flex
+    font-size: 12px
+    line-height: 15px
+    max-width: 350px
+
+    .icon
+      flex-shrink: 0
+      fill: rgba(#fff, .5)
+      width: 16px
+      height: 16px
+      margin-right: 8px
+
 /* Max width $m-hd */
 @media only screen and (max-width: $m-hd)
   .pay-comp-wrapp
@@ -249,6 +344,10 @@
         &:last-child
           margin-top: 20px
           width: 100%
+
+  .pay-co-success-body
+    .btn
+      flex-shrink: 1
 /* end media max width $m-hd */
 
 /* Max width $m-xl-plus */
@@ -264,6 +363,12 @@
     &__logo
       height: 80px
       line-height: 80px
+
+  .pay-co-success-body
+    display: block
+
+    .btn
+      margin: 0 0 20px
 /* end media max width $m-xl-plus */
 
 /* Max width $m-xl */
@@ -322,6 +427,30 @@
   .pay-comp-actions
     margin-bottom: 24px
 /* end media max width $m-xl */
+
+/* Max width $m-lg */
+@media only screen and (max-width: $m-lg)
+  .pay-direct-info
+    .tiles-list
+      display: block
+
+      li
+        padding: 17px 20px 20px
+        margin: 0 0 4px
+        width: 100%
+
+    .tiles-head
+      margin-bottom: 9px
+
+    .round-row-list._half-col
+      margin: 25px 0 0
+      display: block
+
+      li
+        width: 100%
+        margin: 0
+        margin-top: 15px
+/* end media max width $m-lg */
 
 /* Min width $md */
 @media only screen and (min-width: $md) and (max-width: $m-xl-plus)
@@ -486,4 +615,78 @@
 
     .pay-comp-actions__field
       width: 100%
+
+  .pay-direct-info
+    font-size: 12px
+    line-height: 15px
+
+    &__tt
+      margin-bottom: 15px
+      font-size: 12px
+      line-height: 15px
+    
+    .tiles-list
+      display: block
+      margin-top: 15px
+
+      li
+        padding: 12px 20px 25px
+        margin: 0 0 4px
+        width: 100%
+
+      .icon
+        width: 20px
+        height: 20px
+        margin-right: 10px
+
+    .tiles-head
+      margin-bottom: 9px
+
+    .round-row-list._half-col
+      margin-top: 14px
+      margin-bottom: 3px
+
+    .tiles-tt
+      font-size: 12px
+      line-height: 15px
+
+    .tiles-info
+      font-size: 10px
+      line-height: 12px
+
+  .pay-direct-comment
+    font-size: 12px
+    line-height: 15px
+
+    .icon
+      width: 24px
+      height: 22px
+      margin-right: 10px
+
+  .pay-comp-order-success
+    padding: 0
+    background: none
+
+  .pay-co-success-head
+    margin-bottom: 20px
+
+    &__tt
+      margin-bottom: 12px
+      font-size: 14px
+      line-height: 17px
+
+    &__text
+      font-size: 12px
+      line-height: 15px
+
+  .pay-co-success-body
+    .btn
+      margin: 0 0 18px
+
+      span
+        display: none
+
+    &__more
+      font-size: 10px
+      line-height: 12px
 /* end media max width $m-md */
