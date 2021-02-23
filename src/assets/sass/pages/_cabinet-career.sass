@@ -1,0 +1,493 @@
+.cab-career-reasons
+  position: relative
+  border: 1px solid #f7f7f7
+  border-radius: 10px
+
+  &._opened
+    position: relative
+
+    .cab-c-reasons-line
+      &::before
+        width: 866px
+
+      .btn.btn_border
+        .icon
+          transform: rotate(-180deg)
+          position: relative
+          top: -1px
+  
+  .tiles-head
+    margin-bottom: 16px
+
+  .tiles-list
+    padding-top: 0
+
+    &._arr-top li
+      padding-top: 32px
+
+    .tiles-numb
+      margin-bottom: 0
+
+    p+p
+      margin-top: 16px
+
+.cab-c-reasons-line
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 15px 20px 15px 30px
+
+  &::before
+    content: ''
+    position: absolute
+    left: 46px
+    top: 65px
+    width: 0
+    height: 33px
+    overflow: hidden
+    z-index: 2
+    background-image: url('../img/cab-career-reasons.svg')
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    background-size: 100% 100%
+    transition: width .3s
+
+  .icon-puzzle
+    flex-shrink: 0
+    width: 34px
+    height: 26px
+    margin-right: 10px
+    fill: $colorBlue
+
+  &__tt
+    flex-grow: 1
+    font-weight: 600
+    font-size: 16px
+    line-height: 20px
+    margin-right: auto
+
+  .btn.btn_border
+    padding: 10px 26px
+    flex-shrink: 0
+    font-size: 10px
+    margin-left: 20px
+
+    .icon
+      margin-left: 7px
+      width: 8px
+      height: 5px
+
+.cab-career-reasons-body
+  padding: 38px 30px 30px
+  display: none
+
+.cabinet-career-about
+  padding: 30px 30px 33px
+  border-radius: 10px
+  background-image: radial-gradient(circle at 27% 150%, #0060ba, #02afd4 142%)
+  color: #fff
+
+.cabinet-career-programs-list
+  margin-left: -8px
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+  li
+    position: relative
+    margin: 0 0 8px 8px
+    padding: 30px 30px 33px 76px
+    border-radius: 10px
+    width: calc(50% - 8px)
+    font-size: 12px
+    line-height: 20px
+
+  .icon
+    position: absolute
+    left: 30px
+    top: 32px
+    width: 30px
+    height: 31px
+    fill: $colorBlue
+
+.cabinet-best-status
+  margin-top: 32px
+  margin-bottom: 10px
+
+.c-best-status-head
+  display: flex
+  align-items: center
+  margin-bottom: 32px
+
+  &__logo
+    width: 60px
+    height: 60px
+    margin-right: 18px
+    flex-shrink: 0
+
+    .icon
+      width: 100%
+      height: 100%
+
+  &__tt
+    font-weight: 600
+    font-size: 24px
+    line-height: 29px
+    max-width: 680px
+
+.c-best-status-l-row
+  display: flex
+  margin-bottom: 20px
+  margin-left: -6px
+
+.c-best-status-l-col
+  padding: 18px 20px 20px
+  width: calc(33.33% - 6px)
+  margin-left: 6px
+  border-radius: 4px
+  border: 1px solid #f7f7f7
+
+  .status-level
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+
+    &__tt
+      font-size: 14px
+      line-height: 17px
+
+    &__val
+      font-size: 18px
+      line-height: 22px
+      font-weight: 500
+
+  .status-level-progress
+    margin-top: 14px
+
+    &::before
+      background-size: 100% 100%
+
+.c-best-status-list
+  display: flex
+  flex-wrap: wrap
+  margin-bottom: 15px
+  margin-left: -6px
+
+  li
+    width: calc(33.33% - 6px)
+    margin-left: 6px
+    font-size: 12px
+    line-height: 16px
+    margin-bottom: 14px
+    padding-left: 24px
+    background-image: url('../img/tick.svg')
+    background-repeat: no-repeat
+    background-position: 0 0
+
+.c-best-status-btns
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  .btn
+    flex-grow: 1
+
+  .btn_border
+    flex-grow: 0
+    margin-left: 20px
+    min-width: 305px
+
+.c-best-status-body
+  .c-best-status-btns
+    .btn
+      font-size: 12px
+      padding: 10px 20px
+
+/* Max width $m-hd */
+@media only screen and (max-width: $m-hd)
+  .cab-c-reasons-line
+    &::before
+      display: none
+
+  .cab-career-reasons-body
+    padding-top: 0px
+/* end media max width $m-hd */
+
+/* Max width $m-xl-plus */
+@media only screen and (max-width: $m-xl-plus)
+  .cab-career-reasons
+    margin: 30px 0
+
+  .cab-c-reasons-line
+    padding: 15px 15px 15px 30px
+
+    &::before
+      display: block
+      left: 29px
+      top: 67px
+      width: 10px
+      height: 0
+      background-image: url('../img/cab-career-reasons-tablet.svg')
+      background-size: auto
+      transition: height .5s
+
+    &__tt
+      max-width: 300px
+
+  .cab-career-reasons
+    &._opened
+      .cab-c-reasons-line
+        &::before
+          width: 10px
+          height: 427px
+
+    .tiles-list
+      display: block
+
+      li
+        margin: 0 0 4px
+        padding: 22px 30px 13px 40px
+
+        &:first-child
+          min-height: 178px
+
+        &:nth-child(2)
+          min-height: 138px
+
+        &:last-child
+          margin-bottom: 0
+          min-height: 158px
+
+    .tiles-list._three-col._arr-top li,
+    .tiles-list._three-col li
+      width: 100%
+
+    .tiles-list._three-col._arr-top li
+      &:first-child
+        background-image: url('../img/cab-career-reasons-tabl1.png')
+
+      &:nth-child(2)
+        background-image: url('../img/cab-career-reasons-tabl2.png')
+
+      &:last-child
+        background-image: url('../img/cab-career-reasons-tabl3.png')
+
+    .tiles-list._arr-top li
+      padding-top: 22px
+
+  .cab-career-reasons-body
+    padding-left: 54px
+    padding-top: 15px
+
+  .cabinet-career-programs-list
+    margin: 0
+    
+    li
+      width: 100%
+      margin-left: 0
+
+      &:last-child
+        margin-bottom: 0
+/* end media max width $m-xl-plus */
+
+/* Max width $m-lg */
+@media only screen and (max-width: $m-lg)
+  .c-best-status-head
+    align-items: flex-start
+
+  .cabinet-best-status
+    margin-top: 40px
+
+  .c-best-status-l-row
+    display: flex
+    margin-bottom: 20px
+    margin-left: -6px
+
+  .c-best-status-list
+    li
+      width: calc(50% - 6px)
+
+  .c-best-status-btns
+    .btn_border
+      min-width: 230px
+/* end media max width $m-lg */
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .cab-career-reasons
+    padding-bottom: 60px
+    margin: 0
+
+  .cab-c-reasons-line
+    padding: 17px 20px 15px
+    align-items: flex-start
+
+    &::before
+      display: block
+      left: 20px
+
+    &__tt
+      max-width: 200px
+      min-height: 51px
+      font-size: 14px
+      line-height: 17px
+
+    .icon-puzzle
+      width: 24px
+      height: 18px
+      margin-right: 10px
+      margin-top: 3px
+
+    .btn.btn_border
+      position: absolute
+      left: 20px
+      bottom: 20px
+      right: 20px
+      margin: 0
+      width: calc(100% - 40px)
+
+  .cab-career-reasons
+    &._opened
+      .cab-c-reasons-line
+        &::before
+          width: 10px
+          height: 427px
+
+    .tiles-head
+      margin-bottom: 10px
+
+      .icon
+        width: 24px
+        height: 24px
+        margin-right: 10px
+
+    .tiles-tt
+      font-size: 13px
+      line-height: 16px
+
+    .tiles-numb
+      font-size: 14px
+      line-height: 17px
+
+    .tiles-list
+      li
+        padding: 20px 20px 24px 31px
+
+      p + p
+        margin-top: 10px
+
+    .tiles-info
+      font-size: 10px
+      line-height: 12px
+
+    .tiles-list._three-col._arr-top li,
+    .tiles-list._three-col li
+      width: 100%
+
+    .tiles-list._arr-top li
+      padding-top: 20px
+
+  .cab-career-reasons-body
+    padding: 2px 20px 10px 37px
+
+  .cabinet-career-about
+    padding: 20px 20px 23px
+
+  .cabinet-career-programs-list
+    display: block
+
+    li
+      margin-bottom: 4px
+      padding: 20px 20px 23px 50px
+      font-size: 10px
+      line-height: 18px
+
+    .icon
+      left: 20px
+      top: 20px
+      width: 20px
+      height: 21px
+
+  .c-best-status-head
+    margin-bottom: 20px
+
+    &__logo
+      width: 40px
+      height: 40px
+      margin-right: 14px
+
+    &__tt
+      font-size: 16px
+      line-height: 19px
+
+  .cabinet-best-status
+    margin-top: 0
+    margin-bottom: 0
+
+  .c-best-status-l-row
+    display: block
+    margin-bottom: 14px
+    margin-left: 0
+
+  .c-best-status-l-col
+    width: 100%
+    margin: 0 0 4px
+    padding: 16px 22px 18px 20px
+
+    &:last-child
+      margin-bottom: 0
+
+    .status-level
+      &__tt
+        font-size: 12px
+        line-height: 15px
+        margin-bottom: 0
+
+      &__val
+        font-size: 16px
+        line-height: 20px
+
+    .status-level-progress
+      margin-top: 9px
+
+  .c-best-status-list
+    margin-bottom: 20px
+    margin-left: 0
+
+    li
+      width: 100%
+      margin-left: 0
+      margin-bottom: 14px
+
+      &:last-child
+        margin-bottom: 0
+
+  .c-best-status-btns
+    display: block
+
+    .btn
+      width: 100%
+
+    .btn_border
+      min-width: 20px
+      margin: 0
+      margin-top: 10px
+
+  .c-best-status-body .c-best-status-btns .btn
+    font-size: 12px
+    line-height: 20px
+
+    &.btn_border
+      line-height: 18px
+/* end media max width $m-md */
+
+/* Max width 480px */
+@media only screen and (max-width: 480px)
+  .cab-career-reasons
+    .tiles-list._three-col._arr-top li
+      &:first-child,
+      &:nth-child(2),
+      &:last-child
+        background-image: url('../img/cab-career-reasons-mob@2x.png')
+/* end media max width 480px */

@@ -169,4 +169,23 @@ $(function () {
       removeDocumentScrollBlocker()
     }
   })
+
+  // aside career open reasons
+  var isReasonBtnOpen = false
+  var $reasonCabBtn = $('.cab-c-reasons-line .btn')
+  var reasonTextOpen = $reasonCabBtn.attr('data-open-text') + '<svg class="icon icon-arrow-down"><use xlink:href="assets/img/sprite.svg#arrow-down"></use></svg>'
+  var reasonTextClose = $reasonCabBtn.attr('data-close-text') + '<svg class="icon icon-arrow-down"><use xlink:href="assets/img/sprite.svg#arrow-down"></use></svg>'
+  $reasonCabBtn.html(reasonTextOpen)
+
+  $reasonCabBtn.on('click', function() {
+    if (isReasonBtnOpen === true) {
+      $reasonCabBtn.html(reasonTextOpen)
+      isReasonBtnOpen = false
+      $(this).parents('.cab-career-reasons').removeClass('_opened').find('.cab-career-reasons-body').slideUp()
+    } else {
+      $reasonCabBtn.html(reasonTextClose)
+      isReasonBtnOpen = true
+      $(this).parents('.cab-career-reasons').addClass('_opened').find('.cab-career-reasons-body').slideDown()
+    }
+  })
 })
