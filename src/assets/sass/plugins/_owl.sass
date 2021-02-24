@@ -19,25 +19,24 @@
   display: flex
   align-items: center
   justify-content: center
-  margin-top: -40px
-  height: 80px
+  margin-top: -20px
+  height: 40px
   width: 30px
   color: #fff
-  background-color: red
-  transition: background-color $transDefault
   cursor: pointer
 
+  &:hover
+    .icon
+      fill: #fff
+
   &.disabled
-    opacity: 0.35
+    opacity: 0
     cursor: default
 
-    &:hover
-      background-color: red
-
   .icon
-    width: 30px
-    height: 30px
-    fill: white
+    width: 8px
+    height: 13px
+    fill: #8491b4
 
 .owl-prev
   left: 10px
@@ -64,8 +63,42 @@
   background-color: #444
   cursor: pointer
 
-  &.active
-    background-color: red
+
+.statuses-carousel
+  .owl-nav
+    position: static
+    top: 0
+
+  .owl-prev,
+  .owl-next
+    height: 100%
+    top: 0
+    margin-top: 0
+    width: 30px
+
+  .owl-prev
+    left: 0
+    background-image: linear-gradient(to right, #050447 50%, rgba(#050447, 0))
+
+  .owl-next
+    right: 0
+    background-image: linear-gradient(to left, #050447 50%, rgba(#050447, 0))
+
+/* Max width 1399px */
+@media only screen and (max-width: 1399px)
+  .statuses-carousel
+    .owl-prev,
+    .owl-next
+      width: 40px
+/* end media max width 1399px */
+
+/* Max width $m-lg */
+@media only screen and (max-width: $m-lg)
+  .statuses-carousel
+    .owl-prev,
+    .owl-next
+      width: 45px
+/* end media max width $m-lg */
 
 /* Max width $m-md */
 @media only screen and (max-width: $m-md)
@@ -96,4 +129,14 @@
       width: 37px
       height: 31px
       fill: #d7d7e0
+
+  .statuses-carousel
+    .owl-prev,
+    .owl-next
+      width: 40px
+
+      .icon
+        width: 6px
+        height: 10px
+        margin-top: -1px
 /* end media max width $m-md */

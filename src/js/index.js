@@ -188,4 +188,58 @@ $(function () {
       $(this).parents('.cab-career-reasons').addClass('_opened').find('.cab-career-reasons-body').slideDown()
     }
   })
+
+  // statuses carousel 
+  var $statusesCarousel = $('.statuses-carousel').owlCarousel({
+    loop: false,
+    dots: false,
+    nav: true,
+    autoWidth: true,
+    margin: 0,
+    navText: [
+      '<svg class="icon icon-arrow-prev"><use xlink:href="assets/img/sprite.svg#arrow-prev"></use></svg>',
+      '<svg class="icon icon-arrow-next"><use xlink:href="assets/img/sprite.svg#arrow-next"></use></svg>',
+    ],
+  })
+
+  if ($statusesCarousel.length) {
+    var $currentCarItem = $('.carousel-status._current')
+
+    var showCurrentCarItem = function () {
+      var indx = $currentCarItem.parent().index() - 1
+      if (indx < 0) {
+        indx = 0
+      }
+      $statusesCarousel.trigger('to.owl.carousel', indx)
+    }
+
+    // add class all previous items
+    $currentCarItem .parent().prevAll().find('.carousel-status').addClass('_prev-current')
+
+    // show current item when resize and start
+    $(window).on('resize', showCurrentCarItem)
+    showCurrentCarItem()
+
+    // click item
+    $('.carousel-status:not(._prev-current)').on('click', '.car-st-icon', function() {
+      // change inner info
+      var idx = $(this).parents('.owl-item').index()
+      $('.career-ms-details__inner').eq(idx).fadeIn().siblings().hide()
+
+
+      $('.carousel-status').removeClass('_clicked')
+
+      if ($(window).width() <= 740) {
+        var offset = 20
+        var destination = $('.career-main-status-details').offset().top - offset;
+        $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
+      }
+
+      if ($(this).parent().is('._current')) {
+        return
+      }
+      
+      $(this).parent().addClass('_clicked')
+    })
+  }
 })

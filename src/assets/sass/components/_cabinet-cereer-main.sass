@@ -1,3 +1,7 @@
+.career-ms-details
+  &__inner
+    display: none
+
 .career-status-info-row
   display: flex
   color: #fff
@@ -74,6 +78,7 @@
 
   .c-best-status-list
     margin-bottom: 0
+    margin-left: -12px
 
     li
       width: calc(50% - 12px)
@@ -108,3 +113,387 @@
 
   .status-level-progress
     margin-top: 8px
+
+.c-msd-row
+  position: relative
+  display: flex
+  justify-content: space-between
+
+  .c-msi-levels
+    flex-grow: 1
+
+.c-msd-aside-col,
+.c-msd-aside-col-tiles
+  width: 200px
+  flex-shrink: 0
+  margin-left: 4px
+  border-radius: 4px
+  background-color: rgba(#fff, .08)
+  padding: 11px 20px
+
+.c-msd-aside-col-tiles
+  padding: 0
+  background: none
+  display: flex
+  flex-direction: column
+
+  .cabinet-stat-bl
+    background-color: rgba(#fff, .08)
+    margin: 0 0 4px
+    width: 100%
+    color: #fff
+    flex-grow: 1
+
+    &:last-child
+      margin-bottom: 0
+
+  .cabinet-stat-bl
+    &__tt
+      margin-bottom: 3px
+      color: #8491b4
+
+    .icon
+      width: 20px
+      height: 22px
+
+.exp-status-level-items
+  position: relative
+
+.exp-status-level
+  &__tt
+    font-weight: 600
+    font-size: 12px
+    line-height: 15px
+    margin-bottom: 14px
+
+.exp-or
+  position: absolute
+  top: 50%
+  left: -8px
+  width: 24px
+  text-align: center
+  transform: translateY(-50%)
+  font-size: 10px
+  line-height: 12px
+  color: #8491b4
+
+.exp-status-level-item
+  margin-bottom: 12px
+  font-weight: 500
+  font-size: 14px
+  line-height: 17px
+  padding-left: 26px
+  position: relative
+
+  &:last-child
+    &::before
+      top: auto
+      bottom: 6px
+
+    &::after
+      top: auto
+      bottom: 17px
+
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 6px
+    width: 5px
+    height: 5px
+    z-index: 2
+    border: 1px solid rgba(#ffffff, .08)
+    border-radius: 50%
+
+  &::after
+    content: ''
+    position: absolute
+    left: 3px
+    top: 17px
+    width: 1px
+    height: 14px
+    z-index: 2
+    background-color: rgba(#fff, .08)
+
+  &:last-child
+    margin-bottom: 0
+
+  span
+    display: block
+    margin-top: 3px
+    font-size: 12px
+    line-height: 15px
+    color: #8491b4
+
+.career-statuses
+  margin-bottom: 4px
+  border-radius: 10px
+  background-color: #050447
+  position: relative
+  overflow: hidden
+
+.statuses-carousel
+  .owl-item
+    &:first-child
+      .carousel-status
+        padding-left: 20px
+
+    &:last-child
+      .carousel-status
+        padding-right: 20px
+
+.carousel-status
+  display: flex
+  align-items: center
+  height: 60px
+
+  &._current
+    .car-st-icon
+      width: 40px
+      height: 40px
+
+      .icon
+        opacity: 0
+
+      .icon-aw
+        opacity: 1
+
+  &._prev-current
+    .car-st-icon
+      cursor: default
+
+      .icon
+        opacity: 0
+
+      .icon-aw
+        opacity: 1
+
+    .car-st-progress
+      &__fill
+        width: 100%
+
+  &._clicked
+    .car-st-icon
+      cursor: default
+      transform: scale(1.335)
+
+      .icon
+        opacity: 0
+
+      .icon-aw-act
+        opacity: 1
+
+.car-st-icon
+  position: relative
+  width: 30px
+  height: 30px
+  margin: 0 10px
+  cursor: pointer
+  transition: transform .2s
+
+  &:hover
+    .icon-aw-ghost
+      opacity: 0
+
+    .icon-aw-act
+      opacity: 1
+  
+  .icon
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    opacity: 0
+    transition: opacity .2s
+
+  .icon-aw-ghost
+    opacity: 1
+
+.car-st-progress
+  width: 62px
+  height: 4px
+  border-radius: 2px
+  background-color: #8491b4
+  overflow: hidden
+
+  &__fill
+    width: 0
+    height: 100%
+    background-color: #fedb41
+
+/* Max width $m-hd */
+@media only screen and (max-width: $m-hd) and (min-width: 1201px)
+  .career-main-status-details .c-best-status-list,
+  .career-msi-about .c-best-status-list
+    display: block
+    margin-left: 0
+
+    li
+      width: 100%
+      margin-left: 0
+/* end media max width $m-hd */
+
+/* Max width $m-xl-plus */
+@media only screen and (max-width: $m-xl-plus)
+  .career-status-info-row
+    display: block
+
+  .career-main-status-info
+    margin-bottom: 4px
+
+  .career-main-status-details
+    margin: 0
+    width: 100%
+
+  .c-msi-levels
+    margin-bottom: 0px
+
+  .career-msi-aside
+    width: 248px
+
+  .statuses-carousel
+    .owl-item
+      &:first-child
+        .carousel-status
+          padding-left: 35px
+
+      &:last-child
+        .carousel-status
+          padding-right: 35px
+
+  .car-st-progress
+    width: 58px
+/* end media max width $m-xl-plus */
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .career-statuses
+    margin-left: -20px
+    margin-right: -20px
+    border-radius: 0
+    margin-bottom: 14px
+
+  .statuses-carousel
+    .owl-item
+      &:first-child
+        .carousel-status
+          padding-left: 26px
+
+      &:last-child
+        .carousel-status
+          padding-right: 26px
+
+  .car-st-icon
+    margin: 0 14px
+    width: 22px
+    height: 22px
+  
+  .car-st-progress
+    width: 30px
+
+  .career-main-status-info
+    display: block
+
+  .career-msi-aside
+    width: 100%
+    padding: 20px
+
+    .cab-p-status
+      margin-bottom: 20px
+
+      &__icon
+        width: 50px
+        height: 50px
+        margin-bottom: 10px
+
+      &__tt
+        font-size: 10px
+        line-height: 12px
+        margin-bottom: 5px
+
+  .career-statuses-inf,
+  .c-msd-aside-col-tiles
+    .cabinet-stat-bl
+      padding: 11px 20px
+
+      &__val
+        font-size: 14px
+        line-height: 17px
+
+  .career-msi-tt
+    font-size: 12px
+    line-height: 16px
+    margin-bottom: 14px
+
+  .c-msi-levels
+    padding: 14px 20px 18px
+
+    .status-level-progress
+      margin-top: 5px
+
+    .status-level
+      &__val
+        font-size: 12px
+        line-height: 15px
+
+      &__tt
+        font-size: 10px
+        line-height: 12px
+
+  .career-main-status-details, .career-msi-about
+    padding: 20px
+
+  .career-main-status-details .c-best-status-list,
+  .career-msi-about .c-best-status-list
+    display: block
+    margin: 0
+
+    li
+      margin: 14px 0 0
+      width: 100%
+      font-size: 10px
+      line-height: 12px
+
+  .c-msd-row
+    display: block
+
+  .c-msd-aside-col
+    width: 100%
+    margin: 4px 0 0
+    padding: 14px 20px 20px
+
+  .c-msd-aside-col-tiles
+    width: 100%
+    margin: 4px 0 0
+
+  .exp-status-level__tt
+    font-size: 10px
+    line-height: 13px
+    margin-bottom: 14px
+
+  .exp-status-level-item
+    font-size: 13px
+    line-height: 16px
+    margin-bottom: 15px
+
+    &::after
+      height: 12px
+
+    span
+      font-size: 10px
+      line-height: 12px
+      margin-top: 3px
+
+  .carousel-status
+    height: 50px
+
+    &._current
+      .car-st-icon
+        width: 30px
+        height: 30px
+
+    &._clicked
+      .car-st-icon
+        transform: scale(1.36)
+/* end media max width $m-md */
