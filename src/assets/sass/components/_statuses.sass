@@ -206,6 +206,25 @@
     &__tt
       margin-right: 34px
 
+._status-working
+  .status-level-progress
+    .progress-active-lines
+      span
+        background-image: url('../img/status-progress-fill-blue.png')
+
+._status-finished
+  .status-level-progress
+    .progress-active-lines
+      span
+        background-image: url('../img/status-progress-fill.png')
+
+._status-closed
+  .status-level-progress
+    .progress-active-lines
+      span
+        background-image: url('../img/status-progress-empty.png')
+
+
 .status-level-progress
   position: relative
   display: flex
@@ -217,7 +236,7 @@
   background-image: url('../img/status-progress-empty.png')
   background-repeat: repeat-x
   background-position: 0 50%
-  background-size: 8.3333% 4px
+  background-size: 8.3333% 100%
   background-repeat: space
 
   &._progress-blue
@@ -278,6 +297,94 @@
     .progress-active-lines
       width: 100%
 
+  &.st-progress-20
+    background-size: 5% 100%
+
+    .progress-active-lines
+      span
+        background-size: 5% 100%
+
+    &.st-level-1
+      .progress-active-lines
+        width: 5%
+
+    &.st-level-2
+      .progress-active-lines
+        width: 10%
+
+    &.st-level-3
+      .progress-active-lines
+        width: 15%
+
+    &.st-level-4
+      .progress-active-lines
+        width: 20%
+
+    &.st-level-5
+      .progress-active-lines
+        width: 25%
+
+    &.st-level-6
+      .progress-active-lines
+        width: 30%
+
+    &.st-level-7
+      .progress-active-lines
+        width: 35%
+
+    &.st-level-8
+      .progress-active-lines
+        width: 40%
+
+    &.st-level-9
+      .progress-active-lines
+        width: 45%
+
+    &.st-level-10
+      .progress-active-lines
+        width: 50%
+
+    &.st-level-11
+      .progress-active-lines
+        width: 55%
+
+    &.st-level-12
+      .progress-active-lines
+        width: 60%
+
+    &.st-level-13
+      .progress-active-lines
+        width: 65%
+
+    &.st-level-14
+      .progress-active-lines
+        width: 70%
+
+    &.st-level-15
+      .progress-active-lines
+        width: 75%
+
+    &.st-level-16
+      .progress-active-lines
+        width: 80%
+
+    &.st-level-17
+      .progress-active-lines
+        width: 85%
+
+    &.st-level-18
+      .progress-active-lines
+        width: 90%
+
+    &.st-level-19
+      .progress-active-lines
+        width: 95%
+
+    &.st-level-20
+      .progress-active-lines
+        width: 100%
+        
+
 .progress-active-lines
   height: 100%
   overflow: hidden
@@ -293,7 +400,7 @@
     background-image: url('../img/status-progress-fill.png')
     background-repeat: repeat-x
     background-position: 0 50%
-    background-size: 8.3333% 4px
+    background-size: 8.3333% 100%
     background-repeat: space
 
 /* Max width $m-hd */

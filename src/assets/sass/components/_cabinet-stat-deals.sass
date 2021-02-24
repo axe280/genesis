@@ -146,13 +146,13 @@
   flex-grow: 1
   display: flex
   align-items: center
-  flex-wrap: wrap
   justify-content: space-between
 
   &__info
     display: flex
     align-items: center
-    margin: 4px 10px 4px 0
+    flex-shrink: 0
+    margin: 4px 18px 4px 0
 
     .deal-ti-tt
       margin: 0 10px 0 0
@@ -161,10 +161,8 @@
     flex-shrink: 0
 
   .status-level-progress
-    flex-shrink: 0
-    width: 500px
+    flex-grow: 1
     margin: 4px 0
-    background-color: #ccc
 
 .deal-ti-tt
   font-size: 12px
@@ -206,6 +204,17 @@
   width: 170px
   flex-shrink: 0
 
+.cab-tt-line-row
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  .title-site
+    margin-right: 20px
+
+  .ui-st-checkbox
+    margin-bottom: 20px
+
 /* Max width 1300px */
 @media only screen and (max-width: 1300px)
   .deal-ti-row>div:first-child
@@ -224,7 +233,6 @@
       margin: 0
 
     .status-level-progress
-      width: 140px
       margin-left: 20px
 
   .deal-ti-row
@@ -324,9 +332,6 @@
     margin: 14px 0
     width: 100%
 
-    .status-level-progress
-      width: 295px
-
     &__info
       align-items: flex-end
 
@@ -381,6 +386,15 @@
     order: 2
     width: auto
     margin: 0 0 14px
+
+  .cab-tt-line-row
+    display: block
+
+  .title-site
+    margin: 0 0 14px
+
+  .ui-st-checkbox
+    margin-bottom: 14px
 /* end media max width $m-md */
 
 /* Max width $m-sm */

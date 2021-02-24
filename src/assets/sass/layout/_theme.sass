@@ -90,7 +90,8 @@
     border-color: rgba(#fff, .11)
 
   .text_dark-50,
-  .aside-nav-list-items>li>a
+  .aside-nav-list-items>li>a,
+  .deal-ti-status .btn.btn_border
     color: var(--color-light)
 
   .cabinet-stat-bl .btn_border.btn_border-gray
@@ -123,6 +124,14 @@
   .pagination a:hover
     background-color: #8491b4
     color: #000
+
+  .pagination a.disabled
+    color: #fff
+    background-color: var(--main-blocks-bg)
+
+    &:hover
+      background-color: var(--main-blocks-bg)
+      color: #fff
 
   .cab-partners-row .cabinet-stat-bl,
   .cab-partners-col .status-levels,
@@ -187,3 +196,7 @@
   .cabinet-stat-data .tiles-list .tiles-service__icon .icon,
   .ban-repeat-bl .icon
     fill: rgba(#fff, .5)
+
+  .status-level-progress,
+  ._status-closed .status-level-progress .progress-active-lines span
+    background-image: url('../img/status-progress-empty-dark-theme.png')

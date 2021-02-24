@@ -47,10 +47,20 @@
     color: #000
     background-color: #f7f7f7
     transition: background-color .2s
+    user-select: none
 
     &:hover
       background-color: #45a7e7
       color: #fff
+
+    &.disabled
+      cursor: default
+      color: #000
+      background-color: #f7f7f7
+
+      &:hover
+        color: #000
+        background-color: #f7f7f7
 
   &__prev,
   &__next
