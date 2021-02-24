@@ -305,4 +305,18 @@ $(function () {
     $(this).parent().toggleClass('_mob-opened')
     $(this).siblings('.cabinet-stat-data').slideToggle()
   })
+
+  // progress line width
+  var $pLines = $('.progress-active-lines span')
+  var changeProgressLinesWidth = function () {
+    $pLines.each(function () {
+      var parentWidth = $(this).parents('.status-level-progress').width()
+      $(this).width(parentWidth)
+    })
+  }
+
+  if ($pLines.length) {
+    changeProgressLinesWidth()
+    $(window).on('resize', changeProgressLinesWidth)
+  }
 })

@@ -212,79 +212,89 @@
   margin-top: 10px
   height: 4px
   width: 100%
-  background-image: url('../img/status-progress-empty.svg')
-  background-repeat: no-repeat
+  border-radius: 1px
+  overflow: hidden
+  background-image: url('../img/status-progress-empty.png')
+  background-repeat: repeat-x
   background-position: 0 50%
-  background-size: 100% 100%
+  background-size: 8.3333% 4px
+  background-repeat: space
 
   &._progress-blue
-    &::before
-      background-image: url('../img/status-progress-fill-blue.svg')
+    .progress-active-lines
+      span
+        background-image: url('../img/status-progress-fill-blue.png')
 
   &._progress-purple
-    &::before
-      background-image: url('../img/status-progress-fill-purple.svg')
-
-  &::before
-    content: ''
-    position: absolute
-    left: 0
-    top: 0
-    width: 0
-    height: 100%
-    z-index: 2
-    background-image: url('../img/status-progress-fill.svg')
-    background-repeat: no-repeat
-    background-position: 0 50%
-    background-size: 132px 100%
+    .progress-active-lines
+      span
+        background-image: url('../img/status-progress-fill-purple.png')
 
   &.st-level-1
-    &::before
+    .progress-active-lines
       width: 8.3333%
 
   &.st-level-2
-    &::before
+    .progress-active-lines
       width: 16.6666%
 
   &.st-level-3
-    &::before
+    .progress-active-lines
       width: 24.9999%
 
   &.st-level-4
-    &::before
+    .progress-active-lines
       width: 33.3332%
 
   &.st-level-5
-    &::before
+    .progress-active-lines
       width: 41.6665%
 
   &.st-level-6
-    &::before
+    .progress-active-lines
       width: 49.9998%
 
   &.st-level-7
-    &::before
+    .progress-active-lines
       width: 58.3331%
 
   &.st-level-8
-    &::before
+    .progress-active-lines
       width: 66.6664%
 
   &.st-level-9
-    &::before
+    .progress-active-lines
       width: 74.9997%
 
   &.st-level-10
-    &::before
+    .progress-active-lines
       width: 83.3333%
 
   &.st-level-11
-    &::before
+    .progress-active-lines
       width: 91.6663%
 
   &.st-level-12
-    &::before
+    .progress-active-lines
       width: 100%
+
+.progress-active-lines
+  height: 100%
+  overflow: hidden
+  position: relative
+
+  span
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 2
+    background-image: url('../img/status-progress-fill.png')
+    background-repeat: repeat-x
+    background-position: 0 50%
+    background-size: 8.3333% 4px
+    background-repeat: space
 
 /* Max width $m-hd */
 @media only screen and (max-width: $m-hd)
