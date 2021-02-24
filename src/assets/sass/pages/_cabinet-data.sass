@@ -1,3 +1,11 @@
+.cabinet-stat-data-select-wrapp
+  margin-bottom: 20px
+  background-color: #050447
+  border-radius: 10px
+
+.cabinet-stat-data-mob-btn
+  display: none
+
 .data-head-tt
   display: flex
   align-items: center
@@ -145,6 +153,10 @@
     border-radius: 50%
     margin-right: 10px
 
+    &._img
+      .icon
+        display: none
+
     .icon
       width: 56px
       height: 56px
@@ -154,6 +166,24 @@
     &.btn_border
       padding-left: 22px
       padding-right: 22px
+
+.cab-data-photo-d
+  position: absolute
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  border-radius: 50%
+  overflow: hidden
+
+  img
+    position: absolute
+    left: 50%
+    transform: translate(-50%)
+    top: 0
+    width: auto
+    max-width: none
+    height: 100%
 
 .data-qw-info
   display: flex
@@ -455,4 +485,40 @@
 
   .h-aside-nav
     display: none
+
+  .cabinet-stat-data-mob-btn
+    display: block
+    font-size: 14px
+    line-height: 17px
+    padding: 14px 20px
+    font-weight: 600
+    color: #fff
+    border-radius: 10px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    .icon
+      fill: #fff
+      width: 8px
+      height: 5px
+      flex-shrink: 0
+      margin-left: 20px
+      transition: transform .2s, fill .2s
+
+  .cabinet-stat-data-select-wrapp
+    &._mob-opened
+      .cabinet-stat-data-mob-btn
+        color: $colorBlue
+
+        .icon
+          transform: rotate(-180deg)
+          position: relative
+          top: -1px
+          fill: $colorBlue
+
+  .cabinet-stat-data
+    display: none
+    border-radius: 0
+    background: none
 /* end media max width $m-md */

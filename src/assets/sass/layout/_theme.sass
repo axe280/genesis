@@ -56,15 +56,16 @@
   .cabinet-stat-data,
   .career-main-status-info,
   .career-main-status-details,
-  .career-statuses
+  .career-statuses,
+  .cabinet-stat-data-select-wrapp
     background: #1f1e43
 
-.statuses-carousel
-  .owl-prev
-    background-image: linear-gradient(to right, #1f1e43 50%, rgba(#1f1e43, 0))
+  .statuses-carousel
+    .owl-prev
+      background-image: linear-gradient(to right, #1f1e43 50%, rgba(#1f1e43, 0))
 
-  .owl-next
-    background-image: linear-gradient(to left, #1f1e43 50%, rgba(#1f1e43, 0))
+    .owl-next
+      background-image: linear-gradient(to left, #1f1e43 50%, rgba(#1f1e43, 0))
 
   .cabinet-stat-bl
     background-color: #f7f7f7
@@ -94,6 +95,9 @@
 
   .cabinet-stat-bl .btn_border.btn_border-gray
     border-color: rgba(#424242, .2)
+
+  .cabinet-data-photo__img
+    border-color: rgba(#ededed, .2)
 
   .cab-st-tile-disabled-inner
     background-color: rgba(#000, .2)
@@ -172,3 +176,14 @@
 
       .icon
         fill: #fff
+
+  .cabinet-stat-data .tiles-list li
+    color: #fff
+    background-image: url('../img/cab-stat-data-bg-dark.png')
+
+  .cabinet-stat-data .tiles-list .tiles-service__info span
+    color: rgba(#fff, .5)
+
+  .cabinet-stat-data .tiles-list .tiles-service__icon .icon,
+  .ban-repeat-bl .icon
+    fill: rgba(#fff, .5)

@@ -13,6 +13,14 @@ $(function () {
     document.body.classList.remove('scroll-page-locked')
   }
 
+  // jcf select
+  jcf.replaceAll()
+
+  // select img wrapp
+  $('.jcf-select').on('click', function () {
+    $('.jcf-list img').wrap('<span class="select-img-wrap"></span>')
+  })
+
   // open mobile menu
   $('.burger-menu').on('click', function () {
     $('body').toggleClass('menu_opened')
@@ -22,6 +30,29 @@ $(function () {
     } else {
       removeDocumentScrollBlocker()
     }
+  })
+
+  // copy btn
+  var copytext = function (el) {
+    var $tmp = $('<input>')
+    $('body').append($tmp)
+    $tmp.val($(el).val()).select()
+    document.execCommand('copy')
+    $tmp.remove()
+  }
+
+  var copyTimer = null
+
+  $('.copy-link .btn').on('click', function () {
+    copytext($(this).parent().find('.field-item__field input'))
+
+    clearTimeout(copyTimer)
+
+    $(this).siblings('.copied-text').fadeIn()
+
+    copyTimer = setTimeout(() => {
+      $(this).siblings('.copied-text').fadeOut()
+    }, 2000)
   })
 
   // calc checked
@@ -160,36 +191,51 @@ $(function () {
   addAsideFixClass()
 
   // open aside pan
-  $('.aside-nav-tablet-btn__burger, .burger-menu-cabinet').on('click', function() {
-    $('body').toggleClass('aside-pan_opened')
+  $('.aside-nav-tablet-btn__burger, .burger-menu-cabinet').on(
+    'click',
+    function () {
+      $('body').toggleClass('aside-pan_opened')
 
-    if ($('body').hasClass('aside-pan_opened')) {
-      addDocumentScrollBlocker()
-    } else {
-      removeDocumentScrollBlocker()
+      if ($('body').hasClass('aside-pan_opened')) {
+        addDocumentScrollBlocker()
+      } else {
+        removeDocumentScrollBlocker()
+      }
     }
-  })
+  )
 
   // aside career open reasons
   var isReasonBtnOpen = false
   var $reasonCabBtn = $('.cab-c-reasons-line .btn')
-  var reasonTextOpen = $reasonCabBtn.attr('data-open-text') + '<svg class="icon icon-arrow-down"><use xlink:href="assets/img/sprite.svg#arrow-down"></use></svg>'
-  var reasonTextClose = $reasonCabBtn.attr('data-close-text') + '<svg class="icon icon-arrow-down"><use xlink:href="assets/img/sprite.svg#arrow-down"></use></svg>'
+  var reasonTextOpen =
+    $reasonCabBtn.attr('data-open-text') +
+    '<svg class="icon icon-arrow-down"><use xlink:href="assets/img/sprite.svg#arrow-down"></use></svg>'
+  var reasonTextClose =
+    $reasonCabBtn.attr('data-close-text') +
+    '<svg class="icon icon-arrow-down"><use xlink:href="assets/img/sprite.svg#arrow-down"></use></svg>'
   $reasonCabBtn.html(reasonTextOpen)
 
-  $reasonCabBtn.on('click', function() {
+  $reasonCabBtn.on('click', function () {
     if (isReasonBtnOpen === true) {
       $reasonCabBtn.html(reasonTextOpen)
       isReasonBtnOpen = false
-      $(this).parents('.cab-career-reasons').removeClass('_opened').find('.cab-career-reasons-body').slideUp()
+      $(this)
+        .parents('.cab-career-reasons')
+        .removeClass('_opened')
+        .find('.cab-career-reasons-body')
+        .slideUp()
     } else {
       $reasonCabBtn.html(reasonTextClose)
       isReasonBtnOpen = true
-      $(this).parents('.cab-career-reasons').addClass('_opened').find('.cab-career-reasons-body').slideDown()
+      $(this)
+        .parents('.cab-career-reasons')
+        .addClass('_opened')
+        .find('.cab-career-reasons-body')
+        .slideDown()
     }
   })
 
-  // statuses carousel 
+  // statuses carousel
   var $statusesCarousel = $('.statuses-carousel').owlCarousel({
     loop: false,
     dots: false,
@@ -214,32 +260,49 @@ $(function () {
     }
 
     // add class all previous items
-    $currentCarItem .parent().prevAll().find('.carousel-status').addClass('_prev-current')
+    $currentCarItem
+      .parent()
+      .prevAll()
+      .find('.carousel-status')
+      .addClass('_prev-current')
 
     // show current item when resize and start
     $(window).on('resize', showCurrentCarItem)
     showCurrentCarItem()
 
     // click item
-    $('.carousel-status:not(._prev-current)').on('click', '.car-st-icon', function() {
-      // change inner info
-      var idx = $(this).parents('.owl-item').index()
-      $('.career-ms-details__inner').eq(idx).fadeIn().siblings().hide()
+    $('.carousel-status:not(._prev-current)').on(
+      'click',
+      '.car-st-icon',
+      function () {
+        // change inner info
+        var idx = $(this).parents('.owl-item').index()
+        $('.career-ms-details__inner').eq(idx).fadeIn().siblings().hide()
 
+        $('.carousel-status').removeClass('_clicked')
 
-      $('.carousel-status').removeClass('_clicked')
+        if ($(window).width() <= 740) {
+          var offset = 20
+          var destination =
+            $('.career-main-status-details').offset().top - offset
+          $('html:not(:animated),body:not(:animated)').animate(
+            { scrollTop: destination },
+            800
+          )
+        }
 
-      if ($(window).width() <= 740) {
-        var offset = 20
-        var destination = $('.career-main-status-details').offset().top - offset;
-        $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
+        if ($(this).parent().is('._current')) {
+          return
+        }
+
+        $(this).parent().addClass('_clicked')
       }
-
-      if ($(this).parent().is('._current')) {
-        return
-      }
-      
-      $(this).parent().addClass('_clicked')
-    })
+    )
   }
+
+  // open mobile data btn
+  $('.cabinet-stat-data-mob-btn').on('click', function () {
+    $(this).parent().toggleClass('_mob-opened')
+    $(this).siblings('.cabinet-stat-data').slideToggle()
+  })
 })
