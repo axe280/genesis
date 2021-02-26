@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="241" height="259" viewBox="0 0 241 259">
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(-40 -3332) translate(20 96) translate(0 2805) translate(20 432)">
+            <path stroke="#8BEAFF" stroke-dasharray="0 4" stroke-linecap="round" d="M4 240v7c0 5.523 4.477 10 10 10h216c5.523 0 10-4.477 10-10v-7h0V10c0-5.523-4.477-10-10-10H14.034c-5.503 0-9.972 4.447-10 9.95L4 16.832h0" transform="matrix(1 0 0 -1 0 257)"/>
+            <circle cx="3.5" cy="58.5" r="2.5" stroke="#FEDB41" stroke-width="2"/>
+            <circle cx="3.5" cy="88.5" r="2.5" stroke="#FEDB41" stroke-width="2"/>
+            <circle cx="3.5" cy="118.5" r="2.5" stroke="#FEDB41" stroke-width="2"/>
+            <circle cx="3.5" cy="164.5" r="2.5" stroke="#FEDB41" stroke-width="2"/>
+            <circle cx="3.5" cy="229.5" r="2.5" stroke="#FEDB41" stroke-width="2"/>
+        </g>
+        <g transform="translate(-40 -3332) translate(20 96) translate(0 2805) translate(20 432) translate(0 25)">
+            <path stroke="#8BEAFF" stroke-dasharray="0 4" stroke-linecap="round" d="M3.416 12L3.416 25M3.416 41L3.416 55M3.416 71L3.416 85M3.416 102L3.416 131M3.416 149L3.416 196"/>
+            <circle cx="3.5" cy="3.5" r="2.5" stroke="#FEDB41" stroke-width="2"/>
+        </g>
+    </g>
+</svg>

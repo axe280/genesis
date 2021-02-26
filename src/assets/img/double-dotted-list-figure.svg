@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="629" height="143" viewBox="0 0 629 143" preserveAspectRatio="none">
+    <g fill="none" fill-rule="evenodd">
+        <g stroke="#8BEAFF" stroke-dasharray="0 4" stroke-linecap="round">
+            <path d="M0 124v7c0 5.523 4.477 10 10 10h305c5.523 0 10-4.477 10-10v-7h0V10c0-5.523-4.477-10-10-10H10.034C4.531 0 .062 4.447.034 9.95L0 16.832h0" transform="translate(-70 -2479) translate(30 227) translate(0 1964) translate(40 289) translate(303) matrix(1 0 0 -1 0 141)"/>
+        </g>
+        <g stroke="#FEDB41" stroke-width="2" transform="translate(-70 -2479) translate(30 227) translate(0 1964) translate(40 289) translate(300 67)">
+            <circle cx="3.5" cy="3.5" r="2.5"/>
+            <circle cx="3.5" cy="47.5" r="2.5"/>
+        </g>
+        <g transform="translate(-70 -2479) translate(30 227) translate(0 1964) translate(40 289) translate(300 25)">
+            <path stroke="#8BEAFF" stroke-dasharray="0 4" stroke-linecap="round" d="M3.416 13L3.416 36M3.416 57L3.416 80"/>
+            <circle cx="3.5" cy="3.5" r="2.5" stroke="#FEDB41" stroke-width="2"/>
+        </g>
+        <g transform="translate(-70 -2479) translate(30 227) translate(0 1964) translate(40 289)">
+            <path stroke="#8BEAFF" stroke-dasharray="0 4" stroke-linecap="round" d="M3.416 124v7c0 5.523 4.477 10 10 10h280c5.523 0 10-4.477 10-10v-6h0"/>
+            <path stroke="#8BEAFF" stroke-dasharray="0 4" stroke-linecap="round" d="M3.416 0v7c0 5.523 4.477 10 10 10h280c5.523 0 10-4.477 10-10V1h0" transform="matrix(1 0 0 -1 0 17)"/>
+            <circle cx="3.5" cy="70.5" r="2.5" stroke="#FEDB41" stroke-width="2"/>
+            <circle cx="3.5" cy="114.5" r="2.5" stroke="#FEDB41" stroke-width="2"/>
+        </g>
+        <g transform="translate(-70 -2479) translate(30 227) translate(0 1964) translate(40 289) translate(0 25)">
+            <path stroke="#8BEAFF" stroke-dasharray="0 4" stroke-linecap="round" d="M3.416 13L3.416 35M3.416 57L3.416 79"/>
+            <circle cx="3.5" cy="3.5" r="2.5" stroke="#FEDB41" stroke-width="2"/>
+        </g>
+    </g>
+</svg>
