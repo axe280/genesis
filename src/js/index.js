@@ -14,7 +14,10 @@ $(function () {
   }
 
   // jcf select
-  jcf.replaceAll()
+  var customSelects = document.querySelectorAll('.jcf-custom-select')
+  if (customSelects.length) {
+    jcf.replace(customSelects)
+  }
 
   // select img wrapp
   $('.jcf-select').on('click', function () {
@@ -291,6 +294,8 @@ $(function () {
           )
         }
 
+        changeProgressLinesWidth()
+
         if ($(this).parent().is('._current')) {
           return
         }
@@ -318,5 +323,42 @@ $(function () {
   if ($pLines.length) {
     changeProgressLinesWidth()
     $(window).on('resize', changeProgressLinesWidth)
+  }
+
+  // pic avatar file
+  var oldVal = null
+
+  $('#avaFileBtn').on('change', function () {
+    if (!this.value) return
+
+    if (readMaxFileSize(this)) {
+      $('.error-file-size').hide()
+      readURL(this)
+    } else {
+      $('.error-file-size').show()
+    }
+  })
+
+  function readMaxFileSize(input) {
+    if (typeof input.files[0] !== 'undefined') {
+      var maxSize = parseInt($(input).attr('data-max-bytes-size'), 10),
+        size = input.files[0].size
+      return maxSize > size
+    }
+  }
+
+  function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader()
+
+      reader.onload = function (e) {
+        $('#fileImgTarget img')
+          .attr('src', e.target.result)
+          .parents('.cabinet-data-photo__img')
+          .addClass('_img')
+      }
+
+      reader.readAsDataURL(input.files[0])
+    }
   }
 })

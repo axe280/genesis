@@ -248,6 +248,20 @@
   height: 60px
 
   &._current
+    position: relative
+
+    &::before
+      content: ''
+      position: absolute
+      left: -10px
+      top: 0
+      width: 80px
+      height: 100%
+      background-image: url('../img/cab-career-ic-bg.png')
+      background-repeat: no-repeat
+      background-position: 50% 50%
+      background-size: 100% 100%
+
     .car-st-icon
       width: 40px
       height: 40px

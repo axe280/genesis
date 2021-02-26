@@ -91,7 +91,9 @@
 
   .text_dark-50,
   .aside-nav-list-items>li>a,
-  .deal-ti-status .btn.btn_border
+  .deal-ti-status .btn.btn_border,
+  .login-h .btn.btn_border,
+  .history-table .btn.btn_border
     color: var(--color-light)
 
   .cabinet-stat-bl .btn_border.btn_border-gray
@@ -99,9 +101,6 @@
 
   .cabinet-data-photo__img
     border-color: rgba(#ededed, .2)
-
-  .cab-st-tile-disabled-inner
-    background-color: rgba(#000, .2)
 
   .cab-st-tile._disabled
     background-color: rgba(#1f1e43, .5)
@@ -136,7 +135,8 @@
   .cab-partners-row .cabinet-stat-bl,
   .cab-partners-col .status-levels,
   .partners-link-list,
-  .deal-ti-dates
+  .deal-ti-dates,
+  .cab-st-tile-disabled-inner
     background-color: #18173d
 
   .cab-partners-status
@@ -150,6 +150,10 @@
 
   .aside-nav-list-items ul li:after
     background-color: #8491b4
+
+  .main .btn.disabled, .main .btn[disabled], .main .btn_border.btn_second-st[disabled], .main .btn_border[disabled]
+    background-color: #8491b4
+    color: rgba(#fff, .5)
 
   .aside-nav-list-items li
     &.active
@@ -200,3 +204,6 @@
   .status-level-progress,
   ._status-closed .status-level-progress .progress-active-lines span
     background-image: url('../img/status-progress-empty-dark-theme.png')
+
+  .career-statuses-inf .cabinet-stat-bl
+    background-color: rgba(#fff, .08)
