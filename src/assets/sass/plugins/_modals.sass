@@ -1,3 +1,104 @@
+.aside-modal-bl
+  position: fixed
+  left: 20px
+  bottom: 20px
+  z-index: 50
+
+.aside-modal
+  margin-top: 10px
+  position: relative
+  padding: 18px 20px 20px
+  color: #fff
+  background-color: #02afd4
+  background-image: url('../img/aside-modal-bg.png')
+  background-repeat: none
+  background-position: 50% 50%
+  background-size: cover
+  border-radius: 6px
+  max-width: 230px
+  overflow: hidden
+
+.aside-modal-tt
+  font-size: 14px
+  line-height: 17px
+  font-weight: 600
+  padding-right: 10px
+
+.aside-modal-btn
+  margin-top: 14px
+
+  .btn.btn_border
+    color: #fff
+    width: 100%
+    line-height: 14px
+
+.aside-modal-btn-close
+  cursor: pointer
+  position: absolute
+  right: 6px
+  top: 6px
+  display: flex
+  align-items: flex-end
+
+  &:hover
+    .icon
+      fill: #fff
+
+  .icon
+    fill: rgba(#fff, .5)
+
+.modal-content
+  position: relative
+  max-width: 640px
+  padding: 40px
+  border-radius: 10px
+  margin: 0 auto
+  background-color: #fff
+  overflow: hidden
+  color: #000
+
+  .title-site
+    color: #000
+
+  .mfp-close,
+  button.mfp-close
+    .icon
+      fill: rgba(#000, .5)
+
+    &:hover
+      .icon
+        fill: #000
+
+  .v-soc-fullname
+    margin-top: 20px
+
+.modal-c-aside-img
+  max-width: 1024px
+  padding-right: 424px
+
+.modal-img
+  overflow: hidden
+  position: absolute
+  top: 0
+  right: 0
+  width: 384px
+  height: 100%
+
+  img
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    object-position: 50% 0
+
+.modal-btn
+  margin-top: 20px
+
+  .btn
+    line-height: 24px
+
 .st-form
   margin: 0
 
@@ -592,6 +693,23 @@
           background-position: 0 50%
 /* end media max width $m-hd */
 
+/* Max width $m-lg */
+@media only screen and (max-width: $m-lg)
+  .modal-c-aside-img
+    max-width: 708px
+    padding-right: 40px
+
+  .modal-img
+    position: relative
+    width: auto
+    height: auto
+    margin: -40px -40px 40px
+
+    img
+      position: relative
+      object-fit: fill
+/* end media max width $m-lg */
+
 /* Max width $m-md */
 @media only screen and (max-width: $m-md)
   .st-modal.modal-partner
@@ -856,4 +974,45 @@
 
   .st-modal.modal-reg .accept-checkbox
     margin: 20px 0
+
+  .modal-content
+    padding: 20px
+
+  .modal-btn .btn
+    line-height: 26px
+    font-size: 12px
+
+  .modal-body
+    p
+      font-size: 13px
+      line-height: 20px
+
+    .title-site_h1
+      font-size: 16px
+      line-height: 20px
+
+  .modal-img
+    margin: -20px -20px 20px
+
+  .aside-modal-bl
+    left: 10px
+    bottom: 10px
+    padding-right: 10px
+
+  .aside-modal
+    max-width: 340px
+    position: relative
+    padding: 14px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  .aside-modal-tt
+    font-size: 12px
+    line-height: 15px
+
+  .aside-modal-btn
+    flex-shrink: 0
+    margin-top: 0
+    margin-right: 20px
 /* end media max width $m-md */

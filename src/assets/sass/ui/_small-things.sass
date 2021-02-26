@@ -36,6 +36,54 @@
 
 // full social
 .v-soc-fullname
+  &._btns
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-left: -10px
+
+    li
+      width: calc(33.33% - 10px)
+      margin: 0 0 0 10px
+
+    .soc-btn
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+      font-weight: 600
+      font-size: 12px
+      line-height: 16px
+      padding: 11px 14px
+      border-radius: 4px
+      color: #000
+      text-transform: uppercase
+      transition: background-color .2s
+
+      .icon
+        margin-right: 10px
+
+      &_vk
+        background-color: rgba(#4b729f, .1)
+
+        &:hover
+          background-color: rgba(#4b729f, .2)
+
+      &_tel
+        background-color: rgba(#039be5, .1)
+        
+        &:hover
+          background-color: rgba(#039be5, .2)
+
+      &_sup
+        background-color: rgba(#c66fec, .1)
+        
+        &:hover
+          background-color: rgba(#c66fec, .2)
+
+        .icon
+          fill: #c66fec
+  
   li
     display: flex
     align-items: center
@@ -169,4 +217,16 @@
       border-left: 8px solid transparent
       border-right: 8px solid transparent
       border-top: 6px solid #050447
+
+  .v-soc-fullname
+    &._btns
+      display: block
+      margin: 0
+
+      li
+        width: 100%
+        margin: 0 0 4px
+
+        &:last-child
+          margin-bottom: 0
 /* end media max width $m-md */

@@ -93,11 +93,15 @@
   .aside-nav-list-items>li>a,
   .deal-ti-status .btn.btn_border,
   .login-h .btn.btn_border,
-  .history-table .btn.btn_border
+  .history-table .btn.btn_border,
+  .pay-comp-row .pay-comp-btn .btn
     color: var(--color-light)
 
   .cabinet-stat-bl .btn_border.btn_border-gray
     border-color: rgba(#424242, .2)
+
+    &:hover
+      border-color: $colorBlue
 
   .cabinet-data-photo__img
     border-color: rgba(#ededed, .2)
@@ -178,8 +182,11 @@
       color: #8491b4
 
       &:hover
-        background-color: #8491b4
         color: #fff
+        border-color: $colorBlue
+
+  .cabinet-data-photo__btn:hover .btn
+    border-color: $colorBlue
 
   .cab-c-reasons-line
     .btn.btn_border
@@ -207,3 +214,9 @@
 
   .career-statuses-inf .cabinet-stat-bl
     background-color: rgba(#fff, .08)
+
+  .modal-content .title-site
+    color: #000
+
+  .aside-modal
+    background: #050447
