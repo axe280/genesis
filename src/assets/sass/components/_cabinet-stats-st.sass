@@ -40,6 +40,30 @@
   background-color: #fff
   border-radius: 4px
 
+  &._blue-version
+    background-color: #3698e4
+    color: #fff
+
+    .icon
+      fill: #fff
+
+    .cabinet-stat-bl__tt
+      color: rgba(#fff, .7)
+
+    .btn.btn_border
+      border-color: #fff
+      color: #fff
+
+      &:hover
+        background-color: #fff
+        color: #000
+
+    .btn.btn_border-gray
+      border-color: rgba(#fff, .5)
+
+    .cabinet-stat-bl__val
+      color: #fff
+
   .icon
     flex-shrink: 0
     width: 26px
@@ -256,6 +280,8 @@
 
   .pay-comp-stats
     .mpm-stat-row
+      margin-bottom: 8px
+      
       &:before
         display: none
 
@@ -263,6 +289,9 @@
       padding: 10px 18px 10px 12px
       height: auto
       min-height: 10px
+
+      &:first-child
+        margin-bottom: 8px
 
       &:nth-child(2)
         width: 100%

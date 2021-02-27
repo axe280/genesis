@@ -40,9 +40,6 @@
   color: var(--color-gray-light)
 
 [data-theme="dark"]
-  a:hover
-    color: var(--color-light)
-
   .btn
     &:hover
       color: #000
@@ -69,6 +66,40 @@
 
   .cabinet-stat-bl
     background-color: #f7f7f7
+
+  .cabinet-stat-bl._blue-version
+    color: var(--color-dark)
+
+    .cabinet-stat-bl__tt
+      color: #7c7c7c
+
+    .icon_blueDark
+      fill: #3698e4
+
+    .icon_purpleDark
+      fill: #a047ad
+
+    .icon_primary
+      fill: $colorPrimary
+
+    .btn.btn_border
+      color: #000
+
+      &:hover
+        background-color: #fff
+        color: #000
+
+    .btn.btn_border-second
+      border-color: $colorBlue
+
+      &:hover
+        background-color: $colorBlue
+
+    .btn.btn_border-gray
+      border-color: rgba(66,66,66,.2)
+
+    .cabinet-stat-bl__val
+      color: #000
 
   .pay-comp-aside
     border-color: rgba(#fff, .11)
@@ -156,7 +187,7 @@
     background-color: #8491b4
 
   .main .btn.disabled, .main .btn[disabled], .main .btn_border.btn_second-st[disabled], .main .btn_border[disabled]
-    background-color: #8491b4
+    background-color: rgba(#272558, .75)
     color: rgba(#fff, .5)
 
   .aside-nav-list-items li
@@ -212,8 +243,11 @@
   ._status-closed .status-level-progress .progress-active-lines span
     // background-image: url('../img/status-progress-empty-dark-theme.png')
 
-  .career-statuses-inf .cabinet-stat-bl
-    background-color: rgba(#fff, .08)
+  .career-statuses-inf .cabinet-stat-bl,
+  .c-msi-levels,
+  .c-msd-aside-col,
+  .c-msd-aside-col-tiles .cabinet-stat-bl
+    background-color: #272558
 
   .modal-content .title-site
     color: #000
@@ -232,3 +266,12 @@
 
   ._status-closed .status-level-progress span.active
     background-color: #343459
+
+  .fake-control
+    background-color: rgba(#fff, .8)
+
+  .hint-inner
+    background-color: #000
+
+    &::before
+      border-top-color: #000
