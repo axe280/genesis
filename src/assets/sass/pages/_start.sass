@@ -14,6 +14,7 @@
     right: 0
     left: 30px
     background: $colorPurpleDarkest
+    background-color: $colorPurpleDarkest
     background-image: url('../img/section-invest-bg.svg')
     background-repeat: no-repeat
     background-position: 50% 50%
@@ -206,3 +207,76 @@
 
       &:nth-child(3)
         background-image: url('../img/tiles-start-bottom-arr-3-bg.svg#svgView(preserveAspectRatio(none))')
+
+
+// Max width $m-hd
+@media only screen and (max-width: $m-hd)
+  .section-invest-diff
+    .diff-col
+      &.company-invest
+        padding: 30px
+        background-position: calc(100% + 30px) center
+        li
+          width: 100%
+          span
+            display: none
+      &.self-invest
+        padding: 30px
+
+  // .section-space-st:not(.section-invest-diff),
+  // .ic-tt-start-bl,
+  // .start-spec-bl,
+  // .start-spec-tt,
+  // .start-spec-info,
+  // .ic-tt-start-bl,
+  // .quick-reg
+  //   display: none
+
+// Max width $m-lg
+@media only screen and (max-width: $m-lg)
+  .section-invest-diff
+    .diff-col
+      &.company-invest
+        width: 55%
+      &.self-invest
+        width: 45%
+
+
+// Max width $m-md
+@media only screen and (max-width: $m-md)
+  .section-invest-diff
+    flex-direction: column
+    padding: 0
+    &::before
+      left: 0
+    .diff-col
+      &.company-invest
+        width: 100%
+        padding: 20px
+        background-position: 50%
+        li
+          &:not(:last-child)
+            margin-bottom: 16px
+
+      &.self-invest
+        width: 100%
+        padding: 20px
+
+    .icon
+      width: 30px
+      height: 28px
+      margin-right: 13px
+    .diff-list
+      padding-left: 0
+    li
+      padding-left: 34px
+      &:not(:last-child)
+        margin-bottom: 16px
+      br
+        display: none
+
+// Max width $m-sm
+@media only screen and (max-width: $m-sm)
+  .section-invest-diff
+    .title-site
+      font-size: 16px

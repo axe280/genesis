@@ -139,7 +139,7 @@
       padding-top: 12px
       padding-bottom: 12px
       text-transform: none
-      
+
   .form-title
     display: flex
     align-items: center
@@ -158,6 +158,80 @@
     flex-grow: 1
     margin: 0 30px
     height: 10px
+  .mobile-line-break
+    display: none
   .mail-link
     height: 44px
     font-size: 18px
+
+
+// Max width $m-lg
+@media only screen and (max-width: $m-lg)
+  .section-partner-contact
+    padding: 40px 40px 0
+    p
+      margin-bottom: 20px
+    .info-list
+      background: transparent url('../img/double-dotted-list-figure.svg#svgView(preserveAspectRatio(none))') center no-repeat
+      background-size: 100% 100%
+      grid-template-columns: 1fr 1fr
+      padding: 16px 0
+      li
+        display: flex
+        flex-direction: column
+        justify-content: center
+        // min-height: 33px
+
+    .contact-form
+      padding: 30px
+    .form-title
+      font-weight: 500
+
+// Max width $m-md
+@media only screen and (max-width: $m-md)
+  .section-partner-contact
+    padding: 24px 20px 0
+    &::before
+      bottom: 20px
+      background-image: url('../img/section-partner-contact-bg-mobile.svg')
+      background-size: cover
+    .title-site
+      &_h6
+        margin-bottom: 20px
+        font-size: 14px
+    .info-list
+      background: transparent url('../img/single-dotted-list-figure.svg#svgView(preserveAspectRatio(none))') center no-repeat
+      background-size: 100% 100%
+      grid-template-columns: 1fr
+      padding: 20px 0
+    .contact-form
+      padding: 20px
+      margin-top: 20px
+      // flex-direction: column
+      align-items: flex-end
+      flex-wrap: wrap
+      justify-content: center
+      .btn
+        font-size: 14px
+        margin-top: 16px
+        padding: 11px 22px
+        margin-top: 10px
+        width: 100%
+        max-width: 360px
+    .form-title
+      font-size: 14px
+      line-height: normal
+      margin-right: 10px
+      .icon
+        width: 20px
+        height: 15px
+        margin-right: 10px
+    .arrow
+      width: 38px
+      height: 20px
+      background-image: url('../img/dotted-arrow-curved-blue.svg')
+      flex-grow: 0
+      margin: 0
+    .mobile-line-break
+      display: block
+      width: 100%
