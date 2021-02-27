@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="32px" viewBox="0 0 9 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>6DE188D5-82CC-498B-8AE7-6C154853302B</title>
+    <g id="Внутренние" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Карьера-320" transform="translate(-53.000000, -3054.000000)">
+            <g id="Контент" transform="translate(0.000000, 96.000000)">
+                <g id="Пример" transform="translate(20.000000, 2770.000000)">
+                    <g id="Стрелки" transform="translate(33.000000, 65.000000)">
+                        <g id="1" transform="translate(0.000000, 124.000000)">
+                            <line x1="4.5" y1="-2.70117262e-13" x2="4.5" y2="24" id="Path-5" stroke="#3698E4" stroke-width="2" stroke-linecap="round" stroke-dasharray="0,4"></line>
+                            <polygon id="Triangle" fill="#3698E4" transform="translate(4.500000, 26.500000) rotate(-180.000000) translate(-4.500000, -26.500000) " points="4.5 22 9 31 0 31"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -8,7 +8,6 @@
   background-repeat: no-repeat
   background-position: 50% 100%
   background-size: cover
-  backdrop-filter: blur(20px)
 
   .tiles-list
     margin-bottom: 30px
@@ -318,3 +317,190 @@
 
   .btn
     flex-shrink: 0
+
+/* Max width $m-hd */
+@media only screen and (max-width: $m-hd)
+  .career-steps
+    max-width: 708px
+    margin: 0 auto
+    padding: 40px
+
+    &::before
+      left: 20px
+      top: 60px
+      width: 670px
+      height: 379px
+      background-image: url('../img/career-steps-arr-bg-tablet.png')
+      background-size: 100% 100%
+
+  .career-users
+    flex-wrap: wrap
+    margin-top: -30px
+    margin-bottom: 0
+    
+    li
+      width: 33%
+      margin-top: 30px
+      padding-right: 10px
+
+  .career-users
+    &__info
+      min-height: 74px
+
+  .career-steps-result
+    margin-top: -10px
+
+  .cs-result-item
+    width: 50%
+    padding-right: 10px
+
+    &:first-child
+      margin-right: 0
+
+    .career-users
+      &__info
+        min-height: 24px
+/* end media max width $m-hd */
+
+/* Max width $m-lg */
+@media only screen and (max-width: $m-lg)
+  .career-prog-wrapp
+    padding: 40px 40px 32px
+
+    .tiles-list
+      margin: 0
+      padding: 0
+      border: none
+
+      li
+        padding: 0 0 30px
+        margin-bottom: 30px
+        width: 100%
+        border: none
+        border-bottom: 1px solid #d7d7dc
+
+        &:first-child,
+        &:last-child
+          width: 100%
+          border-bottom: 1px solid #d7d7dc
+
+      .tiles-tt
+        font-size: 16px
+        line-height: 19px
+/* end media max width $m-lg */
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .career-prog-wrapp
+    margin-top: 30px
+    padding: 24px 20px 20px
+
+    .title-site
+      font-size: 16px
+      line-height: 20px
+      margin-bottom: 20px
+
+    .tiles-list
+      li
+        margin-bottom: 20px
+        padding-bottom: 20px
+
+      .tiles-head
+        margin-bottom: 8px
+
+        .icon
+          width: 20px
+          height: 20px
+
+      .tiles-tt
+        font-size: 14px
+        line-height: 18px
+
+  .career-steps
+    padding: 26px 20px 20px
+    background-color: #f4f4f6
+    background-image: radial-gradient(circle at -4% 92%, #f5f5f5, #f4f4f6 86%)
+
+    &::before
+      display: none
+
+  .career-users
+    display: block
+    margin: 0
+
+    li
+      position: relative
+      display: flex
+      width: 100%
+      margin: 0
+      padding-bottom: 24px
+      background-image: url('../img/career-users-mob-arr.svg')
+      background-repeat: no-repeat
+      background-position: 15px calc(100% - 8px)
+
+      &:last-child
+        background: none
+
+        &::before
+          content: ''
+          position: absolute
+          left: 19px
+          bottom: -11px
+          width: 19px
+          height: 35px
+          z-index: 2
+          background-image: url('../img/career-users-mob-arr-last.svg')
+          background-size: 100% 100%
+
+    &__icon
+      height: 39px
+      width: 40px
+      margin: 0 10px 0 0
+      flex-shrink: 0
+      text-align: center
+      background-color: #f4f4f6
+      padding-bottom: 9px
+
+      .icon-person-l1
+        width: 35px
+
+      .icon-person-l2
+        width: 37px
+
+      .icon-person-l3
+        width: 35px
+
+      .icon-person-l4
+        width: 38px
+
+      .icon-user-st
+        width: 24px
+
+      .icon-person-l7
+        width: 39px
+
+  .career-steps-result
+    display: block
+    margin: 0
+    border-radius: 6px
+    padding: 20px 24px 20px 18px
+
+  .cs-result-item
+    width: 100%
+    padding: 0
+    margin: 0 0 20px
+    align-items: flex-start
+
+    &:last-child
+      margin-bottom: 0
+
+    .career-users__icon
+      background: none
+      padding-bottom: 0
+      height: 30px
+
+  .career-users__info
+    min-height: 20px
+    font-size: 13px
+    line-height: 16px
+/* end media max width $m-md */

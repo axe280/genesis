@@ -124,14 +124,12 @@
   flex-shrink: 0
   min-height: 54px
   padding: 9px 50px 9px 20px
-  background-image: url('../img/status-rectangle-left.svg#svgView(preserveAspectRatio(none))')
+  background-image: url('../img/status-rectangle-left.png')
   background-repeat: no-repeat
   background-position: 0 50%
-  background-size: auto 100%
+  background-size: cover
   overflow: hidden
   border-radius: 0 4px 4px 0
-  -webkit-backdrop-filter: blur(20px)
-  backdrop-filter: blur(20px)
 
   &::before
     content: ''
@@ -146,7 +144,7 @@
 
   &:first-child
     padding: 9px 50px 9px 14px
-    background-image: url('../img/status-rectangle-right.svg#svgView(preserveAspectRatio(none))')
+    background-image: url('../img/status-rectangle-right.png')
     background-position: 100% 50%
     border-radius: 4px 0 0 4px
 
@@ -190,10 +188,10 @@
     flex-grow: 1
     min-height: 54px
     padding: 7px 18px 14px 24px
-    background-image: url('../img/status-rectangle-left.svg#svgView(preserveAspectRatio(none))')
+    background-image: url('../img/status-rectangle-left.png')
     background-repeat: no-repeat
     background-position: 0 50%
-    background-size: auto 100%
+    background-size: cover
     border-radius: 0 4px 4px 0
 
   .status-level
@@ -206,196 +204,46 @@
     &__tt
       margin-right: 34px
 
+.deal-ti-progress .status-level-progress span,
+._status-closed .status-level-progress span.active
+  background-color: #dedde4
+
 ._status-working
   .status-level-progress
-    .progress-active-lines
-      span
-        // background-image: url('../img/status-progress-fill-blue.png')
-
-._status-finished
-  .status-level-progress
-    .progress-active-lines
-      span
-        // background-image: url('../img/status-progress-fill.png')
-
-._status-closed
-  .status-level-progress
-    .progress-active-lines
-      span
-        // background-image: url('../img/status-progress-empty.png')
-
+    span
+      &.active
+        background-color: #23ace5
 
 .status-level-progress
   position: relative
   display: flex
+  justify-content: space-between
   margin-top: 10px
   height: 4px
   width: 100%
   border-radius: 1px
   overflow: hidden
-  background-image: url('../img/progress-empty@3x.png')
-  background-repeat: repeat-x
-  background-position: 0 50%
-  background-size: 100% 100%
-  background-repeat: space
-
-  &._progress-blue
-    .progress-active-lines
-      span
-        // background-image: url('../img/status-progress-fill-blue.png')
-
-  &._progress-purple
-    .progress-active-lines
-      span
-        // background-image: url('../img/status-progress-fill-purple.png')
-
-  &.st-level-1
-    .progress-active-lines
-      width: 8.3333%
-
-  &.st-level-2
-    .progress-active-lines
-      width: 16.6666%
-
-  &.st-level-3
-    .progress-active-lines
-      width: 24.9999%
-
-  &.st-level-4
-    .progress-active-lines
-      width: 33.3332%
-
-  &.st-level-5
-    .progress-active-lines
-      width: 41.6665%
-
-  &.st-level-6
-    .progress-active-lines
-      width: 49.9998%
-
-  &.st-level-7
-    .progress-active-lines
-      width: 58.3331%
-
-  &.st-level-8
-    .progress-active-lines
-      width: 66.6664%
-
-  &.st-level-9
-    .progress-active-lines
-      width: 74.9997%
-
-  &.st-level-10
-    .progress-active-lines
-      width: 83.3333%
-
-  &.st-level-11
-    .progress-active-lines
-      width: 91.6663%
-
-  &.st-level-12
-    .progress-active-lines
-      width: 100%
-
-  &.st-progress-20
-    &.st-level-1
-      .progress-active-lines
-        width: 5%
-
-    &.st-level-2
-      .progress-active-lines
-        width: 10%
-
-    &.st-level-3
-      .progress-active-lines
-        width: 15%
-
-    &.st-level-4
-      .progress-active-lines
-        width: 20%
-
-    &.st-level-5
-      .progress-active-lines
-        width: 25%
-
-    &.st-level-6
-      .progress-active-lines
-        width: 30%
-
-    &.st-level-7
-      .progress-active-lines
-        width: 35%
-
-    &.st-level-8
-      .progress-active-lines
-        width: 40%
-
-    &.st-level-9
-      .progress-active-lines
-        width: 45%
-
-    &.st-level-10
-      .progress-active-lines
-        width: 50%
-
-    &.st-level-11
-      .progress-active-lines
-        width: 55%
-
-    &.st-level-12
-      .progress-active-lines
-        width: 60%
-
-    &.st-level-13
-      .progress-active-lines
-        width: 65%
-
-    &.st-level-14
-      .progress-active-lines
-        width: 70%
-
-    &.st-level-15
-      .progress-active-lines
-        width: 75%
-
-    &.st-level-16
-      .progress-active-lines
-        width: 80%
-
-    &.st-level-17
-      .progress-active-lines
-        width: 85%
-
-    &.st-level-18
-      .progress-active-lines
-        width: 90%
-
-    &.st-level-19
-      .progress-active-lines
-        width: 95%
-
-    &.st-level-20
-      .progress-active-lines
-        width: 100%
-        
-
-.progress-active-lines
-  height: 100%
-  overflow: hidden
-  position: relative
+  margin-left: -1px
 
   span
-    position: absolute
-    left: 0
-    top: 0
-    width: 100%
-    height: 100%
-    z-index: 2
-    background-image: url('../img/progress-fill@3x.png')
-    background-repeat: repeat-x
-    background-position: 0 50%
-    background-size: 100% 100%
-    background-repeat: space
+    flex-grow: 1
+    height: 4px
+    margin-left: 1px
+    border-radius: 1px
+    background-color: rgba(#fff, .3)
+
+    &.active
+      background-color: $colorPrimary
+
+  &._progress-blue
+    span
+      &.active
+        background-color: #23ace5
+
+  &._progress-purple
+    span
+      &.active
+        background-color: #ab50b6
 
 /* Max width $m-hd */
 @media only screen and (max-width: $m-hd)
@@ -410,6 +258,7 @@
   .status-rank
     width: 100%
     margin-bottom: 20px
+    margin-right: 0
 
   .status-item
     border-bottom: 1px solid rgba(#fff, .2)
@@ -419,6 +268,50 @@
     &:last-child
       border: none
       padding-bottom: 0
+
+  .status-list
+    .status-item
+      width: 50%
+      min-height: 20px
+      padding: 0
+      border: none
+      padding-right: 20px
+
+    .status-level
+      justify-content: space-between
+
+      &__tt
+        margin-right: 10px
+
+      &__val
+        margin-right: 10px
+
+  .status-item-partners
+    display: block
+    margin-left: 0
+    padding-left: 20px
+
+    &__tt
+      display: block
+      min-height: 50px
+      padding: 0
+      margin-bottom: 20px
+      width: auto
+      display: flex
+      align-items: center
+
+    .status-level
+      width: 32%
+
+  .status-item-partners
+    width: 50%
+
+  .status-money-wrapp
+    justify-content: space-between
+    width: 100%
+
+  .status-money-item
+    flex-grow: 1
 /* end media max width $m-hd */
 
 /* Max width $m-lg */
@@ -460,6 +353,40 @@
       border-bottom: 1px solid rgba(#fff, .2)
       margin-bottom: 25px
       padding-bottom: 25px
+
+  .status-list
+    li
+      width: 100%
+      margin: 0
+      display: block
+      margin-bottom: 22px
+
+    .status-item
+      margin: 0
+      padding: 0
+      width: 100%
+      flex-wrap: nowrap
+      min-height: 20px
+
+    .status-rank
+      margin: 0 10px 0 0
+      min-width: 20px
+      width: 133px
+      flex-shrink: 0
+
+    .status-info
+      width: 100%
+
+  .status-item-partners
+    width: 100%
+    padding: 0
+    margin-top: 20px
+    display: flex
+
+    &__tt
+      width: 133px
+      min-height: 20px
+      margin-bottom: 0
 /* end media max width $m-lg */
 
 /* Max width $m-md */
@@ -518,4 +445,98 @@
   .status-bonus
     align-items: flex-start
     margin-top: 12px
+
+  .status-section-wrapper._bg2
+    .title-site
+      text-align: center
+      margin-bottom: 20px
+
+  .status-list
+    li
+      margin-bottom: 0
+      padding-bottom: 0
+      border: none
+
+    .status-item
+      display: block
+
+    .status-rank
+      width: 60px
+      margin: 0 auto 20px
+
+      &__icon
+        width: 60px
+        height: 60px
+        margin: 0
+
+      &__name
+        margin-top: 10px
+        font-size: 18px
+        line-height: 22px
+
+  .status-money-wrapp
+    display: block
+
+  .status-money-line
+    display: none
+
+  .status-money-item
+    width: 100%
+    margin-bottom: 4px
+
+    &::before
+      background-size: 22px 22px
+
+    &:first-child,
+    &:last-child
+      background: rgba(#fff, .08)
+      border-radius: 4px
+      padding: 8px 40px 8px 14px
+
+    &:last-child
+      margin-bottom: 0
+
+    &__val
+      font-size: 14px
+      line-height: 18px
+
+  .status-item-partners
+    display: block
+
+    &__tt
+      text-align: center
+      margin-bottom: 14px
+      width: 100%
+
+    .status-levels
+      background: none
+      display: block
+      padding: 0
+
+    .status-level
+      display: flex
+      align-items: center
+      padding: 9px 15px 15px
+      background: rgba(#fff, .08)
+      border-radius: 4px
+      width: 100%
+      margin-bottom: 2px
+
+      &:last-child
+        margin-bottom: 0
+
+      &__val
+        margin-right: 7px
+
+    .status-level-progress
+      margin-top: 5px
+
+      span
+        height: 3px
+
+  .status-section-wrapper._bg2
+    background-image: url('../img/status-sec-2-mob.png')
+    background-repeat: no-repeat
+    background-position: 50% 0
+    background-size: cover
 /* end media max width $m-md */

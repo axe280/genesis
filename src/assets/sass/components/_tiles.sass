@@ -221,3 +221,43 @@ a.tiles-head
     font-size: 16px
     line-height: 20px
 /* end media max width $m-xl */
+
+/* Max width $m-xl */
+@media only screen and (max-width: $m-xl) and (min-width: $md)
+  .m-tiles-bl
+    .tiles-list
+      li
+        padding: 30px
+
+    .tiles-tt
+      font-size: 16px
+      line-height: 19px
+
+    .tiles-head
+      &._bordered
+        margin-bottom: 26px
+        padding-bottom: 26px
+
+        .icon
+          width: 24px
+          height: 24px
+/* end media max width $m-xl */
+
+/* Max width $m-lg */
+@media only screen and (max-width: $m-lg)
+  .tiles-list._three-col._arr-top,
+  .tiles-list._three-col
+    display: block
+
+    li
+      width: 100%
+/* end media max width $m-lg */
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .tiles-list
+    display: block
+
+    li
+      width: 100%
+/* end media max width $m-md */
