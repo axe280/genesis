@@ -294,8 +294,6 @@ $(function () {
           )
         }
 
-        changeProgressLinesWidth()
-
         if ($(this).parent().is('._current')) {
           return
         }
@@ -312,18 +310,21 @@ $(function () {
   })
 
   // progress line width
-  var $pLines = $('.progress-active-lines span')
-  var changeProgressLinesWidth = function () {
-    $pLines.each(function () {
-      var parentWidth = $(this).parents('.status-level-progress').width()
-      $(this).width(parentWidth)
-    })
-  }
+  $('.status-level-progress').each(function () {
+    var levelVal = $(this).attr('data-progress-level')
+    var itemsVal = $(this).attr('data-progress-items')
+    var html = ''
 
-  if ($pLines.length) {
-    changeProgressLinesWidth()
-    $(window).on('resize', changeProgressLinesWidth)
-  }
+    for (var i = 0; i < itemsVal; i++) {
+      if (i < levelVal) {
+        html += '<span class="active"></span>'
+      } else {
+        html += '<span></span>'
+      }
+    }
+
+    $(this).append(html)
+  })
 
   // pic avatar file
   var oldVal = null
