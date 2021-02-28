@@ -67,39 +67,30 @@
   .cabinet-stat-bl
     background-color: #f7f7f7
 
-  .cabinet-stat-bl._blue-version
-    color: var(--color-dark)
+  .cabinet-stat-bl
+    &._blue-version
+      background-color: #3698e4
+      color: #fff
 
-    .cabinet-stat-bl__tt
-      color: #7c7c7c
+      .icon
+        fill: #fff
 
-    .icon_blueDark
-      fill: #3698e4
+      .cabinet-stat-bl__tt
+        color: rgba(#fff, .7)
 
-    .icon_purpleDark
-      fill: #a047ad
+      .btn.btn_border
+        border-color: #fff
+        color: #fff
 
-    .icon_primary
-      fill: $colorPrimary
+        &:hover
+          background-color: #fff
+          color: #000
 
-    .btn.btn_border
-      color: #000
+      .btn.btn_border-gray
+        border-color: rgba(#fff, .5)
 
-      &:hover
-        background-color: #fff
-        color: #000
-
-    .btn.btn_border-second
-      border-color: $colorBlue
-
-      &:hover
-        background-color: $colorBlue
-
-    .btn.btn_border-gray
-      border-color: rgba(66,66,66,.2)
-
-    .cabinet-stat-bl__val
-      color: #000
+      .cabinet-stat-bl__val
+        color: #fff
 
   .pay-comp-aside
     border-color: rgba(#fff, .11)

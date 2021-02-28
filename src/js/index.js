@@ -21,6 +21,7 @@ $(function () {
 
   // select img wrapp
   $('.jcf-select').on('click', function () {
+    if ($('.select-img-wrap').length) return
     $('.jcf-list img').wrap('<span class="select-img-wrap"></span>')
   })
 
