@@ -143,6 +143,7 @@ $(function () {
 
   // init resize carousel
   var $mobileCarouselHts = null
+  var $mobileCarouselStatusList = null
 
   var initHtsCarousel = function () {
     $mobileCarouselHts = $('.tiles-mobile-carousel').owlCarousel({
@@ -154,20 +155,31 @@ $(function () {
     })
   }
 
-  var initCarouselResizeHandler = function () {
-    if (
-      $mobileCarouselHts &&
-      $mobileCarouselHts.length &&
-      $(window).width() >= 740
-    ) {
-      $mobileCarouselHts.trigger('destroy.owl.carousel')
+  var initStatusListCarousel = function () {
+    $mobileCarouselStatusList = $('.status-list').owlCarousel({
+      loop: false,
+      dots: false,
+      nav: true,
+      autoHeight: true,
+      items: 1,
+    })
+  }
+
+  var initCarouselResizeHandler = function ($selector, initFunc) {
+    if ($selector && $selector.length && $(window).width() >= 740) {
+      $selector.trigger('destroy.owl.carousel')
     } else if ($(window).width() < 740) {
-      initHtsCarousel()
+      initFunc()
     }
   }
 
-  initCarouselResizeHandler()
-  $(window).on('resize', initCarouselResizeHandler)
+  initCarouselResizeHandler($mobileCarouselHts, initHtsCarousel)
+  initCarouselResizeHandler($mobileCarouselStatusList, initStatusListCarousel)
+
+  $(window).on('resize', function () {
+    initCarouselResizeHandler($mobileCarouselHts, initHtsCarousel)
+    initCarouselResizeHandler($mobileCarouselStatusList, initStatusListCarousel)
+  })
 
   // cabinet
   // switch theme
@@ -363,4 +375,20 @@ $(function () {
       reader.readAsDataURL(input.files[0])
     }
   }
+
+  // mobile career tabs
+  $('.ic-tt-col-about').on('click', '.ic-tt-chart:not(._mob-act)', function () {
+    if ($(window).width() < 740) {
+      $(this)
+        .addClass('_mob-act')
+        .siblings('.ic-tt-chart')
+        .removeClass('_mob-act')
+        .parents('.ic-tt-rows')
+        .find('.tiles-list')
+        .eq($(this).index())
+        .fadeIn()
+        .siblings('.tiles-list')
+        .hide()
+    }
+  })
 })

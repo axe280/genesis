@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="283px" height="25px" viewBox="0 0 283 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>56A4B654-4BC1-4B60-BA40-19F01591ED7F</title>
+    <g id="Внутренние" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Карьера-768" transform="translate(-129.000000, -5264.000000)">
+            <g id="Контент" transform="translate(0.000000, 227.000000)">
+                <g id="Отзывы" transform="translate(30.000000, 4893.000000)">
+                    <g id="Стрелка" transform="translate(240.500000, 157.000000) scale(-1, 1) translate(-240.500000, -157.000000) translate(100.000000, 145.000000)">
+                        <path d="M6.41615219,19 L270.529458,19 C276.052305,19 280.529458,14.5228475 280.529458,9 L280.529458,0 L280.529458,0" id="Path-5" stroke="#B66BDF" stroke-width="2" stroke-linecap="round" stroke-dasharray="0,4"></path>
+                        <polygon id="Triangle" fill="#B66BDF" transform="translate(5.098593, 18.923897) scale(-1, 1) rotate(-270.000000) translate(-5.098593, -18.923897) " points="5.0985929 14.423897 9.5985929 23.423897 0.5985929 23.423897"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

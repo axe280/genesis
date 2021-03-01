@@ -146,6 +146,165 @@
 
         &:nth-child(4)
           background-image: url('../img/tiles-blue-4-hts.png')
+
+  .ic-tt-rows._chart
+    display: block
+    background: none
+    max-width: 708px
+    margin: 0 auto
+    padding: 0
+    min-height: 1px
+
+    .ic-tt-col-about
+      padding: 0
+      display: flex
+      align-items: center
+      flex-direction: column
+
+      &__icon
+        position: relative
+        z-index: 10
+        margin-bottom: 16px
+        padding-left: 20px
+        padding-right: 20px
+        background-color: #fff
+
+    .ic-col-services
+      flex-direction: row
+      min-height: 1px
+
+    .tiles-list,
+    .tiles-list._three-col
+      display: block
+
+      li
+        width: 315px
+
+    .tiles-list
+      padding-left: 32px
+
+      &._three-col
+        li
+          &:first-child
+            background-image: url('../img/chart-tablet-1.png')
+
+            &::before
+              height: 195px
+              background-image: url('../img/chart-tablet-i-1.svg')
+
+          &:nth-child(2)
+            background-image: url('../img/chart-tablet-2.png')
+
+            &::before
+              height: 165px
+              background-image: url('../img/chart-tablet-i-2.svg')
+
+          &:last-child
+            background-image: url('../img/chart-tablet-3.png')
+
+            &::before
+              height: 155px
+              background-image: url('../img/chart-tablet-i-3.svg')
+
+        &:last-child
+          li
+            background-position: 100% 50%
+
+            &:first-child
+              background-image: url('../img/chart-tablet-4.png')
+
+              &::before
+                height: 195px
+                background-image: url('../img/chart-tablet-i-4.svg')
+
+            &:nth-child(2)
+              background-image: url('../img/chart-tablet-5.png')
+
+              &::before
+                height: 165px
+                background-image: url('../img/chart-tablet-i-4.svg')
+
+            &:last-child
+              background-image: url('../img/chart-tablet-6.png')
+
+              &::before
+                height: 155px
+                background-image: url('../img/chart-tablet-i-3.svg')
+
+      &:last-child
+        padding-left: 0
+        padding-right: 32px
+
+        li
+          padding-left: 30px
+
+          &::before
+            left: auto
+            right: -32px
+            background-position: 100% 100%
+
+      li
+        position: relative
+        width: 315px
+        min-height: 150px
+        margin-bottom: 4px
+        padding-top: 30px
+        padding-bottom: 10px
+        padding-left: 40px
+        background-repeat: no-repeat
+        background-position: 0% 50%
+        background-size: 100% 100%
+
+        &::before
+          content: ''
+          position: absolute
+          left: -32px
+          margin-bottom: -5px
+          bottom: 50%
+          width: 52px
+          height: 100px
+          z-index: 2
+          background-position: 0 100%
+          background-repeat: no-repeat
+
+        &:first-child
+          min-height: 190px
+
+        &:last-child
+          margin-bottom: 0
+          min-height: 170px
+
+  .ic-tt-chart
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      margin-top: -5px
+      width: 120px
+      height: 10px
+      z-index: 2
+      background-repeat: no-repeat
+      background-image: url('../img/dotted-arrow-long-blue.svg')
+      background-position: 100% 50%
+    
+    &._top
+      top: 25px
+      left: 70px
+
+      &::before
+        left: 100%
+        margin-left: 10px
+        transform: rotate(180deg)
+
+    &._bottom
+      bottom: auto
+      left: auto
+      top: 25px
+      right: 70px
+
+      &::before
+        right: 100%
+        margin-right: 10px
 /* end media max width $m-hd */
 
 /* Max width $m-md */
@@ -245,4 +404,137 @@
         &:last-child
           min-height: 186px
           padding-bottom: 3px
+
+  .ic-tt-rows._chart
+    .ic-col-services
+      display: block
+
+      .tiles-list
+        display: none
+
+        &:first-child
+          display: block
+
+    .tiles-list._three-col
+      &:last-child
+        li
+          &:first-child
+            &::before
+              height: 102px
+              background-image: url('../img/chart-mob-i-4.svg')
+
+          &:nth-child(2)
+            &::before
+              height: 151px
+              background-image: url('../img/chart-mob-i-5.svg')
+
+          &:last-child
+            &::before
+              height: 151px
+              background-image: url('../img/chart-mob-i-3.svg')
+
+      li
+        &:first-child
+          &::before
+            height: 92px
+            background-image: url('../img/chart-mob-i-1.svg')
+
+        &:nth-child(2)
+          &::before
+            height: 134px
+            background-image: url('../img/chart-mob-i-2.svg')
+
+        &:last-child
+          &::before
+            height: 142px
+            background-image: url('../img/chart-mob-i-3.svg')
+
+    .tiles-list._three-col li,
+    .tiles-list li
+      width: 100%
+
+    .tiles-list
+      padding-left: 17px
+
+      &:last-child
+        padding-right: 17px
+
+        li
+          padding: 20px 30px 20px 20px
+
+          &::before
+            right: -17px
+
+          &:first-child,
+          &:last-child
+            min-height: 166px
+
+          &:nth-child(2)
+            min-height: 146px
+
+      li
+        padding: 20px 20px 20px 30px
+
+        &::before
+          width: 10px
+          left: -17px
+
+        &:first-child
+          min-height: 146px
+
+        &:nth-child(2)
+          min-height: 126px
+
+        &:last-child
+          min-height: 166px
+
+    .ic-tt-col-about
+      padding-bottom: 76px
+      margin-bottom: 0
+
+      &__icon
+        margin: 0 0 10px
+        padding: 0
+
+        .icon
+          width: 40px
+          height: 40px
+
+    .title-site_h4
+      margin: 0
+      padding: 0
+
+    .ic-tt-chart
+      width: 50%
+      margin: 0
+      text-align: center
+      box-shadow: 0 0 0 1px #ebebf3
+      padding: 12px 10px
+      font-size: 12px
+      line-height: 15px
+      color: rgba(#000, .3)
+      cursor: pointer
+
+      &._mob-act
+        z-index: 3
+        box-shadow: 0 0 0 1px #3698e4
+        color: #000
+
+      &::before
+        display: none
+
+      &._top
+        top: auto
+        left: 0
+        bottom: 20px
+        border-radius: 4px 0 0 4px
+
+      &._bottom
+        top: auto
+        right: 0
+        bottom: 20px
+        border-radius: 0 4px 4px 0
+
+        &._mob-act
+          box-shadow: 0 0 0 1px #c66fec
 /* end media max width $m-md */

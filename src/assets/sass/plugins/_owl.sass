@@ -2,6 +2,9 @@
   &.tiles-mobile-carousel
     display: flex
 
+  &.status-list
+    display: block
+
 .mobile-carousel-hand
   display: none
 
@@ -118,6 +121,50 @@
 
       .owl-stage-outer
         overflow: visible
+
+    &.status-list
+      padding-bottom: 50px
+
+      .owl-nav
+        top: auto
+        bottom: 10px
+
+        .owl-next, .owl-prev
+          width: 48px
+          height: 9px
+          background-repeat: no-repeat
+          background-image: url('../img/car-nav-hov.svg')
+          background-position: 50% 50%
+          background-size: 100% 100%
+          margin: -8px 0 0 10px
+          text-indent: -9999px
+          transform: rotate(-180deg)
+
+          &.disabled
+            opacity: 1
+            transform: none
+            background-image: url('../img/car-nav-st.svg')
+
+        .owl-next
+          transform: none
+          margin: -8px 10px 0 0
+
+          &.disabled
+            transform: rotate(-180deg)
+
+  .status-section-wrapper
+    .container
+      position: relative
+
+      .mobile-carousel-hand
+        position: absolute
+        bottom: 0
+        left: 50%
+        margin-left: -18px
+        margin-bottom: 0
+        
+        .icon
+          fill: rgba(#d7d7e0, .3)
 
   .mobile-carousel-hand
     display: block

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="628px" height="262px" viewBox="0 0 628 262" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>5568DEF2-D2B9-4F0D-A11A-81817CD5B372</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Внутренние" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Карьера-768" transform="translate(-70.000000, -6152.000000)">
+            <g id="Контент" transform="translate(0.000000, 227.000000)">
+                <g id="Обратите-внимание" transform="translate(30.000000, 5741.000000)">
+                    <g id="Ограничения" transform="translate(0.000000, 144.000000)">
+                        <g id="Group-12" transform="translate(40.000000, 40.000000)">
+                            <polygon id="Rectangle" fill="url(#linearGradient-1)" opacity="0.200000003" transform="translate(314.500000, 196.500000) scale(1, -1) translate(-314.500000, -196.500000) " points="314 131 315 131 315 262 314 262"></polygon>
+                            <polygon id="Rectangle-Copy" fill="url(#linearGradient-2)" opacity="0.200000003" points="314 0 315 0 315 116 314 116"></polygon>
+                            <polygon id="Rectangle" fill="#FFFFFF" opacity="0.200000003" points="322 123 628 123 628 124 322 124"></polygon>
+                            <polygon id="Rectangle-Copy-2" fill="#FFFFFF" opacity="0.200000003" points="0 123 307 123 307 124 0 124"></polygon>
+                            <circle id="Oval" stroke="#9D9DC5" cx="314.5" cy="123.5" r="3"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

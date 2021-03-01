@@ -127,7 +127,6 @@
   background-repeat: no-repeat
   background-position: 50% 0
   background-size: cover
-  backdrop-filter: blur(10px)
   color: #fff
   border-radius: 10px
 
@@ -177,7 +176,6 @@
   background-position: 50% 50%
   background-size: cover
   border-radius: 6px
-  backdrop-filter: blur(10px)
   color: #000
 
 .limit-info
@@ -287,7 +285,6 @@
   background-repeat: no-repeat
   background-position: 50% 50%
   background-size: cover
-  backdrop-filter: blur(20px)
 
   &__about
     display: flex
@@ -362,6 +359,103 @@
         min-height: 24px
 /* end media max width $m-hd */
 
+/* Max width $m-xl-plus */
+@media only screen and (max-width: $m-xl-plus)
+  .limit-info-wrap
+    padding: 30px
+    max-width: 628px
+    margin: 0 auto
+
+  .limit-info
+    align-items: flex-start
+    margin-bottom: 22px
+
+    &:last-child
+      .limit-info__tt
+        margin-top: 10px
+
+      .limit-info-tt-arrow
+        top: 8px
+        margin-top: 0
+
+    &__tt
+      width: 106px
+      display: block
+      margin: 0 20px 0 0
+      padding-right: 45px
+      position: relative
+
+  .limit-info-tt-arrow
+    position: absolute
+    right: 0
+    top: 50%
+    margin-top: -5px
+    width: 33px
+    background-image: url('../img/min-purple-arr.svg')
+    background-position: 100% 50%
+
+    .icon
+      display: none
+
+  .limit-info-tt-icon
+    margin: 0 0 8px
+
+  .limit-info-steps
+    flex-wrap: wrap
+    position: relative
+
+    li
+      width: 50%
+      margin: 0
+      min-height: 45px
+      margin-bottom: 55px
+      padding-right: 10px
+      background: none
+
+      &:first-child
+        padding-right: 60px
+        position: relative
+
+        &::before
+          content: ''
+          position: absolute
+          right: 16px
+          top: 50%
+          margin-top: -5px
+          width: 33px
+          height: 10px
+          z-index: 2
+          background-image: url('../img/min-purple-arr.svg')
+          background-repeat: no-repeat
+          background-position: 100% 50%
+
+      &:last-child
+        position: relative
+        width: 100%
+        margin-bottom: 0
+        min-height: 30px
+        padding-right: 0
+
+        &::before
+          content: ''
+          position: absolute
+          left: 4px
+          margin-bottom: 10px
+          bottom: 100%
+          width: 446px
+          height: 69px
+          z-index: 2
+          background-image: url('../img/limit-info-steps-tablet.svg')
+          background-repeat: no-repeat
+          background-position: 50% 50%
+          background-size: 100% 100%
+
+  .limit-info-steps li:nth-child(2) .limit-info-steps__about,
+  .limit-info-steps__about
+    min-width: 20px
+    max-width: 340px
+/* end media max width $m-xl-plus */
+
 /* Max width $m-lg */
 @media only screen and (max-width: $m-lg)
   .career-prog-wrapp
@@ -387,6 +481,41 @@
       .tiles-tt
         font-size: 16px
         line-height: 19px
+
+  .career-file-wrap
+    padding: 44px 40px 40px 40px
+    display: block
+    background-image: url('../img/career-file-wrap-bg-tablet.png')
+
+    &__about
+      align-items: flex-start
+      margin: 0 0 20px
+
+  .career-file-wrap__arr
+    display: inline-block
+    vertical-align: top
+    width: 281px
+    height: 24px
+    margin: 7px 24px 0 60px
+    background-image: url('../img/career-file-wrap-arr.svg')
+    background-repeat: no-repeat
+    background-position: 50% 100%
+    background-size: 100% auto
+    
+    .icon
+      display: none
+
+  .limitation-section
+    padding: 40px 40px 0 40px
+    background-image: url('../img/limitation-section-bg-tablet.png')
+
+  .limitation-list
+    margin-bottom: -44px
+    background-image: url('../img/limit-list-bg-tablet.svg')
+    background-position: 50% calc(50% - 34px)
+
+    li
+      margin-bottom: 64px
 /* end media max width $m-lg */
 
 /* Max width $m-md */
@@ -503,4 +632,170 @@
     min-height: 20px
     font-size: 13px
     line-height: 16px
+
+  .career-file-wrap
+    position: relative
+    padding: 30px
+    background-image: url('../img/career-file-wrap-bg-mob.png')
+
+    &__about
+      display: block
+
+      .icon
+        width: 30px
+        height: 32px
+        margin: 0 0 14px
+
+      p
+        font-size: 13px
+        line-height: 16px
+        padding-right: 20px
+        max-width: 250px
+
+    .btn
+      width: 100%
+
+  .career-file-wrap__arr
+    position: absolute
+    right: 30px
+    z-index: 3
+    top: 85px
+    width: 40px
+    height: 87px
+    margin: 0
+    background-image: url('../img/career-file-wrap-arr-mob.svg')
+    background-repeat: no-repeat
+    background-position: 100% 0
+    background-size: auto 100%
+
+  .limitation-section
+    margin: 20px 0 50px
+    padding: 20px 20px 0 20px
+    background-image: url('../img/limitation-section-bg-mob.png')
+
+  .limitation-list
+    margin-bottom: 0
+    background: none
+    display: block
+    margin-bottom: -20px
+
+    li
+      width: 100%
+      margin: 0 0 20px
+      padding: 0 0 20px
+      border-bottom: 1px solid rgba(#fff, .2)
+
+      &:nth-child(even)
+        padding: 0 0 20px
+
+      &:last-child
+        border: none
+        margin-bottom: 0
+
+    .icon
+      width: 16px
+      height: 16px
+      margin: 10px 10px 0 0
+
+    p
+      font-size: 12px
+      line-height: 15px
+
+  .limit-info-wrap
+    padding: 18px 20px 20px
+    top: 20px
+    background-image: url('../img/limit-info-wrap-bg-mob.png')
+
+  .limit-info
+    display: block
+    margin-bottom: 18px
+    padding-bottom: 20px
+
+    &:last-child
+      .limit-info__tt
+        padding-bottom: 20px
+
+        &::after
+          content: ''
+          position: absolute
+          left: 7px
+          bottom: -3px
+          width: 9px
+          height: 16px
+          background-image: url('../img/mob-p-arr-down.svg')
+          background-repeat: no-repeat
+          background-position: 50% 100%
+
+    &__about
+      p
+        font-size: 12px
+        line-height: 15px
+
+    span
+      font-size: 14px
+      line-height: 18px
+
+    &__tt
+      width: auto
+      display: flex
+      flex-wrap: wrap
+      margin-bottom: 10px
+      padding: 0
+
+      .icon
+        width: 24px
+        height: 24px
+
+  .limit-info-tt-icon
+    margin: 0 10px 0 0
+
+  .limit-info-tt-arrow,
+  .limit-info-steps li:last-child::before
+    display: none
+
+  .limit-info-steps
+    display: block
+
+    li
+      padding: 0
+      margin: 0
+      width: 100%
+      min-height: 20px
+      padding-bottom: 33px
+      position: relative
+
+      &::after
+        content: ''
+        position: absolute
+        left: 8px
+        bottom: 4px
+        width: 9px
+        height: 24px
+        background-image: url('../img/mob-p-arr-down.svg')
+        background-repeat: no-repeat
+        background-position: 50% 100%
+
+      &:first-child
+        padding-right: 0
+
+        &::before
+          display: none
+
+      &:last-child
+        padding: 0
+
+        &::after
+          display: none
+
+      .icon-status1-dark
+        width: 24px
+        height: 24px
+        margin-right: 10px
+
+      .icon-user-st
+        width: 20px
+        height: 24px
+        margin-left: 3px
+        margin-right: 11px
+
 /* end media max width $m-md */
