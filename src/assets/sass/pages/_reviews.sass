@@ -65,3 +65,82 @@
     width: 20px
     height: 20px
     margin-right: 10px
+    fill: $colorPurple
+
+/* Max width $m-lg */
+@media only screen and (max-width: $m-lg)
+  .reviews-info-main
+    position: relative
+    display: block
+
+  .reviews-info-aside
+    position: absolute
+    right: -20px
+    top: 72px
+    margin: 0
+
+  .reviews-info-list.list-forbidden
+    display: block
+    padding-right: 300px
+
+    li
+      max-width: 100%
+      width: 100%
+/* end media max width $m-lg */
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .reviews-info-bl
+    padding: 24px 20px 80px
+    position: relative
+    margin: 30px 0 50px
+    background-image: url('../img/reviews-info-bl-bg-mob.png')
+    background-repeat: no-repeat
+    background-position: 50% 0
+    background-size: cover
+
+  .reviews-info-about
+    padding: 0
+
+  .reviews-info-main
+    position: static
+
+  .reviews-info-aside
+    position: absolute
+    top: auto
+    left: 20px
+    right: 20px
+    bottom: -20px
+    padding: 20px
+    font-size: 12px
+    line-height: 18px
+    width: auto
+
+  .reviews-info-bottom
+    padding: 20px 0
+    font-size: 12px
+    line-height: 18px
+
+  .reviews-info-tt
+    font-size: 14px
+    line-height: 18px
+    margin-bottom: 16px
+
+  .reviews-info-list.list-forbidden
+    padding-right: 0
+    margin-bottom: 20px
+
+    li
+      padding-left: 26px
+      font-size: 12px
+      line-height: 18px
+      margin-bottom: 16px
+      background-size: 16px 16px
+      background-position: 0 1px
+/* end media max width $m-md */
+
+/* Max width 380px */
+@media only screen and (max-width: 380px)
+  .reviews-info-bl
+    padding-bottom: 100px
+/* end media max width 380px */
