@@ -14,7 +14,7 @@
   display: flex
   flex-wrap: wrap
   justify-content: space-between
-  background-image: url('../img/restrictions-list-lines.svg#svgView(preserveAspectRatio(none))')
+  background-image: url('../img/restrictions-list-lines.svg')
   background-repeat: no-repeat
   background-position: -5px 29px
 
@@ -45,6 +45,10 @@
       background-position: 50% 50%
       background-size: cover
 
+    .restrictions-tt
+      background-image: url('../img/logo-m.svg')
+      background-size: 20px 26px
+
 .restrictions-tt
   padding-left: 30px
   margin-bottom: 15px
@@ -57,3 +61,140 @@
   background-repeat: no-repeat
   background-position: 0 50%
   background-size: 20px 20px
+
+/* Max width $m-hd */
+@media only screen and (max-width: $m-hd)
+  .restrictions-bl
+    padding: 40px 40px 0
+
+  .restrictions-list
+    background: none
+    margin-top: 30px
+
+    li
+      position: relative
+      width: 50%
+      min-height: 20px
+      margin: 0
+      padding: 30px 30px 30px 0
+      border-right: 1px solid rgba(#fff, .2)
+      border-top: 1px solid rgba(#fff, .2)
+
+      &::after
+        content: ''
+        position: absolute
+        right: -4px
+        bottom: -4px
+        width: 5px
+        height: 5px
+        z-index: 20
+        border: 1px solid #9d9dc5
+        border-radius: 50%
+        background-color: #2d1167
+        box-shadow: 0 0 0 3px #2d1167
+
+      &:nth-child(even)
+        padding: 30px 0 30px 30px
+        border-right: none
+
+        &::after
+          display: none
+
+      &:nth-child(1),
+      &:nth-child(2)
+        padding-top: 0
+        border-top: none
+
+      &:nth-child(5)
+        &::after
+          display: none
+
+    .restrictions-last-b
+      padding-bottom: 40px
+
+      &::before
+        display: block
+        right: -41px
+        left: -1px
+        bottom: 0
+        top: -1px
+
+  .restrictions-tt
+    background-position: 0 8px
+/* end media max width $m-hd */
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .restrictions-bl
+    padding: 24px 20px 0
+
+  .restrictions-list
+    margin-top: 16px
+    display: block
+
+    li
+      padding: 16px 0 20px
+      width: 100%
+      margin: 0
+      border: none
+      border-bottom: 1px solid rgba(#fff, .2)
+
+      &::after
+        display: none
+
+      &:nth-child(even)
+        padding: 16px 0 20px
+        border-bottom: 1px solid rgba(#fff, .2)
+
+  .restrictions-tt
+    margin-bottom: 10px
+    font-size: 13px
+    line-height: 16px
+    padding-left: 26px
+    background-size: 16px 16px
+    background-position: 0 0
+    max-width: 100%
+
+  .restrictions-list .restrictions-last-b:before
+    left: -20px
+    right: -20px
+    border-radius: 0
+
+  .restrictions-list .restrictions-last-b .restrictions-tt
+    background-size: 16px 21px
+
+  .st-two-columns
+    margin-top: 30px
+
+  .st-two-aside
+    display: block
+
+  .aside-icon-bl
+    width: 100%
+    margin: 0 0 4px
+    padding: 30px
+    overflow: hidden
+
+    .btn
+      margin-top: 20px
+      width: 100%
+      padding-top: 13px
+      padding-bottom: 13px
+      font-size: 12px
+
+    .icon
+      float: left
+      width: 33px
+      height: 31px
+      margin-top: 2px
+
+    &__tt
+      font-size: 14px
+      line-height: 18px
+      margin: 0 0 0 44px
+
+  .aside-icon-bl__sub
+    margin: 12px 0 0 44px
+    font-size: 12px
+    line-height: 15px
+/* end media max width $m-md */
