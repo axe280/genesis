@@ -6,7 +6,6 @@
   background-repeat: no-repeat
   background-position: 50% 50%
   background-size: cover
-  backdrop-filter: blur(10px)
 
   .tiles-list
     // transform: translateY(20px)
@@ -187,35 +186,71 @@
     .form-title
       font-weight: 500
 
+  .services-bl
+    padding: 40px 40px 1px
+    background-image: url('../img/services-bl-bg-tablet.png')
+
+    .tiles-list
+      margin-bottom: -30px
+
 // Max width $m-md
 @media only screen and (max-width: $m-md)
   .section-partner-contact
     padding: 24px 20px 0
+    margin-bottom: 40px
+
     &::before
       bottom: 20px
       background-image: url('../img/section-partner-contact-bg-mobile.svg')
       background-size: cover
+
+    p
+      margin: 0 0 20px
+
     .title-site
+      margin-bottom: 14px
+
       &_h6
         margin-bottom: 20px
         font-size: 14px
+        line-height: 18px
     .info-list
-      background: transparent url('../img/single-dotted-list-figure.svg#svgView(preserveAspectRatio(none))') center no-repeat
-      background-size: 100% 100%
+      background: none
       grid-template-columns: 1fr
-      padding: 20px 0
+      padding: 18px 0
+      border: 1px dotted #fff
+      border-radius: 10px
+
+      li
+        font-size: 13px
+        line-height: 16px
+        margin-bottom: 6px
+        position: relative
+
+        &::before
+          content: ''
+          position: absolute
+          left: 12px
+          top: 5px
+          width: 3px
+          height: 3px
+          z-index: 2
+          border: 2px solid $colorPrimary
+          border-radius: 50%
+
+        &:last-child
+          margin-bottom: 0
+
     .contact-form
       padding: 20px
       margin-top: 20px
       // flex-direction: column
       align-items: flex-end
       flex-wrap: wrap
-      justify-content: center
       .btn
         font-size: 14px
         margin-top: 16px
-        padding: 11px 22px
-        margin-top: 10px
+        padding: 13px 22px
         width: 100%
         max-width: 360px
     .form-title
@@ -235,3 +270,41 @@
     .mobile-line-break
       display: block
       width: 100%
+
+  .services-bl
+    padding: 24px 20px 1px
+    margin-bottom: 50px
+    background-image: url('../img/services-bl-bg-mob.png')
+
+    .tiles-list
+      li
+        padding: 20px
+
+    .tiles-service__icon
+      width: 30px
+      margin-right: 12px
+
+      .icon
+        width: 30px
+        height: 30px
+
+    .tiles-service__info
+      b
+        padding: 0 0 4px
+        font-size: 20px
+        line-height: 24px
+
+      span
+        font-size: 12px
+        line-height: 15px
+
+  .sevices-checklist
+    margin-bottom: 20px
+    margin-top: 20px
+
+    li
+      padding: 14px 20px 14px 46px
+      font-size: 14px
+      line-height: 18px
+      background-size: 16px 14px
+      background-position: 20px 50%
