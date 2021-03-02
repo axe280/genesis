@@ -20,6 +20,10 @@
           padding-left: 30px
           border-left: 1px solid rgba(#fff, .2)
 
+  .tiles-doc-item__tt
+    em
+      font-style: normal
+
   &._purple
     li
       &:first-child
@@ -280,3 +284,294 @@
 
       .icon
         flex-shrink: 0
+
+/* Max width $m-hd */
+@media only screen and (max-width: $m-hd)
+  .about-main-tiles
+    .tiles-list
+      flex-wrap: wrap
+      
+      li
+        width: calc(50% - 2px)
+        margin-bottom: 4px
+        min-height: 353px
+        padding-bottom: 140px
+
+        &:nth-child(1),
+        &:nth-child(2)
+          padding-bottom: 30px
+          min-height: 100px
+
+    .tiles-info
+      p
+        min-height: 10px
+
+    .tiles-tt
+      font-size: 16px
+      line-height: 20px
+      margin-right: 0
+    
+  .about-tiles-line
+    width: 648px
+    left: 50%
+    right: auto
+    margin-left: -324px
+    flex-wrap: wrap
+    align-items: flex-start
+    padding: 32px 30px 30px
+
+    &__tt
+      width: auto
+      margin-right: 30px
+      margin-top: 2px
+
+    &__arr
+      position: relative
+      top: 12px
+      margin: 0
+      width: 38px
+      height: 20px
+      background-image: url('../img/m-min-p-arrow.svg')
+      background-repeat: no-repeat
+      background-position: 100% 100%
+      background-size: 100% 100%
+
+      .icon
+        display: none
+
+    &__info
+      margin-left: 43px
+      margin-bottom: 20px
+
+    .v-soc-fullname
+      margin: 0 0 0 43px
+      display: flex
+      align-items: center
+
+      li
+        margin: 0
+        margin-right: 90px
+
+        &:last-child
+          margin-right: 0
+
+      a
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        .icon
+          flex-shrink: 0
+
+  .tiles-docs
+    flex-wrap: wrap
+    
+    li
+      display: flex
+      justify-content: space-between
+      flex-direction: column
+      width: calc(33.33% - 3px)
+
+      &.tiles-docs__row
+        width: 100%
+        margin-bottom: 4px
+/* end media max width $m-hd */
+
+/* Max width $m-lg */
+@media only screen and (max-width: $m-lg)
+  .about-row
+    display: block
+
+  .about-aside
+    margin: 50px auto 0
+
+  .tiles-docs
+    li
+      min-height: 210px
+      padding: 30px
+
+    .tiles-doc-item__tt
+      em
+        display: block
+
+        &::after
+          content: '-'
+/* end media max width $m-lg */
+
+/* Max width $m-md */
+@media only screen and (max-width: $m-md)
+  .about-main-tiles
+    .tiles-list
+      flex-wrap: block
+
+      li
+        width: 100%
+        min-height: 100px
+        padding-bottom: 20px
+        padding-top: 20px
+
+    .tiles-head
+      &._bordered-round
+        padding-bottom: 15px
+        
+      .icon
+        width: 30px
+        height: 30px
+        margin-right: 14px
+
+    .tiles-tt
+      font-size: 14px
+      line-height: 18px
+
+      br
+        display: none
+
+    .tiles-info p
+      font-size: 13px
+      line-height: 16px
+
+    .tp-sm
+      font-size: 12px
+      line-height: 15px
+
+  .about-main-tiles .tiles-list li:first-child, .about-main-tiles .tiles-list li:nth-child(2)
+    padding-bottom: 20px
+
+  .about-main-tiles
+    margin-bottom: 30px
+
+  .about-tiles-line
+    position: relative
+    margin-left: 0
+    width: 100%
+    bottom: 0
+    left: 0
+    padding: 20px
+    align-items: center
+
+  .about-tiles-line__icon
+    margin-right: 14px
+
+    .icon
+      width: 20px
+      height: 30px
+
+  .about-tiles-line__tt
+    margin-top: 0
+    padding-right: 40px
+    font-size: 14px
+
+  .about-tiles-line__arr
+    position: absolute
+    right: 20px
+    top: 36px
+    width: 30px
+    background-size: auto 100%
+
+  .about-tiles-line__info
+    margin: 0 0 20px
+    font-size: 13px
+
+    span
+      margin-top: 14px
+
+  .about-tiles-line .v-soc-fullname
+    margin: 0
+    display: block
+
+    li
+      margin: 0 0 15px
+      font-size: 13px
+
+  .about-aside
+    width: 280px
+    margin-top: 30px
+
+  .aside-b-start
+    padding: 40px 30px 0
+    background-size: 100% 340px
+    background-image: url('../img/aside-b-start-mob.png')
+    background-repeat: no-repeat
+    background-position: 50% 0
+
+    .btn
+      margin-bottom: 30px
+
+    img
+      width: 160px
+
+    .title-site
+      margin-bottom: 20px
+      font-size: 20px
+      line-height: 24px
+
+  ._docs-b
+    .ic-tt-col-about
+      &::after
+        position: relative
+        top: 12px
+        content: ''
+        width: 38px
+        height: 20px
+        background-image: url(../img/m-min-p-arrow.svg)
+        background-repeat: no-repeat
+        background-position: 100% 100%
+        background-size: 100% 100%
+      
+      &__icon
+        .icon
+          width: 30px
+          height: 37px
+
+    .tiles-docs
+      li
+        padding: 20px
+        min-height: 40px
+
+    .tiles-doc-item
+      margin-bottom: 0
+
+  .tiles-doc-item__icon
+    margin-bottom: 10px
+    height: auto
+
+    .icon
+      width: 24px
+      height: 26px
+
+  .tiles-docs li.tiles-docs__row
+    display: block
+
+    .tile-doc-item-bottom
+      .btn
+        margin-top: 20px
+
+    .tiles-doc-item:last-child
+      padding-left: 20px
+
+  .tiles-doc-item__tt
+    font-size: 13px
+    line-height: 16px
+
+    span
+      margin-top: 4px
+
+  .tile-doc-item-bottom
+    .btn
+      padding: 12px 20px
+      font-size: 12px
+
+  .tiles-docs
+    li
+      width: 100%
+      display: flex
+      align-items: center
+      flex-direction: row
+      justify-content: space-between
+
+  .tiles-docs .tiles-doc-item__tt em
+    display: inline
+
+    &::after
+      display: none
+/* end media max width $m-md */
