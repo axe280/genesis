@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="681px" height="1427px" viewBox="0 0 681 1427" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>7B88966D-3379-4143-A192-1F00620A280C</title>
+    <g id="Внутренние" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Как-начать-768" transform="translate(-57.000000, -1950.000000)">
+            <g id="Контент" transform="translate(30.000000, 227.000000)">
+                <g id="Как-начать-работу-с-GENESIS" transform="translate(0.000000, 1724.000000)">
+                    <g id="Стрелки" transform="translate(28.000000, 0.000000)">
+                        <g id="6" transform="translate(671.000000, 1168.000000)">
+                            <g id="1-copy-10" transform="translate(4.000000, 0.000000)" stroke="#FEDB41" stroke-dasharray="0,4" stroke-linecap="round" stroke-width="2">
+                                <line x1="1" y1="-5.18439477e-13" x2="0.774352887" y2="234.032898" id="Path-5"></line>
+                            </g>
+                            <polygon id="Triangle" fill="#FEDB41" transform="translate(4.500000, 236.500000) rotate(180.000000) translate(-4.500000, -236.500000) " points="4.5 232 9 241 0 241"></polygon>
+                            <circle id="Oval-Copy-3" stroke="#FEDB41" stroke-width="3" cx="4.5" cy="253.5" r="3"></circle>
+                        </g>
+                        <g id="5" transform="translate(671.000000, 917.000000)">
+                            <g id="1-copy-10" transform="translate(4.000000, 0.000000)" stroke="#3698E4" stroke-dasharray="0,4" stroke-linecap="round" stroke-width="2">
+                                <line x1="1" y1="-5.8181077e-13" x2="0.774352887" y2="216.032898" id="Path-5"></line>
+                            </g>
+                            <circle id="Oval-Copy-3" stroke="#3698E4" stroke-width="3" cx="4.5" cy="235.5" r="3"></circle>
+                            <polygon id="Triangle" fill="#3698E4" transform="translate(4.500000, 218.500000) rotate(180.000000) translate(-4.500000, -218.500000) " points="4.5 214 9 223 0 223"></polygon>
+                        </g>
+                        <g id="4" transform="translate(671.000000, 658.000000)">
+                            <g id="1-copy-10" transform="translate(4.000000, 0.000000)" stroke="#3698E4" stroke-dasharray="0,4" stroke-linecap="round" stroke-width="2">
+                                <line x1="1" y1="-1.26714483e-12" x2="0.774352887" y2="224.032898" id="Path-5"></line>
+                            </g>
+                            <circle id="Oval-Copy-3" stroke="#3698E4" stroke-width="3" cx="4.5" cy="243.5" r="3"></circle>
+                            <polygon id="Triangle" fill="#3698E4" transform="translate(4.500000, 226.500000) rotate(180.000000) translate(-4.500000, -226.500000) " points="4.5 222 9 231 0 231"></polygon>
+                        </g>
+                        <g id="3" transform="translate(671.000000, 406.000000)">
+                            <g id="1-copy-10" transform="translate(4.000000, 0.000000)" stroke="#3698E4" stroke-dasharray="0,4" stroke-linecap="round" stroke-width="2">
+                                <line x1="1" y1="-1.45349634e-12" x2="0.774352887" y2="216.032898" id="Path-5"></line>
+                            </g>
+                            <circle id="Oval-Copy-3" stroke="#3698E4" stroke-width="3" cx="4.5" cy="235.5" r="3"></circle>
+                            <polygon id="Triangle" fill="#3698E4" transform="translate(4.500000, 218.500000) rotate(180.000000) translate(-4.500000, -218.500000) " points="4.5 214 9 223 0 223"></polygon>
+                        </g>
+                        <g id="2" transform="translate(671.000000, 165.000000)">
+                            <g id="1-copy-11" transform="translate(4.000000, 0.000000)" stroke="#3698E4" stroke-dasharray="0,4" stroke-linecap="round" stroke-width="2">
+                                <line x1="1" y1="-1.66863892e-12" x2="0.774352887" y2="208.032898" id="Path-5"></line>
+                            </g>
+                            <circle id="Oval-Copy-4" stroke="#3698E4" stroke-width="3" cx="4.5" cy="227.5" r="3"></circle>
+                            <polygon id="Triangle" fill="#3698E4" transform="translate(4.500000, 210.500000) rotate(180.000000) translate(-4.500000, -210.500000) " points="4.5 206 9 215 0 215"></polygon>
+                        </g>
+                        <g id="1">
+                            <g id="1-copy-7" stroke="#3698E4" stroke-dasharray="0,4" stroke-linecap="round" stroke-width="2">
+                                <path d="M0.692244808,50.8479921 L0.692244808,10 C0.692244808,4.4771525 5.16939731,-7.61826213e-16 10.6922448,0 L665.983024,0 C671.505871,-1.01453063e-15 675.983024,4.4771525 675.983024,10 C675.983024,10.0056539 675.983019,10.0113078 675.983009,10.0169617 L675.774353,133.032898 L675.774353,133.032898" id="Path-5"></path>
+                            </g>
+                            <circle id="Oval" stroke="#3698E4" stroke-width="3" cx="675.5" cy="150.5" r="3"></circle>
+                            <polygon id="Triangle" fill="#3698E4" transform="translate(675.500000, 133.500000) rotate(180.000000) translate(-675.500000, -133.500000) " points="675.5 129 680 138 671 138"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

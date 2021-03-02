@@ -114,7 +114,6 @@
   background-repeat: no-repeat
   background-position: 50% 50%
   background-size: cover
-  backdrop-filter: blur(10px)
   border-radius: 10px
   color: #fff
 
@@ -232,8 +231,73 @@
   // .quick-reg
   //   display: none
 
+  .ic-tt-start-bl
+    max-width: 708px
+    margin: 0 auto 30px
+    padding: 20px 28px 0 0
+    background-image: url('../img/ic-tt-start-bg-tablet.svg')
+    background-repeat: no-repeat
+    background-position: 100% 0
+    background-size: auto
+
+    .ic-tt-rows
+      margin-bottom: 4px
+
+      .tiles-list
+        margin-left: 0
+
+        li
+          &:first-child
+            min-height: 260px
+
+          &:nth-child(2)
+            min-height: 216px
+
+          &:nth-child(3)
+            min-height: 276px
+
+    .tiles-list
+      display: block
+      margin-left: 190px
+
+      li
+        &:first-child
+          min-height: 236px
+
+        &:nth-child(2)
+          min-height: 256px
+
+        &:nth-child(3)
+          min-height: 276px
+
+    .tiles-list._three-col
+      &._arr-top,
+      &._arr-bottom
+        li
+          &:nth-child(n)
+            background-image: url('../img/tiles-blue-start-tablet.png')
+            background-repeat: no-repeat
+            background-position: 100% 50%
+            background-size: 100% 100%
+      
+      li
+        width: 100%
+        margin-bottom: 4px
+        padding: 30px 40px 10px 30px
+
+        &:last-child
+          margin-bottom: 0
+
+    .ic-tt-col-about
+      margin-left: 0
+      padding-top: 49px
+
 // Max width $m-lg
 @media only screen and (max-width: $m-lg)
+  .diff-list
+    br
+      display: none
+
   .section-invest-diff
     .diff-col
       &.company-invest
@@ -241,12 +305,35 @@
       &.self-invest
         width: 45%
 
+  .start-spec-bl
+    padding: 26px 0 30px 30px
+    margin: 0 20px 0 0
+    flex-wrap: wrap
+    background-image: url('../img/start-spec-bg-tablet.png')
+
+  .start-spec-tt
+    padding: 0 0 23px
+    margin-bottom: 30px
+    width: 100%
+    border-bottom: 1px solid rgba(#fff, .2)
+
+    br
+      display: none
+
+  .start-spec-info
+    padding: 0
+    border: none
+
+    &__arr
+      margin-left: 13px
+
 
 // Max width $m-md
 @media only screen and (max-width: $m-md)
   .section-invest-diff
     flex-direction: column
     padding: 0
+    margin-bottom: 60px
     &::before
       left: 0
     .diff-col
@@ -274,6 +361,134 @@
         margin-bottom: 16px
       br
         display: none
+
+  .ic-tt-start-bl
+    padding: 0 17px 0 0
+    background: none
+    
+    .ic-tt-rows
+      .tiles-list
+        li
+          &:first-child
+            min-height: 260px
+
+            &::before
+              background-image: url('../img/ic-start-mob-arr-1.svg')
+              height: 172px
+
+          &:nth-child(2)
+            min-height: 266px
+
+            &::before
+              background-image: url('../img/ic-start-mob-arr-2.svg')
+              height: 259px
+
+          &:nth-child(3)
+            min-height: 366px
+
+            &::before
+              background-image: url('../img/ic-start-mob-arr-3.svg')
+              height: 312px
+
+    .tiles-list
+      margin-left: 0
+
+      li
+        position: relative
+
+        &::before
+          content: ''
+          position: absolute
+          right: -17px
+          bottom: 50%
+          margin-bottom: -4px
+          width: 97px
+          z-index: 2
+          background-repeat: no-repeat
+          background-position: 100% 100%
+        
+        &:first-child
+          min-height: 306px
+
+          &::before
+            background-image: url('../img/ic-start-mob-arr-4.svg')
+            height: 322px
+
+        &:nth-child(2)
+          min-height: 346px
+
+          &::before
+            background-image: url('../img/ic-start-mob-arr-5.svg')
+            height: 322px
+
+        &:nth-child(3)
+          min-height: 366px
+
+          &::before
+            background-image: url('../img/ic-start-mob-arr-6.svg')
+            height: 352px
+
+    .ic-tt-col-about
+      padding-top: 0
+
+      &__icon
+        .icon
+          width: 40px
+          height: 40px
+
+    .tiles-list._three-col
+      li
+        padding: 20px 30px 10px 20px
+
+        .btn
+          padding: 13px 11px
+          width: 100%
+          font-weight: 600
+          font-size: 12px
+
+    .tiles-head__group
+      .icon
+        width: 30px
+        height: 30px
+        margin-right: 16px
+
+    .tiles-head._bordered
+      margin-bottom: 18px
+      padding-bottom: 18px
+
+  .start-spec-bl
+    display: block
+    padding: 20px 20px 1px
+    margin: 0 0 50px
+    background-image: url('../img/start-spec-bg-mob.png')
+
+  .start-spec-tt
+    padding: 0 0 17px
+    margin-bottom: 18px
+
+    .icon
+      margin-right: 16px
+
+  .start-spec-info
+    display: block
+
+    &__arr
+      display: none
+
+    &__text
+      margin-bottom: 20px
+
+    &__more
+      width: 100%
+      margin: 0 0 -20px
+      padding: 20px
+
+
+/* Max width 500px */
+@media only screen and (max-width: 500px)
+  .ic-tt-start-bl .tiles-list._three-col._arr-bottom li:nth-child(n), .ic-tt-start-bl .tiles-list._three-col._arr-top li:nth-child(n)
+    background-image: url(../img/tiles-blue-start-mobile.png)
+/* end media max width 500px */
 
 // Max width $m-sm
 @media only screen and (max-width: $m-sm)
