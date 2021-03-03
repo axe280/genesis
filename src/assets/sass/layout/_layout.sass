@@ -103,6 +103,39 @@ body
 .carousel-wrap-ov
   overflow: hidden
 
+.support-btn-wrapp
+  position: fixed
+  bottom: 55px
+  z-index: 10
+  left: 230px
+  right: 0
+  text-align: right
+
+.support-btn
+  display: inline-flex
+  align-items: center
+  padding: 11px 22px 11px 12px
+  color: #000
+  text-decoration: none
+  background-color: $colorPrimary
+  border-radius: 4px
+  font-weight: 600
+  font-size: 13px
+  line-height: 16px
+  text-transform: uppercase
+  background-color: $btnBg
+
+  &:hover
+    color: #000
+    background-color: $btnBgDarken
+
+  .icon
+    width: 24px
+    height: 24px
+    margin-right: 8px
+    flex-shrink: 0
+    fill: #000
+
 
 /* Max width $m-lg */
 @media only screen and (max-width: $m-lg)
@@ -148,6 +181,18 @@ body
       margin-right: $sides-negative-spacing-xs
       padding-left: $sides-spacing-xs
       padding-right: $sides-spacing-xs
+
+  .support-btn-wrapp
+    bottom: 44px
+
+  .support-btn
+    padding: 8px
+
+    .icon
+      margin-right: 0
+    
+    span
+      display: none
 /* end media max width $m-md */
 
 
