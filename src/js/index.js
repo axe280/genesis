@@ -7,23 +7,26 @@ $(function () {
   // page scroll blocker
   var addDocumentScrollBlocker = function () {
     document.body.classList.add('scroll-page-locked')
+    document.body.style.overflow = 'hidden'
   }
 
   var removeDocumentScrollBlocker = function () {
     document.body.classList.remove('scroll-page-locked')
+    document.body.style.removeProperty('overflow')
   }
 
-  // jcf select
-  var customSelects = document.querySelectorAll('.jcf-custom-select')
-  if (customSelects.length) {
-    jcf.replace(customSelects)
-  }
+  // company select https://designwithpc.com/Plugins/ddSlick#demo
+  $('.custom-select').ddslick({
+    imagePosition: 'left',
+    onSelected: function (data) {
+      if (data.selectedIndex !== 0) {
+        data.selectedItem.parents('.dd-container').addClass('_selected')
+      }
+    },
+  })
 
   // select img wrapp
-  $('.jcf-select').on('click', function () {
-    if ($('.select-img-wrap').length) return
-    $('.jcf-list img').wrap('<span class="select-img-wrap"></span>')
-  })
+  $('.dd-options .dd-option img').wrap('<span class="select-img-wrap"></span>')
 
   // open mobile menu
   $('.burger-menu').on('click', function () {
