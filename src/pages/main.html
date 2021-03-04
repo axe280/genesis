@@ -17,7 +17,6 @@
   <body>
     <!-- site main wrapper -->
     <div class="site-wrapper">
-
       <div class="main-header-wrapper">
         <!-- header -->
         <header class="header _mobile-menu-top" id="header">
@@ -1845,7 +1844,7 @@
             </div>
 
             <div class="mpm-graph-bo">
-              <img src="assets/img/lab-graph.png" alt="" />
+              <canvas id="modalUnityTrade"></canvas>
             </div>
           </div>
 
@@ -2000,7 +1999,7 @@
             </div>
 
             <div class="mpm-graph-bo">
-              <img src="assets/img/lab-graph.png" alt="" />
+              <canvas id="modalMineLab"></canvas>
             </div>
           </div>
 
@@ -2198,7 +2197,7 @@
             </div>
 
             <div class="mpm-graph-bo">
-              <img src="assets/img/lab-graph.png" alt="" />
+              <canvas id="modalGraphNgr"></canvas>
             </div>
           </div>
 
@@ -2813,5 +2812,239 @@
         </div>
       </form>
     </div>
+
+    <script src="Chart.bundle.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function (event) {
+        setTimeout(() => {
+          ;(function () {
+            // default global
+            Chart.defaults.global.defaultFontColor = '#7c7c7c'
+            Chart.defaults.global.defaultFontFamily =
+              "'Montserrat', 'BlinkMacSystemFont', 'Segoe UI', sans-serif"
+            Chart.defaults.global.legend.display = false
+            Chart.defaults.global.tooltips.bodyFontSize = 13
+            Chart.defaults.global.tooltips.bodyFontColor = 'rgba(0, 0, 0, .5)'
+            Chart.defaults.global.tooltips.backgroundColor = '#fff'
+            Chart.defaults.global.tooltips.borderWidth = 1
+            Chart.defaults.global.tooltips.borderColor = '#11dadc'
+            Chart.defaults.global.tooltips.displayColors = false
+            Chart.defaults.global.tooltips.titleFontSize = 16
+            Chart.defaults.global.tooltips.titleFontColor = '#000'
+            Chart.defaults.global.tooltips.titleFontStyle = '500'
+            Chart.defaults.global.tooltips.titleMarginBottom = 2
+            Chart.defaults.global.tooltips.xPadding = 16
+            Chart.defaults.global.tooltips.yPadding = 12
+            Chart.defaults.global.tooltips.caretSize = 6
+
+            var createModalChart = function (dataIncome, dataInvest, el) {
+              Chart.defaults.global.defaultFontColor = 'rgba(255, 255, 255, .4)'
+              Chart.defaults.global.tooltips.borderColor = 'rgba(0, 0, 0, .3)'
+
+              var ctx = el.getContext('2d')
+
+              var gradient1 = ctx.createLinearGradient(0, 0, 0, 500)
+              gradient1.addColorStop(0, 'rgba(17, 218, 220, 0.2')
+              gradient1.addColorStop(1, 'rgba(17, 218, 220, 0)')
+              var gradient2 = ctx.createLinearGradient(0, 0, 0, 600)
+              gradient2.addColorStop(0, 'rgba(207, 68, 251, 0.2)')
+              gradient2.addColorStop(1, 'rgba(207, 68, 251, 0)')
+
+              new Chart(ctx, {
+                type: 'line',
+                data: {
+                  labels: [
+                    'Январь',
+                    'Февраль',
+                    'Март',
+                    'Апрель',
+                    'Май',
+                    'Июнь',
+                    'Июль',
+                    'Август',
+                    'Сентябрь',
+                    'Октябрь',
+                    'Ноябрь',
+                    'Декабрь',
+                  ],
+                  datasets: [
+                    {
+                      data: dataIncome,
+                      backgroundColor: gradient1,
+                      borderColor: '#11d4d8',
+                      borderWidth: 1,
+                      pointBorderWidth: 2,
+                      pointRadius: 3,
+                      pointBackgroundColor: '#050447',
+                      pointHoverBackgroundColor: '#050447',
+                    },
+
+                    {
+                      data: dataInvest,
+                      backgroundColor: gradient2,
+                      borderColor: '#cf44fb',
+                      borderWidth: 1,
+                      pointBorderWidth: 2,
+                      pointRadius: 3,
+                      pointBackgroundColor: '#050447',
+                      pointHoverBackgroundColor: '#050447',
+                    },
+                  ],
+                },
+                options: {
+                  tooltips: {
+                    callbacks: {
+                      title: function (tooltipItem, data) {
+                        return tooltipItem[0].value + '$'
+                      },
+                      label: function (tooltipItem, data) {
+                        return tooltipItem.label
+                      },
+                    },
+                  },
+                  scales: {
+                    yAxes: [
+                      {
+                        gridLines: {
+                          drawBorder: false,
+                          color: 'rgba(255, 255, 255, .2)',
+                        },
+                        ticks: {
+                          padding: 20,
+                          callback: function (value, index, values) {
+                            return value + '$'
+                          },
+                        },
+                      },
+                    ],
+                    xAxes: [
+                      {
+                        gridLines: {
+                          display: false,
+                        },
+                        ticks: {
+                          padding: 10,
+                        },
+                      },
+                    ],
+                  },
+                },
+              })
+            }
+
+            // modal unity trade
+            var modalUnityTrade = document.getElementById('modalUnityTrade')
+
+            if (modalUnityTrade) {
+              var dataInvest = [
+                9120,
+                13452,
+                13464,
+                15872,
+                17780,
+                17550,
+                14520,
+                18564,
+                25830,
+                23688,
+                25916,
+                31590,
+              ]
+
+              var dataIncome = [
+                8000,
+                11400,
+                10200,
+                12800,
+                14000,
+                13500,
+                12000,
+                15600,
+                21000,
+                18800,
+                20900,
+                24300,
+              ]
+
+              createModalChart(dataInvest, dataIncome, modalUnityTrade)
+            }
+
+            // modal graph ngr
+            var modalGraphNgr = document.getElementById('modalGraphNgr')
+
+            if (modalGraphNgr) {
+              var dataInvest = [
+                14000,
+                16200,
+                12600,
+                15800,
+                18900,
+                21500,
+                22000,
+                24700,
+                32000,
+                34200,
+                28900,
+                26100,
+              ]
+
+              var dataIncome = [
+                20720,
+                23004,
+                17388,
+                22278,
+                27972,
+                33540,
+                36300,
+                34827,
+                48640,
+                52668,
+                43061,
+                37062,
+              ]
+
+              createModalChart(dataInvest, dataIncome, modalGraphNgr)
+            }
+
+            // modal mine lab
+            var modalMineLab = document.getElementById('modalMineLab')
+
+            if (modalMineLab) {
+              var dataInvest = [
+                16214,
+                15500,
+                12852,
+                12896,
+                18705,
+                19170,
+                15232,
+                25137,
+                36260,
+                41318,
+                51900,
+                49320,
+              ]
+
+              var dataIncome = [
+                13400,
+                12500,
+                10200,
+                10400,
+                12900,
+                13500,
+                11200,
+                18900,
+                24500,
+                28300,
+                34600,
+                36000,
+              ]
+
+              createModalChart(dataInvest, dataIncome, modalMineLab)
+            }
+          })()
+        }, 1000)
+      })
+    </script>
   </body>
 </html>

@@ -5,9 +5,9 @@ import 'magnific-popup'
 // import './js/plugins/jcf'
 // import './js/plugins/jcf.select'
 import './js/plugins/jquery.ddSlick.js'
+// import Chart from 'chart.js/dist/Chart.bundle.js'
 // import AOS from 'aos'
-
-// window.AOS = AOS
+window.Chart = Chart
 // window.Swiper = Swiper
 
 // JS
