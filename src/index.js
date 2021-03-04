@@ -7,7 +7,7 @@ import 'magnific-popup'
 import './js/plugins/jquery.ddSlick.js'
 // import Chart from 'chart.js/dist/Chart.bundle.js'
 // import AOS from 'aos'
-window.Chart = Chart
+// window.Chart = Chart
 // window.Swiper = Swiper
 
 // JS

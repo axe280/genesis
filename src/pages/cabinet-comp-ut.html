@@ -618,9 +618,6 @@
             Chart.defaults.global.tooltips.caretSize = 6
 
             var createModalChart = function (dataIncome, dataInvest, el) {
-              Chart.defaults.global.defaultFontColor = 'rgba(255, 255, 255, .4)'
-              Chart.defaults.global.tooltips.borderColor = 'rgba(0, 0, 0, .3)'
-
               var ctx = el.getContext('2d')
 
               var gradient1 = ctx.createLinearGradient(0, 0, 0, 500)
@@ -673,6 +670,7 @@
                 },
                 options: {
                   tooltips: {
+                    borderColor: 'rgba(0, 0, 0, .3)',
                     callbacks: {
                       title: function (tooltipItem, data) {
                         return tooltipItem[0].value + '$'
@@ -691,6 +689,7 @@
                         },
                         ticks: {
                           padding: 20,
+                          fontColor: 'rgba(255, 255, 255, .4)',
                           callback: function (value, index, values) {
                             return value + '$'
                           },
@@ -704,6 +703,7 @@
                         },
                         ticks: {
                           padding: 10,
+                          fontColor: 'rgba(255, 255, 255, .4)',
                         },
                       },
                     ],

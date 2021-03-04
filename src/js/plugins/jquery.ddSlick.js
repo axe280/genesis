@@ -193,16 +193,16 @@
     u.selectedData = t
     if (o.showSelectedHTML) {
       r.html(
-        (t.imageSrc
-          ? '<img class="dd-selected-image' +
-            (o.imagePosition == 'right' ? ' dd-image-right' : '') +
-            '" src="' +
-            t.imageSrc +
-            '" />'
+        // (t.imageSrc
+        //   ? '<img class="dd-selected-image' +
+        //     (o.imagePosition == 'right' ? ' dd-image-right' : '') +
+        //     '" src="' +
+        //     t.imageSrc +
+        //     '" />'
+        //   : '') +
+        (t.text
+          ? '<label class="dd-selected-text">' + t.text + '</label>'
           : '') +
-          (t.text
-            ? '<label class="dd-selected-text">' + t.text + '</label>'
-            : '') +
           (t.description
             ? '<small class="dd-selected-description dd-desc' +
               (o.truncateDescription
