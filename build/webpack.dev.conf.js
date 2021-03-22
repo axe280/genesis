@@ -16,7 +16,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   devtool: 'cheap-module-eval-source-map',
   devServer: {
     contentBase: PATHS.dist,
-    host: '192.168.0.105',
+    host: 'localhost',
     disableHostCheck: true,
     port: 3000,
     overlay: {

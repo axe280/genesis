@@ -138,7 +138,9 @@
   .h-aside-nav
     li
       &.active,
-      &:hover
+      &.active a,
+      &:hover,
+      a:hover
         color: #fff
 
   .pagination a
@@ -246,6 +248,9 @@
 
   .aside-modal
     background: #050447
+
+  .aside-modal_error
+    background: #d43d02
 
   .deal-ti-progress .status-level-progress span
     background-color: #343459

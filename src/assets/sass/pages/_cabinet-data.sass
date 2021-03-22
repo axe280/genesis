@@ -270,11 +270,17 @@
     user-select: none
     color: #7c7c7c
 
+    a
+      color: #7c7c7c
+
     &:last-child
       margin-bottom: 0
 
     &.active
       color: #000
+
+      a
+        color: #000
 
       &::before
         content: ''
@@ -291,7 +297,8 @@
         background-size: 300px 10px
         transform: rotate(-180deg)
 
-    &:hover
+    &:hover,
+    a:hover
       color: #000
 
 

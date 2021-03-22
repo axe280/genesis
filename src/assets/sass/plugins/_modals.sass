@@ -1,8 +1,17 @@
-.aside-modal-bl
+.aside-modal-bl,
+.info-box
   position: fixed
   left: 20px
   bottom: 20px
   z-index: 50
+
+.info-box
+  left: auto
+  right: 20px
+
+  .aside-modal-tt
+    padding-right: 0
+    margin-top: 2px
 
 .aside-modal
   margin-top: 10px
@@ -17,6 +26,9 @@
   border-radius: 6px
   max-width: 230px
   overflow: hidden
+
+  &._error
+    background: #d43d02
 
 .aside-modal-tt
   font-size: 14px
@@ -195,6 +207,9 @@
     height: 20px
     margin-right: 9px
     fill: #fff
+
+    &._dark
+      fill: #000
 
 .modal-form-b-message
   margin-top: 20px
